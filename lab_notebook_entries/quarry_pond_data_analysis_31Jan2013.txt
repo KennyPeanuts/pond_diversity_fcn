@@ -1,0 +1,159 @@
+# Entries for my open lab notebook
+
+# 31 Jan 2013
+## Notes on data analysis for Quarry Pond SOD Experiment
+
+### Experimental Design/Methods Notes
+
+Each jar contained mud from the lake (filtered through 250um mesh to exclude macroinvertebrates) and overlying water from the lake. Once the chironomids were added to the jar, SOD was measured on julian days 177, 178, 179, 181, and 184.  The response variable is SOD, the factor of interest is Treatment, and the covariates are the final dissolved oxygen concentration and the julian day. 
+
+Jar     Treat    Day
+----    ------   -----
+A1       N         177
+A2       C         177
+A3       T         177
+A4       Ct        177
+B1       N         177
+B2       C         177
+B3       T         177
+B4       Ct        177
+C1       N         177
+C2       C         177
+C3       T         177
+C4       Ct        177
+A1       N         178
+A2       C         178
+A3       T         178
+A4       Ct        178
+B1       N         178
+B2       C         178
+B3       T         178
+B4       Ct        178
+C1       N         178
+C2       C         178
+C3       T         178
+C4       Ct        178
+...     ...       ...
+C4       Ct        184
+
+
+### Data Notes
+
+The data were retrieved from the Dropbox blackBox/R working/Data/Experiment 2-Quarry Pond/Text Files
+
+These files contain the calculations of SOD made by the students from the 2nd and SOD experiment.
+
+The data files were imported using the following code:
+
+    # Import data
+    # Data from dropbox files calculated by students during summer research  
+    sod.25Jn <- read.delim("./data/SOD Data 25-Jun.txt", header = T, stringsAsFactors = F)	
+    sod.26Jn <- read.delim("./data/SOD Data 26-Jun.txt", header = T, stringsAsFactors = F)
+    sod.27Jn <- read.delim("./data/SOD Data 27-Jun.txt", header = T, stringsAsFactors = F)
+    sod.29Jn <- read.delim("./data/SOD Data 29-Jun.txt", header = T, stringsAsFactors = F)
+    sod.2Jl <- read.delim("./data/SOD Data 2-Jul.txt", header = T, stringsAsFactors = F)
+    sod <- rbind(sod.25Jn[sod.25Jn$TimeStep == "T0-T1",], sod.26Jn, sod.27Jn, sod.29Jn, sod.2Jl)
+
+    > str(sod)
+    'data.frame':	60 obs. of  9 variables:
+    $ Date     : chr  "25-Jun" "25-Jun" "25-Jun" "25-Jun" ...
+    $ JulianDay: int  177 177 177 177 177 177 177 177 177 177 ...
+    $ Year     : int  2012 2012 2012 2012 2012 2012 2012 2012 2012 2012 ...
+    $ TimeStep : chr  "T0-T1" "T0-T1" "T0-T1" "T0-T1" ...
+    $ Treat    : chr  "T" "C" "N" "CT" ...
+    $ Rep      : chr  "B" "C" "A" "B" ...
+    $ DOf      : num  0.235 0.221 0.226 0.22 0.238 ...
+    $ DOrep    : num  0.249 0.234 0.242 0.239 0.251 ...
+    $ SOD      : num  7.68 7.36 8.2 9.7 6.97 ...
+    > 
+
+The variables in the data are:
+
+* Date = the date of the data collection all dates are in 2012
+* JulianDay = the julian day of the data collection
+* Year = the year
+* TimeStep = the interval name of the SOD measurement
+    + Note that on June 25, SOD was measured twice - during a T0 - T1 interval and then during a T1 - T2 interval. On subsequent dates only the T0 - T1 interval was measures.  I omitted the T1 - T2 SOD data from June 25 in the compiled data frame (sod).
+* Treat = the name of the treatment applied 
+    + N = control - no chironomids added
+    + C = chironominae added
+    + T = tanypodinae added
+    + CT = tanypodinae and chironominae added
+* Rep = the replicate id
+* DOf = the final dissolved oxygen concentration at the end of the sampling interval in mmol/L
+* DOrep = the dissolved oxygen concentration at the beginning of the sampling interval in mmol/L
+* SOD = the sediment oxygen demand, which is the change in the dissolved oxygen concentration from the beginning to the end of the sampling interval normalized to mmol/m~2~/d
+
+### Analysis notes
+
+A plot of SOD on the individual days shows considerable variation in the effect of treatment on SOD by date, as well as the magnitude of SOD.  The difference in magnitude seems to be related to the DO concentration.
+
+    # plot by day
+    par(las=1)
+    par(mfcol = c(1, 5))
+    plot(SOD~as.factor(Treat), data = sod.25Jn, ylim=c(0, 20))
+    plot(SOD~as.factor(Treat), data = sod.26Jn, ylim=c(0, 20))
+    plot(SOD~as.factor(Treat), data = sod.27Jn, ylim=c(0, 20))
+    plot(SOD~as.factor(Treat), data = sod.29Jn, ylim=c(0, 20))
+    plot(SOD~as.factor(Treat), data = sod.2Jl, ylim=c(0, 20))
+
+    # plot of DOf by JulianDay
+    par(las = 1)
+    plot(DOf ~ JulianDay, data = sod)
+
+but in combination the treatments containing the chironominae  have a greater median SOD than those treatments without chironominae
+
+     # plot of SOD ~ Treat across days
+     par(las = 1)
+     plot(SOD ~ as.factor(Treat), data = sod)
+
+an the relationship between SOD and the final oxygen concentration is supported
+
+    # plot of SOD ~ DOf across days
+    par(las = 1)
+    plot(SOD ~ DOf, data = sod, col = 4)
+    abline(lm(SOD ~ DOf, data = sod))
+
+To analyze the interation between SOD, treatment, and DOf, I used a repeated measures anova model. I don't have enough df to include treatment, DOf, and JulianDay plus interactions.  I am not including JulianDay in the model.
+
+    # repeated measures analysis of SOD ~ Treat * DOf
+    sod.rm.aov <- (aov(SOD ~ as.factor(Treat) * DOf + Error(as.factor(Jar)), data = sod))
+    summary(sod.rm.aov)
+
+this yields:
+
+    Error: as.factor(Jar)
+                         Df Sum Sq Mean Sq F value   Pr(>F)   
+    as.factor(Treat)      3 79.231 26.4104 25.6707 0.004495 **
+    DOf                   1  5.083  5.0831  4.9407 0.090333 . 
+    as.factor(Treat):DOf  3  8.679  2.8929  2.8119 0.171741   
+    Residuals             4  4.115  1.0288                    
+    ---
+    
+    Error: Within
+                         Df Sum Sq Mean Sq F value  Pr(>F)  
+    DOf                   1  43.62  43.623  3.5567 0.06592 .
+    as.factor(Treat):DOf  3  21.41   7.136  0.5818 0.63009  
+    Residuals            44 539.66  12.265                  
+    ---
+    
+
+These results support the differences in the SOD between treatments and weakly support the effect of intial oxygen concentration.  Without any of the other factors in the model, variation in sod is still affected by treatment.
+
+
+    # repeated measures analysis of SOD ~ Treat (without other factors)
+    sod.oneFac.rm.aov <- (aov(SOD ~ as.factor(Treat) + Error(as.factor(Jar)), data = sod))
+    summary(sod.oneFac.rm.aov)
+
+this yields:
+
+
+    Error: as.factor(Jar)
+                     Df Sum Sq Mean Sq F value  Pr(>F)   
+    as.factor(Treat)  3 79.231 26.4104  11.819 0.00261 **
+    Residuals         8 17.877  2.2347                   
+    ---
+    
+    Error: Within
+              Df Sum Sq Mean Sq F value Pr(>F)
+    Residuals 48 604.69  12.598               

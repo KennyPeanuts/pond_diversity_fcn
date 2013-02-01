@@ -1,0 +1,13 @@
+# Notes on literature 
+
+## Papers
+
+The main articles we read were Komoinoski and Rosemond 2012, Vaughn 2010, and Hillebrand and Matthiessen 2009.
+
+I am responsible for presenting Hillebrand and Matthiessen 2009.
+
+This paper mainly conceptualizes the relationship between biodiversity and ecosystem function within the context of "effect traits".  The authors describe functional traits as those that affect the fitness of the organism but effect traits as those that alter ecosystem function. 
+
+On of their main points is that there need not be a simple correlation between these two types of traits and therefore changes to diversity may not affect ecosystem function positively.  Their model provides a means of making predictions about how diversity and function are related.
+
+Given that functional traits often represent trade offs between different processess it is reasonable to assume that the 

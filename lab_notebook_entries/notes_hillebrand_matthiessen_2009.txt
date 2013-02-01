@@ -1,0 +1,22 @@
+# Notes on Hillebrand, H. and B. Matthiessen. 2009. Biodiversity in a complex world: consolidation and progress in functional biodiversity research. Ecology Letters 12: 1405-1419.
+
+## Introduction
+
+* General effect of diversity loss = 
+    + reduction in ecosystem process rates
+    + reduction in resource use efficiency
+    + accelerated reductions in above with time
+    + reduction is aspects of stability
+
+* This consensus is developed from experiments without biological complexity and thus leave open questions of:
+    + direct and indirect effect of diversity on process
+    + mechanisms of additive vs emergent effects in actual communities
+
+* Species richness may be a poor variable for diversity/function questions
+    + human activities tend to alter evenness and beta diversity before local richness
+    + richness is only one point in the diversity hierarchy from genetic diversity to functional diversity
+        - functional diversity can be measured as a cont. measure of trait diversity
+        - functional traits = any aspect of biology that affects individual performance
+        - functional diversity explicitly includes identity
+
+* Diversity effects on the sum of all ecosystem processes > diversity effects on single ecosystem functions
