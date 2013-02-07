@@ -1,0 +1,46 @@
+# Notes on Boyero et al. 2007 and Hunting et al. 2012
+
+## Boyero, L., R. G. Pearson, and M. Bastian. 2007. How biological diversity influences ecosystem fuction: a test with a tropical stream detritivore guild. Ecological Research 22:551-558.
+
+Diversity effects on ecosystem function can be due to:
+
+* sampling effect
+* niche complementarity
+* interspecific facilitation
+* release from intersp. interference 
+
+The authors test the effect of shredder species richness (1 - 4 sp; 3 caddisfly and a mayfly) and shredder evenness on leaf mass lost in a lab experiment with shredders from a tropical creek in Australia.
+
+Species richness had no effect on leaf mass lost when the mayfly was included in the community but when the community consisted of only caddisflies, the 3-sp treatment had significantly greater leaf mass lost.
+
+Leaf mass lost was greater with greater evenness in treatments containing 3 caddisfly species but not in treatments containing only 2 species. The authors conclude this is evidence of a reduction in intraspecific interference.
+
+## Hunting E. R., M. H. Whatley, H. G. van der Geest, C. Mulder, M. H. S. Kraak, A. M. Breure, and W. Admiraal. 2012. Freshwater Science. 31:724-732.
+
+Bioturbation can occur via 5 mechanisms:
+
+* Biodiffusion  simple mixing of the sediments
+* Upward conveyor
+* Downward conveyor
+* Regenerator - excavate holes that refill
+* Gallery diffuser - irrigated permanent tunnels
+
+The authors test the effect of 3 of these mechanisms with 5 sediment macroinvertebrates on sediment LOI, DOC production, and bacterial activity (ETSA)^1^ in laboratory mesocosm incubations.
+
+They use the amphipod G. pulex and the isopod A. aquaticus as biodiffusers, the oligochaetes Tubifex spp. and L. variegatus as upward conveyors, and the insect C. riparius as a gallery diffuser.
+
+All of the functional groups elevated LOI over controls but the biodiffusers showed the greatest response. 
+
+All organisms elevated DOC production from the sediments and bacterial activity with the exception of Tubifex.  Again the biodiffusers showed the greatest effect.
+
+Eh was highest in the mesocosms with the biodiffusers and lower in the presence of burrowing animals.
+
+The effects did not change if the mesocosms were inoculated with a bacterial community at the onset of the incubation.
+
+1. ETSA = Electron transport system activity - see Hunting et al. 2010. Bulletin of Marine Science 86:871-877 for more information.  This may be a useful addition to SOD for assessing OM processing.
+
+## General Notes
+
+Hunting et al. show that functional groups in soft sediments can alter the microbial activity and OM processing but they do this only with single species incubations.  Based on this we would predict a rather strong effect of functional diversity if the effects are additive.  However, Boyero et al. show that in when in combination, species effects are not always additive and the species identity is important even for diversity within a single functional group (shredders).  In particular the presence of the mayfly resulted in less of an effect than would have been expected from information of single species effects.
+
+
