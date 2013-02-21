@@ -1,0 +1,10 @@
+# Notes on Brady, J. K. and A. M. Turner. 2010. Species-Specific effects of gastropods on leaf litter processing in pond mesocosms. Hydrobiologia 651: 93-100.
+
+The authors evaluate the effect of 6 different species of lentic snails on red maple litter breakdown in 400 L mesocosms and the effect of a single sp of snail (_Stagnicola elodes_) on the decay of 5 litter species.  All of the incubations were single species.
+
+Red maple leaf mass loss without snails was 0.142 d^-1^ and increased by 27 to 39% in the presence of the two snails species with the greatest effects (both variants of _S. elodes_). Three of the 6 species had no effect on the mass loss of the red maple leaves.
+
+_S. elodes_ significantly increased the mass loss of the leaves for all species except American Beech.  Mass lost increased between 25 and 72% in the presence of _S. elodes_.
+
+
+

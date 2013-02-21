@@ -1,0 +1,8 @@
+# Notes on Bohmann I, and Herrmann, J. 2006. The timing of winter-growing shredder species and leaf litter turnover in an oligotrophic lake, SE Sweden. Hydrobiologia 556:99-108
+
+The authors evaluate the colonization and breakdown of birch and oak leaf litter bags in the littoral zone of a 2.7 km^2^ boreal lake.  
+
+The authors find a total of 35 taxa in the leaf bags but only 11 shredder taxa.  The abundance of the of only 2 genera of tricoptera correlates with the loss of litter mass. 
+
+In a second year of the study ice-cover was much greater, freezing the litter bags and resulting in low oxygen. During this time period, the macroinvertebrate densities were very low and their contribution to mass loss was limited.  However the microbial conditioning of the leaves may have facilitated the breakdown of the leaves via an isopod after ice-out.
+

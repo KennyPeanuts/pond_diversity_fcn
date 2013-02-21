@@ -1,0 +1,39 @@
+# Oertli, B. 1993. Leaf litter processing and energy flow through mcroinvertebrates in a woodland pond (Switzerland). Oecologia 96:466-477
+
+Woodland ponds share many characteristics of other littoral systems: have same substrates (macrophytes, litter, mud) 
+
+## Study Site
+
+* Man-made pond, constructed in 1969
+* 4400 m^2^, mean Z = 0.8 m, max Z = 2 m
+* surrounded by deciduous forest
+* Substrate by area 25% leaf litter, 13% sub. macrophytes, 28% emergent macrophytes
+* Leaf litter accumulation patchy; max values = 180 - 1400 g m^-2^ y^-1^
+
+The authors estimate oak leaf decay and macroinvertebrate production in leaf packs as well as in chara and Typha beds in a small forested impoundment.
+
+Oak leaf decay constant = -0.0014, 32% of leaf mass remained after one year so leaves represented a consistent habitat throughout the year.
+
+Leaf pack communities
+    
+    Table 1. Percent of Total Primary Consumers
+    Group         Density    Biomass   Production 
+    ---------------------------------------------
+    Chironomidae  64         60        82
+    Oligochaeta   31         9         
+    Limniphilidae            15        4
+    
+    * Note that Chironomidae excludes the tanypodinae
+
+    Table 2. Percent of Total Predators
+    Group          Density    Biomass    Production
+    -----------------------------------------------
+    Tanypodinae    57         7.6        60
+    Ceratopogonid  14
+
+Predator density was 6% of total but 12% of total production
+
+**Shredders consumed only 19% of leaf mass (post leaching), 81% of the leaf mass lost due to microbial processing.** This is much smaller than is typically seen in streams.
+
+
+ 

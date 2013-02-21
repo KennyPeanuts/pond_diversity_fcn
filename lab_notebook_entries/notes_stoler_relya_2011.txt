@@ -1,0 +1,6 @@
+# Stoler, A. B. and R. A. Relyea. 2011. Living in the litter: the influence of tree litter on wetland communities. Oikos 120:862-872 doi: 10.1111/j.1600-0706.2010.18625.x
+
+The authors evaluate the effect of 9 broadleaf species individually, 5 conifer species individually, conifer mix, broadleaf mix, and total sp mix on the mass of periphyton, phytoplankton, tadpoles, and zooplankton in small mesocosms.  The system is based around eastern U.S. forest ponds.
+
+They find that all of the parameters measured differ based on the individual species of leaves but there is not a consistent pattern across responses.  The mixtures in general show additive responses for all of the parameters.
+

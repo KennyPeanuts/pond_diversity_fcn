@@ -1,0 +1,10 @@
+lake site depth repl init.mass
+WL littoral 1.9 A 13.1875
+WL littoral 1.9 B 13.2355
+WL littoral 1.9 C 13.3609
+WL open 2 A 13.2247
+WL open 2 B 13.2464
+WL open 2 C 13.3428
+WL deep NA A 13.2874
+WL deep NA B 13.2378
+WL deep NA C 13.4083

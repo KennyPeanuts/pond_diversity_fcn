@@ -1,0 +1,19 @@
+# Reynolds, P. M. and J. F. Bruno. 2012. Effects of trophic skewing of species richness on ecosystem functioning in a diverse marine community. PLoS ONE 7(5):e36196 doi:10.1371/journal.pone0036196
+
+The authors test the effect of the relative species richness across trophic levels in a 3 trophic level marine system on the magnitude of trophic cascading.  The authors use a mesocosm system based in organisms from hard substratum sites in NC estuaries.
+
+Trophic skewing refers to the equality of taxon richness across trophic levels in a community.  The authors test 4 levels of trophic skew:
+
+    Trophic Level   Top-rich   Neutral  Slightly bottom-rich   bottom-rich
+    -----------------------------------------------------------------------    
+    Predator            6         4            3                   2
+    Grazer              4         4            4                   4
+    Algae               2         4            5                   6
+
+these trophic skew treatments were crossed with the number of trophic levels (1-3)
+
+The results show a trophic cascade on the abundance of algae in the mesocosms that was affected by the trophic skewing. In general macroalgal biomass was lowest in the presence of the grazers and highest in the presence of the predators and grazers.  The effect of the predators was on the macroalgal abundance was greatest in the 2 bottom-rich communities.
+
+The microalgal abundance also showed a trophic cascade but this cascade was the strongest in the top-rich treatments.
+
+Grazer abundance was highest when macroalgal abundance was greatest - indicating that the grazers are stimulated by algal diversity, regardless of the presence of the predators. 

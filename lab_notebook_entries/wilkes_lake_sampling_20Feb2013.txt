@@ -1,0 +1,45 @@
+# Wilkes Lake Sampling
+## 20 Febuary 2013
+
+### Goal/ Sampling Design
+
+The goal of the sampling was to begin collecting data to assess the relationship between CPOM and macroinvertebrate functional diversity.
+
+The sampling design was to collect 3 replicate Ekman samples from a _littoral_ section of the lake, an _open shallow_ section, and a _open deep_ section.  The _littoral_ and _open shallow_ sections were intended to be similar in depth and therefore similar physical environments but represent a gradient of CPOM inputs.  The _deep_ sample was intended to capture the effect of focussing on CPOM distribution.
+
+### Sampling Location & Site Description
+
+We put the boat in on the N shore just to the E of the island in the lake.  The shoreline dropped off essentially vertically to about 0.5 m and then dropped steeply to 2 m.  The depth remained 2 m all the way across the lake until we got within about 10 m of the shore and then it began to rise steeply again.
+
+#### Sample Data
+
+    Site          Dist. from shore    Depth
+    ----------------------------------------
+    Littoral      approx 20 m         1.9 m
+    Open/shallow  approx mid lake     2.0 m
+
+The shore opposite the _littoral_ sample is completely forested but the forest is interrupted but a walking trail a few meteres from shore.
+
+The sediments of the _littoral_ site had a high clay content and were gray colored with black leaf fragments.  Overall the sediments felt soft and deep.  Oligochates appeared common when washing the samples.
+
+The sediments of the _open shallow_ site were much sandier and one of the replicates was collected in sediments that felt noticeably harder than the other samples.  Unfortunately the replicate was not recorded.  Smaller leaf fragments were evident in the sample.
+
+    Secchi depth = 0.7 m (collected at the _open shallow_ site
+
+The _deep_ sample was not collected.
+
+### Sample Processing
+
+Prior to washing the samples the sediments collected from the Ekman were gently homogenized and a pre-weighed scintillation vial was partially filled with sediment by dipping it into the slurry for LOI. 
+
+_Note the LOI sampling needs a new procedure.  A syringe may work better and get a more consistent volume._
+
+All of the samples were washed through 250 &mu;m nets and preserved in 70% EtOH in the field.
+
+In the lab the LOI samples were placed in the drying oven at 50^o^ C at approximately 4:00 pm
+
+On 21 Feb 2013, the CPOM of the littoral samples was removed by rinsing the samples on 250 &mu;m sieves and hand-picking any fragments > 1 mm.
+
+All macroinvertebrates associated with the CPOM were removed and preserved in 70% EtOH
+
+_Note the CPOM removal would probably work better with a 1 mm sieve._
