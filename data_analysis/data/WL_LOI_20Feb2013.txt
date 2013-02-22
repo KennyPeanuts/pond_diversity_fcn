@@ -1,4 +1,4 @@
-lake site depth repl init.mass
+lake site depth repl vial.mass
 WL littoral 1.9 A 13.1875
 WL littoral 1.9 B 13.2355
 WL littoral 1.9 C 13.3609

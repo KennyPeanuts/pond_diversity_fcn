@@ -1,0 +1,10 @@
+lake site depth repl boat.num boat.mass
+WL littoral 1.9 A 28 1.9434
+WL littoral 1.9 B 53 1.8294
+WL littoral 1.9 C 66 1.8443
+WL open 2 A 27 1.6925
+WL open 2 B 72 1.8084
+WL open 2 C 57 1.7482
+WL deep NA A NA NA
+WL deep NA B NA NA
+WL deep NA C NA NA

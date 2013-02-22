@@ -1,0 +1,45 @@
+<h1 id="data-for-wilkes-lake-loi-20-feb-2013-sampling">Data for Wilkes Lake LOI; 20 Feb 2013 Sampling</h1>
+<h2 id="metadata">Metadata</h2>
+<p>Collected by: Kenneth Fortino, Carly Martin, Leanna Tacik</p>
+<p>Collected on: 20 Feb 2013</p>
+<p>Affiliation: Longwood University</p>
+<p>Location: Wilkes Lake, Farmville VA. Samples were collected E of the island.</p>
+<p>Description: data represent the mass of sediments for LOI calculations from Ekman samples.</p>
+<p>Created: 22 Feb 2013</p>
+<p>Modified -</p>
+<h3 id="variables">Variables:</h3>
+<ul>
+<li>lake = the name of the lake
+<ul>
+<li>WL = Wilkes Lake</li>
+<li>LPP = Lancer Park Pond</li>
+</ul></li>
+<li>site = the relative location of the sample within the lake
+<ul>
+<li>littoral = near the shoreline ~ approx. 20 m from S shore</li>
+<li>open = away from the shoreline ~ approx equidistant from N and S shore</li>
+</ul></li>
+<li>depth = the depth of the water at the sampling site (m)</li>
+<li>repl = the replicate</li>
+<li>vial.mass = the mass of the empty scintilation vial (g)</li>
+</ul>
+<h2 id="r-code">R Code</h2>
+<pre><code>lake &lt;- rep(&quot;WL&quot;, 9)
+site &lt;- c(rep(&quot;littoral&quot;, 3), rep(&quot;open&quot;, 3), rep(&quot;deep&quot;, 3))
+depth &lt;- c(rep(1.9, 3), rep(2.0, 3), rep(NA, 3))
+repl &lt;- rep(c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;), 3)
+vial.mass &lt;- c(13.1875, 13.2355, 13.3609, 13.2247, 13.2464, 13.3428, 13.2874, 13.2378, 13.4083)
+WL.LOI.20Feb2013 &lt;- data.frame(lake, site, depth, repl, vial.mass, stringsAsFactors = F)
+write.table(WL.LOI.20Feb2013, &quot;./data/WL_LOI_20Feb2013.txt&quot;, quote=F, row.names=F)</code></pre>
+<h2 id="output">Output</h2>
+<pre><code>&gt; WL.LOI.20Feb2013
+  lake     site depth repl vial.mass
+1   WL littoral   1.9    A   13.1875
+2   WL littoral   1.9    B   13.2355
+3   WL littoral   1.9    C   13.3609
+4   WL     open   2.0    A   13.2247
+5   WL     open   2.0    B   13.2464
+6   WL     open   2.0    C   13.3428
+7   WL     deep    NA    A   13.2874
+8   WL     deep    NA    B   13.2378
+9   WL     deep    NA    C   13.4083</code></pre>
