@@ -1,0 +1,11 @@
+# Moore et al. 2004
+
+1. detrital accrual is density independent and affected by pool size
+2. detrital ontogeny (i.e., transformations in quality) is the result of the activity of the species in the system other than the ones that made the detritus
+3. detritus does not require energy for maintenance of the pool, so it can serve as a storage resource and habitat.
+
+Detrital based systems are viable at lower levels of detrital input due to the lack of maintenance costs and interspecific "producer" competition (i.e., density dependent resource growth).
+
+Detritus is more stable and resilient than prim prod over a large range of productivity measures --> _In this analysis, I am assuming that detrital productivity is simply the production of detritus and therefore would be tied very closely to prim. prod. either within the system or somewhere else._
+
+
