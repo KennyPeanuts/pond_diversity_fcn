@@ -10,11 +10,18 @@ Affiliation: Longwood University
 
 Location: Wilkes Lake, Farmville VA.  Samples were collected E of the island. 
 
-Description: data represent the mass of OM fragments greater than 1mm for CPOM mass calculations removed from Ekman samples that were washed through 250 &mu;m mesh.
+Description: 
+* Data represent the mass of CPOM fragments greater than 1mm for CPOM
+mass calculations removed from Ekman samples that were washed through
+250 &mu;m mesh.
+* CPOM dried at 50^o^ C. 
 
 Created: 22 Feb 2013
 
-Modified -
+Modified:
+
+28 March 2013 
+* Added final and CPOM masses for the littoral and open samples
 
 ### Variables:
 
@@ -27,7 +34,9 @@ Modified -
 * depth = the depth of the water at the sampling site (m)
 * repl = the replicate
 * boat.num = the number identifying the weighboat
-* boat.mass = the mass of the empty weighboat (g) 
+* boat.mass = the mass of the empty weighboat (g)
+* boat.cpom = the mass of the weighboat plus CPOM mass (g)
+* cpom.mass = the mass of the dried CPOM = boat.cpom - boat.mass (g)
 
 ## R Code
 
@@ -37,6 +46,7 @@ Modified -
     repl <- rep(c("A", "B", "C"), 3)
     boat.num <- c(28, 53, 66, 27, 72, 57, NA, NA, NA)
     boat.mass <- c(1.9434, 1.8294, 1.8443, 1.6925, 1.8084, 1.7482, NA, NA, NA)
+    boat.cpom <- c(
     WL.CPOM.20Feb2013 <- data.frame(lake, site, depth, repl, boat.num, boat.mass, stringsAsFactors = F)
     write.table(WL.CPOM.20Feb2013, "./data/WL_CPOM_20Feb2013.txt", quote=F, row.names=F)
 
