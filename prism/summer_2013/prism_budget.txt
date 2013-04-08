@@ -1,0 +1,53 @@
+# PRISM Research Plan for Summer 2013
+
+## Experiments and Field-work Planned
+
+1. Field sampling for the relationship between FBOM + CPOM and macroinvertebrate diversity .
+2. Effect of macroinvertebrates (tanypodinae) CPOM breakdown.
+2. Relationship between CPOM and SOD and Tanypods.
+
+## Supplies Needed
+
+| Supplies           | Price | Source | Notes | Experiment |
+|--------------------+-------+--------+-------+------------|
+| Mason Jars         |       |        |       | 2 & 3      |
+| Bug Key            |       |        |       | 1          |
+| Scintilation Vials |       |        |       | all        |
+|                    |       |        |       |            |
+
+## Experimental Protocol Outlines
+
+### Experiment 1
+
+1. Collect Ekman samples of local ponds in the littoral and open habitats.
+2. Quantify the mass of CPOM by passing samples through 1 mm mesh sieve
+3. Quantify the %OM by collecting a sample from the remaining sediments for LOI
+    + Potential problem = the high clay content of the sediments biasing LOI
+    + Talk to Joe about other sediment characterization
+4. Pass samples through 250&mu;m mesh to preserve fine sample
+5. Pick and ID "bugs" from coarse and fine samples
+
+| Equipment     | Need |
+|---------------+------|
+| Ekman         |      |
+| Boat          |      |
+| 1 mm Sieve    |      |
+| 250&mu;m nets |      |
+| Buckets       |      |
+| Key           | Y    |
+| Scint Vials   | Y    |
+|               |      |
+
+### Experiments 2
+
+1. Collect sediments from lake with Ekman
+2. Pass sediment through 250&mu;m mesh to remove all CPOM and macroinvertebrates
+3. Place bug-free sediment into 1 pint mason jars
+4. Add standard mass of CPOM to jars as Black Willow leaf disks
+5. Add tanypodinae to half of the jars
+6. Incubate jars (3 weeks)
+7. Remove sediment and CPOM to measure CPOM mass change and distribution of CPOM
+8. Measure %OM of the fine sediment using LOI
+
+## Experiment 3
+
