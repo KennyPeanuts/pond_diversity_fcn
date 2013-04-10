@@ -8,12 +8,24 @@
 
 ## Supplies Needed
 
-| Supplies           | Price | Source | Notes | Experiment |
-|--------------------+-------+--------+-------+------------|
-| Mason Jars         |       |        |       | 2 & 3      |
-| Bug Key            |       |        |       | 1          |
-| Scintilation Vials |       |        |       | all        |
-|                    |       |        |       |            |
+| Supplies                  | Number     | Price ea | Source                  | Notes |
+|---------------------------+------------+----------+-------------------------+-------|
+| Merrit and Cummins        |            | $143.95  | ISBN: 978-0-7575-6321-8 |       |
+| Septum Jars wide (250 ml) | 3 cs of 12 | $67(201) | 05-719-452              |       |
+| BOD Bottles               | 1 cs of 36 | $752     | 02926100A               |       |
+
+Total = $1096
+
+| Supplies            | Number      | Price ea |     Source | Notes |
+|---------------------+-------------+----------+------------+-------|
+| buret (10 ml)       |             | $100     |    03-700A |       |
+| buret (50 ml)       |             | $146     |    03-700C |       |
+| buret stand         |             | $224     | 02-216-299 |       |
+| stirrer             |             | $227     | 14-505-122 |       |
+| pH buffers          |             | $104     | 13-624-500 |       |
+| pipette (1 ml)      |             | $262     | 21-377-821 |       |
+| pipette tips (1 ml) | 1 cs (5000) | $136     |   02-681-4 |       |
+
 
 ## Experimental Protocol Outlines
 
@@ -35,7 +47,7 @@
 | 250&mu;m nets |      |
 | Buckets       |      |
 | Key           | Y    |
-| Scint Vials   | Y    |
+| Scint Vials   |      |
 |               |      |
 
 ### Experiments 2
@@ -50,4 +62,11 @@
 8. Measure %OM of the fine sediment using LOI
 
 ## Experiment 3
+
+1. Collect sediments from the lake with Ekman
+2. Pass the sediment through 250&mu;m mesh to remove CPOM and macroinvertebrates 
+3. Place bug-free sediment into 1 pint mason jars
+4. Create treatments by adding CPOM disks to the jars and tanypodes
+5. Incubate jars in the dark
+6. Sample water from jars and measure CO~2~ production via measurement of alkalinity and pH
 
