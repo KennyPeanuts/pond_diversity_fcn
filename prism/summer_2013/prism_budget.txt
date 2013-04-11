@@ -13,6 +13,9 @@
 | Merrit and Cummins        |            | $143.95  | ISBN: 978-0-7575-6321-8 |       |
 | Septum Jars wide (250 ml) | 3 cs of 12 | $67(201) | 05-719-452              |       |
 | BOD Bottles               | 1 cs of 36 | $752     | 02926100A               |       |
+| Garmin GPS421S            | 1          | $418     |                         |       |
+| 12V battery + charger     | 1          | $27      |                         |       |
+|                           |            |          |                         |       |
 
 Total = $1096
 

@@ -14,7 +14,7 @@ I am thinking this summer's plan should therefore focus on characterizing the CP
 
 ### Questions
 
-1. What is the relationship between sediment CPOM mass, pond size, and shoreline tree density?
+1. What is the relationship between sediment CPOM mass, pond size, and land use?
 2. What is the relationship between sediment biodiversity, pond size, and CPOM mass?
 
 ### Factors that could affect CPOM pool
@@ -31,10 +31,10 @@ I am thinking this summer's plan should therefore focus on characterizing the CP
     4. temperature
     5. oxygen availability
 
-### Factors that affect benthic macroinvertebrates 
+### Factors that could affect benthic macroinvertebrates 
 
 1. Habitat availability (CPOM)
-2. Physical conditions (e.g., low O2)
+2. Physical or sediment conditions (e.g., low O2, sand)
 3. Phenology/Season (I am not sure when these taxa emerge)
 
 ### Variables to collect
