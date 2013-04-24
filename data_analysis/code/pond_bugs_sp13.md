@@ -34,6 +34,8 @@ Modified:
 
 18 April 2013 - added LPP data to bug dataset - KF
 
+23 April 2013 - created data table of mean macroinvertebrate densities and the percent contribution of each taxa to the total density - KF
+
 ### Variables:
 
 * lake = the name of the lake
@@ -129,3 +131,113 @@ write.table(WL.LPP.bugs.sp13, file = "./data/WL_LPP_bugs_sp13.txt", row.names = 
 
 ~~~~
 
+## Analysis
+
+### Macroinvertebrate  Presentation Table for Carly's Poster
+
+The following code is to generate a table of the mean density of the different macroinvertebrate taxa in each of the lakes and sampled locations.
+
+#### Metadata
+
+* lake = the name of the lake (as above)
+* samp = the location of the sample (as above)
+* tany.mean = the mean density of tanypodinae (num m^-2)
+* tany.sd = the standard deviation of tany.mean
+* cerat.mean = the mean density of ceratopogonidae (num m^-2)
+* cerat.sd = the standard deviation of cerat.mean
+* chiro.mean = the mean density of chironiminae (num m^-2)
+* chiro.sd = the standard deviation of chiro.mean
+* chaob.mean = the mean density of chaoborus (num m^-2)
+* chaob.sd = the standard deviation of chaob.mean
+* bugs.mean = the mean density of all the collected and enumerated macroinvertebrates (excludes oligocheates) (num m^-2)
+* bugs.sd = the standard deviation of bugs.mean
+* tany.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of tanypodinae
+* cerat.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of ceratopogonidae
+* chiro.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of chironominae
+* chaob.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of chaoborus
+
+~~~~
+
+# Calculate Mean Density and SD for each taxon in each sampling location and lake
+## Wilkes Lake
+## tany
+tapply(WL.LPP.bugs.sp13$tany[WL.LPP.bugs.sp13$lake == "WL"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "WL"], mean)
+tapply(WL.LPP.bugs.sp13$tany[WL.LPP.bugs.sp13$lake == "WL"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "WL"], sd)
+# cerat
+tapply(WL.LPP.bugs.sp13$cerat[WL.LPP.bugs.sp13$lake == "WL"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "WL"], mean)
+tapply(WL.LPP.bugs.sp13$cerat[WL.LPP.bugs.sp13$lake == "WL"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "WL"], sd)
+# chiro
+tapply(WL.LPP.bugs.sp13$chiro[WL.LPP.bugs.sp13$lake == "WL"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "WL"], mean)
+tapply(WL.LPP.bugs.sp13$chiro[WL.LPP.bugs.sp13$lake == "WL"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "WL"], sd)
+# chaob
+tapply(WL.LPP.bugs.sp13$chaob[WL.LPP.bugs.sp13$lake == "WL"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "WL"], mean)
+tapply(WL.LPP.bugs.sp13$chaob[WL.LPP.bugs.sp13$lake == "WL"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "WL"], sd)
+# bugs
+tapply(WL.LPP.bugs.sp13$bugs[WL.LPP.bugs.sp13$lake == "WL"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "WL"], mean)
+tapply(WL.LPP.bugs.sp13$bugs[WL.LPP.bugs.sp13$lake == "WL"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "WL"], sd)
+## Lancer Park Pond
+## tany
+tapply(WL.LPP.bugs.sp13$tany[WL.LPP.bugs.sp13$lake == "LPP"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "LPP"], mean)
+tapply(WL.LPP.bugs.sp13$tany[WL.LPP.bugs.sp13$lake == "LPP"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "LPP"], sd)
+# cerat
+tapply(WL.LPP.bugs.sp13$cerat[WL.LPP.bugs.sp13$lake == "LPP"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "LPP"], mean)
+tapply(WL.LPP.bugs.sp13$cerat[WL.LPP.bugs.sp13$lake == "LPP"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "LPP"], sd)
+# chiro
+tapply(WL.LPP.bugs.sp13$chiro[WL.LPP.bugs.sp13$lake == "LPP"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "LPP"], mean)
+tapply(WL.LPP.bugs.sp13$chiro[WL.LPP.bugs.sp13$lake == "LPP"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "LPP"], sd)
+# chaob
+tapply(WL.LPP.bugs.sp13$chaob[WL.LPP.bugs.sp13$lake == "LPP"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "LPP"], mean)
+tapply(WL.LPP.bugs.sp13$chaob[WL.LPP.bugs.sp13$lake == "LPP"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "LPP"], sd)
+# bugs
+tapply(WL.LPP.bugs.sp13$bugs[WL.LPP.bugs.sp13$lake == "LPP"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "LPP"], mean)
+tapply(WL.LPP.bugs.sp13$bugs[WL.LPP.bugs.sp13$lake == "LPP"], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == "LPP"], sd)
+
+## Generate data.frame
+
+lake <- c("WL", "WL", "LPP", "LPP")
+samp <- c("open", "lit", "open", "lit")
+tany.mean <- c(919, 3363, 133, 1422)
+tany.sd <- c(260, 1966, 89, 611)
+cerat.mean <- c(74, 252, 15, 59)
+cerat.sd <- c(128, 68, 26, 51)
+chiro.mean <- c(193, 74, 341, 770)
+chiro.sd <- c(92, 128, 245, 911)
+chaob.mean <- c(415, 607, 0, 0)
+chaob.sd <- c(228, 112, NA, NA)
+bugs.mean <- c(1600, 4296, 489, 2251)
+bugs.sd <- c(400, 1778, 311, 1530)
+tany.perc <- (tany.mean / bugs.mean) * 100
+cerat.perc <- (cerat.mean / bugs.mean) * 100
+chiro.perc <- (chiro.mean / bugs.mean) * 100
+chaob.perc <- (chaob.mean / bugs.mean) * 100
+
+# Create data frame
+WL.LPP.meanBugs.sp13 <- data.frame(lake, samp, tany.mean, tany.sd, cerat.mean, cerat.sd, chiro.mean, chiro.sd, chaob.mean, chaob.sd, bugs.mean, bugs.sd, tany.perc, cerat.perc, chiro.perc, chaob.perc)
+
+# Create output table
+write.table(WL.LPP.meanBugs.sp13, file = "./data/WL_LPP_meanBugs_sp13.txt", row.names = F, quote = F)
+
+~~~~
+
+## Output
+
+~~~~
+
+> WL.LPP.meanBugs.sp13
+  lake samp tany.mean tany.sd cerat.mean cerat.sd chiro.mean chiro.sd
+1   WL open       919     260         74      128        193       92
+2   WL  lit      3363    1966        252       68         74      128
+3  LPP open       133      89         15       26        341      245
+4  LPP  lit      1422     611         59       51        770      911
+  chaob.mean chaob.sd bugs.mean bugs.sd tany.perc cerat.perc chiro.perc
+1        415      228      1600     400  57.43750   4.625000  12.062500
+2        607      112      4296    1778  78.28212   5.865922   1.722533
+3          0       NA       489     311  27.19836   3.067485  69.734151
+4          0       NA      2251    1530  63.17192   2.621057  34.207019
+  chaob.perc
+1   25.93750
+2   14.12942
+3    0.00000
+4    0.00000
+
+~~~~
