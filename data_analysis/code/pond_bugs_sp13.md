@@ -241,3 +241,42 @@ write.table(WL.LPP.meanBugs.sp13, file = "./data/WL_LPP_meanBugs_sp13.txt", row.
 4    0.00000
 
 ~~~~
+
+## Present biodiversity data for Leanna's poster
+
+We need a method to present the differences in the abundance and presence of the different taxa in the littoral and the open samples in WL
+
+~~~~
+
+# Create a data.frame of just WL
+WL.bugs.sp13 <- WL.LPP.bugs.sp13[WL.LPP.bugs.sp13$lake == "WL", ]
+
+# plot histogram type plot
+pdf("../ouput/plots/WL_bug_abun.pdf")
+par(las = 1)
+par(mfcol = c(4, 1))
+par(mar = c(3, 10, 2, 12))
+# Chiro 
+plot(WL.bugs.sp13$chiro / 1000 , type = "h", lwd = 10, col = c(2, 2, 2, 4, 4, 4), axes = F, ylim = c(0, 1), ylab = "Chironominae", xlab = " ", cex.lab = 1.5)
+abline(h = 0)
+axis(2, cex.axis = 1.2)
+#axis(1, c("Littoral", "Open"), at = c(2, 5), lwd = 0, cex.axis = 1.4)
+# Cerat 
+plot(WL.bugs.sp13$cerat / 1000, type = "h", lwd = 10, col = c(2, 2, 2, 4, 4, 4), axes = F, ylim = c(0, 1), ylab = "Ceratopogonidae", xlab = " ", cex.lab = 1.5)
+abline(h = 0)
+axis(2, cex.axis = 1.2)
+#axis(1, c("Littoral", "Open"), at = c(2, 5), lwd = 0, cex.axis = 1.4)
+# Chaob
+plot(WL.bugs.sp13$chaob / 1000, type = "h", lwd = 10, col = c(2, 2, 2, 4, 4, 4), axes = F, ylim = c(0, 1), ylab = "Chaoborus", xlab = " ", cex.lab = 1.5)
+abline(h = 0)
+axis(2, cex.axis = 1.2)
+#axis(1, c("Littoral", "Open"), at = c(2, 5), lwd = 0, cex.axis = 1.4)
+# Tany
+plot(WL.bugs.sp13$tany / 1000, type = "h", lwd = 10, col = c(2, 2, 2, 4, 4, 4), axes = F, ylim = c(0, 10), ylab = "Tanypodinae", xlab = " ", cex.lab = 1.5)
+abline(h = 0)
+axis(2, cex.axis = 1.2)
+axis(1, c("Littoral", "Open"), at = c(2, 5), lwd = 0, cex.axis = 1.4)
+dev.off()
+
+
+~~~~
