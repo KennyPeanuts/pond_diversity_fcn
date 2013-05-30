@@ -1,133 +1,54 @@
-<div id="macroinvertebrate-abundance-data-and-analysis-for-wl-and-lpp"
-><h1
-  >Macroinvertebrate abundance data and analysis for WL and LPP</h1
-  ><div id="metadata"
-  ><h2
-    >Metadata</h2
-    ><p
-    >Collected by: Kenneth Fortino, Leanna Tacik, and Carly Martin</p
-    ><p
-    >Collected on:</p
-    ><ul
-    ><li
-      >Wilkes Lake - 20 Feb 2013</li
-      ><li
-      >Lancer Park Pond - 20 March 2013</li
-      ></ul
-    ><p
-    >Affiliation: Longwood University</p
-    ><p
-    >Location:</p
-    ><ul
-    ><li
-      >Wilkes Lake - Samples were collected to the E of the island approximately equidistant from the N and S shore of the lake and about 20 m from the S shore.</li
-      ><li
-      >Lancer Park Pond - Samples were collected in the approximate middle of the lake and in the SW corner of the pond about 1 m from the S shore</li
-      ></ul
-    ><p
-    >Description:</p
-    ><p
-    >Three replicate samples were collected with an Ekman dredge and then washed through a 250μm mesh in the field and preserved in 70% ethanol.</p
-    ><p
-    >Back in the lab the CPOM was removed from the samples by washing through a 1 mm sieve. Macroinvertebrates retained with this coarse fraction were removed from the CPOM by picking in a basin without magnification.</p
-    ><p
-    >The macroinvertebrates collected in the fine fraction were removed from the fine sediment under a dissecting scope.</p
-    ><p
-    >Insects were identified to family (ceratopogonidae), subfamily (chironomidae) or genus (chaoborus).</p
-    ><p
-    >Oligochatetes were not identified or quantified and occurred mostly as fragments</p
-    ><p
-    >Created: 17 April 2013</p
-    ><p
-    >Modified:</p
-    ><p
-    >18 April 2013 - added LPP data to bug dataset - KF</p
-    ><p
-    >23 April 2013 - created data table of mean macroinvertebrate densities and the percent contribution of each taxa to the total density - KF</p
-    ><div id="variables:"
-    ><h3
-      >Variables:</h3
-      ><ul
-      ><li
-	>lake = the name of the lake<ul
-	  ><li
-	    >WL = Wilkes Lake</li
-	    ><li
-	    >LPP = Lance Park Pond</li
-	    ></ul
-	  ></li
-	><li
-	>samp = the type of sample<ul
-	  ><li
-	    >open = away from the shore</li
-	    ><li
-	    >lit = littoral, near shore</li
-	    ></ul
-	  ></li
-	><li
-	><p
-	  >repl = the replicate</p
-	  ></li
-	><li
-	><p
-	  >depth = the water depth where the sample was collected (m)</p
-	  ></li
-	><li
-	><p
-	  >cerat.count = the number of Ceratopogonidae collected from a single Ekman</p
-	  ></li
-	><li
-	><p
-	  >tany.count = the number of Tanypodinae collected from a single Ekman</p
-	  ></li
-	><li
-	><p
-	  >chiro.count = the number of Chironominae collected from a single Ekman</p
-	  ></li
-	><li
-	><p
-	  >chaob.count = the number of Chaoborus collected from a single Ekman</p
-	  ></li
-	><li
-	><p
-	  >cerat = the density of Ceratopogonidae in n m<sup
-	    >-2</sup
-	    ></p
-	  ></li
-	><li
-	><p
-	  >tany = the density of Tanypodinae in n m<sup
-	    >-2</sup
-	    ></p
-	  ></li
-	><li
-	><p
-	  >chiro = the the density of Chironominae in n m<sup
-	    >-2</sup
-	    ></p
-	  ></li
-	><li
-	><p
-	  >chaob = the density of Chaoborus in n m<sup
-	    >-2</sup
-	    ></p
-	  ></li
-	><li
-	><p
-	  >bugs = the total macroinvertebrate density (omitting oligochaetes) in n m<sup
-	    >-2</sup
-	    ></p
-	  ></li
-	></ul
-      ></div
-    ></div
-  ><div id="r-code"
-  ><h2
-    >R Code</h2
-    ><pre
-    ><code
-      ><br
-	 /># Generate Variables for data.frame
+<h1 id="macroinvertebrate-abundance-data-and-analysis-for-wl-and-lpp">Macroinvertebrate abundance data and analysis for WL and LPP</h1>
+<h2 id="metadata">Metadata</h2>
+<p>Collected by: Kenneth Fortino, Leanna Tacik, and Carly Martin</p>
+<p>Collected on:</p>
+<ul>
+<li>Wilkes Lake - 20 Feb 2013</li>
+<li>Lancer Park Pond - 20 March 2013</li>
+</ul>
+<p>Affiliation: Longwood University</p>
+<p>Location:</p>
+<ul>
+<li>Wilkes Lake - Samples were collected to the E of the island approximately equidistant from the N and S shore of the lake and about 20 m from the S shore.</li>
+<li>Lancer Park Pond - Samples were collected in the approximate middle of the lake and in the SW corner of the pond about 1 m from the S shore</li>
+</ul>
+<p>Description:</p>
+<p>Three replicate samples were collected with an Ekman dredge and then washed through a 250μm mesh in the field and preserved in 70% ethanol.</p>
+<p>Back in the lab the CPOM was removed from the samples by washing through a 1 mm sieve. Macroinvertebrates retained with this coarse fraction were removed from the CPOM by picking in a basin without magnification.</p>
+<p>The macroinvertebrates collected in the fine fraction were removed from the fine sediment under a dissecting scope.</p>
+<p>Insects were identified to family (ceratopogonidae), subfamily (chironomidae) or genus (chaoborus).</p>
+<p>Oligochatetes were not identified or quantified and occurred mostly as fragments</p>
+<p>Created: 17 April 2013</p>
+<p>Modified:</p>
+<p>18 April 2013 - added LPP data to bug dataset - KF</p>
+<p>23 April 2013 - created data table of mean macroinvertebrate densities and the percent contribution of each taxa to the total density - KF</p>
+<h3 id="variables">Variables:</h3>
+<ul>
+<li>lake = the name of the lake
+<ul>
+<li>WL = Wilkes Lake</li>
+<li>LPP = Lance Park Pond</li>
+</ul></li>
+<li>samp = the type of sample
+<ul>
+<li>open = away from the shore</li>
+<li>lit = littoral, near shore</li>
+</ul></li>
+<li><p>repl = the replicate</p></li>
+<li><p>depth = the water depth where the sample was collected (m)</p></li>
+<li><p>cerat.count = the number of Ceratopogonidae collected from a single Ekman</p></li>
+<li><p>tany.count = the number of Tanypodinae collected from a single Ekman</p></li>
+<li><p>chiro.count = the number of Chironominae collected from a single Ekman</p></li>
+<li><p>chaob.count = the number of Chaoborus collected from a single Ekman</p></li>
+<li><p>cerat = the density of Ceratopogonidae in n m<sup>-2</sup></p></li>
+<li><p>tany = the density of Tanypodinae in n m<sup>-2</sup></p></li>
+<li><p>chiro = the the density of Chironominae in n m<sup>-2</sup></p></li>
+<li><p>chaob = the density of Chaoborus in n m<sup>-2</sup></p></li>
+<li><p>bugs = the total macroinvertebrate density (omitting oligochaetes) in n m<sup>-2</sup></p></li>
+</ul>
+<h2 id="r-code">R Code</h2>
+<pre><code>
+# Generate Variables for data.frame
 
 lake &lt;- c(rep(&quot;WL&quot;, 6), rep(&quot;LPP&quot;, 6))
 samp &lt;- rep(c(rep(&quot;open&quot;, 3), rep(&quot;lit&quot;, 3)), 2)
@@ -149,17 +70,10 @@ WL.LPP.bugs.sp13 &lt;- data.frame(lake, samp, repl, depth, cerat.count, tany.cou
 # save data table
 
 write.table(WL.LPP.bugs.sp13, file = &quot;./data/WL_LPP_bugs_sp13.txt&quot;, row.names = F, quote = F)
-
-</code
-      ></pre
-    ></div
-  ><div id="output"
-  ><h2
-    >Output</h2
-    ><pre
-    ><code
-      ><br
-	 />   lake samp repl depth cerat.count tany.count chiro.count chaob.count
+</code></pre>
+<h2 id="output">Output</h2>
+<pre><code>
+   lake samp repl depth cerat.count tany.count chiro.count chaob.count
 1    WL open    A   2.0           0         25           6           5
 2    WL open    B   2.0           0         14           5           8
 3    WL open    C   2.0           5         23           2          15
@@ -186,59 +100,31 @@ write.table(WL.LPP.bugs.sp13, file = &quot;./data/WL_LPP_bugs_sp13.txt&quot;, ro
 11   0.00000  888.88889  266.66667   0.0000 1155.5556
 12  88.88889 2088.88889 1822.22222   0.0000 4000.0000
 &gt;
-
-</code
-      ></pre
-    ></div
-  ><div id="analysis"
-  ><h2
-    >Analysis</h2
-    ><div id="macroinvertebrate-presentation-table-for-carlys-poster"
-    ><h3
-      >Macroinvertebrate Presentation Table for Carly's Poster</h3
-      ><p
-      >The following code is to generate a table of the mean density of the different macroinvertebrate taxa in each of the lakes and sampled locations.</p
-      ><div id="metadata-1"
-      ><h4
-	>Metadata</h4
-	><ul
-	><li
-	  >lake = the name of the lake (as above)</li
-	  ><li
-	  >samp = the location of the sample (as above)</li
-	  ><li
-	  >tany.mean = the mean density of tanypodinae (num m^-2)</li
-	  ><li
-	  >tany.sd = the standard deviation of tany.mean</li
-	  ><li
-	  >cerat.mean = the mean density of ceratopogonidae (num m^-2)</li
-	  ><li
-	  >cerat.sd = the standard deviation of cerat.mean</li
-	  ><li
-	  >chiro.mean = the mean density of chironiminae (num m^-2)</li
-	  ><li
-	  >chiro.sd = the standard deviation of chiro.mean</li
-	  ><li
-	  >chaob.mean = the mean density of chaoborus (num m^-2)</li
-	  ><li
-	  >chaob.sd = the standard deviation of chaob.mean</li
-	  ><li
-	  >bugs.mean = the mean density of all the collected and enumerated macroinvertebrates (excludes oligocheates) (num m^-2)</li
-	  ><li
-	  >bugs.sd = the standard deviation of bugs.mean</li
-	  ><li
-	  >tany.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of tanypodinae</li
-	  ><li
-	  >cerat.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of ceratopogonidae</li
-	  ><li
-	  >chiro.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of chironominae</li
-	  ><li
-	  >chaob.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of chaoborus</li
-	  ></ul
-	><pre
-	><code
-	  ><br
-	     /># Calculate Mean Density and SD for each taxon in each sampling location and lake
+</code></pre>
+<h2 id="analysis">Analysis</h2>
+<h3 id="macroinvertebrate-presentation-table-for-carlys-poster">Macroinvertebrate Presentation Table for Carly's Poster</h3>
+<p>The following code is to generate a table of the mean density of the different macroinvertebrate taxa in each of the lakes and sampled locations.</p>
+<h4 id="metadata-1">Metadata</h4>
+<ul>
+<li>lake = the name of the lake (as above)</li>
+<li>samp = the location of the sample (as above)</li>
+<li>tany.mean = the mean density of tanypodinae (num m^-2)</li>
+<li>tany.sd = the standard deviation of tany.mean</li>
+<li>cerat.mean = the mean density of ceratopogonidae (num m^-2)</li>
+<li>cerat.sd = the standard deviation of cerat.mean</li>
+<li>chiro.mean = the mean density of chironiminae (num m^-2)</li>
+<li>chiro.sd = the standard deviation of chiro.mean</li>
+<li>chaob.mean = the mean density of chaoborus (num m^-2)</li>
+<li>chaob.sd = the standard deviation of chaob.mean</li>
+<li>bugs.mean = the mean density of all the collected and enumerated macroinvertebrates (excludes oligocheates) (num m^-2)</li>
+<li>bugs.sd = the standard deviation of bugs.mean</li>
+<li>tany.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of tanypodinae</li>
+<li>cerat.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of ceratopogonidae</li>
+<li>chiro.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of chironominae</li>
+<li>chaob.perc = the percentage of the total macroinvertebrate density (bugs.mean) that is made up of chaoborus</li>
+</ul>
+<pre><code>
+# Calculate Mean Density and SD for each taxon in each sampling location and lake
 ## Wilkes Lake
 ## tany
 tapply(WL.LPP.bugs.sp13$tany[WL.LPP.bugs.sp13$lake == &quot;WL&quot;], WL.LPP.bugs.sp13$samp[WL.LPP.bugs.sp13$lake == &quot;WL&quot;], mean)
@@ -296,19 +182,10 @@ WL.LPP.meanBugs.sp13 &lt;- data.frame(lake, samp, tany.mean, tany.sd, cerat.mean
 
 # Create output table
 write.table(WL.LPP.meanBugs.sp13, file = &quot;./data/WL_LPP_meanBugs_sp13.txt&quot;, row.names = F, quote = F)
-
-</code
-	  ></pre
-	></div
-      ></div
-    ></div
-  ><div id="output-1"
-  ><h2
-    >Output</h2
-    ><pre
-    ><code
-      ><br
-	 />&gt; WL.LPP.meanBugs.sp13
+</code></pre>
+<h2 id="output-1">Output</h2>
+<pre><code>
+&gt; WL.LPP.meanBugs.sp13
   lake samp tany.mean tany.sd cerat.mean cerat.sd chiro.mean chiro.sd
 1   WL open       919     260         74      128        193       92
 2   WL  lit      3363    1966        252       68         74      128
@@ -324,9 +201,38 @@ write.table(WL.LPP.meanBugs.sp13, file = &quot;./data/WL_LPP_meanBugs_sp13.txt&q
 2   14.12942
 3    0.00000
 4    0.00000
+</code></pre>
+<h2 id="present-biodiversity-data-for-leannas-poster">Present biodiversity data for Leanna's poster</h2>
+<p>We need a method to present the differences in the abundance and presence of the different taxa in the littoral and the open samples in WL</p>
+<pre><code>
+# Create a data.frame of just WL
+WL.bugs.sp13 &lt;- WL.LPP.bugs.sp13[WL.LPP.bugs.sp13$lake == &quot;WL&quot;, ]
 
-</code
-      ></pre
-    ></div
-  ></div
->
+# plot histogram type plot
+par(las = 1)
+par(mfcol = c(4, 1))
+par(mar = c(3, 10, 2, 12))
+# Chiro 
+plot(WL.bugs.sp13$chiro / 1000 , type = &quot;h&quot;, lwd = 10, col = c(2, 2, 2, 4, 4, 4), axes = F, ylim = c(0, 1), ylab = &quot;Chironominae&quot;, xlab = &quot; &quot;, cex.lab = 1.5)
+abline(h = 0)
+axis(2, cex.axis = 1.2)
+#axis(1, c(&quot;Littoral&quot;, &quot;Open&quot;), at = c(2, 5), lwd = 0, cex.axis = 1.4)
+# Cerat 
+plot(WL.bugs.sp13$cerat / 1000, type = &quot;h&quot;, lwd = 10, col = c(2, 2, 2, 4, 4, 4), axes = F, ylim = c(0, 1), ylab = &quot;Ceratopogonidae&quot;, xlab = &quot; &quot;, cex.lab = 1.5)
+abline(h = 0)
+axis(2, cex.axis = 1.2)
+#axis(1, c(&quot;Littoral&quot;, &quot;Open&quot;), at = c(2, 5), lwd = 0, cex.axis = 1.4)
+# Chaob
+plot(WL.bugs.sp13$chaob / 1000, type = &quot;h&quot;, lwd = 10, col = c(2, 2, 2, 4, 4, 4), axes = F, ylim = c(0, 1), ylab = &quot;Chaoborus&quot;, xlab = &quot; &quot;, cex.lab = 1.5)
+abline(h = 0)
+axis(2, cex.axis = 1.2)
+#axis(1, c(&quot;Littoral&quot;, &quot;Open&quot;), at = c(2, 5), lwd = 0, cex.axis = 1.4)
+# Tany
+plot(WL.bugs.sp13$tany / 1000, type = &quot;h&quot;, lwd = 10, col = c(2, 2, 2, 4, 4, 4), axes = F, ylim = c(0, 10), ylab = &quot;Tanypodinae&quot;, xlab = &quot; &quot;, cex.lab = 1.5)
+abline(h = 0)
+axis(2, cex.axis = 1.2)
+axis(1, c(&quot;Littoral&quot;, &quot;Open&quot;), at = c(2, 5), lwd = 0, cex.axis = 1.4)
+</code></pre>
+<div class="figure">
+<embed src="../plots/WL_bugs_sp13.pdf" /><p class="caption">Macroinvertebrate abundance in Wilck's lake Spring 2013</p>
+</div>
