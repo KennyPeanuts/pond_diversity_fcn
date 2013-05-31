@@ -24,13 +24,18 @@ Back in the lab the preserved samples were washed through a 1 mm sieve.  For WL 
 
 Created: 12 April 2013
 
-Modified: 12 April 2013
+Modified:
+12 April 2013
+31 May 2013
+KF, added surface area estimates for the ponds
 
 ### Variables:
 
 * lake = the name of the lake
     * WL = Wilkes Lake
     * LPP = Lance Park Pond
+
+* sa = surface area (m^2^): estimated by measuring L X W on google maps
 
 * samp = the type of sample
     * open = away from the shore
@@ -77,6 +82,7 @@ WL.LPP.LOI.sp13 <- read.delim("./data/WL_LPP_LOI_sp13.txt", header = T, sep = " 
 # Create variable for CPOM
 # note these data replace the data in WL_CPOM_20Feb2013.md
 
+sa <- c(rep(194760, 6), rep(1395, 6))
 boat.bag.num <- c(27, 72, 57, 28, 53, 66, 4, 5, 6, 1, 2, 3)
 boat.bag.mass <- c(1.6925, 1.8084, 1.7482, 1.9434, 1.8294, 1.8443, 7.1048, 7.0473, 7.1103, 7.0334, 6.9891, 7.1693)
 boat.bag.CPOM <- c(1.8544, 2.204, 2.0725, 2.4342, 2.4063, 2.5529, 12.3407, 9.0054, 8.4776, 36.5694, 12.7007, 23.0556)
@@ -85,7 +91,7 @@ CPOM.ekman <- boat.bag.CPOM - boat.bag.mass
 CPOM <- CPOM.ekman / 0.0225
 # Create data.frame of all OM data from WL LPP spring 2013 sampling
 
-WL.LPP.OM.sp13 <- data.frame(WL.LPP.LOI.sp13, boat.bag.num, boat.bag.mass, boat.bag.CPOM, CPOM.ekman, CPOM)
+WL.LPP.OM.sp13 <- data.frame(WL.LPP.LOI.sp13, sa, boat.bag.num, boat.bag.mass, boat.bag.CPOM, CPOM.ekman, CPOM)
 
 # Save data table
 
