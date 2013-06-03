@@ -45,8 +45,11 @@ plot(lm(log10(CPOM) ~ as.factor(lake) * as.factor(samp), data = pond.CPOM, subse
 
 # not transformed
 par(las = 1, mar = c(5, 5, 3, 3), cex.axis = 1.2, cex.lab = 1.5)
-plot(CPOM/1000 ~ as.factor(lake), data = pond.CPOM, subset = samp == "open", ylim = c(0, 1.5), ylab = expression(paste("Leaf Litter Mass (kg m"^{-2}, ")")), xlab = "Lake", col = 8)
+plot(CPOM/1000 ~ as.factor(lake), data = pond.CPOM, subset = samp == "open", ylim = c(0, 1.5), ylab = expression(paste("Leaf Litter Mass (kg m"^{-2}, ")")), xlab = "Lake", col = 8, axes = F)
 plot(CPOM/1000 ~ as.factor(lake), data = pond.CPOM, subset = samp == "lit", add = T, col = 4, axes = F, ylab = " ", xlab = " ")
+axis(2)
+axis(1, c("Daulton", "Lancer Pk.", "Woodland Ct", "Wilck's"), at = c(1, 2, 3, 4))
+box()
 legend(3, 1.5, c("Littoral", "Open"), pch = 15, col = c(4, 8), cex = 2)
 
 # not transformed w-o LPP
@@ -95,6 +98,49 @@ anova(lm(log10(CPOM) ~ samp * log10(sa), data = pond.CPOM))
 
 ## Annalysis of differences in CPOM within DP and WCP
 
+~~~~
+
+# plot as points not boxplot
+# DP lit
+par(las = 1)
+par(mar = c(5, 5, 3, 3), cex.axis = 1.2, cex.lab = 1.5)
+plot(0, 0, xlim = c(0, 4), ylim = c(0, 2.5), ylab = expression(paste("Leaf Litter Mass (kg m"^{-2}, ")")), xlab = "Littoral Sample Site w/in Daulton Lake", type = "n", axes = F)
+points(CPOM/1000 ~ as.factor(site), data = DP.CPOM, subset = samp == "lit", col = 4, cex = 2, pch = 17)
+axis(2)
+axis(1, c("A", "B", "C"), at = c(1, 2, 3))
+box()
+
+# plot as points not boxplot
+# WCP lit
+par(las = 1)
+par(mar = c(5, 5, 3, 3), cex.axis = 1.2, cex.lab = 1.5)
+plot(0, 0, xlim = c(0, 4), ylim = c(0, 2.5), ylab = expression(paste("Leaf Litter Mass (kg m"^{-2}, ")")), xlab = "Littoral Sample Site w/in Woodland Ct. Pond", type = "n", axes = F)
+points(CPOM/1000 ~ as.factor(site), data = WCP.CPOM, subset = samp == "lit", col = 4, cex = 2, pch = 17)
+axis(2)
+axis(1, c("A", "B", "C"), at = c(1, 2, 3))
+box()
+
+# plot as points not boxplot
+# DP open
+par(las = 1)
+par(mar = c(5, 5, 3, 3), cex.axis = 1.2, cex.lab = 1.5)
+plot(0, 0, xlim = c(0, 4), ylim = c(0, 30), ylab = expression(paste("Leaf Litter Mass (g m"^{-2}, ")")), xlab = "Littoral Sample Site w/in Daulton Lake", type = "n", axes = F)
+points(CPOM ~ as.factor(site), data = DP.CPOM, subset = samp == "open", col = 4, cex = 2, pch = 17)
+axis(2)
+axis(1, c("A", "B", "C"), at = c(1, 2, 3))
+box()
+
+# plot as points not boxplot
+# WCP open
+par(las = 1)
+par(mar = c(5, 5, 3, 3), cex.axis = 1.2, cex.lab = 1.5)
+plot(0, 0, xlim = c(0, 4), ylim = c(0, 30), ylab = expression(paste("Leaf Litter Mass (g m"^{-2}, ")")), xlab = "Littoral Sample Site w/in Woodland Ct. Pond", type = "n", axes = F)
+points(CPOM ~ as.factor(site), data = WCP.CPOM, subset = samp == "open", col = 4, cex = 2, pch = 17)
+axis(2)
+axis(1, c("A", "B", "C"), at = c(1, 2, 3))
+box()
+
+
 plot(CPOM/1000 ~ as.factor(site), data = DP.CPOM, subset = samp == "lit", ylim = c(0, 2.5), xlab = "Littoral Sample Site w/in Daulton Lake", ylab = expression(paste("Leaf Litter Mass (kg m"^{-2}, ")")), col = 4)
 
 plot(CPOM ~ as.factor(site), data = DP.CPOM, subset = samp == "open", ylim = c(0, 30), xlab = "Open Sample Site w/in Daulton Lake", ylab = expression(paste("Leaf Litter Mass (g m"^{-2}, ")")), col = 4)
@@ -102,4 +148,59 @@ plot(CPOM ~ as.factor(site), data = DP.CPOM, subset = samp == "open", ylim = c(0
 plot(CPOM/1000 ~ as.factor(site), data = WCP.CPOM, subset = samp == "lit", ylim = c(0, 2.5), xlab = "Littoral Sample Site w/in Woodland Ct. Pond", ylab = expression(paste("Leaf Litter Mass (kg m"^{-2}, ")")), col = 4)
 
 plot(CPOM ~ as.factor(site), data = WCP.CPOM, subset = samp == "open", ylim = c(0, 30), xlab = "Open Sample Site w/in Woodland Ct. Pond", ylab = expression(paste("Leaf Litter Mass (g m"^{-2}, ")")), col = 4)
+
+~~~~
+
+## Rough Calculation of total CPOM mass in lakes
+
+This is a very rough calculation of the total mass of CPOM in each of the ponds based on the SA of the pond and the density (g m^-2^) of CPOM in the pond.  I assumed that the littoral region made up 1% of the pond SA and the open was the remaining 99%.
+
+
+~~~~
+
+# DP
+
+# calculation for littoral zone assuming littoral = 1% of total lake sa
+DP.tot.lit.CPOM <- (DP.CPOM$sa * 0.01) * mean(DP.CPOM$CPOM[DP.CPOM$samp == "lit"])
+
+# calculation for open zone assuming open = 99% of total lake sa
+DP.tot.open.CPOM <- (DP.CPOM$sa * 0.99) * mean(DP.CPOM$CPOM[DP.CPOM$samp == "open"])
+
+# lake total
+DP.tot.CPOM <- DP.tot.lit.CPOM + DP.tot.open.CPOM
+
+# WCP
+
+# calculation for littoral zone assuming littoral = 1% of total lake sa
+WCP.tot.lit.CPOM <- (WCP.CPOM$sa * 0.01) * mean(WCP.CPOM$CPOM[WCP.CPOM$samp == "lit"])
+
+# calculation for open zone assuming open = 99% of total lake sa
+WCP.tot.open.CPOM <- (WCP.CPOM$sa * 0.99) * mean(WCP.CPOM$CPOM[WCP.CPOM$samp == "open"])
+
+# lake total
+WCP.tot.CPOM <- WCP.tot.lit.CPOM + WCP.tot.open.CPOM
+
+# WL
+
+# calculation for littoral zone assuming littoral = 1% of total lake sa
+WL.tot.lit.CPOM <- (WL.LPP.CPOM$sa[WL.LPP.CPOM$lake == "WL"] * 0.01) * mean(WL.LPP.CPOM$CPOM[WL.LPP.CPOM$samp == "lit" & WL.LPP.CPOM$lake == "WL"])
+
+# calculation for open zone assuming open = 99% of total lake sa
+WL.tot.open.CPOM <- (WL.LPP.CPOM$sa[WL.LPP.CPOM$lake == "WL"] * 0.99) * mean(WL.LPP.CPOM$CPOM[WL.LPP.CPOM$samp == "open" & WL.LPP.CPOM$lake == "WL"])
+
+# lake total
+WL.tot.CPOM <- WL.tot.lit.CPOM + WL.tot.open.CPOM
+
+# LPP
+
+# calculation for littoral zone assuming littoral = 1% of total lake sa
+LPP.tot.lit.CPOM <- (WL.LPP.CPOM$sa[WL.LPP.CPOM$lake == "LPP"] * 0.01) * mean(WL.LPP.CPOM$CPOM[WL.LPP.CPOM$samp == "lit" & WL.LPP.CPOM$lake == "LPP"])
+
+# calculation for open zone assuming open = 99% of total lake sa
+LPP.tot.open.CPOM <- (WL.LPP.CPOM$sa[WL.LPP.CPOM$lake == "LPP"] * 0.99) * mean(WL.LPP.CPOM$CPOM[WL.LPP.CPOM$samp == "open" & WL.LPP.CPOM$lake == "LPP"])
+
+# lake total
+LPP.tot.CPOM <- LPP.tot.lit.CPOM + LPP.tot.open.CPOM
+
+~~~~
 
