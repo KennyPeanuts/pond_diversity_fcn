@@ -8,7 +8,7 @@ All samples were washed through 250 um mesh in the field and CPOM was separated 
 
 Control samp were not preserved and washed the same day, Treatment samp was preserved and washed a week later
 
-~~~~C++
+~~~~
 
 #working directory:"C:/Users/Leanna/Dropbox/pond_bgc"
 
