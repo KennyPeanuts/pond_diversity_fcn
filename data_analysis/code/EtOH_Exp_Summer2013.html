@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>EtOH Preservation Experiment Analysis</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>EtOH Preservation Experiment Analysis</h1>
+
+<h2>Experimental Description</h2>
+
+<p>Analysis of the data from the experiment testing EtOH preservation of OM</p>
+
+<p>Sediment was collected from Wilcks Lake on 11 June 2013 using an Ekman</p>
+
+<p>All samples were washed through 250 um mesh in the field and CPOM was separated from the FPOM using a 1 mm sieve</p>
+
+<p>Control samp were not preserved and washed the same day, Treatment samp was preserved and washed a week later</p>
+
+<h2>Data Analysis</h2>
+
+<p>working directory:&ldquo;C:/Users/Leanna/Dropbox/pond_bgc&rdquo;</p>
+
+<h3>Import data</h3>
+
+<pre><code>etoh &lt;- read.delim(&quot;./data/EtOH_Exp_Summer2013.txt&quot;, header= T)
+</code></pre>
+
+<h3>Data Cleanup</h3>
+
+<pre><code># treatment A &amp; B were same sample in field but we are removing it from the data because B is a duplicate of A
+etoh &lt;- etoh[-11,]
+</code></pre>
+
+<h3>Calculate variables</h3>
+
+<pre><code>CPOM.ek &lt;- etoh$dish.CPOM - etoh$dish.mass
+ash.cruc &lt;- etoh$cruc.ash -etoh$cruc.mass
+CPOM.cruc &lt;- etoh$cruc.sed - etoh$cruc.mass
+CPOM &lt;- CPOM.ek/ 0.0225
+OM.cruc &lt;- CPOM.cruc - ash.cruc
+OM.prop &lt;- OM.cruc/ CPOM.cruc
+AFDM &lt;- CPOM* OM.prop
+</code></pre>
+
+<h3>Variable Descriptions</h3>
+
+<ul>
+<li>CPOM.ek = mass of dry CPOM (g) in Ekman</li>
+<li>ash.cruc = mass of ash (g) in cruc</li>
+<li>CPOM.cruc = mass of CPOM(g) in cruc</li>
+<li>CPOM = mass of CPOM (g/m<sup>2)</sup></li>
+<li>OM.cruc = mass of OM in cruc (g) = CPOM.cruc - ash.cruc</li>
+<li>OM.prop = proportion of OM in CPOM = OM.cruc/ CPOM.cruc</li>
+<li>AFDM = mass of OM (g/m<sup>2)</sup> = CPOM * OM.prop</li>
+</ul>
+
+<h3>Analysis of the Effec of the EtOH treatment</h3>
+
+<pre><code>
+    plot(AFDM ~ Type, data = etoh)
+    anova(lm(AFDM ~ Type, data = etoh))
+
+Analysis of Variance Table
+
+Response: AFDM
+          Df Sum Sq Mean Sq F value Pr(&gt;F)
+Type       1      2     2.4   1e-04 0.9922
+Residuals 16 384508 24031.8   
+
+sd(AFDM[etoh$Type == &quot;Control&quot;])
+sd(AFDM[etoh$Type == &quot;Treatment&quot;])
+
+</code></pre>
+
+<h3>Analysis of the effect of Site</h3>
+
+<pre><code>
+## Create Site Variable
+    Site&lt;- rep(c(&quot;Lit&quot;,&quot;Open&quot;, &quot;Lit&quot;, rep(&quot;Open&quot;,4), rep (&quot;Lit&quot;,2)),2)
+
+## Plot of the Site Effec
+plot(AFDM ~ as.factor(Site))
+
+</code></pre>
+
+<p>There is much more variability in the littoral sites, so this may be swamping the effect of the treatment.  We re-ran the ANOVA on only the open sites</p>
+
+<pre><code>
+#Effect of Treatment only in open sites
+plot(AFDM ~ Type, data = etoh, subset= Site ==&quot;Open&quot;)
+anova(lm(AFDM ~ Type, data =etoh, subset = Site == &quot;Open&quot;))
+
+Analysis of Variance Table
+
+Response: AFDM
+          Df Sum Sq Mean Sq F value Pr(&gt;F)
+Type       1   4.97   4.967  0.1046 0.7547
+Residuals  8 379.99  47.499           
+
+</code></pre>
+
+<h3>Analysis of the Effect of Location within the Lake</h3>
+
+<pre><code>
+# Plot of Treatment effect by location
+plot(0,0, type =&quot;n&quot;, ylim = c(0, 500), xlim = c(1, 9), axes = F, ylab = expression(paste(&quot;CPOM AFDM (g m&quot;^{-1}, &quot;)&quot;)), xlab = &quot;Location within the Lake&quot;)
+points(AFDM[etoh$Type == &quot;Control&quot;], col = 1)
+points(AFDM[etoh$Type == &quot;Treatment&quot;], pch = 16)
+axis(1, c(&quot;North Shore&quot;, &quot;South Shore&quot;), at = c(1, 9))
+axis(2)
+legend(2, 450, c(&quot;Control&quot;, &quot;Preserved&quot;), pch = c(1, 16))
+
+## Effect of Location
+anova(lm(log10(AFDM)~Location, data= etoh))
+
+Analysis of Variance Table
+
+Response: log10(AFDM)
+          Df  Sum Sq Mean Sq F value    Pr(&gt;F)    
+Location   8 10.1413 1.26766  19.968 7.307e-05 ***
+Residuals  9  0.5714 0.06348                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+
+</code></pre>
+
+</body>
+
+</html>
+

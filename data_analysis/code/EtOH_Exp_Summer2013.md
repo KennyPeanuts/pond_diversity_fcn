@@ -41,10 +41,18 @@ working directory:"C:/Users/Leanna/Dropbox/pond_bgc"
 * AFDM = mass of OM (g/m^2) = CPOM * OM.prop
 
 ### Analysis of the Effec of the EtOH treatment
+
 ~~~~
 
-    plot(AFDM ~ Type, data = etoh)
-    anova(lm(AFDM ~ Type, data = etoh))
+# Untransformed Data
+par(las = 1, mar = c(6, 6, 4, 4))
+plot(AFDM ~ Type, data = etoh, axes = F, xlab = "Preservation Method", ylab = expression(paste("CPOM AFDM (g m"^{-1}, ")")), col = "light blue", lwd = 2, cex.lab = 1.5)
+axis(1, c("None", "Ethanol"), at = c(1, 2), cex.axis = 1.5, lwt = 4)
+axis(2, cex.axis = 1.5)
+
+
+# ANOVA of AFDM by EtOH treatment
+anova(lm(AFDM ~ Type, data = etoh))
 
 Analysis of Variance Table
 
@@ -53,9 +61,41 @@ Response: AFDM
 Type       1      2     2.4   1e-04 0.9922
 Residuals 16 384508 24031.8   
 
+# SD of untransformed data
 sd(AFDM[etoh$Type == "Control"])
+[1] 165.9691
 sd(AFDM[etoh$Type == "Treatment"])
+[1] 143.2404
 
+~~~~
+
+Although the variance is similar the data is very highly skewed due to the littoral samples so I am re-running the analysis with log10 transformation
+
+~~~~
+
+# Log10 transformed Data
+par(las = 1, mar = c(6, 6, 4, 4))
+plot(log10(AFDM) ~ Type, data = etoh, axes = F, xlab = "Preservation Method", ylab = expression(paste("log CPOM AFDM (g m"^{-1}, ")")), col = "light blue", lwd = 2, cex.lab = 1.5)
+axis(1, c("None", "Ethanol"), at = c(1, 2), cex.axis = 1.5, lwt = 4)
+axis(2, cex.axis = 1.5)
+
+
+# ANOVA of AFDM by EtOH treatment
+anova(lm(log10(AFDM) ~ Type, data = etoh))
+
+Analysis of Variance Table
+
+Response: log10(AFDM)
+          Df Sum Sq Mean Sq F value Pr(>F)
+Type       1  0.016 0.01603   0.024 0.8789
+Residuals 16 10.697 0.66854
+
+# SD of untransformed data
+sd(log(AFDM)[etoh$Type == "Control"])
+[1] 1.701535
+sd(log(AFDM)[etoh$Type == "Treatment"])
+[1] 2.047879
+ 
 ~~~~
 
 ### Analysis of the effect of Site
@@ -91,12 +131,13 @@ Residuals  8 379.99  47.499
 ~~~~
 
 # Plot of Treatment effect by location
-plot(0,0, type ="n", ylim = c(0, 500), xlim = c(1, 9), axes = F, ylab = expression(paste("CPOM AFDM (g m"^{-1}, ")")), xlab = "Location within the Lake")
-points(AFDM[etoh$Type == "Control"], col = 1)
-points(AFDM[etoh$Type == "Treatment"], pch = 16)
+par(las = 1, mar = c(6, 6, 4, 4))
+plot(0,0, type ="n", ylim = c(0, 500), xlim = c(1, 9), axes = F, ylab = expression(paste("CPOM AFDM (g m"^{-1}, ")")), xlab = "Location within the Lake", cex.lab = 1.5)
+points(AFDM[etoh$Type == "Control"], col = 1, cex = 1.5)
+points(AFDM[etoh$Type == "Treatment"], pch = 16, cex = 1.5)
 axis(1, c("North Shore", "South Shore"), at = c(1, 9))
 axis(2)
-legend(2, 450, c("Control", "Preserved"), pch = c(1, 16))
+legend(2, 450, c("Control", "Preserved"), pch = c(1, 16), cex = 1.5)
 
 ## Effect of Location
 anova(lm(log10(AFDM)~Location, data= etoh))
