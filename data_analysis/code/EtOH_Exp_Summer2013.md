@@ -70,7 +70,7 @@ Sample A was too big to fit into only 1 bottle after washing so both the A and B
 
 * Type = the treatment applied to the sample
     * Control was returned to the lab in water and washed the same day
-    * Treatment was preserved in 70% ethanol and washed a week later
+    * Treatment was preserved in 70% ethanol and washed a week laterpl
 * Location is the location of the sample between the N and S shore.  Sample A was collected approx 10m from the N shore and the samples progressed approx equidistantly between the N and S shore (but note the switching of D and C and the lack of B described above).
 * Cruc.num = the number of the crucible used
 * cruc.mass = the mass of the empty crucible (g)
@@ -198,3 +198,42 @@ Residuals  9  0.5714 0.06348
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
 
 ~~~~
+###Mean of CPOM for Type
+
+#Mean of Treament
+mean(CPOM[etoh$Type == "Treatment"])
+[1] 258.8367
+
+#Mean of Control
+mean(CPOM[etoh$Type == "Control"])
+[1] 228.3427
+
+
+### SD of CPOM and AFDM for Type
+
+#SD of CPOM of Treatment
+sd(CPOM[etoh$Type == "Treatment"])
+[1] 423.7274
+
+#SD of AFDM of Treatment
+sd(AFDM[etoh$Type == "Treatment"])
+[1] 149.8506
+
+#SD of CPOM of Control
+sd(CPOM[etoh$Type == "Control"])
+[1] 410.7339
+
+#SD of AFDM of Control
+sd(AFDM[etoh$Type == "Control"])
+[1] 165.9691
+
+
+
+##CPOM/AFDM
+par(las = 1, mar = c(6, 6, 4, 4))
+plot(0,0, type ="n", ylim = c(0, 6), xlim = c(1, 9), axes = F, ylab = expression(paste("CPOM/AFDM")), xlab = "Location within the Lake", cex.lab = 1.5)
+points((CPOM/AFDM)[etoh$Type == "Control"], col = 1, cex = 1.5)
+points((CPOM/AFDM)[etoh$Type == "Treatment"], pch = 16, cex = 1.5)
+axis(1, c("North Shore", "South Shore"), at = c(1, 9))
+axis(2)
+legend(2, 450, c("Control", "Preserved"), pch = c(1, 16), cex = 1.5)
