@@ -1,184 +1,21 @@
-<!DOCTYPE html>
-<!-- saved from url=(0014)about:internet -->
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-<title>EtOH Preservation Experiment Analysis</title>
-
-<style type="text/css">
-body, td {
-   font-family: sans-serif;
-   background-color: white;
-   font-size: 12px;
-   margin: 8px;
-}
-
-tt, code, pre {
-   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
-}
-
-h1 { 
-   font-size:2.2em; 
-}
-
-h2 { 
-   font-size:1.8em; 
-}
-
-h3 { 
-   font-size:1.4em; 
-}
-
-h4 { 
-   font-size:1.0em; 
-}
-
-h5 { 
-   font-size:0.9em; 
-}
-
-h6 { 
-   font-size:0.8em; 
-}
-
-a:visited {
-   color: rgb(50%, 0%, 50%);
-}
-
-pre {	
-   margin-top: 0;
-   max-width: 95%;
-   border: 1px solid #ccc;
-   white-space: pre-wrap;
-}
-
-pre code {
-   display: block; padding: 0.5em;
-}
-
-code.r, code.cpp {
-   background-color: #F8F8F8;
-}
-
-table, td, th {
-  border: none;
-}
-
-blockquote {
-   color:#666666;
-   margin:0;
-   padding-left: 1em;
-   border-left: 0.5em #EEE solid;
-}
-
-hr {
-   height: 0px;
-   border-bottom: none;
-   border-top-width: thin;
-   border-top-style: dotted;
-   border-top-color: #999999;
-}
-
-@media print {
-   * { 
-      background: transparent !important; 
-      color: black !important; 
-      filter:none !important; 
-      -ms-filter: none !important; 
-   }
-
-   body { 
-      font-size:12pt; 
-      max-width:100%; 
-   }
-       
-   a, a:visited { 
-      text-decoration: underline; 
-   }
-
-   hr { 
-      visibility: hidden;
-      page-break-before: always;
-   }
-
-   pre, blockquote { 
-      padding-right: 1em; 
-      page-break-inside: avoid; 
-   }
-
-   tr, img { 
-      page-break-inside: avoid; 
-   }
-
-   img { 
-      max-width: 100% !important; 
-   }
-
-   @page :left { 
-      margin: 15mm 20mm 15mm 10mm; 
-   }
-     
-   @page :right { 
-      margin: 15mm 10mm 15mm 20mm; 
-   }
-
-   p, h2, h3 { 
-      orphans: 3; widows: 3; 
-   }
-
-   h2, h3 { 
-      page-break-after: avoid; 
-   }
-}
-
-</style>
-
-
-
-
-
-</head>
-
-<body>
-<h1>EtOH Preservation Experiment Analysis</h1>
-
-<h2>Experimental Description</h2>
-
+<h1 id="etoh-preservation-experiment-analysis">EtOH Preservation Experiment Analysis</h1>
+<h2 id="experimental-description">Experimental Description</h2>
 <p>Analysis of the data from the experiment testing EtOH preservation of OM</p>
-
 <p>Sediment was collected from Wilcks Lake on 11 June 2013 using an Ekman</p>
-
 <p>All samples were washed through 250 um mesh in the field and CPOM was separated from the FPOM using a 1 mm sieve</p>
-
 <p>Control samp were not preserved and washed the same day, Treatment samp was preserved and washed a week later</p>
-
-<h3>Field Notes</h3>
-
+<h3 id="field-notes">Field Notes</h3>
 <p>The field notes can be found at:</p>
-
 <p><a href="http://blogs.longwood.edu/fortinolabnotebook/2013/06/18/ethanol-preservation-exp-11-june-2013/">http://blogs.longwood.edu/fortinolabnotebook/2013/06/18/ethanol-preservation-exp-11-june-2013/</a></p>
-
-<h2>Data Analysis</h2>
-
-<p>working directory:&ldquo;C:/Users/Leanna/Dropbox/pond_bgc&rdquo;</p>
-
-<h3>Import data</h3>
-
-<pre><code>etoh &lt;- read.delim(&quot;./data/EtOH_Exp_Summer2013.txt&quot;, header= T)
-</code></pre>
-
-<p>Note that the &ldquo;D&rdquo; site is before the &ldquo;C&rdquo; site  in the original text file because this is how the samples were collected in the field</p>
-
-<h3>Data Cleanup</h3>
-
+<h2 id="data-analysis">Data Analysis</h2>
+<p>working directory:&quot;C:/Users/Leanna/Dropbox/pond_bgc&quot;</p>
+<h3 id="import-data">Import data</h3>
+<pre><code>etoh &lt;- read.delim(&quot;./data/EtOH_Exp_Summer2013.txt&quot;, header= T)</code></pre>
+<p>Note that the &quot;D&quot; site is before the &quot;C&quot; site in the original text file because this is how the samples were collected in the field</p>
+<h3 id="data-cleanup">Data Cleanup</h3>
 <p>Treatment A &amp; B were same sample in field but we are removing it from the data because B is a duplicate of A</p>
-
 <p>Sample A was too big to fit into only 1 bottle after washing so both the A and B bottles were used and no B sample was collected</p>
-
-<pre><code>etoh &lt;- etoh[-11,]
-</code></pre>
-
+<pre><code>etoh &lt;- etoh[-11,]</code></pre>
 <pre><code>
         Type Location Cruc.num cruc.mass cruc.sed cruc.ash dish.mass dish.CPOM
 1    Control        A        7   12.1979  12.9508  12.7003    7.0668   28.2017
@@ -199,30 +36,23 @@ hr {
 17 Treatment        H        8   12.5993  12.7240  12.6135    7.0463    7.5194
 18 Treatment        I        9   11.6679  12.1624  11.8390    7.0563   11.6227
 19 Treatment        J       10   12.9346  14.1867  13.8499    7.0586   32.7218
-
 </code></pre>
-
-<h3>Calculate variables</h3>
-
+<h3 id="calculate-variables">Calculate variables</h3>
 <pre><code>CPOM.ek &lt;- etoh$dish.CPOM - etoh$dish.mass
 ash.cruc &lt;- etoh$cruc.ash -etoh$cruc.mass
 CPOM.cruc &lt;- etoh$cruc.sed - etoh$cruc.mass
 CPOM &lt;- CPOM.ek/ 0.0225
 OM.cruc &lt;- CPOM.cruc - ash.cruc
 OM.prop &lt;- OM.cruc/ CPOM.cruc
-AFDM &lt;- CPOM* OM.prop
-</code></pre>
-
-<h3>Variable Descriptions</h3>
-
+AFDM &lt;- CPOM* OM.prop</code></pre>
+<h3 id="variable-descriptions">Variable Descriptions</h3>
 <ul>
 <li>Type = the treatment applied to the sample
-
 <ul>
 <li>Control was returned to the lab in water and washed the same day</li>
 <li>Treatment was preserved in 70% ethanol and washed a week later</li>
 </ul></li>
-<li>Location is the location of the sample between the N and S shore.  Sample A was collected approx 10m from the N shore and the samples progressed approx equidistantly between the N and S shore (but note the switching of D and C and the lack of B described above).</li>
+<li>Location is the location of the sample between the N and S shore. Sample A was collected approx 10m from the N shore and the samples progressed approx equidistantly between the N and S shore (but note the switching of D and C and the lack of B described above).</li>
 <li>Cruc.num = the number of the crucible used</li>
 <li>cruc.mass = the mass of the empty crucible (g)</li>
 <li>cruc.sed = the mass of the ground dried CPOM + the crucible (g)</li>
@@ -232,14 +62,12 @@ AFDM &lt;- CPOM* OM.prop
 <li>CPOM.ek = mass of dry CPOM (g) in Ekman</li>
 <li>ash.cruc = mass of ash (g) in cruc</li>
 <li>CPOM.cruc = mass of CPOM(g) in cruc</li>
-<li>CPOM = mass of CPOM (g/m<sup>2)</sup></li>
+<li>CPOM = mass of CPOM (g/m^2)</li>
 <li>OM.cruc = mass of OM in cruc (g) = CPOM.cruc - ash.cruc</li>
 <li>OM.prop = proportion of OM in CPOM = OM.cruc/ CPOM.cruc</li>
-<li>AFDM = mass of OM (g/m<sup>2)</sup> = CPOM * OM.prop</li>
+<li>AFDM = mass of OM (g/m^2) = CPOM * OM.prop</li>
 </ul>
-
-<h3>Analysis of the Effec of the EtOH treatment</h3>
-
+<h3 id="analysis-of-the-effec-of-the-etoh-treatment">Analysis of the Effec of the EtOH treatment</h3>
 <pre><code>
 # Untransformed Data
 par(las = 1, mar = c(6, 6, 4, 4))
@@ -263,11 +91,8 @@ sd(AFDM[etoh$Type == &quot;Control&quot;])
 [1] 165.9691
 sd(AFDM[etoh$Type == &quot;Treatment&quot;])
 [1] 143.2404
-
 </code></pre>
-
 <p>Although the variance is similar the data is very highly skewed due to the littoral samples so I am re-running the analysis with log10 transformation</p>
-
 <pre><code>
 # Log10 transformed Data
 par(las = 1, mar = c(6, 6, 4, 4))
@@ -291,22 +116,16 @@ sd(log(AFDM)[etoh$Type == &quot;Control&quot;])
 [1] 1.701535
 sd(log(AFDM)[etoh$Type == &quot;Treatment&quot;])
 [1] 2.047879
-
-</code></pre>
-
-<h3>Analysis of the effect of Site</h3>
-
+ </code></pre>
+<h3 id="analysis-of-the-effect-of-site">Analysis of the effect of Site</h3>
 <pre><code>
 ## Create Site Variable
     Site&lt;- rep(c(&quot;Lit&quot;,&quot;Open&quot;, &quot;Lit&quot;, rep(&quot;Open&quot;,4), rep (&quot;Lit&quot;,2)),2)
 
 ## Plot of the Site Effec
 plot(AFDM ~ as.factor(Site))
-
 </code></pre>
-
-<p>There is much more variability in the littoral sites, so this may be swamping the effect of the treatment.  We re-ran the ANOVA on only the open sites</p>
-
+<p>There is much more variability in the littoral sites, so this may be swamping the effect of the treatment. We re-ran the ANOVA on only the open sites</p>
 <pre><code>
 #Effect of Treatment only in open sites
 plot(AFDM ~ Type, data = etoh, subset= Site ==&quot;Open&quot;)
@@ -318,11 +137,8 @@ Response: AFDM
           Df Sum Sq Mean Sq F value Pr(&gt;F)
 Type       1   4.97   4.967  0.1046 0.7547
 Residuals  8 379.99  47.499           
-
 </code></pre>
-
-<h3>Analysis of the Effect of Location within the Lake</h3>
-
+<h3 id="analysis-of-the-effect-of-location-within-the-lake">Analysis of the Effect of Location within the Lake</h3>
 <pre><code>
 # Plot of Treatment effect by location
 par(las = 1, mar = c(6, 6, 4, 4))
@@ -343,11 +159,5 @@ Response: log10(AFDM)
 Location   8 10.1413 1.26766  19.968 7.307e-05 ***
 Residuals  9  0.5714 0.06348                      
 ---
-Signif. codes:  0 â***â 0.001 â**â 0.01 â*â 0.05 â.â 0.1 â â 1 
-
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
 </code></pre>
-
-</body>
-
-</html>
-
