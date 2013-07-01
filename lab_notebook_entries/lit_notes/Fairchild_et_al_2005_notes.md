@@ -11,7 +11,9 @@ The authors evaluate whether ponds behave similarly to shallow lakes with respec
 They test the effect of pond size on:
 
 1) chl a predicted by TP
+
 2) secchi depth predicted by chl a
+
 3) stratification depth predicted by secchi depth
 
 ## Methods
