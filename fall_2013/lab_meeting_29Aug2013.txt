@@ -1,0 +1,9 @@
+# Lab Meeting Agenda
+## 29 Aug 2013
+
+1) Introduce everyone
+2) Identify lab and field work times
+3) Set research agenda for upcoming weeks
+4) Assign papers for next meeting
+5) Go over GitHub
+
