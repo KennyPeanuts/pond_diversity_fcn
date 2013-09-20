@@ -94,6 +94,7 @@ All treatments will be incubated in 250 ml septum top jars and filled with lake 
     * Fisher - 03-313-11F
     * $111 / cs of 50
 
+cd ..
 * [X] Lab Coats
   * Fisherbrand Unisex Lab Coats
     * Large - 19-166-226
