@@ -1,0 +1,73 @@
+<DOCTYPE HTML>
+<head>
+
+</head>
+<body>
+<h1>Project Narrative</h1>
+
+<h2>Background</h2>
+<p>
+Human activities have had substantial impacts on the Earth's ecosystem processes. Human land use has altered the distribution of ecological habitat, increased the dispersal of species, and disrupted the cycling of biologically important materials (CITE).  Examples of the most striking changes are the alterations to global climate that are occurring as a result of human forest clearing and fossil fuel burning (CITE) and the loss of biodiversity as a result of human habitat modification and the facilitation of species dispersal (CITE).  Such dramatic global changes through the activity of a single species is unparalleled in the Earth's history (CITE).
+</p>
+<p>
+A striking example of a human activity that impacts the above processes is the construction of ponds and reservoirs.  The number of man-made ponds is increasing exponentially (Downing et al. 2006) and in many regions that lack natural lakes, such as the southeast United States, man-made ponds represent a novel but now dominant freshwater habitat. Furthermore, ponds are highly active sites of biogeochemical processing and can integrate processes occurring in their entire watersheds (Tranvick et al. 2009).  A clear understanding of the way that man-made ponds affect biodiversity and biogeochemical processes is essential for understanding the ways that human land use are altering the Earth's ecosystem processes.
+</p>    
+
+<h2>Rationale</h2>
+<p>
+Ponds accumulate organic matter produced with the pond and transported by their watersheds (CITE).  The decomposition of this accumulated organic matter is a critical step in the carbon cycle.  Sediment organic matter represents the net imbalance between photosynthetic (i.e., organic matter producing) and decomposition (i.e., organic matter consuming) processes and is therefore both a bank of energy and materials for heterotrophic metabolism but also a pool of sequestered atmospheric carbon (Schelsinger 1998). Thus the factors that affect the decomposition of sediment organic matter represent the key drivers of the rate of energy and material use by the ecosystem but also regulate the capacity of the system to buffer increases in atmospheric carbon dioxide.
+</p>
+<p>
+The organic matter that accumulates in aquatic systems is operationally divided into a coarse particulate fraction (coarse particulate organic matter &ndash; CPOM) that is retained by a 1 mm sieve, and a fine particulate fraction (fine particulate organic matter &ndash; FPOM) that passes through a 1 mm sieve (Wetzel 2001).  The CPOM is largely derived from senescent leaves that are transported into the lake (CITE). 
+</p>
+<p>
+In natural lakes the decomposition of CPOM results in the production of FPOM and this process has been shown to be regulated by the activity of sediment dwelling invertebrates and fungi (CITE). However these processes are largely unstudied in man-made ponds. My PRISM project from 2013 collected data on the summer standing stock of CPOM in man-made ponds in Farmville and found that CPOM is a common component of the total organic matter pool and the amount of CPOM is correlated with the FPOM in the sediments.  Furthermore, we found that the invertebrate groups most commonly associated with CPOM decomposition were absent from the lakes we studied. My lab is currently quantifying the rate of CPOM decomposition and the role of invertebrate animals in this process through experiments being conducted during the Fall of 2013.
+</p> 
+<p>
+The decomposition of FPOM is mainly regulated by microbial processes.  Our results show that the amount of CPOM in the pond sediments is correlated with the amount of FPOM but we do not have information on the mechanistic relationship between these two organic matter pools.  The correlation between CPOM and FPOM mass could result from the conversion of CPOM to FPOM or from the suppression of FPOM decomposition by the presence of CPOM.  The proposed project would conduct experiments to quantify the relationship between CPOM and the rate of total sediment organic matter decomposition.
+</p>
+ 
+<h2>Goals</h2>
+<p>
+The goal of this project is to <em>Quantify the effect of CPOM on the rate of sediment organic matter processing.</em>
+<p>
+ This objective will evaluate how the amount of CPOM affects the rate of sediment organic matter decomposition.
+</p>
+
+<h2>Intellectual Merit</h2>
+
+<h2>Broader Impacts</h2>
+
+<h1>Project Timeline</h1>
+<ul>
+  <li>Spring 2014 &mdash; literature review, project planning, and method development</li>
+  <li>PRISM; Summer 2014 &mdash; data collection and analysis</li>
+    <ul>
+      <li>Week 1 &mdash; experiment set&ndash;up</li>
+      <li>Weeks 2&ndash;6 &mdash; data collection</li>
+      <li>Weeks 7&ndash;8 &mdash; data analysis and poster development</li>
+    </ul>
+  <li>Late Summer 2014 &mdash; begin manuscript preparation</li>
+  <li>Fall 2014 &mdash; complete and submit manuscript</li>
+  <li>Spring 2015 &mdash; presentation of results at professional meetings, manuscript revision</li>
+</ul>
+
+<h1>Plans for Dissemination</h1>
+<h2>Publications</h2>
+<p>
+The results of this project will contribute to a larger research project in my lab that is looking broadly at the effects of CPOM on the biodiversity and carbon cycling in small man-made ponds.  The results of the proposed project will be combined with other data collected throughout the year to produce a manuscript describing the overall impact of CPOM on sediment metabolic processes.  The preparation of the manuscript will begin during the summer of 2014 with submission anticipated during the fall of 2014.  The student collaborator on the project will have the opportunity to contribute to the manuscript preparation through writing, data analysis, and figure/table preparation. 
+</p>
+
+<h2>Presentations</h2>
+<p>
+The results of this project will be presented the student at 2 professional meetings.  The first of these is the 2015 annual meeting of the Association of Southeastern Biologists, which is a regional meeting that focuses on ecological research in the southeastern United States. The second is the 2015 annual meeting of the Society for Freshwater Science, which is an national meeting that focuses on freshwater ecology.
+</p>
+<p>
+The results of the project will also be presented at the Cook-Cole College Research Symposium in the Fall of 2014.
+</p>
+
+<h2>Open Science Practices</h2>
+<p>
+  In addition to peer&ndash;reviewed publications and presentations at professional meetings, the project will be conducted using the best practices of open science.  The project activities and data will be documented in an open lab notebook hosted in a publicly available Github repository (https://github.com/KennyPeanuts/pond_diversity_fcn). Data visualizations and unpublished results will be archived on figshare (http://figshare.com/authors/Kenneth_Fortino/101417).   
+</p>
+</body></html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<head>
+<style>
+li {
+    padding: 0.2em;
+   }
+</style>
+</head>
+
+<body>
+<h1>Git and Github Instructions and Cheat&ndash;sheet</h1>
+<h2>Fortino Lab; Fall 2013</h2>
+
+<h3>Introduction to Git and Github</h3>
+<p>
+Git and Github are a version control and collaboration system that is widely used in science.  They are used to keep track of the changes to computer files as a project develops. Git operates on an individual computer and tracks the changes made to files locally.  Github links the git repositories on several individual local computers together into a single cloud&ndash;based repository. File changes are pulled from Github to a local git and pushed from a local git to Github.
+</p>
+
+<h3>Detailed Workflow</h3>
+<ol>
+  <li>Before you begin working you need to update your local files from Github with a pull.</li>
+    <ol>
+      <li>Open the git console and change to the directory where the lab files are kept on your computer</li>
+      <li>Type: <code>git pull origin master</code></li>
+      <li>You will likely have to enter your Github username and password</li>
+      <li>When this is complete your local files are synced with the Github files</li>
+    </ol>
+  <li>Now you need to tell git what files you want it to track</li>
+     <ol>
+       <li>To track all the files in the directory, type: <code>git add *</code> (the <code>*</code> is a wildcard for "match everything")</li>
+       <li>If you don't want to track all files they list the files you want after <code>add</code>: <code>git add <em>file or directory names</em></code></li>
+     </ol>
+  <li>You can now do your work and git will keep track of any changes you make to the files in the directory</li>
+  <li>To update your local git you need to "commit" the changes</li>
+     <ol>
+       <li>In the git console type: <code>git commit -am "<em>commit message</em>"</code></li>
+       <li>The <code>a</code> flag tells git to commit any file that has been changed</li>
+       <li>The <code>m</code> flag tells git that you are following with a commit message</li>
+         <ul>
+           <li>A good commit message is a brief but specific description of what changes you made</li>
+           <li>GOOD: "Added littoral sampling data to the LOI dataframe" </li>
+           <li>BAD: "Updated data files"</li>
+         </uL>
+        <li>Now your local git repository is up to date with the changes you made</li>
+        <li>You can commit as often as you want and it is usually a good idea to commit following each task (e.g., commit after entering the data and again after doing data analysis, and again after making a figure, etc...)</li>
+      </ol>
+   <li>When you are done with your work, you can now update the Github repository with a push.</li>
+     <ol>
+       <li>Type <code>git push origin master</code></li>
+       <li>You will need to enter your username and password</li>
+       <li>When this is complete, Github is now updated with the changes you made</li>
+     </ol>
+</ol>
+
+<h3>Workflow Cheatsheet</h3>
+<ol>
+  <li><code>git pull origin master</code> updates local git from Github</li>
+  <li><code>git add *</code> tells git to track all files in current directory</li>
+  <li><code>git commit -am "<em>commit message</em>"</code> commits changes to local git and adds commit message</li>
+  <li><code>git push origin master</code> updates Github from local git</li>
+</ol>
+
+
+</body></html>

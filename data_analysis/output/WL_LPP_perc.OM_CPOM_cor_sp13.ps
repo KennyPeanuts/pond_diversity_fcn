@@ -1,0 +1,677 @@
+%!PS-Adobe-3.0
+%%DocumentNeededResources: font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Helvetica-Oblique
+%%+ font Helvetica-BoldOblique
+%%+ font Symbol
+%%DocumentMedia: letter 612 792 0 () ()
+%%Title: R Graphics Output
+%%Creator: R Software
+%%Pages: (atend)
+%%Orientation: Landscape
+%%BoundingBox: 18 18 594 774
+%%EndComments
+%%BeginProlog
+/bp  { gs 612.00 0 translate 90 rotate gs } def
+% begin .ps.prolog
+/gs  { gsave } def
+/gr  { grestore } def
+/ep  { showpage gr gr } def
+/m   { moveto } def
+/l  { rlineto } def
+/np  { newpath } def
+/cp  { closepath } def
+/f   { fill } def
+/o   { stroke } def
+/c   { newpath 0 360 arc } def
+/r   { 4 2 roll moveto 1 copy 3 -1 roll exch 0 exch rlineto 0 rlineto -1 mul 0 exch rlineto closepath } def
+/p1  { stroke } def
+/p2  { gsave bg fill grestore newpath } def
+/p3  { gsave bg fill grestore stroke } def
+/p6  { gsave bg eofill grestore newpath } def
+/p7  { gsave bg eofill grestore stroke } def
+/t   { 5 -2 roll moveto gsave rotate
+       1 index stringwidth pop
+       mul neg 0 rmoveto show grestore } def
+/ta  { 4 -2 roll moveto gsave rotate show } def
+/tb  { 2 -1 roll 0 rmoveto show } def
+/cl  { grestore gsave newpath 3 index 3 index moveto 1 index
+       4 -1 roll lineto  exch 1 index lineto lineto
+       closepath clip newpath } def
+/rgb { setrgbcolor } def
+/s   { scalefont setfont } def
+% end   .ps.prolog
+%%IncludeResource: font Helvetica
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font1 exch definefont pop
+%%IncludeResource: font Helvetica-Bold
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font2 exch definefont pop
+%%IncludeResource: font Helvetica-Oblique
+/Helvetica-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font3 exch definefont pop
+%%IncludeResource: font Helvetica-BoldOblique
+/Helvetica-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font4 exch definefont pop
+%%IncludeResource: font Symbol
+/Symbol findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  currentdict
+  end
+/Font5 exch definefont pop
+%%EndProlog
+%%Page: 1 1
+bp
+106.56 128.16 728.64 505.44 cl
+106.56 128.16 728.64 505.44 cl
+/bg { 0 setgray } def
+243.27 192.14 4.05 c p2
+294.73 321.17 4.05 c p2
+283.29 390.52 4.05 c p2
+307.15 412.00 4.05 c p2
+316.46 407.71 4.05 c p2
+328.31 412.26 4.05 c p2
+443.51 438.70 4.05 c p2
+386.85 425.97 4.05 c p2
+366.17 422.57 4.05 c p2
+543.16 459.55 4.05 c p2
+448.52 431.43 4.05 c p2
+507.44 447.34 4.05 c p2
+18.00 18.00 774.00 594.00 cl
+0 setgray
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+129.60 128.16 m
+576.00 0 l
+o
+np
+129.60 128.16 m
+0 -10.80 l
+o
+np
+244.80 128.16 m
+0 -10.80 l
+o
+np
+360.00 128.16 m
+0 -10.80 l
+o
+np
+475.20 128.16 m
+0 -10.80 l
+o
+np
+590.40 128.16 m
+0 -10.80 l
+o
+np
+705.60 128.16 m
+0 -10.80 l
+o
+/Font1 findfont 18 s
+129.60 89.28 (0) .5 0 t
+244.80 89.28 (2) .5 0 t
+360.00 89.28 (4) .5 0 t
+475.20 89.28 (6) .5 0 t
+590.40 89.28 (8) .5 0 t
+705.60 89.28 (10) .5 0 t
+np
+106.56 142.13 m
+0 349.34 l
+o
+np
+106.56 142.13 m
+-10.80 0 l
+o
+np
+106.56 200.36 m
+-10.80 0 l
+o
+np
+106.56 258.58 m
+-10.80 0 l
+o
+np
+106.56 316.80 m
+-10.80 0 l
+o
+np
+106.56 375.02 m
+-10.80 0 l
+o
+np
+106.56 433.24 m
+-10.80 0 l
+o
+np
+106.56 491.47 m
+-10.80 0 l
+o
+84.96 135.67 (0.0) 1 0 t
+84.96 193.89 (0.5) 1 0 t
+84.96 252.12 (1.0) 1 0 t
+84.96 310.34 (1.5) 1 0 t
+84.96 368.56 (2.0) 1 0 t
+84.96 426.78 (2.5) 1 0 t
+84.96 485.00 (3.0) 1 0 t
+np
+106.56 128.16 m
+622.08 0 l
+0 377.28 l
+-622.08 0 l
+0 -377.28 l
+o
+18.00 18.00 774.00 594.00 cl
+/Font1 findfont 18 s
+0 setgray
+335.92 45.72 (CPOM Mass \(g m) 0 0 t
+/Font5 findfont 13 s
+478.93 54.66 (-) 0 0 t
+/Font1 findfont 13 s
+486.06 54.66 (2) 0 0 t
+/Font1 findfont 18 s
+493.29 45.72 (\)) 0 0 t
+37.44 183.25 (P) 90 ta
+-0.900 (ercent Sediment Organic Matter) tb gr
+ep
+%%Trailer
+%%Pages: 1
+%%EOF
+6 728.64 505.44 cl
+106.56 128.16 728.64 505.44 cl
+/bg { 0 setgray } def
+243.27 192.14 4.05 c p2
+294.73 321.17 4.05 c p2
+283.29 390.52 4.05 c p2
+307.15 412.00 4.05 c p2
+316.46 407.71 4.05 c p2
+328.31 412.26 4.05 c p2
+443.51 438.70 4.05 c p2
+386.85 425.97 4.05 c p2
+366.17 422.57 4.05 c p2
+543.16 459.55 4.05 c p2
+448.52 431.43 4.05 c p2
+507.44 447.34 4.05 c p2
+18.00 18.00 774.00 594.00 cl
+0 setgray
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+129.60 128.16 m
+576.00 0 l
+o
+np
+129.60 128.16 m
+0 -10.80 l
+o
+np
+244.80 128.16 m
+0 -10.80 l
+o
+np
+360.00 128.16 m
+0 -10.80 l
+o
+np
+475.20 128.16 m
+0 -10.80 l
+o
+np
+590.40 128.16 m
+0 -10.80 l
+o
+np
+705.60 128.16 m
+0 -10.80 l
+o
+/Font1 findfont 18 s
+129.60 89.28 (0) .5 0 t
+244.80 89.28 (2) .5 0 t
+360.00 89.28 (4) .5 0 t
+475.20 89.28 (6) .5 0 t
+590.40 89.28 (8) .5 0 t
+705.60 89.28 (10) .5 0 t
+np
+106.56 142.13 m
+0 349.34 l
+o
+np
+106.56 142.13 m
+-10.80 0 l
+o
+np
+106.56 200.36 m
+-10.80 0 l
+o
+np
+106.56 258.58 m
+-10.80 0 l
+o
+np
+106.56 316.80 m
+-10.80 0 l
+o
+np
+106.56 375.02 m
+-10.80 0 l
+o
+np
+106.56 433.24 m
+-10.80 0 l
+o
+np
+106.56 491.47 m
+-10.80 0 l
+o
+84.96 135.67 (0.0) 1 0 t
+84.96 193.89 (0.5) 1 0 t
+84.96 252.12 (1.0) 1 0 t
+84.96 310.34 (1.5) 1 0 t
+84.96 368.56 (2.0) 1 0 t
+84.96 426.78 (2.5) 1 0 t
+84.96 485.00 (3.0) 1 0 t
+np
+106.56 128.16 m
+622.08 0 l
+0 377.28 l
+-622.08 0 l
+0 -377.28 l
+o
+18.00 18.00 774.00 594.00 cl
+/Font1 findfont 18 s
+0 setgray
+335.92 45.72 (CPOM Mass \(g m) 0 0 t
+/Font5 findfont 13 s
+478.93 54.66 (-) 0 0 t
+/Font1 findfont 13 s
+486.06 54.66 (2) 0 0 t
+/Font1 findfont 18 s
+493.29 45.72 (\)) 0 0 t
+37.44 183.25 (P) 90 ta
+-0.900 (ercent Sediment Organic Matter) tb gr
+ep
+%%Page: 3 3
+bp
+106.56 128.16 728.64 505.44 cl
+106.56 128.16 728.64 505.44 cl
+/bg { 0 setgray } def
+243.27 192.14 4.05 c p2
+294.73 321.17 4.05 c p2
+283.29 390.52 4.05 c p2
+307.15 412.00 4.05 c p2
+316.46 407.71 4.05 c p2
+328.31 412.26 4.05 c p2
+443.51 438.70 4.05 c p2
+386.85 425.97 4.05 c p2
+366.17 422.57 4.05 c p2
+543.16 459.55 4.05 c p2
+448.52 431.43 4.05 c p2
+507.44 447.34 4.05 c p2
+18.00 18.00 774.00 594.00 cl
+0 setgray
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+129.60 128.16 m
+576.00 0 l
+o
+np
+129.60 128.16 m
+0 -10.80 l
+o
+np
+244.80 128.16 m
+0 -10.80 l
+o
+np
+360.00 128.16 m
+0 -10.80 l
+o
+np
+475.20 128.16 m
+0 -10.80 l
+o
+np
+590.40 128.16 m
+0 -10.80 l
+o
+np
+705.60 128.16 m
+0 -10.80 l
+o
+/Font1 findfont 18 s
+129.60 89.28 (0) .5 0 t
+244.80 89.28 (2) .5 0 t
+360.00 89.28 (4) .5 0 t
+475.20 89.28 (6) .5 0 t
+590.40 89.28 (8) .5 0 t
+705.60 89.28 (10) .5 0 t
+np
+106.56 142.13 m
+0 349.34 l
+o
+np
+106.56 142.13 m
+-10.80 0 l
+o
+np
+106.56 200.36 m
+-10.80 0 l
+o
+np
+106.56 258.58 m
+-10.80 0 l
+o
+np
+106.56 316.80 m
+-10.80 0 l
+o
+np
+106.56 375.02 m
+-10.80 0 l
+o
+np
+106.56 433.24 m
+-10.80 0 l
+o
+np
+106.56 491.47 m
+-10.80 0 l
+o
+84.96 135.67 (0.0) 1 0 t
+84.96 193.89 (0.5) 1 0 t
+84.96 252.12 (1.0) 1 0 t
+84.96 310.34 (1.5) 1 0 t
+84.96 368.56 (2.0) 1 0 t
+84.96 426.78 (2.5) 1 0 t
+84.96 485.00 (3.0) 1 0 t
+np
+106.56 128.16 m
+622.08 0 l
+0 377.28 l
+-622.08 0 l
+0 -377.28 l
+o
+18.00 18.00 774.00 594.00 cl
+/Font1 findfont 18 s
+0 setgray
+335.92 45.72 (CPOM Mass \(g m) 0 0 t
+/Font5 findfont 13 s
+478.93 54.66 (-) 0 0 t
+/Font1 findfont 13 s
+486.06 54.66 (2) 0 0 t
+/Font1 findfont 18 s
+493.29 45.72 (\)) 0 0 t
+37.44 183.25 (P) 90 ta
+-0.900 (ercent Sediment Organic Matter) tb gr
+ep
+%%Page: 4 4
+bp
+106.56 128.16 728.64 505.44 cl
+106.56 128.16 728.64 505.44 cl
+/bg { 0 setgray } def
+243.27 192.14 4.05 c p2
+294.73 321.17 4.05 c p2
+283.29 390.52 4.05 c p2
+307.15 412.00 4.05 c p2
+316.46 407.71 4.05 c p2
+328.31 412.26 4.05 c p2
+443.51 438.70 4.05 c p2
+386.85 425.97 4.05 c p2
+366.17 422.57 4.05 c p2
+543.16 459.55 4.05 c p2
+448.52 431.43 4.05 c p2
+507.44 447.34 4.05 c p2
+18.00 18.00 774.00 594.00 cl
+0 setgray
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+129.60 128.16 m
+576.00 0 l
+o
+np
+129.60 128.16 m
+0 -10.80 l
+o
+np
+244.80 128.16 m
+0 -10.80 l
+o
+np
+360.00 128.16 m
+0 -10.80 l
+o
+np
+475.20 128.16 m
+0 -10.80 l
+o
+np
+590.40 128.16 m
+0 -10.80 l
+o
+np
+705.60 128.16 m
+0 -10.80 l
+o
+/Font1 findfont 18 s
+129.60 89.28 (0) .5 0 t
+244.80 89.28 (2) .5 0 t
+360.00 89.28 (4) .5 0 t
+475.20 89.28 (6) .5 0 t
+590.40 89.28 (8) .5 0 t
+705.60 89.28 (10) .5 0 t
+np
+106.56 142.13 m
+0 349.34 l
+o
+np
+106.56 142.13 m
+-10.80 0 l
+o
+np
+106.56 200.36 m
+-10.80 0 l
+o
+np
+106.56 258.58 m
+-10.80 0 l
+o
+np
+106.56 316.80 m
+-10.80 0 l
+o
+np
+106.56 375.02 m
+-10.80 0 l
+o
+np
+106.56 433.24 m
+-10.80 0 l
+o
+np
+106.56 491.47 m
+-10.80 0 l
+o
+84.96 135.67 (0.0) 1 0 t
+84.96 193.89 (0.5) 1 0 t
+84.96 252.12 (1.0) 1 0 t
+84.96 310.34 (1.5) 1 0 t
+84.96 368.56 (2.0) 1 0 t
+84.96 426.78 (2.5) 1 0 t
+84.96 485.00 (3.0) 1 0 t
+np
+106.56 128.16 m
+622.08 0 l
+0 377.28 l
+-622.08 0 l
+0 -377.28 l
+o
+18.00 18.00 774.00 594.00 cl
+/Font1 findfont 18 s
+0 setgray
+335.92 45.72 (CPOM Mass \(g m) 0 0 t
+/Font5 findfont 13 s
+478.93 54.66 (-) 0 0 t
+/Font1 findfont 13 s
+486.06 54.66 (2) 0 0 t
+/Font1 findfont 18 s
+493.29 45.72 (\)) 0 0 t
+37.44 183.25 (P) 90 ta
+-0.900 (ercent Sediment Organic Matter) tb gr
+ep
+%%Page: 5 5
+bp
+106.56 128.16 728.64 505.44 cl
+106.56 128.16 728.64 505.44 cl
+/bg { 0 setgray } def
+243.27 192.14 4.05 c p2
+294.73 321.17 4.05 c p2
+283.29 390.52 4.05 c p2
+307.15 412.00 4.05 c p2
+316.46 407.71 4.05 c p2
+328.31 412.26 4.05 c p2
+443.51 438.70 4.05 c p2
+386.85 425.97 4.05 c p2
+366.17 422.57 4.05 c p2
+543.16 459.55 4.05 c p2
+448.52 431.43 4.05 c p2
+507.44 447.34 4.05 c p2
+18.00 18.00 774.00 594.00 cl
+0 setgray
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+129.60 128.16 m
+576.00 0 l
+o
+np
+129.60 128.16 m
+0 -10.80 l
+o
+np
+244.80 128.16 m
+0 -10.80 l
+o
+np
+360.00 128.16 m
+0 -10.80 l
+o
+np
+475.20 128.16 m
+0 -10.80 l
+o
+np
+590.40 128.16 m
+0 -10.80 l
+o
+np
+705.60 128.16 m
+0 -10.80 l
+o
+/Font1 findfont 18 s
+129.60 89.28 (0) .5 0 t
+244.80 89.28 (2) .5 0 t
+360.00 89.28 (4) .5 0 t
+475.20 89.28 (6) .5 0 t
+590.40 89.28 (8) .5 0 t
+705.60 89.28 (10) .5 0 t
+np
+106.56 142.13 m
+0 349.34 l
+o
+np
+106.56 142.13 m
+-10.80 0 l
+o
+np
+106.56 200.36 m
+-10.80 0 l
+o
+np
+106.56 258.58 m
+-10.80 0 l
+o
+np
+106.56 316.80 m
+-10.80 0 l
+o
+np
+106.56 375.02 m
+-10.80 0 l
+o
+np
+106.56 433.24 m
+-10.80 0 l
+o
+np
+106.56 491.47 m
+-10.80 0 l
+o
+84.96 135.67 (0.0) 1 0 t
+84.96 193.89 (0.5) 1 0 t
+84.96 252.12 (1.0) 1 0 t
+84.96 310.34 (1.5) 1 0 t
+84.96 368.56 (2.0) 1 0 t
+84.96 426.78 (2.5) 1 0 t
+84.96 485.00 (3.0) 1 0 t
+np
+106.56 128.16 m
+622.08 0 l
+0 377.28 l
+-622.08 0 l
+0 -377.28 l
+o
+18.00 18.00 774.00 594.00 cl
+/Font1 findfont 18 s
+0 setgray
+335.92 45.72 (CPOM Mass \(g m) 0 0 t
+/Font5 findfont 13 s
+478.93 54.66 (-) 0 0 t
+/Font1 findfont 13 s
+486.06 54.66 (2) 0 0 t
+/Font1 findfont 18 s
+493.29 45.72 (\)) 0 0 t
+37.44 183.25 (P) 90 ta
+-0.900 (ercent Sediment Organic Matter) tb gr
+ep
+%%Trailer
+%%Pages: 5
+%%EOF
