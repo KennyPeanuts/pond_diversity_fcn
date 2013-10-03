@@ -5,7 +5,7 @@
 ### Questions
 
 1. What is the rate of leaf decomposition in man-made ponds?
-2. Does pond design (old farm pond vs retention pond) affect decomposition rate?
+2. Does pond design affect decomposition rate?
 3. Does macroinvertebrate colonization affect decomposition rate?
 4. Does macroinvertebrate colonization of litter differ between lakes and with decomposition state?
 
@@ -13,13 +13,11 @@
 
 #### Treatments
 
-* Lake
+* Pond
     * Dalton Pond
     * Lancer Park Pond
-
-* Mesh Size
-    * small (1 mm) 
-    * large (1 cm)
+    * LU golf course pond
+    * LU campus pond
 
 #### Sampling Frequency
 
@@ -42,12 +40,11 @@
 
      5 replicate bags per date
      14 dates
-     2 lakes
-     2 mesh sizes
+     4 lakes
     ---------------
      280 bags 
 
-    140 bags per lake (70 fine mesh + 70 coarse mesh)
+    70 bags per lake
 
 if each bag contains 5 g dry mass leaves
 
@@ -67,7 +64,7 @@ if each bag contains 5 g dry mass leaves
 
 ### Narrative Description
 
-Litter bags will be placed in the littoral zone of Dalton Pond and Lancer Park Pond in fine mesh (1 mm) and coarse mesh (1 cm) bags.  The bags will be filled with 5 g of senescent tulip poplar leaves and will be retrieved over a 6 month period. At each sampling date 5 fine mesh and 5 coarse mesh bags will be randomly selected from each lake.  The bags will be retrieved over a 250 &mu;m mesh net and the contents placed in to a 2 gal zip-lock bag.
+Litter bags will be placed in the littoral zone of each pond in litter bags.  The bags will be filled with 5 g of senescent tulip poplar leaves and will be retrieved over a 6 month period. At each sampling date 5 bags will be randomly selected from each pond.  The bags will be retrieved over a 250 &mu;m mesh net and the contents placed in to a 2 gal zip-lock bag.
 
 Back in the lab, the contents of the litter bag will be gently washed to separate macroinvertebrates from the leaf litter.  The litter will be dried at 50 dC and then ashed at 550 dC to determine AFDM.  The macroinvertebrates will be preserved in 70% EtOH for enumeration and identification.  
 
@@ -76,8 +73,6 @@ Back in the lab, the contents of the litter bag will be gently washed to separat
 * [ ] 140 fine mesh bags
     * http://www.onlinefabricstore.net/landscape-and-garden/bags-and-sacks/woven-and-mesh-polypropylene-bags.htm
     * http://www.wassermanbag.com/potato-bags.html
-
-* [ ] 140 coarse mesh bags
 
 * [ ] 20 2 gal Ziploc bags
 
