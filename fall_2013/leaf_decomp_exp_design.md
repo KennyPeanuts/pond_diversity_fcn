@@ -70,9 +70,11 @@ Back in the lab, the contents of the litter bag will be gently washed to separat
 
 ### Materials
 
-* [ ] 140 fine mesh bags
-    * http://www.onlinefabricstore.net/landscape-and-garden/bags-and-sacks/woven-and-mesh-polypropylene-bags.htm
-    * http://www.wassermanbag.com/potato-bags.html
+* [X] 140 fine mesh bags
+    * Woven Leno Bag 10 X 19" (avisbag.com)
+
+* [X] 140 coarse mesh bags
+    * Vexar Bag 12x15 No Header (avisbag.com)
 
 * [ ] 20 2 gal Ziploc bags
 
