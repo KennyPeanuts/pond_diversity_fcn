@@ -8,11 +8,10 @@ Further Revised 8 Oct 2013 for Longwood U. pond research projects
 
 ## Equipment
 
-### Sample Preparation
-
 ### Titration
+
 1. 10 ml buret
-2. 5 ml serum vial
+2. 10 ml serum vial
 3. serum vial top
 4. flea stir bar
 3. magnetic stirrer (top painted white)
