@@ -26,10 +26,12 @@ Further Revised 8 Oct 2013 for Longwood U. pond research projects
 * Manganous Chloride solution (3M):  
     * 500 ml: 300g MnCl2*4H2O --> 500ml DI
     * 250 ml: 150g MnCl2*4H2O --> 250ml DI
+    * 100 ml: 60g MnCl2*4H2O --> 100ml DI
 
 * Alkaline Iodide solution (8N NaOH, 4M NaI): 
     * 500 ml: 160g NaOH + 300g NaI --> 200ml DI, cool and bring to 500ml
     * 250 ml: 80g NaOH + 150g NaI --> 100ml DI, cool and bring to 250ml
+    * 100 ml: 32g NaOH + 60g NaI --> 50ml DI, cool and bring to 100ml
 
 * Sulfuric Acid solution (10N):
     * slowly add 140ml cH2SO4 to 200ml DI, cool and bring to 500ml
