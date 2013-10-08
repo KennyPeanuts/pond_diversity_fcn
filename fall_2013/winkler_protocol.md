@@ -9,9 +9,6 @@ Further Revised 8 Oct 2013 for Longwood U. pond research projects
 ## Equipment
 
 ### Sample Preparation
-1. 300 ml BOD bottle
-2. 6X 50 ml beaker 
-3. 100 - 1000 ml pipette
 
 ### Titration
 1. 10 ml buret
@@ -54,7 +51,8 @@ Further Revised 8 Oct 2013 for Longwood U. pond research projects
 
     DO = (((R - Rblk) Vstd * Nstd * E)/(Rstd - Rblk) (Vb - Vreg)) - DOreg
 
-where
+where:
+
 * DO = dissolved oxygen in ml/L
 * R = sample titration buret reading (ml)
 * Rblk = difference between 1st and 2nd blank titration buret readings (ml)
@@ -66,32 +64,32 @@ where
 * E = 5,598 ml O2 / equivalent 
 * DOreg = oxygen added with reagents (ml) = 0.018 ml/L O2 per 1 ml of MnCl
 
-## Procedure for 5 ml BOD bottles
+## Procedure for 10 ml serum vials
 
 ### Sample Collection
-1. Collect ~ 5 ml into volume calibrated serum vial by overfilling by 2X volume
+1. Collect ~10 ml into volume calibrated serum vial by overfilling by 0.5X volume
 2. Cap vial to get correct volume
-2. Immediately add 40 ul of MnCl sol. and 40 ul of the NaOH/NaI sol. and cap
+2. Immediately add 85 ul of MnCl sol. and 85 ul of the NaOH/NaI sol. and cap
 3. Shake and allow precip to form and settle 3X while keeping the bottle in the dark
-4. Add 40 ul of 10N H2SO4 and shake
+4. Add 85 ul of 10N H2SO4 and shake
 5. Titrate with sodium thiosulfate until pale yellow then add 1 drop starch sol. and titrate until blue color disappears
 
 ### Standardization of Sodium Thiosulfate
-1. Add 40 ul of KIO3 sol. to serum vial
+1. Add 85 ul of KIO3 sol. to serum vial
 2. Nearly fill serum vial with DI Water
-3. Add 40 ul of 10N H2SO4
-4. Add 40 ul of NaOH/NaI sol.
+3. Add 85 ul of 10N H2SO4
+4. Add 85 ul of NaOH/NaI sol.
 5. Titrate with sodium thiosulfate until pale yellow then add 1 drop starch sol. and titrate until blue color disappears
 6. Repeat 3 to 5 times and use mean in calculations
 
 ### Blank Determination
-1. Add 40 ul KIO3 sol. to BOD bottle 
+1. Add 85 ul KIO3 sol. to BOD bottle 
 2. Nearly fill BOD bottle with DI Water
-3. Add 40 ul of 10N H2SO4
-4. Add 40 ul of NaOH/NaI sol. and mix
-5. Add 40 ul of MnCl sol.
+3. Add 85 ul of 10N H2SO4
+4. Add 85 ul of NaOH/NaI sol. and mix
+5. Add 85 ul of MnCl sol.
 6. Titrate with sodium thiosulfate until pale yellow then add 1 drop starch sol. and titrate until blue color disappears
-7. Add 40 ul KIO3 sol.
+7. Add 85 ul KIO3 sol.
 8. Titrate with sodium thiosulfate until pale yellow then add 1 drop starch sol. and titrate until blue color disappears
 9. Calculate difference between 1st and 2nd titrations as Rblk (this may be negative)
 
