@@ -1,0 +1,3 @@
+Status Update
+
+This week I dropped off four bags of leaves. And now I'm attempting to understand and use Git & GitHub.
