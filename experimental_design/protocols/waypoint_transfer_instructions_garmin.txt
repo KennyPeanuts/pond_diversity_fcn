@@ -1,0 +1,29 @@
+
+
+How can I transfer waypoints using Homeport to an Excel spreadsheet?
+HomePort trip planning software will allow the transfer of waypoints, routes and tracks to an Excel spreadsheet.
+
+To transfer your waypoints, routes and tracks to an Excel spreadsheet:
+
+Launch HomePort
+Select the desired waypoints from My Collection/SD/Data Card
+Export the file
+Click File
+Click Export
+Click Export Selection
+Select .GPX format as the file type for PC, or .CSV for a MAC
+Select a destination (ex. My Documents or Desktop) to save it to on PC or MAC
+Click Save.
+Launch Excel
+Click File
+Click Open
+Open the saved .GPX file or the saved .CSV file.
+If Excel indicates this is not a valid format and ask if you want to open, Select Yes.
+Open the file in Excel using the option, "As an XML table."
+Click Yes to the next prompt from Excel.
+Once the selected file has been opened you will have an Excel spreadsheet with your exported information. The information will contain Latitude/Longitude and time stamp. If the waypoint was created while the chartplotter was connected to a transducer, the water depth and water temperature will also show.
+
+Referenced Links:
+
+https://buy.garmin.com/shop/shop.do?pID=64242
+
