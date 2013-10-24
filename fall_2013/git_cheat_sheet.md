@@ -17,24 +17,24 @@ local git to Github.
 
 1.  Before you begin working you need to update your local files
     from Github with a pull.
-2.  1.  Open the git console and change to the directory where the
+    1.  Open the git console and change to the directory where the
         lab files are kept on your computer
     2.  Type: `git pull origin master`
     3.  You will likely have to enter your Github username and password
     4.  When this is complete your local files are synced with the
         Github files
 
-3.  Now you need to tell git what files you want it to track
-4.  1.  To track all the files in the directory, type: `git add *`
+2.  Now you need to tell git what files you want it to track
+    1.  To track all the files in the directory, type: `git add *`
         (the `*` is a wildcard for "match everything")
     2.  If you don't want to track all files they list the files you
         want after `add`: `git add <em>file or directory names</em>`
 
-5.  You can now do your work and git will keep track of any changes
+3.  You can now do your work and git will keep track of any changes
     you make to the files in the directory
-6.  To update your local git you need to "commit" the changes
-7.  1.  In the git console type:
-        `git commit -am "<em>commit message</em>"`
+4.  To update your local git you need to "commit" the changes
+    1.  In the git console type:
+        `git commit -am "commit message"`
     2.  The `a` flag tells git to commit any file that has been changed
     3.  The `m` flag tells git that you are following with a commit
         message
@@ -50,9 +50,9 @@ local git to Github.
         data and again after doing data analysis, and again after making a
         figure, etc...)
 
-8.  When you are done with your work, you can now update the Github
+5.  When you are done with your work, you can now update the Github
     repository with a push.
-9.  1.  Type `git push origin master`
+    1.  Type `git push origin master`
     2.  You will need to enter your username and password
     3.  When this is complete, Github is now updated with the changes
         you made
