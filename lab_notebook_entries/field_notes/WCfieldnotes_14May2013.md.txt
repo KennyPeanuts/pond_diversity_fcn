@@ -1,0 +1,8 @@
+Samples were collected from a residential pond on May 14, 2013. Two samples per sampling location were taken and done at varying depths; all littoral samples taken were approximately 10m away from the shore. Open A was taken near the damside in the middle at 2.2 m, open B was in the middle near the lawn side by inlet at 1.6 m, open C was taken near inlet side in the middle at 1.4 m. Littoral A was taken on wooded side near dam at 1.3 m, littoral B was taken lawn side near dam at 0.6 m, and littoral C was taken wooded side near inlet at 1.2 m. Note: all litoral samples were taken approximately 10m from shore.
+The YSI was used to collect the following data (Note: pH was not calibrated):
+Z(m) T(?C) Cond.  %DO   DO   pH   ORP
+0   18.24  0.95   82.9 7.81 5.92 239.6
+0.5 17.77  0.95   81.9 7.79 5.44 267.3
+1   17.64  0.96   79.9 7.61 4.52 323.6
+1.5 17.42  0.97   74.6 7.11 3.82 372.6
+
