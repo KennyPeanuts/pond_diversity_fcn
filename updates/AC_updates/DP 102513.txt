@@ -1,0 +1,7 @@
+2013 October 25
+
+1.  Used timer to generate random numbers
+2.  Collected random samples using net (find measurement)
+	Placed leaf bags and water from net into blue bags
+3.  Washed leaves to collect stuff in bucket into vials with ethanol
+4.  Dried leaves in measured bags (50 degrees Celsius) dry oven
