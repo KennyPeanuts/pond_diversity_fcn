@@ -1,0 +1,11 @@
+In order to sample the mass of the organic matter from Lancer Park, we took the samples collected in the ekman and homogenized them. The samples were placed in a basin and then moved around to homogenize the sample. A small scint vial was put into the basin to collect the sediment. The vials were pre-weighed before any sediment was placed in them.
+Sampling Data:
+Site		 Rep 	Scint mass(g)	 Scint + OM (g)	 OM mass (g)
+Littoral	 A	 13.2644 		14.0344		 0.77
+Littoral 	B 	13.2930 		14.3301		 1.03
+Littoral 	C 	13.2102		 13.7273		 0.5171
+Open 		A 	13.2918		 14.3521		 1.0603
+Open 		B 	13.3406		 15.7327		 2.3915
+Open 		C 	13.3605		 15.2533		 1.8928
+Note: the scint + OM vials were weighed without their top.
+

@@ -1,0 +1,10 @@
+Today I finished weighing the samples taken from Wilkes Lake on Feb 21. These samples were the CPOM from the littoral and open samples. The weigh boats were numbered then weighed to get an initial mass. The CPOM was placed in the weigh boats and then placed in the drying oven at 50 degrees Celsius. The boats were then weighed and the final mass was subtracted from the initial mass to figure out the CPOM mass.
+Sample Data:
+Boat # Site Depth Rep Initial Boat Mass (g) boat + CPOM (g) CPOMmass(g)
+28 	Littoral	 Shallow A 1.9424		 2.4342	 	0.4908
+53	 Littoral	 Shallow B 1.8294		 2.4063	 	0.5769
+66	 Littoral	 Shallow C 1.8443		 2.5529	 	0.7086
+27	 Open		 Shallow A 1.6925		 1.8544	 	0.1619
+72	 Open		 Shallow B 1.8084		 2.204	 	0.3956
+57	 Open		 Shallow C 1.7482		 2.0725	 	0.3243
+

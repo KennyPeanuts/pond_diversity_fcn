@@ -1,0 +1,9 @@
+Samples were collected from a Wilck’s Lake on 14 June 2013. Two samples per sampling location were taken and done at varying depths; all littoral samples taken were approximately 10m away from the shore. Open A was taken at 1.9 m oppoiste to the library, open B was opposite to the playground between the wood retention walls at 1.6 m, open C was taken in the S island bay at 1.8 m. Littoral A was taken at a depth 1.1 m north of shore between the island and library near the forested side, littoral B was taken at the forested shore across from the beach at 1.4 m, and littoral C was taken north of shore by the bushes east of the beach at 1.6 m.Note:littoral C samples were too large and had to be split in 1/2 and placed in empty hypo bottles.
+Secchi Z= 0.5 m Epi Z= 1 m Hypo Z= not stratified no sample
+The YSI was used to collect the following data (Note: pH was not calibrated):
+Z(m)          T(?C)	Cond.		%DO		DO	pH	ORP
+0	     26.36	0.087		75.9		6.11	7.03	153.4
+0.5	     26.33	0.087		74.9		6.04	6.78	138.1
+1	    26.33	0.087		74.9		6.02	6.87	130.0
+1.5	    26.21	0.087		73.8		5.97	6.8	133.4
+
