@@ -1,212 +1,211 @@
 lake 	sample 	date_collected	bag_weight_dry	bag_weight_collection	calculated_difference	proportion_loss
-Campus Pond	1				0.0000	1.00000
-Campus Pond	2	10/22/2013	7.2786	11.5476	4.2690	0.14620
-Campus Pond	3				0.0000	1.00000
-Campus Pond	4				0.0000	1.00000
-Campus Pond	5				0.0000	1.00000
-Campus Pond	6				0.0000	1.00000
-Campus Pond	7				0.0000	1.00000
-Campus Pond	8	10/22/2013	7.2767	11.8332	4.5565	0.08870
+Campus Pond	1				0	1
+Campus Pond	2	10/22/2013	7.2786	11.5476	4.269	0.1462
+Campus Pond	3				0	1
+Campus Pond	4				0	1
+Campus Pond	5	11/5/2013	7.3471	10.702	0	1
+Campus Pond	6				0	1
+Campus Pond	7				0	1
+Campus Pond	8	10/22/2013	7.2767	11.8332	4.5565	0.0887
 Campus Pond	9	10/25/2013	7.1055	10.8298	3.7243	0.25514
-Campus Pond	10				0.0000	1.00000
-Campus Pond	11				0.0000	1.00000
-Campus Pond	12				0.0000	1.00000
-Campus Pond	13				0.0000	1.00000
-Campus Pond	14				0.0000	1.00000
-Campus Pond	15	10/22/2013	7.2325	11.6445	4.4120	0.11760
-Campus Pond	16				0.0000	1.00000
-Campus Pond	17	10/29/2013	7.2183		-7.2183	2.44366
-Campus Pond	18				0.0000	1.00000
-Campus Pond	19				0.0000	1.00000
-Campus Pond	20				0.0000	1.00000
-Campus Pond	21				0.0000	1.00000
-Campus Pond	22	10/25/2013	7.4814	10.6154	3.1340	0.37320
-Campus Pond	23				0.0000	1.00000
-Campus Pond	24				0.0000	1.00000
-Campus Pond	25				0.0000	1.00000
-Campus Pond	26	10/29/2013	7.3317		-7.3317	2.46634
-Campus Pond	27				0.0000	1.00000
-Campus Pond	28				0.0000	1.00000
-Campus Pond	29				0.0000	1.00000
-Campus Pond	30				0.0000	1.00000
-Campus Pond	31				0.0000	1.00000
-Campus Pond	32				0.0000	1.00000
+Campus Pond	10				0	1
+Campus Pond	11				0	1
+Campus Pond	12				0	1
+Campus Pond	13				0	1
+Campus Pond	14	11/5/2013	7.2643	9.9518	0	1
+Campus Pond	15	10/22/2013	7.2325	11.6445	4.412	0.1176
+Campus Pond	16				0	1
+Campus Pond	17	10/29/2013	7.2183	10.4394	-7.2183	2.44366
+Campus Pond	18				0	1
+Campus Pond	19				0	1
+Campus Pond	20				0	1
+Campus Pond	21				0	1
+Campus Pond	22	10/25/2013	7.4814	10.6154	3.134	0.3732
+Campus Pond	23				0	1
+Campus Pond	24				0	1
+Campus Pond	25	11/5/2013	7.3416	10.4174	0	1
+Campus Pond	26	10/29/2013	7.3317	10.2217	-7.3317	2.46634
+Campus Pond	27				0	1
+Campus Pond	28				0	1
+Campus Pond	29				0	1
+Campus Pond	30				0	1
+Campus Pond	31				0	1
+Campus Pond	32				0	1
 Campus Pond	33	10/22/2013	7.2359	11.8288	4.5929	0.08142
-Campus Pond	34				0.0000	1.00000
-Campus Pond	35	10/25/2013	7.3065	10.818	3.5115	0.29770
-Campus Pond	36				0.0000	1.00000
-Campus Pond	37				0.0000	1.00000
-Campus Pond	38	10/29/2013	7.2525		-7.2525	2.45050
-Campus Pond	39				0.0000	1.00000
-Campus Pond	40				0.0000	1.00000
-Campus Pond	41				0.0000	1.00000
-Campus Pond	42				0.0000	1.00000
+Campus Pond	34				0	1
+Campus Pond	35	10/25/2013	7.3065	10.818	3.5115	0.2977
+Campus Pond	36				0	1
+Campus Pond	37				0	1
+Campus Pond	38	10/29/2013	7.2525	10.4962	-7.2525	2.4505
+Campus Pond	39				0	1
+Campus Pond	40				0	1
+Campus Pond	41				0	1
+Campus Pond	42				0	1
 Campus Pond	43	10/25/2013	7.1285	10.9302	3.8017	0.23966
-Campus Pond	44				0.0000	1.00000
-Campus Pond	45				0.0000	1.00000
-Campus Pond	46	10/22/2013	7.2467	11.7907	4.5440	0.09120
-Campus Pond	47				0.0000	1.00000
-Campus Pond	48				0.0000	1.00000
-Campus Pond	49				0.0000	1.00000
-Campus Pond	50				0.0000	1.00000
-Campus Pond	51	10/29/2013	7.2798		-7.2798	2.45596
-Campus Pond	52				0.0000	1.00000
-Campus Pond	53				0.0000	1.00000
-Campus Pond	54				0.0000	1.00000
-Campus Pond	55	10/29/2013	7.3236		-7.3236	2.46472
-Campus Pond	56				0.0000	1.00000
-Campus Pond	57				0.0000	1.00000
-Campus Pond	58				0.0000	1.00000
-Campus Pond	59				0.0000	1.00000
-Campus Pond	60				0.0000	1.00000
-Campus Pond	61				0.0000	1.00000
-Campus Pond	62				0.0000	1.00000
-Campus Pond	63				0.0000	1.00000
-Campus Pond	64				0.0000	1.00000
-Campus Pond	65				0.0000	1.00000
-Campus Pond	66				0.0000	1.00000
+Campus Pond	44				0	1
+Campus Pond	45				0	1
+Campus Pond	46					
+Campus Pond	47				0	1
+Campus Pond	48	10/22/2013	7.2467	11.7907	4.544	0.0912
+Campus Pond	49	11/5/2013	7.2798	10.5647	0	1
+Campus Pond	50				0	1
+Campus Pond	51	10/29/2013	7.2798	10.5647	-7.2798	2.45596
+Campus Pond	52				0	1
+Campus Pond	53				0	1
+Campus Pond	54				0	1
+Campus Pond	55	10/29/2013	7.3236	10.7955	-7.3236	2.46472
+Campus Pond	56				0	1
+Campus Pond	57				0	1
+Campus Pond	58				0	1
+Campus Pond	59				0	1
+Campus Pond	60				0	1
+Campus Pond	61				0	1
+Campus Pond	62				0	1
+Campus Pond	63				0	1
+Campus Pond	64				0	1
+Campus Pond	65				0	1
+Campus Pond	66				0	1
 Campus Pond	67	10/25/2013	7.0545	11.0964	4.0419	0.19162
-Campus Pond	68				0.0000	1.00000
-Campus Pond	69				0.0000	1.00000
-Campus Pond	70				0.0000	1.00000
-Daulton Pond	1				0.0000	1.00000
+Campus Pond	68	11/5/2013	7.2414	10.3012	0	1
+Campus Pond	69				0	1
+Campus Pond	70				0	1
+Daulton Pond	1				0	1
 Daulton Pond	2	10/22/2013	7.3955	11.8928	4.4973	0.10054
 Daulton Pond	3	10/25/2013	7.4675	10.7607	3.2932	0.34136
-Daulton Pond	4				0.0000	1.00000
-Daulton Pond	5	11/1/2013	7.4855		-7.4855	2.49710
-Daulton Pond	6				0.0000	1.00000
-Daulton Pond	7				0.0000	1.00000
-Daulton Pond	8				0.0000	1.00000
-Daulton Pond	9				0.0000	1.00000
-Daulton Pond	10				0.0000	1.00000
-Daulton Pond	11				0.0000	1.00000
-Daulton Pond	12				0.0000	1.00000
-Daulton Pond	13				0.0000	1.00000
-Daulton Pond	14				0.0000	1.00000
-Daulton Pond	15				0.0000	1.00000
-Daulton Pond	16				0.0000	1.00000
-Daulton Pond	17				0.0000	1.00000
-Daulton Pond	18	11/1/2013	7.4265		-7.4265	2.48530
-Daulton Pond	19				0.0000	1.00000
-Daulton Pond	20				0.0000	1.00000
-Daulton Pond	21				0.0000	1.00000
+Daulton Pond	4				0	1
+Daulton Pond	5	11/1/2013	7.4855	10.5476	-7.4855	2.4971
+Daulton Pond	6	11/6/2013	7.3084		0	1
+Daulton Pond	7				0	1
+Daulton Pond	8				0	1
+Daulton Pond	9				0	1
+Daulton Pond	10				0	1
+Daulton Pond	11				0	1
+Daulton Pond	12				0	1
+Daulton Pond	13				0	1
+Daulton Pond	14				0	1
+Daulton Pond	15				0	1
+Daulton Pond	16				0	1
+Daulton Pond	17				0	1
+Daulton Pond	18	11/1/2013	7.4265	10.2989	-7.4265	2.4853
+Daulton Pond	19				0	1
+Daulton Pond	20				0	1
+Daulton Pond	21				0	1
 Daulton Pond	22	10/22/2013	7.3966	11.8908	4.4942	0.10116
 Daulton Pond	23	10/25/2013	7.3955	10.4329	3.0374	0.39252
-Daulton Pond	24				0.0000	1.00000
-Daulton Pond	25	11/1/2013	7.3187		-7.3187	2.46374
-Daulton Pond	26				0.0000	1.00000
-Daulton Pond	27				0.0000	1.00000
-Daulton Pond	28				0.0000	1.00000
-Daulton Pond	29				0.0000	1.00000
-Daulton Pond	30				0.0000	1.00000
-Daulton Pond	31				0.0000	1.00000
-Daulton Pond	32				0.0000	1.00000
-Daulton Pond	33				0.0000	1.00000
+Daulton Pond	24				0	1
+Daulton Pond	25	11/1/2013	7.3187	10.2519	-7.3187	2.46374
+Daulton Pond	26				0	1
+Daulton Pond	27				0	1
+Daulton Pond	28				0	1
+Daulton Pond	29				0	1
+Daulton Pond	30				0	1
+Daulton Pond	31				0	1
+Daulton Pond	32				0	1
+Daulton Pond	33	11/6/2013	7.2125		0	1
 Daulton Pond	34	10/25/2013	7.0195	10.5041	3.4846	0.30308
-Daulton Pond	35				0.0000	1.00000
-Daulton Pond	36				0.0000	1.00000
-Daulton Pond	37				0.0000	1.00000
-Daulton Pond	38	11/1/2013	7.3985		-7.3985	2.47970
-Daulton Pond	39				0.0000	1.00000
-Daulton Pond	40				0.0000	1.00000
-Daulton Pond	41				0.0000	1.00000
+Daulton Pond	35				0	1
+Daulton Pond	36				0	1
+Daulton Pond	37				0	1
+Daulton Pond	38	11/1/2013	7.3985	10.5556	-7.3985	2.4797
+Daulton Pond	39				0	1
+Daulton Pond	40				0	1
+Daulton Pond	41				0	1
 Daulton Pond	42	10/22/2013	7.4082	11.8766	4.4684	0.10632
 Daulton Pond	43	10/25/2013	7.1171	10.5197	3.4026	0.31948
-Daulton Pond	44				0.0000	1.00000
-Daulton Pond	45				0.0000	1.00000
-Daulton Pond	46				0.0000	1.00000
-Daulton Pond	47				0.0000	1.00000
-Daulton Pond	48				0.0000	1.00000
+Daulton Pond	44				0	1
+Daulton Pond	45				0	1
+Daulton Pond	46				0	1
+Daulton Pond	47	11/6/2013	7.3189		0	1
+Daulton Pond	48				0	1
 Daulton Pond	49	10/22/2013	7.3618	11.7997	4.4379	0.11242
-Daulton Pond	50				0.0000	1.00000
-Daulton Pond	51				0.0000	1.00000
-Daulton Pond	52				0.0000	1.00000
+Daulton Pond	50				0	1
+Daulton Pond	51				0	1
+Daulton Pond	52				0	1
 Daulton Pond	53	10/25/2013	7.1044	10.4533	3.3489	0.33022
-Daulton Pond	54				0.0000	1.00000
-Daulton Pond	55				0.0000	1.00000
-Daulton Pond	56				0.0000	1.00000
-Daulton Pond	57				0.0000	1.00000
-Daulton Pond	58				0.0000	1.00000
-Daulton Pond	59				0.0000	1.00000
-Daulton Pond	60				0.0000	1.00000
+Daulton Pond	54				0	1
+Daulton Pond	55				0	1
+Daulton Pond	56				0	1
+Daulton Pond	57	11/6/2013	7.3552		0	1
+Daulton Pond	58				0	1
+Daulton Pond	59				0	1
+Daulton Pond	60				0	1
 Daulton Pond	61	10/22/2013	7.3403	11.9291	4.5888	0.08224
-Daulton Pond	62				0.0000	1.00000
-Daulton Pond	63				0.0000	1.00000
-Daulton Pond	64	11/1/2013	7.3555		-7.3555	2.47110
-Daulton Pond	65				0.0000	1.00000
-Daulton Pond	66				0.0000	1.00000
-Daulton Pond	67				0.0000	1.00000
-Daulton Pond	68				0.0000	1.00000
-Daulton Pond	69				0.0000	1.00000
-Daulton Pond	70				0.0000	1.00000
-Lancer Park Pond	1				0.0000	1.00000
-Lancer Park Pond	2				0.0000	1.00000
-Lancer Park Pond	3				0.0000	1.00000
-Lancer Park Pond	4				0.0000	1.00000
-Lancer Park Pond	5				0.0000	1.00000
-Lancer Park Pond	6				0.0000	1.00000
-Lancer Park Pond	7				0.0000	1.00000
-Lancer Park Pond	8				0.0000	1.00000
-Lancer Park Pond	9				0.0000	1.00000
-Lancer Park Pond	10				0.0000	1.00000
-Lancer Park Pond	11				0.0000	1.00000
-Lancer Park Pond	12				0.0000	1.00000
-Lancer Park Pond	13	10/31/2013	7.2093		-7.2093	2.44186
-Lancer Park Pond	14				0.0000	1.00000
-Lancer Park Pond	15				0.0000	1.00000
-Lancer Park Pond	16	10/31/2013	7.2094		-7.2094	2.44188
-Lancer Park Pond	17				0.0000	1.00000
-Lancer Park Pond	18				0.0000	1.00000
-Lancer Park Pond	19				0.0000	1.00000
-Lancer Park Pond	20				0.0000	1.00000
-Lancer Park Pond	21				0.0000	1.00000
-Lancer Park Pond	22	10/31/2013	7.2104		-7.2104	2.44208
-Lancer Park Pond	23				0.0000	1.00000
-Lancer Park Pond	24				0.0000	1.00000
-Lancer Park Pond	25				0.0000	1.00000
-Lancer Park Pond	26				0.0000	1.00000
-Lancer Park Pond	27				0.0000	1.00000
-Lancer Park Pond	28				0.0000	1.00000
-Lancer Park Pond	29				0.0000	1.00000
-Lancer Park Pond	30				0.0000	1.00000
-Lancer Park Pond	31				0.0000	1.00000
-Lancer Park Pond	32				0.0000	1.00000
-Lancer Park Pond	33	10/29/2013	7.1922		-7.1922	2.43844
-Lancer Park Pond	34				0.0000	1.00000
-Lancer Park Pond	35				0.0000	1.00000
-Lancer Park Pond	36				0.0000	1.00000
-Lancer Park Pond	37				0.0000	1.00000
-Lancer Park Pond	38	10/31/2013	7.2023		-7.2023	2.44046
-Lancer Park Pond	39				0.0000	1.00000
-Lancer Park Pond	40				0.0000	1.00000
-Lancer Park Pond	41				0.0000	1.00000
-Lancer Park Pond	42				0.0000	1.00000
-Lancer Park Pond	43	10/29/2013	7.1908		-7.1908	2.43816
-Lancer Park Pond	44				0.0000	1.00000
-Lancer Park Pond	45				0.0000	1.00000
-Lancer Park Pond	46	10/29/1931	7.1874		-7.1874	2.43748
-Lancer Park Pond	47				0.0000	1.00000
-Lancer Park Pond	48				0.0000	1.00000
-Lancer Park Pond	49				0.0000	1.00000
-Lancer Park Pond	50				0.0000	1.00000
-Lancer Park Pond	51				0.0000	1.00000
-Lancer Park Pond	52				0.0000	1.00000
-Lancer Park Pond	53				0.0000	1.00000
-Lancer Park Pond	54				0.0000	1.00000
-Lancer Park Pond	55				0.0000	1.00000
-Lancer Park Pond	56				0.0000	1.00000
-Lancer Park Pond	57				0.0000	1.00000
-Lancer Park Pond	58	10/29/2013	7.2219		-7.2219	2.44438
-Lancer Park Pond	59				0.0000	1.00000
-Lancer Park Pond	60				0.0000	1.00000
-Lancer Park Pond	61	10/29/2013	7.2022		-7.2022	2.44044
-Lancer Park Pond	62	10/31/2013	7.2242		-7.2242	2.44484
-Lancer Park Pond	63				0.0000	1.00000
-Lancer Park Pond	64				0.0000	1.00000
-Lancer Park Pond	65				0.0000	1.00000
-Lancer Park Pond	66				0.0000	1.00000
-Lancer Park Pond	67				0.0000	1.00000
-Lancer Park Pond	68				0.0000	1.00000
-Lancer Park Pond	69				0.0000	1.00000
-Lancer Park Pond	70				0.0000	1.00000
-						
+Daulton Pond	62				0	1
+Daulton Pond	63	11/6/2013	7.4149		0	1
+Daulton Pond	64	11/1/2013	7.3555	10.4301	-7.3555	2.4711
+Daulton Pond	65				0	1
+Daulton Pond	66				0	1
+Daulton Pond	67				0	1
+Daulton Pond	68				0	1
+Daulton Pond	69				0	1
+Daulton Pond	70				0	1
+Lancer Park Pond	1	11/8/2013	7.0318	10.2502	0	1
+Lancer Park Pond	2				0	1
+Lancer Park Pond	3				0	1
+Lancer Park Pond	4				0	1
+Lancer Park Pond	5				0	1
+Lancer Park Pond	6				0	1
+Lancer Park Pond	7				0	1
+Lancer Park Pond	8				0	1
+Lancer Park Pond	9				0	1
+Lancer Park Pond	10				0	1
+Lancer Park Pond	11				0	1
+Lancer Park Pond	12				0	1
+Lancer Park Pond	13	10/31/2013	7.2093	10.8257	-7.2093	2.44186
+Lancer Park Pond	14				0	1
+Lancer Park Pond	15				0	1
+Lancer Park Pond	16	10/31/2013	7.2094	10.7481	-7.2094	2.44188
+Lancer Park Pond	17				0	1
+Lancer Park Pond	18				0	1
+Lancer Park Pond	19				0	1
+Lancer Park Pond	20				0	1
+Lancer Park Pond	21				0	1
+Lancer Park Pond	22	10/31/2013	7.2104	10.9456	-7.2104	2.44208
+Lancer Park Pond	23				0	1
+Lancer Park Pond	24	11/8/2013	6.9405		0	1
+Lancer Park Pond	25				0	1
+Lancer Park Pond	26				0	1
+Lancer Park Pond	27				0	1
+Lancer Park Pond	28				0	1
+Lancer Park Pond	29				0	1
+Lancer Park Pond	30				0	1
+Lancer Park Pond	31				0	1
+Lancer Park Pond	32				0	1
+Lancer Park Pond	33	10/29/2013	7.1922	11.5806	-7.1922	2.43844
+Lancer Park Pond	34				0	1
+Lancer Park Pond	35				0	1
+Lancer Park Pond	36				0	1
+Lancer Park Pond	37				0	1
+Lancer Park Pond	38	10/31/2013	7.2023	10.4654	-7.2023	2.44046
+Lancer Park Pond	39				0	1
+Lancer Park Pond	40	11/8/2013	7.079	10.6374	0	1
+Lancer Park Pond	41				0	1
+Lancer Park Pond	42				0	1
+Lancer Park Pond	43	10/29/2013	7.1908	11.6357	-7.1908	2.43816
+Lancer Park Pond	44				0	1
+Lancer Park Pond	45				0	1
+Lancer Park Pond	46	10/29/1931	7.1874	11.427	-7.1874	2.43748
+Lancer Park Pond	47	11/8/2013	7.039	10.4337	0	1
+Lancer Park Pond	48				0	1
+Lancer Park Pond	49	11/8/2013	7.0876	10.5559	0	1
+Lancer Park Pond	50				0	1
+Lancer Park Pond	51				0	1
+Lancer Park Pond	52				0	1
+Lancer Park Pond	53				0	1
+Lancer Park Pond	54				0	1
+Lancer Park Pond	55				0	1
+Lancer Park Pond	56				0	1
+Lancer Park Pond	57				0	1
+Lancer Park Pond	58	10/29/2013	7.2219	11.4871	-7.2219	2.44438
+Lancer Park Pond	59				0	1
+Lancer Park Pond	60				0	1
+Lancer Park Pond	61	10/29/2013	7.2022	11.5523	-7.2022	2.44044
+Lancer Park Pond	62	10/31/2013	7.2242	10.7023	-7.2242	2.44484
+Lancer Park Pond	63				0	1
+Lancer Park Pond	64				0	1
+Lancer Park Pond	65				0	1
+Lancer Park Pond	66				0	1
+Lancer Park Pond	67				0	1
+Lancer Park Pond	68				0	1
+Lancer Park Pond	69				0	1
+Lancer Park Pond	70				0	1
