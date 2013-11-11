@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Analysis of CPOM data for Wilcks Lake, Lancer Park Pond, Daulton Pond, and Woodland Court Pond</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>Analysis of CPOM data for Wilcks Lake, Lancer Park Pond, Daulton Pond, and Woodland Court Pond</h1>
+
+<p>This analysis was conducted for the mid-summer PRISM research talks on 4 June 2013</p>
+
+<h2>Import CPOM datasets</h2>
+
+<pre><code>
+# working directory = &quot;/Volumes/NO NAME/working_files/current_research/pond_diversity_fcn/data_analysis&quot;
+
+# Import WL and LPP data from spring data collection
+WL.LPP.CPOM &lt;- read.delim(&quot;./data/WL_LPP_OM_sp13.txt&quot;, header = T, stringsAsFactors = F, sep = &quot; &quot;)
+
+# Import DP data from summer data collection
+DP.CPOM &lt;- read.delim(&quot;./data/DP_CPOM_13May2013.txt&quot;, header = T, stringsAsFactors = F)
+
+# Import WCP data from summer data collection
+WCP.CPOM &lt;- read.delim(&quot;./data/WCP_CPOM_14May2013.txt&quot;, header = T, stringsAsFactors = F)
+
+# truncate and merge CPOM data from different lakes
+# make data frame of only lake, samp, and CPOM with all lakes
+DP.CPOM.trunk &lt;- DP.CPOM[ , c(1, 2, 3, 5, 10)]
+WCP.CPOM.trunk &lt;- WCP.CPOM[ , c(1, 2, 3, 5, 10)]
+WL.LPP.CPOM.trunk &lt;- WL.LPP.CPOM[ , c(1, 12, 2, 4, 17)]
+pond.CPOM &lt;- rbind(WL.LPP.CPOM.trunk, DP.CPOM.trunk[-1, ], WCP.CPOM.trunk[-1, ])
+
+</code></pre>
+
+<h2>Analysis of differences due to lake and site</h2>
+
+<pre><code>
+anova(lm(log10(CPOM) ~ as.factor(lake) * as.factor(samp), data = pond.CPOM))
+plot(lm(log10(CPOM) ~ as.factor(lake) * as.factor(samp), data = pond.CPOM))
+
+# without LPP
+anova(lm(log10(CPOM) ~ as.factor(lake) * as.factor(samp), data = pond.CPOM, subset = lake != &quot;LPP&quot;))
+plot(lm(log10(CPOM) ~ as.factor(lake) * as.factor(samp), data = pond.CPOM, subset = lake != &quot;LPP&quot;))
+
+</code></pre>
+
+<h3>Plots of effects</h3>
+
+<pre><code>
+# not transformed
+par(las = 1, mar = c(5, 5, 3, 3), cex.axis = 1.2, cex.lab = 1.5)
+plot(CPOM/1000 ~ as.factor(lake), data = pond.CPOM, subset = samp == &quot;open&quot;, ylim = c(0, 1.5), ylab = expression(paste(&quot;Leaf Litter Mass (kg m&quot;^{-2}, &quot;)&quot;)), xlab = &quot;Lake&quot;, col = 8)
+plot(CPOM/1000 ~ as.factor(lake), data = pond.CPOM, subset = samp == &quot;lit&quot;, add = T, col = 4, axes = F, ylab = &quot; &quot;, xlab = &quot; &quot;)
+legend(3, 1.5, c(&quot;Littoral&quot;, &quot;Open&quot;), pch = 15, col = c(4, 8), cex = 2)
+
+# not transformed w-o LPP
+par(las = 1, mar = c(5, 5, 3, 3), cex.axis = 1.2, cex.lab = 1.5)
+plot(CPOM/1000 ~ as.factor(lake), data = pond.CPOM, subset = samp == &quot;open&quot; &amp; lake != &quot;LPP&quot;, ylim = c(0, 0.3), ylab = expression(paste(&quot;CPOM Mass (kg m&quot;^{-2}, &quot;)&quot;)), xlab = &quot;Lake&quot;, col = 8)
+plot(CPOM/1000 ~ as.factor(lake), data = pond.CPOM, subset = samp == &quot;lit&quot; &amp; lake != &quot;LPP&quot;, add = T, col = 4, axes = F, ylab = &quot; &quot;, xlab = &quot; &quot;)
+
+# ln trnasformed
+par(las = 1, mar = c(5, 5, 3, 3), cex.axis = 1.5, cex.lab = 1.5)
+plot(log(CPOM) ~ as.factor(lake), data = pond.CPOM, subset = samp == &quot;open&quot;, ylim = c(0, 10), ylab = expression(paste(&quot;ln(CPOM Mass) (g m&quot;^{-2}, &quot;)&quot;)), xlab = &quot;Lake&quot;, col = 8)
+plot(log(CPOM) ~ as.factor(lake), data = pond.CPOM, subset = samp == &quot;lit&quot;, add = T, col = 4, axes = F, ylab = &quot; &quot;, xlab = &quot; &quot;)
+
+</code></pre>
+
+<h2>Analysis of differences in OM due to depth</h2>
+
+<pre><code>
+plot(CPOM ~ depth, data = DP.CPOM, subset = samp == &quot;lit&quot;, ylim = c(0, 2500), xlim = c(0, 5), pch = 16)
+points(CPOM ~ depth, data = DP.CPOM, subset = samp == &quot;open&quot;, pch = 1)
+points(CPOM ~ depth, data = WCP.CPOM, subset = samp == &quot;lit&quot;, pch = 16, col = 2)
+points(CPOM ~ depth, data = WCP.CPOM, subset = samp == &quot;open&quot;, pch = 1, col = 2)
+points(CPOM ~ depth, data = WL.LPP.CPOM, subset = lake == &quot;WL&quot; &amp; samp == &quot;lit&quot;, pch = 16, col = 3)
+points(CPOM ~ depth, data = WL.LPP.CPOM, subset = lake == &quot;WL&quot; &amp; samp == &quot;open&quot;, pch = 1, col = 3)
+points(CPOM ~ depth, data = WL.LPP.CPOM, subset = lake == &quot;LPP&quot; &amp; samp == &quot;lit&quot;, pch = 16, col = 4)
+points(CPOM ~ depth, data = WL.LPP.CPOM, subset = lake == &quot;LPP&quot; &amp; samp == &quot;open&quot;, pch = 1, col = 4)
+legend(3, 2500, c(&quot;Daulton Lk&quot;, &quot;Woodland Ct. Pond&quot;, &quot;Wilck&#39;s Lk&quot;, &quot;Lancer Pk. Pond&quot;), pch = 16, col = c(1, 2, 3, 4))
+
+plot(log(CPOM) ~ depth, data = DP.CPOM, subset = samp == &quot;lit&quot;, ylim = c(0, 10), xlim = c(0, 5), pch = 16)
+points(log(CPOM) ~ depth, data = DP.CPOM, subset = samp == &quot;open&quot;, pch = 1)
+points(log(CPOM) ~ depth, data = WCP.CPOM, subset = samp == &quot;lit&quot;, pch = 16, col = 2)
+points(log(CPOM) ~ depth, data = WCP.CPOM, subset = samp == &quot;open&quot;, pch = 1, col = 2)
+points(log(CPOM) ~ depth, data = WL.LPP.CPOM, subset = lake == &quot;WL&quot; &amp; samp == &quot;lit&quot;, pch = 16, col = 3)
+points(log(CPOM) ~ depth, data = WL.LPP.CPOM, subset = lake == &quot;WL&quot; &amp; samp == &quot;open&quot;, pch = 1, col = 3)
+points(log(CPOM) ~ depth, data = WL.LPP.CPOM, subset = lake == &quot;LPP&quot; &amp; samp == &quot;lit&quot;, pch = 16, col = 4)
+points(log(CPOM) ~ depth, data = WL.LPP.CPOM, subset = lake == &quot;LPP&quot; &amp; samp == &quot;open&quot;, pch = 1, col = 4)
+legend(3, 10, c(&quot;Daulton Lk&quot;, &quot;Woodland Ct. Pond&quot;, &quot;Wilck&#39;s Lk&quot;, &quot;Lancer Pk. Pond&quot;), pch = 16, col = c(1, 2, 3, 4))
+
+
+#analysis of lake, depth, and site effect
+
+anova(lm(log10(CPOM) ~ samp * log10(sa), data = pond.CPOM))
+
+
+</code></pre>
+
+<h2>Annalysis of differences in CPOM within DP and WCP</h2>
+
+<p>plot(CPOM/1000 ~ as.factor(site), data = DP.CPOM, subset = samp == &ldquo;lit&rdquo;, ylim = c(0, 2.5), xlab = &ldquo;Littoral Sample Site w/in Daulton Lake&rdquo;, ylab = expression(paste(&ldquo;Leaf Litter Mass (kg m&rdquo;<sup>{-2},</sup> &ldquo;)&rdquo;)), col = 4)</p>
+
+<p>plot(CPOM ~ as.factor(site), data = DP.CPOM, subset = samp == &ldquo;open&rdquo;, ylim = c(0, 30), xlab = &ldquo;Open Sample Site w/in Daulton Lake&rdquo;, ylab = expression(paste(&ldquo;Leaf Litter Mass (g m&rdquo;<sup>{-2},</sup> &ldquo;)&rdquo;)), col = 4)</p>
+
+<p>plot(CPOM/1000 ~ as.factor(site), data = WCP.CPOM, subset = samp == &ldquo;lit&rdquo;, ylim = c(0, 2.5), xlab = &ldquo;Littoral Sample Site w/in Woodland Ct. Pond&rdquo;, ylab = expression(paste(&ldquo;Leaf Litter Mass (kg m&rdquo;<sup>{-2},</sup> &ldquo;)&rdquo;)), col = 4)</p>
+
+<p>plot(CPOM ~ as.factor(site), data = WCP.CPOM, subset = samp == &ldquo;open&rdquo;, ylim = c(0, 30), xlab = &ldquo;Open Sample Site w/in Woodland Ct. Pond&rdquo;, ylab = expression(paste(&ldquo;Leaf Litter Mass (g m&rdquo;<sup>{-2},</sup> &ldquo;)&rdquo;)), col = 4)</p>
+
+</body>
+
+</html>
+
