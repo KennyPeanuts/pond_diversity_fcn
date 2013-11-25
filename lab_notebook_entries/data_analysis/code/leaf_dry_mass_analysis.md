@@ -44,9 +44,7 @@ str(leaf)
 
     leaf_mass <- leaf$bag_leaf- leaf$bag
 
-#### Plot initial curves for each pond
-
-##### Campus Pond
+#### Plot initial curves based on mass for each pond
 
 All ponds together
 
@@ -89,3 +87,84 @@ Lancer Park Pond
 
 ![Leaf mass remaining in Lancer Park Pond after 15 days](../output/plots/LPP_leaf_15days.png)
  
+#### Plot curves based on percent for each pond
+
+##### Campus Pond
+
+* initial_mass_CP = the mean of the mass of the leaf packs that were placed in the Campus Pond during deployment and then removed immediately 
+
+    initial_mass_CP <- mean(leaf_mass[leaf$days == 0 & leaf$lake == "Campus Pond"], na.rm = T)
+
+~~~~
+
+> initial_mass_CP
+[1] 4.47488
+>
+
+~~~~
+
+* perc_mass_remain_CP = the percent of the leaf mass remaining relative to `initial_mass_CP`
+
+    perc_mass_remain_CP <- (leaf_mass[leaf$lake == "Campus Pond"] / initial_mass_CP) * 100
+
+~~~~
+
+perc_mass_remain_CP
+ [1]  95.39921 101.82396  98.59482 102.63739 101.54462  83.22681  70.03540
+ [8]  78.47138  84.95647  90.32421  71.98182  64.58274  72.48686  73.40756
+[15]  77.58644  74.97184  60.05748  68.73480  74.92715  68.37725  78.48926
+[22]  69.45438  64.19613        NA  66.62078        NA        NA        NA
+[29]        NA        NA        NA        NA        NA        NA        NA
+[36]        NA        NA        NA        NA        NA        NA        NA
+[43]        NA        NA        NA        NA        NA        NA        NA
+[50]        NA        NA        NA        NA        NA        NA        NA
+[57]        NA        NA        NA        NA        NA        NA        NA
+[64]        NA        NA        NA        NA        NA        NA        NA
+>
+
+~~~~
+
+Plot of the ln percent mass remaining by days in the pond
+
+    plot(log(perc_mass_remain_CP) ~ leaf$days[leaf$lake == "Campus Pond"])
+    abline(lm(log(perc_mass_remain_CP) ~ leaf$days[leaf$lake == "Campus Pond"]))
+    text(10, 4.6, "Campus Pond")
+    dev.copy(png, "./output/plots/CP_perc_loss.png")
+    dev.off()
+
+![Percent remaining leaf mass in Campus Pond](../output/plots/CP_perc_loss.png)
+
+###### Analysis of decay constant k
+
+According to Benfield, Chapter 30 in Methods in Stream Ecology, pg 716, the slope of ln of the percent remaining by days should be linear and represent k.  
+
+    summary(lm(log(perc_mass_remain_CP) ~ leaf$days[leaf$lake == "Campus Pond"]))
+
+~~~~
+
+>     summary(lm(log(perc_mass_remain_CP) ~ leaf$days[leaf$lake == "Campus Pond"]))
+
+Call:
+lm(formula = log(perc_mass_remain_CP) ~ leaf$days[leaf$lake == 
+    "Campus Pond"])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.213327 -0.080852 -0.003174  0.070825  0.194654 
+
+Coefficients:
+                                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                            4.487757   0.034834 128.832  < 2e-16 ***
+leaf$days[leaf$lake == "Campus Pond"] -0.015212   0.003027  -5.026 4.95e-05 ***
+---
+
+Residual standard error: 0.1116 on 22 degrees of freedom
+  (46 observations deleted due to missingness)
+Multiple R-squared: 0.5345,	Adjusted R-squared: 0.5133 
+F-statistic: 25.26 on 1 and 22 DF,  p-value: 4.948e-05 
+
+>
+
+~~~~
+
+In this case the ln percent remaining still shows a curveilinear relationship.
