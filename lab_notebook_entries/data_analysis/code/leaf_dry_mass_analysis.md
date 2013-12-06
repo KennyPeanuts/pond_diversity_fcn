@@ -52,40 +52,40 @@ All ponds together
     plot(log(leaf_mass) ~ days, data = leaf, subset = lake == "Campus Pond")
     points(log(leaf_mass) ~ days, data = leaf, subset = lake == "Daulton Pond", col = 3)
     points(log(leaf_mass) ~ days, data = leaf, subset = lake == "Lancer Park Pond", col = 2)
-    dev.copy(png, "./output/plots/All_leaf_22days.png")
+    dev.copy(png, "./output/plots/All_ponds_leaf.png")
     dev.off()
 
-![Leaf mass remaining in all of the ponds after 22 days](../output/plots/All_leaf_22days.png)
+![Leaf mass remaining in all of the ponds](../output/plots/All_ponds_leaf.png)
 
 Campus Pond
    
     par(las = 1)
     plot(log(leaf_mass) ~ days, data = leaf, subset = lake == "Campus Pond")
     text(10, 1.5, "Campus Pond")
-    dev.copy(png, "./output/plots/CP_leaf_22days.png")
+    dev.copy(png, "./output/plots/CP_leaf.png")
     dev.off()
 
-![Leaf mass remaining in Campus Pond after 22 days](../output/plots/CP_leaf_22days.png)
+![Leaf mass remaining in Campus Pond](../output/plots/CP_leaf.png)
 
 Daulton Pond
 
     par(las = 1)
     plot(log(leaf_mass) ~ days, data = leaf, subset = lake == "Daulton Pond")
     text(10, 1.5, "Daulton Pond")
-    dev.copy(png, "./output/plots/DP_leaf_22days.png")
+    dev.copy(png, "./output/plots/DP_leaf.png")
     dev.off()
 
-![Leaf mass remaining in Daulton Pond after 22 days](../output/plots/DP_leaf_22days.png)
+![Leaf mass remaining in Daulton Pond ](../output/plots/DP_leaf.png)
 
 Lancer Park Pond
 
     par(las = 1)
     plot(log(leaf_mass) ~ days, data = leaf, subset = lake == "Lancer Park Pond")
     text(10, 1.5, "Lancer Park Pond")
-    dev.copy(png, "./output/plots/LPP_leaf_15days.png")
+    dev.copy(png, "./output/plots/LPP_leaf.png")
     dev.off()
 
-![Leaf mass remaining in Lancer Park Pond after 15 days](../output/plots/LPP_leaf_15days.png)
+![Leaf mass remaining in Lancer Park Pond](../output/plots/LPP_leaf.png)
  
 #### Plot curves based on percent for each pond
 
@@ -106,23 +106,6 @@ Lancer Park Pond
 * perc_mass_remain_CP = the percent of the leaf mass remaining relative to `initial_mass_CP`
 
     perc_mass_remain_CP <- (leaf_mass[leaf$lake == "Campus Pond"] / initial_mass_CP) * 100
-
-~~~~
-
-perc_mass_remain_CP
- [1]  95.39921 101.82396  98.59482 102.63739 101.54462  83.22681  70.03540
- [8]  78.47138  84.95647  90.32421  71.98182  64.58274  72.48686  73.40756
-[15]  77.58644  74.97184  60.05748  68.73480  74.92715  68.37725  78.48926
-[22]  69.45438  64.19613        NA  66.62078        NA        NA        NA
-[29]        NA        NA        NA        NA        NA        NA        NA
-[36]        NA        NA        NA        NA        NA        NA        NA
-[43]        NA        NA        NA        NA        NA        NA        NA
-[50]        NA        NA        NA        NA        NA        NA        NA
-[57]        NA        NA        NA        NA        NA        NA        NA
-[64]        NA        NA        NA        NA        NA        NA        NA
->
-
-~~~~
 
 Plot of the ln percent mass remaining by days in the pond
 
@@ -149,22 +132,77 @@ lm(formula = log(perc_mass_remain_CP) ~ leaf$days[leaf$lake ==
     "Campus Pond"])
 
 Residuals:
-      Min        1Q    Median        3Q       Max 
--0.213327 -0.080852 -0.003174  0.070825  0.194654 
+     Min       1Q   Median       3Q      Max 
+-0.23363 -0.09867 -0.01241  0.10574  0.21416 
 
 Coefficients:
                                        Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                            4.487757   0.034834 128.832  < 2e-16 ***
-leaf$days[leaf$lake == "Campus Pond"] -0.015212   0.003027  -5.026 4.95e-05 ***
+(Intercept)                            4.417037   0.035825 123.295  < 2e-16 ***
+leaf$days[leaf$lake == "Campus Pond"] -0.005874   0.001730  -3.396  0.00189 ** 
 ---
 
-Residual standard error: 0.1116 on 22 degrees of freedom
-  (46 observations deleted due to missingness)
-Multiple R-squared: 0.5345,	Adjusted R-squared: 0.5133 
-F-statistic: 25.26 on 1 and 22 DF,  p-value: 4.948e-05 
+Residual standard error: 0.1346 on 31 degrees of freedom
+  (37 observations deleted due to missingness)
+Multiple R-squared: 0.2711,	Adjusted R-squared: 0.2476 
+F-statistic: 11.53 on 1 and 31 DF,  p-value: 0.001892 
 
->
+> 
 
 ~~~~
 
-In this case the ln percent remaining still shows a curveilinear relationship.
+##### Daulton Pond
+
+* initial_mass_CP = the mean of the mass of the leaf packs that were placed in the Daulton Pond during deployment and then removed immediately 
+
+    initial_mass_DP <- mean(leaf_mass[leaf$days == 0 & leaf$lake == "Daulton Pond"], na.rm = T)
+
+~~~~
+
+> initial_mass_DP
+[1] 4.49732
+> 
+
+~~~~
+
+* perc_mass_remain_DP = the percent of the leaf mass remaining relative to `initial_mass_DP`
+
+    perc_mass_remain_DP <- (leaf_mass[leaf$lake == "Daulton Pond"] / initial_mass_DP) * 100
+
+Plot of the ln percent mass remaining by days in the pond
+
+    plot(log(perc_mass_remain_DP) ~ leaf$days[leaf$lake == "Daulton Pond"])
+    abline(lm(log(perc_mass_remain_DP) ~ leaf$days[leaf$lake == "Daulton Pond"]))
+    text(10, 4.6, "Daulton Pond")
+    dev.copy(png, "./output/plots/DP_perc_loss.png")
+    dev.off()
+
+![Percent remaining leaf mass in Daulton Pond](../output/plots/DP_perc_loss.png)
+
+##### Lancer Park Pond
+
+* initial_mass_CP = the mean of the mass of the leaf packs that were placed in the Daulton Pond during deployment and then removed immediately 
+
+    initial_mass_LPP <- mean(leaf_mass[leaf$days == 0 & leaf$lake == "Lancer Park Pond"], na.rm = T)
+
+~~~~
+
+> initial_mass_LPP
+[1] 4.33764
+> 
+
+~~~~
+
+* perc_mass_remain_LPP = the percent of the leaf mass remaining relative to `initial_mass_LPP`
+
+    perc_mass_remain_LPP <- (leaf_mass[leaf$lake == "Lancer Park Pond"] / initial_mass_LPP) * 100
+
+Plot of the ln percent mass remaining by days in the pond
+
+    plot(log(perc_mass_remain_LPP) ~ leaf$days[leaf$lake == "Lancer Park Pond"])
+    abline(lm(log(perc_mass_remain_LPP) ~ leaf$days[leaf$lake == "Lancer Park Pond"]))
+    text(10, 4.6, "Lancer Park Pond")
+    dev.copy(png, "./output/plots/LPP_perc_loss.png")
+    dev.off()
+
+![Percent remaining leaf mass in Lancer Park Pond](../output/plots/LPP_perc_loss.png)
+
