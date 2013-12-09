@@ -1,0 +1,209 @@
+FN Thomson Reuters Web of Knowledge
+VR 1.0
+PT J
+AU Downing, JA
+   Prairie, YT
+   Cole, JJ
+   Duarte, CM
+   Tranvik, LJ
+   Striegl, RG
+   McDowell, WH
+   Kortelainen, P
+   Caraco, NF
+   Melack, JM
+   Middelburg, JJ
+AF Downing, J. A.
+   Prairie, Y. T.
+   Cole, J. J.
+   Duarte, C. M.
+   Tranvik, L. J.
+   Striegl, R. G.
+   McDowell, W. H.
+   Kortelainen, P.
+   Caraco, N. F.
+   Melack, J. M.
+   Middelburg, J. J.
+TI The global abundance and size distribution of lakes, ponds, and
+   impoundments
+SO LIMNOLOGY AND OCEANOGRAPHY
+AB One of the major impediments to the integration of lentic ecosystems into global environmental analyses has been fragmentary data on the extent and size distribution of lakes, ponds, and impoundments. We use new data sources, enhanced spatial resolution, and new analytical approaches to provide new estimates of the global abundance of surface-water bodies. A global model based on the Pareto distribution shows that the global extent of natural lakes is twice as large as previously known (304 million lakes; 4.2 million km(2) in area) and is dominated in area by millions of water bodies smaller than 1 km(2). Similar analyses of impoundments based on inventories of large, engineered dams show that impounded waters cover approximately 0.26 million km(2). However, construction of low-tech farm impoundments is estimated to be between 0.1% and 6% of farm area worldwide, dependent upon precipitation, and represents > 77,000 km(2) globally, at present. Overall, about 4.6 million km(2) of the earth's continental "land" surface (> 3%) is covered by water. These analyses underscore the importance of explicitly considering lakes, ponds, and impoundments, especially small ones, in global analyses of rates and processes.
+RI McDowell, William/E-9767-2010; Tranvik, Lars/H-2222-2011; Middelburg,
+   Jack/B-4951-2011; Duarte, Carlos M./A-7670-2013; Prairie,
+   Yves/B-9108-2008
+TC 226
+Z9 231
+SN 0024-3590
+PD SEP
+PY 2006
+VL 51
+IS 5
+BP 2388
+EP 2397
+UT WOS:000240673800041
+ER
+
+PT J
+AU Vorosmarty, CJ
+   Meybeck, M
+   Fekete, B
+   Sharma, K
+   Green, P
+   Syvitski, JPM
+AF Vorosmarty, CJ
+   Meybeck, M
+   Fekete, B
+   Sharma, K
+   Green, P
+   Syvitski, JPM
+TI Anthropogenic sediment retention: major global impact from registered
+   river impoundments
+SO GLOBAL AND PLANETARY CHANGE
+AB In this paper, we develop and apply a framework for estimating the potential global-scale impact of reservoir construction on riverine sediment transport to the ocean. Using this framework, we discern a large, global-scale, and growing impact from anthropogenic impoundment. Our study links information on 633 of the world's largest reservoirs (LRs) (greater than or equal to 0.5 km(3) maximum storage capacity) to the geography of continental discharge and uses statistical inferences to assess the potential impact of the remaining >44,000 smaller reservoirs (SRs). Information on the LRs was linked to a digitized river network at 30' (latitude x longitude) spatial resolution. A residence time change (Deltatau(R)) for otherwise free-flowing river water is determined locally for each reservoir and used with a sediment retention function to predict the proportion of incident sediment flux trapped within each impoundment. The discharge-weighted mean Deltatau(R) for individual impoundments distributed across the globe is 0.21 years for LRs and 0.011 years for SRs. More than 40% of global river discharge is intercepted locally by the LRs analyzed here, and a significant proportion ( approximate to 70%) of this discharge maintains a theoretical sediment trapping efficiency in excess of 50%. Half of all discharge entering LRs shows a local sediment trapping efficiency of 80% or more. Analysis of the recent history of river impoundment reveals that between 1950 and 1968, there was tripling from 5% to 15% in global LR sediment trapping, another doubling to 30% by 1985, and stabilization thereafter. Several large basins such as the Colorado and Nile show nearly complete trapping due to large reservoir construction and flow diversion. From the standpoint of sediment retention rates, the most heavily regulated drainage basins reside in Europe. North America, Africa, and Australia/Oceania are also strongly affected by LRs. Globally, greater than 50% of basin-scale sediment flux in regulated basins is potentially trapped in artificial impoundments, with a discharge-weighted sediment trapping due to LRs of 30%, and an additional contribution of 23% from SRs. If we consider both regulated and unregulated basins, the interception of global sediment flux by all registered reservoirs (n approximate to 45,000) is conservatively placed at 4-5 Gt year(-1) or 25-30% of the total. There is an additional but unknown impact due to still smaller unregistered impoundments (n approximate to 800,000). Our results demonstrate that river impoundment should now be considered explicitly in global elemental flux studies, such as for water, sediment, carbon, and nutrients. From a global change perspective, the long-term impact of such hydraulic engineering works on the world's coastal zone appears to be significant but has yet to be fully elucidated. (C) 2003 Elsevier Science B.V. All rights reserved.
+TC 210
+Z9 220
+SN 0921-8181
+PD OCT
+PY 2003
+VL 39
+IS 1-2
+BP 169
+EP 190
+DI 10.1016/S0921-8181(03)00023-7
+UT WOS:000186115500010
+ER
+
+PT J
+AU Brinson, MM
+   Malvarez, AI
+AF Brinson, MM
+   Malvarez, AI
+TI Temperate freshwater wetlands: types, status, and threats
+SO ENVIRONMENTAL CONSERVATION
+AB This review examines the status of temperate-zone freshwater wetlands and makes projections of how changes over the 2025 time horizon might affect their biodiversity. The six geographic regions addressed are temperate areas of North America, South America, northern Europe, northern Mediterranean, temperate Russia, Mongolia, north-east China, Korea and Japan, and southern Australia and New Zealand. Information from the recent technical literature, general accounts in books, and some first-hand experience provided the basis for describing major wetland types, their status and major threats. Loss of biodiversity is a consequence both of a reduction in area and deterioration in condition. The information base for either change is highly variable geographically. Many countries lack accurate inventories, and for those with inventories, classifications differ, thus making comparisons difficult. Factors responsible for losses and degradation include diversions and damming of river flows, disconnecting floodplain wetlands from flood flows, eutrophication, contamination, grazing, harvests of plants and animals, global warming, invasions of exotics, and the practices of filling, dyking and draining. In humid regions, drainage of depressions and flats has eliminated large areas of wetlands. In arid regions, irrigated agriculture directly competes with wetlands for water. Eutrophication is widespread, which, together with effects of invasive species, reduces biotic complexity. In northern Europe and the northern Mediterranean, losses have been ongoing for hundreds of years, while losses in North America accelerated during the 1950s through to the 1970s. In contrast, areas such as China appear to be on the cusp of expanding drainage projects and building impoundments that will eliminate and degrade freshwater wetlands. Generalizations and trends gleaned from this paper should be considered only as a starting point for developing world-scale data sets. One trend is that the more industrialized countries are likely to conserve their already impacted, remaining wetlands, while nations with less industrialization are now experiencing accelerated losses, and may continue to do so for the next several decades. Another observation is that countries with both protection and restoration programmes do not necessarily enjoy a net increase in area and improvement in condition. Consequently, both reductions in the rates of wetland loss and increases in the rates of restoration are needed in tandem to achieve overall improvements in wetland area and condition.
+TC 112
+Z9 127
+SN 0376-8929
+PD JUN
+PY 2002
+VL 29
+IS 2
+BP 115
+EP 133
+DI 10.1017/S0376892902000085
+UT WOS:000178121600001
+ER
+
+PT J
+AU Batzer, DP
+   Palik, BJ
+   Buech, R
+AF Batzer, DP
+   Palik, BJ
+   Buech, R
+TI Relationships between environmental characteristics and
+   macroinvertebrate communities in seasonal woodland ponds of Minnesota
+SO JOURNAL OF THE NORTH AMERICAN BENTHOLOGICAL SOCIETY
+AB We related macroinvertebrate communities and environmental variables in 66 small seasonal woodland ponds of northern Minnesota, USA. These wetlands were relatively pristine, being embedded in 50- to 100-y-old 2(nd)-growth forests. Macroinvertebrate taxon richness in ponds increased as hydroperiods lengthened, tree canopies opened, water pH declined, and litter input decreased. Eighteen macroinvertebrate taxa were widespread (occurred in >50% of ponds), and hydrology, water chemistry, geomorphology, vegetation, occurrence of other macroinvertebrate taxa, and presence of amphibian larvae each explained some variation in relative abundance of widespread macroinvertebrates. The first 4 axes of a canonical correspondence analysis explained 37% of total variation in relative abundance of widespread macroinvertebrate taxa. Overall, however, macroinvertebrates were remarkably unresponsive to environmental variables. Most relationships between macroinvertebrates and environmental variables were nonsignificant, and the few significant relationships observed were weak (<20% of variation). We suggest that this lack of response occurs because most macroinvertebrates in seasonal woodland ponds are habitat generalists. These species routinely endure pronounced and unpredictable environmental changes; hence, they possess a durability that makes them resistant to most natural variation in habitat conditions.
+TC 51
+Z9 51
+SN 0887-3593
+PD MAR
+PY 2004
+VL 23
+IS 1
+BP 50
+EP 68
+DI 10.1899/0887-3593(2004)023<0050:RBECAM>2.0.CO;2
+UT WOS:000189183000004
+ER
+
+PT J
+AU OERTLI, B
+AF OERTLI, B
+TI LEAF-LITTER PROCESSING AND ENERGY-FLOW THROUGH MACROINVERTEBRATES IN A
+   WOODLAND POND (SWITZERLAND)
+SO OECOLOGIA
+AB Energy generated by leaf litter processing and its flow through the associated macroinvertebrate community was quantified in a pond near Geneva (Switzerland). Annual density, biomass, and production on oak (Quercus robur) leaf litter were assessed for all macroinvertebrate taxa with emphasis on predators. Empirical energetic relations provided an energy budget for the macroinvertebrate community. On 1 m(2) of pond bottom, the processing of 5641 kJ of oak leaf litter resulted in 8.5% of leachate (6 days), and after 1 year 32% of material remained; the other 59.5% was biologically (animal or microbial) converted, including 11.2% processed by shredders. The mean annual density of associated macroinvertebrates was 51374 individuals, mean biomass was 3.53 g (dry mass) and production was about 1451 kJ (or 65 g). Predator production was 170 kJ/m(2), non-chironomid primary consumer production was 101 kJ/m(2) (including 57 kJ from shredders) and chironomid primary consumer production was estimated at 1180 kJ/m(2) Predators contributed to a high proportion of total biomass (39%) but to a smaller amount of production (12%) or density (6%). In this two-stepped food-chain mainly based on detritus, the transfer coefficient between first level (detritus+primary producers) and third level (secondary consumers) was high (2-2.5%) and indicated efficient conversion of energy. This high efficiency was partly related to the reutilization of fine particulate organic matter by the collectors. The production estimate measured on leaf litter was compared with two other predominant substrates (Typha latifolia stems and Char a sp.), and exhibited the highest value. This study shows how leaf litter can constitute a direct source for high secondary production and be an efficient energy source in freshwater ecosystems. It is also demonstrated that a woodland pond can support a high macroinvertebrate production as compared with other freshwater ecosystems.
+TC 37
+Z9 41
+SN 0029-8549
+PD DEC
+PY 1993
+VL 96
+IS 4
+BP 466
+EP 477
+DI 10.1007/BF00320503
+UT WOS:A1993MU37600003
+ER
+
+PT J
+AU Moore, TR
+   Bubier, JL
+   Bledzki, L
+AF Moore, Tim R.
+   Bubier, Jill L.
+   Bledzki, Leszek
+TI Litter decomposition in temperate peatland ecosystems: The effect of
+   substrate and site
+SO ECOSYSTEMS
+AB The large accumulation of organic matter in peat-lands is primarily caused by slow rates of litter decomposition. We determined rates of decomposition of major peat-forming litters of vascular plants and mosses at five sites: a poor fen in New Hampshire and a bog hummock, a poor fen, a beaver pond margin and a beaver pond in Ontario. We used the litterbag technique, retrieving triplicate litterbags six or seven times over 3-5 years, and found that simple exponential decay and continuous-quality non-linear regression models could adequately characterize the decomposition in most cases. Within each site, the rate of decomposition at the surface was generally Typha latifolia leaves = Chamaedaphne calyculata leaves = Carex leaves > Chamaedaphne calyculata stems > hummock Sphagnum = lawn/hollow Sphagnum, with exponential decay constant (k) values generally ranging from 0.05 to 0.37 and continuous-quality model initial quality (qo) values ranging from 1.0 (arbitrarily set for Typha leaves) to 0.7 (Sphagnum). In general, surface decay rates were slowest at the bog hummock site, which had the lowest water table, and in the beaver pond, which was inundated, and fastest at the fens. The continuous-quality model site decomposition parameter (up) ranged from 0.80 to 0.17. Analysis of original litter samples for carbon, nitrogen and proximate fractions revealed a relatively poor explanation of decomposition rates, as defined by k and q(0), compared to most well-drained ecosystems. Three litters, roots of sedge and a shrub and Typha leaves, were placed at depths of 10, 30 and 60 em at the sites. Decomposition rates decreased with depth at each site, with k means of 0.15, 0.08 and 0.05 y(-1) at 10, 30 and 60 cm, respectively, and up of 0.25, 0.13 and 0.07. These differences are primarily related to the position of the water table at each site and to a lesser extent the cooler temperatures in the lower layers of the peat. The distinction between bog and fen was less important than the position of the water table. These results show that we can characterize decomposition rates of surface litter in northern peatlands, but given the large primary productivity below-ground in these ecosystems, and the differential rates of decomposition with depth, subsurface input and decomposition of organic matter is an important and relatively uncertain attribute.
+TC 31
+Z9 31
+SN 1432-9840
+PD SEP
+PY 2007
+VL 10
+IS 6
+BP 949
+EP 963
+DI 10.1007/s10021-007-9064-5
+UT WOS:000250582400007
+ER
+
+PT J
+AU Warren, PH
+   Spencer, M
+AF Warren, PH
+   Spencer, M
+TI Community and food-web responses to the manipulation of energy input and
+   disturbance in small ponds
+SO OIKOS
+AB We describe the effects on community and food web structure of an experimental manipulation of energy input and disturbance to a set of sixteen small artificial pools. Two levels of energy input (leaf litter) and disturbance (draining of pools) were established in a factorial design, and pools were inoculated at intervals with samples of invertebrates from a range of local sites. Artificial leaf litter was used to correct for differences in habitat structure caused by the energy manipulations. The experiment ran for 15 months, during which time small, but persistent, communities (8-19 taxa) established in the pools. In general, energy treatments had a greater effect on the communities than disturbance, though all effects were modest. Low energy treatments had slightly more species than high energy systems, this increase being disproportionately due to predators. Abundances and biomasses of some individual species were affected by one or other manipulation, but rarely both, and commonly neither. Some aspects of the structure of binary food webs constructed for each system were apparently affected by energy treatments, although food chains were not longer in higher energy systems. However, given the effect of energy on species number, and the non-independence of species number and various web characteristics, the significance of the effects that were observed is not clear. We briefly discuss some of the problems of methodology and interpretation associated with this and other similar studies.
+TC 29
+Z9 29
+SN 0030-1299
+PD APR
+PY 1996
+VL 75
+IS 3
+BP 407
+EP 418
+DI 10.2307/3545881
+UT WOS:A1996UX38900008
+ER
+
+PT J
+AU Waters, NM
+   San Giovanni, CR
+AF Waters, NM
+   San Giovanni, CR
+TI Distribution and diversity of benthic macro invertebrates associated
+   with aquatic macrophytes
+SO JOURNAL OF FRESHWATER ECOLOGY
+AB We examined macroinvertebrate characteristics and associations with macrophytes in a small spring-fed impoundment, Aquetong Lake in Bucks County, PA. Benthic samples obtained from the 1 in depth contour were sieved to collect, identify, and determine dry mass on macroinvertebrates, detrital material, macroalgae and macrophyte tissue.
+   Chironomids dominated along with gastropods and isopods. Chironomids were twice as abundant along the siltier nearshore bank. The sandier far shore bank supported two-fold higher taxonomic richness with macroinvertebrate mass also being 25% higher. Vascular macrophytes characterized the silty sediment, while macroalgae and allochthonous detritus predominated in sandy sediment. Results from linear and quadratic regressions suggest that macroinvertebrate mass and abundance are higher in algal-dominated sites, but higher taxonomic richness and macroinvertebrate diversity are associated with vascular macrophyte communities.
+TC 9
+Z9 9
+SN 0270-5060
+PD JUN
+PY 2002
+VL 17
+IS 2
+BP 223
+EP 232
+DI 10.1080/02705060.2002.9663890
+UT WOS:000175646300007
+ER
+
+EF

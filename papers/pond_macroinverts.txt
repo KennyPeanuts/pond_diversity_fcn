@@ -1,0 +1,151 @@
+﻿FN Thomson Reuters Web of Knowledge
+VR 1.0
+PT J
+AU Dripps, W
+   Granger, SR
+AF Dripps, Weston
+   Granger, Sunny Rae
+TI The impact of artificially impounded, residential headwater lakes on
+   downstream water temperature
+SO ENVIRONMENTAL EARTH SCIENCES
+AB In the southeastern United States, which has very few natural lakes, developers often impound headwater streams to create esthetic lakes as focal points in the residential landscape. Given the prevalence and increasing abundance of these water features, it is important to assess and quantify the spatial and temporal impacts these lakes have on headwater stream temperatures. Any changes in the downstream thermal regime may influence not only the biological functioning of a stream, but also important physical and chemical water quality characteristics. The purpose of this study was to quantify the magnitude and extent of the downstream temperature disturbance associated with three different, artificially impounded, residential headwater lakes in Greenville, South Carolina. Water temperature loggers were installed upstream, in-lake, and downstream of three surface-release residential lakes and monitored at 5-min intervals from July 2007 to April 2008. In July/August 2007, longitudinal stream temperature profiles were measured at 50-m intervals both upstream and downstream of each lake in order to assess the spatial extent of the lake's temperature disturbance. The lakes altered the downstream thermal regime at all three sites, increasing temperature by as much as 8.4 A degrees C and decreasing diurnal variability by as much as 3.9 A degrees C within the period of record. Furthermore, the longitudinal profiles of all three stream-lake systems showed no significant signs of downstream recovery to the upstream temperatures. The ecological effects of such temperature disturbances on stream biotic communities were not quantified in this study, but are likely significant. This study considered lakes only in South Carolina, but the observed changes to the downstream thermal regime are presumably similar for impounded residential headwater lakes across the US Southeast given the similar climate regime and comparable design and construction of these lakes across the region.
+TC 0
+Z9 0
+SN 1866-6280
+PD APR
+PY 2013
+VL 68
+IS 8
+BP 2399
+EP 2407
+DI 10.1007/s12665-012-1924-4
+UT WOS:000316749900026
+ER
+
+PT J
+AU Batzer, DP
+AF Batzer, Darold P.
+TI The Seemingly Intractable Ecological Responses of Invertebrates in North
+   American Wetlands: A Review
+SO WETLANDS
+AB Invertebrates play important ecological roles in wetlands, but what factors control their dynamics are poorly established. I review available research conducted in 14 areas of North America where invertebrates have received the most attention. Studies indicate that hydrology, plant factors, anthropogenic disturbance, and predation are the most important controls on wetland invertebrates, but little consensus emerged about how these factors influence invertebrate communities. Findings were often equivocal, contradictory, or inconclusive, either within or among areas. Considerable evidence indicated that wetland invertebrates are resilient, generalist organisms, and a lack of response may reflect insensitivity to environmental variation. However, numerous studies also indicated distinct responses by some invertebrates in some wetlands, although consistent patterns were often lacking. This suggests that wetland invertebrates might be very sensitive to environmental variation, but interactions can be complex and difficult to predict. Either conclusion means that generalizations about how invertebrates in wetland respond ecologically will be difficult to generate without careful study.
+TC 0
+Z9 0
+SN 0277-5212
+PD FEB
+PY 2013
+VL 33
+IS 1
+BP 1
+EP 15
+DI 10.1007/s13157-012-0360-2
+UT WOS:000314728600001
+ER
+
+PT J
+AU Fontanarrosa, MS
+   Collantes, MB
+   Bachmann, AO
+AF Fontanarrosa, M. S.
+   Collantes, M. B.
+   Bachmann, A. O.
+TI Aquatic Insect Assemblages of Man-Made Permanent Ponds, Buenos Aires
+   City, Argentina
+SO NEOTROPICAL ENTOMOLOGY
+AB Freshwater habitats are important elements within urban green space and they are endangered by various types of human activity. With the aim to increase the knowledge about species biodiversity in urban ecosystems, we characterised the assemblages of aquatic insects in four permanent man-made ponds in Buenos Aires city (Argentina) during a 1-year period. We recorded 32 species with Sigara spp. (Hemiptera) as the most abundant. The removal of aquatic vegetation from the studied ponds may have affected both the establishment and permanence of the insect community. Swimmers were the dominant group in the studied sites, followed by burrowers and sprawlers, and only a few strictly climbers were collected. Therefore, all sampled ponds were dominated by collectors (principally gatherers), secondarily by predators and only few shredders were detected, which was much affected by the removal of macrophytes. Non-parametric abundance indexes estimated a number of species very close to the observed number in each site. Conversely, the incidence indexes estimated more species because there were many more taxa present only in one sample than those represented by few individual in a sample. Our data provides some insights on the community of man-made ponds that can improve the management of these aquatic urban habitats. Considering that macrophytes affect animal assemblages due to their role as physical structures that increase the complexity or heterogeneity of habitats, they should not be removed by authorities in order to promote biodiversity.
+TC 0
+Z9 0
+SN 1519-566X
+PD FEB
+PY 2013
+VL 42
+IS 1
+BP 22
+EP 31
+DI 10.1007/s13744-012-0093-1
+UT WOS:000314275200003
+ER
+
+PT J
+AU Williams, P
+   Whitfield, M
+   Biggs, J
+   Bray, S
+   Fox, G
+   Nicolet, P
+   Sear, D
+AF Williams, P
+   Whitfield, M
+   Biggs, J
+   Bray, S
+   Fox, G
+   Nicolet, P
+   Sear, D
+TI Comparative biodiversity of rivers, streams, ditches and ponds in an
+   agricultural landscape in Southern England
+SO BIOLOGICAL CONSERVATION
+AB Information about the relative biodiversity value of different waterbody types is a vital pre-requisite for many strategic conservation goals. In practice, however, exceptionally few inter-waterbody comparisons have been made. The current study compared river, stream, ditch and pond biodiversity within an 80 kin 2 area of lowland British countryside. The results showed that although all waterbody types contributed to the diversity of macrophytes and macroinvertebrates in the region, they differed in relative value. Individual river sites were rich but relatively uniform in their species composition. Individual ponds varied considerably in species richness, with the richest sites supporting similar numbers of taxa to the best river sections, but the poorest sites amongst the most impoverished for all waterbody types. At a regional level, however, ponds contributed most to biodiversity, supporting considerably more species, more unique species and more scarce species than other waterbody types. Streams typically supported fewer species and fewer unique species at local and regional level than either ponds or rivers. Ditches (most of which were seasonal) were the least species-rich habitat, but supported uncommon species, including temporary water invertebrates not recorded in other waterbody types. Multivariate analysis indicated that permanence, depth, flow and altitude were the main environmental variables explaining invertebrate and plant assemblage composition. The findings, as a whole, suggest that ponds and other small waterbodies can contribute significantly to regional biodiversity. This contrasts markedly with their relative status in national monitoring and protection strategies, where small waterbodies are largely ignored. (C) 2003 Elsevier Ltd. All rights reserved.
+RI Sear, David/J-6333-2012
+TC 216
+Z9 224
+SN 0006-3207
+PD FEB
+PY 2004
+VL 115
+IS 2
+BP 329
+EP 341
+DI 10.1016/S0006-3207(03)00153-8
+UT WOS:000186486300013
+ER
+
+PT J
+AU Oertli, B
+   Auderset Joye, D
+   Castella, E
+   Juge, R
+   Cambin, D
+   Lachavanne, JB
+AF Oertli, B
+   Auderset Joye, D
+   Castella, E
+   Juge, R
+   Cambin, D
+   Lachavanne, JB
+TI Does size matter? The relationship between pond area and biodiversity
+SO BIOLOGICAL CONSERVATION
+AB Larger areas support more species. To test the application of this biogeographic principle to ponds, we consider the relationship between size and diversity for 80 ponds in Switzerland, using richness (number of species) and conservation value (score for all species present, according to their degree of rarity) of aquatic plants, molluscs (Gastropoda, Sphaeriidae), Coleoptera, Odonata (adults) and Amphibia. Pond size was found to be important only for Odonata and explained 31% of the variability of their species richness. Pond size showed only a feeble relationship with the species richness of all other groups, particularly the Coleoptera and Amphibia. The weakness of this relationship was also indicated by the low z-values obtained (< 0.13). The SLOSS analyses showed that a set of ponds of small size has more species and has a higher conservation value than a single large pond of the same total area. But we also show that large ponds harbour species missing in the smaller ponds. Finally, we conclude that in a global conservation policy (protection, restoration, management), all size ranges of ponds should be promoted. (C) 2002 Elsevier Science Ltd. All rights reserved.
+TC 189
+Z9 201
+SN 0006-3207
+PD MAR
+PY 2002
+VL 104
+IS 1
+BP 59
+EP 70
+DI 10.1016/S0006-3207(01)00154-9
+UT WOS:000174356200006
+ER
+
+PT J
+AU Heino, J
+AF Heino, J
+TI Lentic macroinvertebrate assemblage structure along gradients in spatial
+   heterogeneity, habitat size and water chemistry
+SO HYDROBIOLOGIA
+AB Littoral zones of small water bodies are spatially heterogeneous habitats, harbouring diverse biotic communities. Despite this apparent heterogeneity, many studies have stressed the importance of water chemistry in determining the structure of littoral macroinvertebrate assemblages. The purpose of this study was to consider the relative importance of several spatial and water chemistry variables in explaining the patterns in the structure of macroinvertebrate assemblages in 21 lentic water bodies in northeastern Finland. Water bodies were selected to represent various habitat conditions ranging from small permanent bog ponds to small forest lakes. According to canonical correspondence analysis (CCA), the most important environmental factors related to assemblage composition were water body area, moss cover, total nitrogen and water hardness. In general, species composition in small bog ponds tended to differ from that in larger lakes with forested shoreline. Total species richness was best explained by a composite variable (PCA) describing physical habitat heterogeneity, species richness being lowest in small bog lakes with simple bottom structure and low amount of aquatic plants. Species numbers in dominant functional feeding groups were related to different environmental factors. Shredder species richness was best explained by a regression model incorporating total nitrogen and the amount of organic matter, both of which were negatively related to the number of shredder species. The number of gatherer species increased with mean substratum particle size. Scraper species richness was negatively affected by the abundance of detritus and positively affected by depth, and a model including both variables explained most of the variation. Variation in the number of predatory species was best explained by a regression model including moss cover and lake area.
+RI Heino, Jani/E-6342-2010
+TC 65
+Z9 73
+SN 0018-8158
+PD JAN
+PY 2000
+VL 418
+BP 229
+EP 242
+DI 10.1023/A:1003969217686
+UT WOS:000085998100020
+ER
+
+EF

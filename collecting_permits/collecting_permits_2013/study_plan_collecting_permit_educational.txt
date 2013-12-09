@@ -1,0 +1,151 @@
+Study Plan for VA Department of Game and Inland Fisheries Scientific Collection/Research/Survey Permit
+Kenneth Fortino; Longwood Unversity
+9 September 2013
+
+This document describes the laboratory exercised that are planned as part of General Ecology (BIOL 341), Aquatic Ecology (BIOL 495) and Biodiversity and Ecosystem Function (BIOL 495) at Longwood University for the purpose of obtaining a collection permit.  The purpose of the collecting activities in the described labs is exclusively educational and to demonstrate ecological sampling methods and for the observation of living organisms.
+
+All sampling will occur as part of labs.  During the labs, sampling will be conducted with dip nets kick nets, seines, and by hand.  The only data that will be collected is the number and identity of the organisms, and all non-macroinvertebrate organisms will be released at the point of capture.  Some macroinvertebrates will be preserved in 70% ethanol for enumeration and identification in the lab.  It is impossible to estimate the number and identity of organisms that will be collected during each lab due to differences in sampling intensity, location, and conditions but the labs are designed to capture common aquatic macroinvertebrates (e.g., insect larvae, crayfish) and fish.  Examples of typical labs are appended below.
+
+Lab Examples:
+STREAM ECOLOGY LAB
+
+Objectives
+
+This laboratory will provide an introduction to lotic ecosystems, with particular emphasize on the macroinvertebrate community.  We will examine the major and microhabitats of a local stream, identifying  the insects and related organisms that we find.  We will discuss the various physical adaptations of the organisms which equip them for life in the stream and for their specific microhabitats within the stream.  We will also observe the feeding mode adaptations of the stream organisms.  Finally, we will consider environmental issues associated with water quality in streams.  
+
+
+Background
+
+Lotic is the word used to describe flowing bodies of water (rivers or streams) while lentic refers to standing waters (lakes or ponds).  Life in a lotic environment often presents challenges that are not experienced in a lentic environment.  Because the water in streams and rivers is constantly moving, organisms must have adaptations for avoiding being washed downstream or for getting back upstream if they are washed down.  Constantly moving water may also result in a fluctuating physical and chemical environment (oxygen, temperature, pH, etc.) and organisms must be adapted to tolerate these conditions.  In today’s laboratory, we will examine many of the amazing adaptations of stream macroinvertebrates (invertebrate animals that are large enough to be seen without a microscope).
+
+
+Lotic Energy Sources
+
+Two terms describe the ultimate sources of energy for stream communities.  Allochthonous (Latin - "other source") contributions originate outside the stream, e.g., leaves and bark from the surrounding vegetation.  In contrast, autochthonous ("same source") contributions originate within the stream, i.e., primary production of algae and rooted plants. Generally speaking, the principal source of energy in small woodland streams is organic matter in the form of leaves, bark, wood, and dissolved organic matter leached from leaves (allochthonous input).  Fungi, animals and bacteria in close cooperation slowly decompose this material.  Larger streams and rivers also may depend on autochthonous energy sources.  The importance of autochthonous primary productivity in streams has just recently been realized, and is under active investigation.  Rapid turnover of plant biomass is potentially sufficient to support considerable grazer biomass even when algal standing crop is small.  It is the small size of the standing crop that led many researchers to underestimate the importance of lotic primary productivity.
+
+
+ 
+Macroinvertebrate Functional Feeding Groups
+
+	Stream macroinvertebrates can be classified into functional feeding groups (also called guilds or faunal elements), based on similar fashions of exploiting resources.  Explanations of the major functional feeding groups are given below.
+
+(1) Shredders – chew and shred leaves and other coarse organic particles to obtain the fungi and bacteria which have invaded them.  The shredders digest very little of the dead leaf itself.  However, the fecal pellets of shredders provide finely ground particles that become an important food for filter-feeders downstream.
+
+(2) Collectors – collect fine and ultra-fine organic particles for food.  Three important sub-categories of collectors are the filter-feeders, the deposit-feeders, and the collector-gathers
+(a) Filter-feeders – filter from the water small suspended particles of detritus and/or small live, drifting organisms, usually with a net-like structure or comb-like “hairs.”
+(b) Deposit-feeders – live on or in the stream bottom and ingest the muddy sediments, digesting the organic particles contained in the mud and depositing the waste at a new location through defecation.
+(c) Collector-gathers -  gather (pick up and eat) small particles of food from the stream bottom.
+
+(3) Scraper-grazers – feed on algae that are scraped off of rocks and other surfaces.
+
+(4) Predators – capture and consume other organisms.
+
+Major and Microhabitats
+
+The interaction of downhill flow and materials in the channel creates a large variety of environmental conditions organized into habitats.  Major habitats include waterfalls, rapids (riffles), and calm water (runs and pools).  Within each major habitat, subtle differences in local current speed, light exposure, and sediment particle size produce several microhabitats.  The microhabitats that we will explore in today’s lab are listed below.
+
+(1) Leafpacks – masses of leaves found on the stream bottom and above obstructions like logs in the stream
+
+(2) Undercut banks or overhangs – areas where the water has undercut the stream bank, leaving exposed roots hanging down into the stream.
+
+(3) Neuston – the air/water interface (i.e., the water surface)
+
+(4) Sandy/silty stream bottom
+
+(5) Rocks
+
+ 
+Macroinvertebrates as Bioindicators of Pollution
+
+If asked to develop a means of evaluating environmental quality, most of us would probably think of various chemical and physical tests or measurements.  While it is true that direct measurement of the physical environment is a very important means of determining environmental quality, it is also possible to use the kinds of organism present in a system as an indication of that system's health.  The arthropod fauna of the stream is particularly important in this regard.  First, imagine trying to run expensive chemical tests for all known toxic substances, just to determine if any were present; it would be much more cost-effective to simply determine whether organisms sensitive to these chemicals could live in the stream!  Second, the life spans of the arthropods in the stream range between a few weeks and two years.  Therefore, arthropod composition may reflect brief but important damaging pollution episodes in the near past better than chemical analysis of water passing by.  Third, arthropods may be good indicators for the general suitability of the stream habitat for other organisms, such as fish and the associated fauna of birds and mammals.  And finally, since arthropods are an important link in the food chain, their number and diversity affects the composition of many other species in lower and higher trophic levels.
+
+
+Water Quality
+
+In natural streams, the vegetation and geology of the catchment basin affect the biological community, but human activities directly or indirectly determine the character of most streams today. Water quality of a stream may be affected by pollutants such as sediments, nutrients, and toxic chemicals which may wash off roads, lawns, cropland, etc.  These are collectively referred to as "nonpoint source" pollutants.  The other kind of pollutants, "point source,"  enter the stream at one or a few readily identified locations, such as pipes carrying effluent from industry or wastewater treatment plants. In general, the possible types of water pollution can be discussed in the following categories:
+
+ 
+(1)	sediment - suspended soil and other particles that enter streams as a result of agriculture, construction, and mining.  This is the number one nonpoint source pollutant in many parts of the country.
+
+(2)	organic wastes - organic materials that enter streams in untreated sewage or runoff from pastures and feedlots.
+
+(3)	nutrients - particularly nitrogen and phosphorus, enter streams in runoff from farms and lawns (fertilizers), in discharges from wastewater treatment plants, and naturally when plant and animal debris decomposes.
+
+(4)	toxic chemicals - materials such as pesticides or heavy metals that may be harmful to plants and animals.  These materials may enter steams in urban and rural runoff (nonpoint source) or as industrial discharges (point source).
+
+(5)	heat -  water of temperatures higher than that of streams is released back into the streams after industrial use as a coolant (point source) or after rainwater washes over parking lots (nonpoint).
+
+
+In many parts of the country, sediments from eroding soils are among the worst problems because they fill the microhabitat spaces, cover growth of attached algae and bacteria, absorb light, clog the nets or biological filters of many animals, and carry adsorbed toxic metals, pesticides, and nutrients.  Organic wastes from sewer systems, food processing plants, and animal feedlots overload streams with biological oxygen demand (BOD), while deforestation removes the base of the food web.  Aerosol nutrients, acids, metals, and other toxic chemicals gradually settle on paved surfaces and roofs, only to be flushed into streams which drain urban and suburban areas at each rainfall.
+
+ 
+The number and kinds of species of macroinvertebrates which can be collected by a standard effort provide one of the best indicators of water quality in streams.  An urban, channelized drain may support four to eight pollution-tolerant species, while a comparable collecting effort in a mountain torrent would yield 70 or more species, many of which are pollution-intolerant.  Such information is used by State and Federal agencies to assess and regulate stream water quality.
+
+Biotic Indices:
+
+Today we will use a simple biotic index developed by the Virginia Save Our Streams program (See separate handout provided). Each of the species of stream invertebrates observed at a given location is placed in one of three categories:
+
+Group One Organisms (Sensitive or Pollution Intolerant)
+These are organisms that are highly sensitive to pollution.
+
+Group Two Organisms (Somewhat Sensitive)
+These are organisms that do fairly well in both clean and polluted streams and are most abundant where there is a moderate degree of organic input.
+
+Group Three Organisms (Pollution Tolerant)
+These organisms may be found in both clean and polluted streams, but are highly tolerant of organic pollution.  They tend to be most abundant in polluted areas, probably due to the absence of competition from less tolerant organisms.
+
+ 
+The stream biotic index is calculated by tallying the number of groups of organisms belonging to each of the three classes (see survey sheet).
+
+More sophisticated diversity indices are available, but they have the disadvantages of requiring exact counts of all individuals and of requiring greater taxonomic expertise to identify all organisms to the species level (rather than the broader taxonomic groups used in our index).  
+
+Some care must be used in applying any biotic index in a comparative study.  In a given stream, riffles tend to have a higher biotic index than pools, and both of these will have higher indices than areas with a bedrock bottom.  Thus it would not make sense to compare a sample from a riffle in one stream with a sample from a bedrock bottom in another stream.  Sampling effort is also important. Once again, it would make no sense to compare riffle samples from two streams, one of which was obtained by 10 people working for an hour, the other of which was obtained by 4 people working for 10 minutes.
+
+
+
+Procedures
+
+You will be assigned to a small group that will sample a specific microhabitat.  Dip-nets and kick-screens will enable you to find and collect the organisms present.  Place the animals you find in pans for others in the class to observe; record where they were captured.  Use the drawings and field guides provided to identify these animals.  After a designated sampling time, the whole class will assemble to discuss the functional feeding groups and adaptations (body shape, leg design, gill number, size and location of other breathing structures, color or pattern) of the organisms that were found in the various microhabitats. We will also briefly discuss water quality and how to calculate a biotic index if there is time to do so.
+
+
+ 
+ECOLOGY OF PONDS AND LAKES
+
+
+Objectives
+
+	This laboratory will provide an introduction to lentic ecosystems and will serve as a comparison to last week’s laboratory on lotic ecosystems.  Several major concepts will be examined including the following: the variety of habitats found in lentic ecosystems, the dominant role of physical conditions in structuring the open-water environment, measurement of physical conditions, trophic structure, biological diversity, and plant/animal adaptations to the lentic environment. 
+
+Background
+
+Ponds and lakes are standing bodies of water which function in similar ways; the only real difference is scale (i.e., lakes are larger).  Such standing water systems, which also include bogs, swamps, and marshes, are called lentic environments.  In contrast to lotic environments (flowing water systems, such as streams), relatively little organic matter is exchanged between the pond or lake and its surrounding terrestrial environment.  While external inputs of detritus (allochthonous inputs) are very important in lower order streams, they account for a much smaller fraction of the total energy input into the pond or lake system.
+Ponds and lakes are also distinguished from stream systems by the lower rates of water renewal in lentic systems.  In lakes, complete replacement of the water can take as long as several years or even several centuries.  Moreover, while the stream has dramatic patchiness (riffles vs. pools), lentic ecosystems have a more homogeneous appearance.  Heterogeneity is present at a much more subtle level in ponds and lakes, as discussed below.
+
+
+Lentic Habitats
+
+	In preparation for this laboratory, look back at your lecture notes about lentic ecosystems and be sure to know the following habitat zones: benthic, littoral, limnetic, and profundal.  In today’s laboratory, we will focus primarily on the littoral and limnetic zones.
+
+
+Physical Conditions
+
+The properties of water are paramount in determining physical conditions within a pond or lake.  Water's high specific heat, its viscosity, and its unusual relationship of density to temperature all have profound consequences for lentic habitats and the organisms living in them.  The paragraphs below explain some details of the physical conditions that we will focus on in this laboratory.
+
+Light: The limnetic zones of lakes and ponds have strong environmental gradients from the surface toward the bottom which are caused by the attenuation of light and by the way water is mixed by wind and thermal convection.  First, let's consider the attenuation of light.  Light from the sun is blocked by the water, plankton, and suspended clay and detritus as it shines down into the depths.  The deeper we look, the less light there is.  The more turbid (cloudy) the pond, the faster light is attenuated.  Turbidity (cloudiness) may be caused by suspended clay and detritus and by plankton.
+
+Photosynthesis requires light and essentially stops at low light levels.  Therefore, the depth of light penetration determines where photosynthesis can occur.  The zone where there is enough light for photosynthesis is called the euphotic zone.  The bottom of this zone is called the euphotic depth (also called the compensation depth).  Basically, the euphotic zone is the zone where phytoplankton are found, because they can receive enough light to have net photosynthetic production (photosynthesis > respiration) and the euphotic depth is the depth of light penetration where photosynthesis = respiration.  Below the euphotic depth, respiration > photosynthesis, therefore phytoplankton can not survive here for long.  The euphotic depth is technically defined as the depth at which 1% of sunlight penetrates the water.  You could calculate this from light meter readings.  Light meters designed for aquatic systems are delicate and expensive instruments; we will not use them in this laboratory.  Instead, we will use a secchi disk as a good, inexpensive estimator of light penetration.  The euphotic depth can also be estimated as approximately twice the secchi depth (more precisely, 1.7 times the secchi depth).
+
+Temperature:  Light penetration greatly influences water temperature because the energy in sunlight is absorbed by the water and its suspended solutes.  The very top of the pond is heated most and heating decreases with increasing depth, just as does light.  When water heats up, it becomes less dense.  Due to the force of gravity, the lighter, warm water heated near the surface stays above the less heated, denser water.  This is called thermal stratification.  Wind blowing on the water creates waves and currents which may overcome thermal stratification, at least down to a certain depth below the surface.  When this happens, the water becomes homogenous in temperature and other features (except light intensity!) for the top meter or more.  This mixed layer is called the epilimnion.  Beneath the mixed layer is a zone in which temperature decreases continuously and fairly rapidly with depth, called the thermocline (or the metalimnion).  In deeper lakes there is a third zone between the thermocline and the bottom sediments called the hypolimnion.  It is beyond the heating effects of the sun and is all at a low, cool temperature. 
+ Of course, at night the sun no longer heats the water and, in fact, heat radiates back to the sky and evaporation cools the water at the surface.  As the surface water cools, it becomes a little denser than the warmer water just beneath it and it sinks, producing convective mixing.  By morning enough convective mixing may occur to produce a homogenous temperature throughout the majority of the water column in a small pond; this may not be true of a large pond or lake.  Also, you should be aware that different patterns of mixing and thermal stratification may occur in other seasons of the year, depending on the conditions and size/depth of a pond or lake (this was part of your textbook reading assignment from lecture).
+
+Oxygen:  The concentration of dissolved oxygen in aquatic ecosystems is determined by a balance among three processes:  photosynthesis (increases O2), respiration/decomposition (decreases O2), and simple physical exchange with the atmosphere (increases or decreases O2, depending on how much is initially present in the water -- remember, this is temperature-dependent with warmer water holding less O2).  Consequently, dissolved oxygen concentrations can also show stratification, with high concentrations in the euphotic zone (where most photosynthesis occurs) and a decline with depth to low concentrations near the bottom due to bacterial respiration (decomposition).  However, as with temperature, mixing events can cause zones of homogeneous dissolved oxygen concentrations.
+
+It is impossible in the course of our brief laboratory to introduce you all aspects of the factors discussed above, but I will try to cover some of the highlights and to introduce you to techniques and equipment used in measuring physical conditions.
+
+Biological Sampling
+
+In studying the organisms of aquatic communities, the biggest problem is sampling.  Many problems exist such as heterogeneity in distribution of organisms and net and sampling gear avoidance.  Vertical tow nets and water bottles (such as the Van Dorn) are used to collect plankton; gill nets, dip nets, seines, and horizontal tow nets are used to collect fish; and grab samples along transects are used to quantify aquatic plants and benthic animals.  When organisms must be sampled quantitatively, the limitations of the gear must always be understood.  We will attempt to collect some representative plankton, plants, macroinvertebrates, and fish in this laboratory and will use and/or discuss various types of equipment that can be used for biological sampling.
+
+
+
+ 
