@@ -4,6 +4,10 @@
 
 Insert date of processing here
 
+## Author
+
+Insert initials here
+
 ## Samples
 
 Insert a description of where the samples you are processing came from here

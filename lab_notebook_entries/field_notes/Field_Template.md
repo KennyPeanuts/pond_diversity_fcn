@@ -4,6 +4,10 @@
 
 Insert date of sampling here
 
+## Author
+
+Just put your initials here.
+
 ## Location
 
 Insert a description of the location here
