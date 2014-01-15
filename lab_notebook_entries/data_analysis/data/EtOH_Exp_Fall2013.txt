@@ -1,0 +1,15 @@
+type	location	cruc.num	cuc.mass	cruc.cpom	cruch.ash
+control	A	8	12.5987	13.9031	13.1756
+control	B	1	29.7358	37.2966	36.314
+control	C	1	29.7335	42.3986	47.4275
+control	C	2	26.649	42.2454	43.6598
+control	D	7	12.1948	13.5909	13.1757
+treatment	A	5	30.377	37.4566	35.0802
+treatment	A	6	31.5017	40.7146	37.8572
+treatment	A	11	11.8998	13.1853	12.6184
+treatment	A	12	11.7832	13.2503	12.6228
+treatment	B	9	11.6679	12.162	11.7246
+treatment	B	10	12.9375	13.5859	13.0727
+treatment	C	3	28.0721	42.2996	41.9715
+treatment	C	4	27.4791	51.289	51.0196
+treatment	D	2	26.6478	53.4754	52.194
