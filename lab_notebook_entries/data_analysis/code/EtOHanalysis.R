@@ -51,3 +51,29 @@ points(AFDM[etoh$Type == "Treatment"], pch = 16)
 ## Effect of Location
 plot(log10(AFDM) ~ Location, data =etoh)
 anova(lm(log10(AFDM)~Location, data= etoh))
+
+
+#Analysis of EtOH Exp
+##28 Jan 2014
+
+
+##Data Import
+    EtOH<- read.delim("./data/EtOH_Exp.txt", header= T)
+
+#Calculations copied from above
+#treatment A & B were same sample in field but we are removing it from the data because B is a duplicate of A
+EtOH <- EtOH[-11,]
+
+#calc variables
+CPOM.ek <- EtOH$dish.CPOM - EtOH$dish.mass
+ash.cruc <- EtOH$cruc.ash -EtOH$cruc.mass
+CPOM.cruc <- EtOH$cruc.sed - EtOH$cruc.mass
+CPOM <- CPOM.ek/ 0.0225
+OM.cruc <- CPOM.cruc - ash.cruc
+OM.prop <- OM.cruc/ CPOM.cruc
+AFDM <- CPOM* OM.prop
+
+#Test of Treatment effect
+
+    EtOH.effect<- lm(AFDM~ Type*Season, data= EtOH)
+    anova(EtOH.effect)
