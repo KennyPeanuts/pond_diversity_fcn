@@ -77,3 +77,25 @@ AFDM <- CPOM* OM.prop
 
     EtOH.effect<- lm(AFDM~ Type*Season, data= EtOH)
     anova(EtOH.effect)
+    logEtOH.effect<- lm(log10(AFDM[-21])~ Type[-21]*Season[-21], data= EtOH)
+    anova(logEtOH.effect)
+# Plot of Treatment effect 
+plot(0,0, type ="n", ylim = c(0, 500), xlim = c(1, 10))
+points(AFDM[EtOH$Type == "Control"], col = 1)
+points(AFDM[EtOH$Type == "Treatment"], pch = 16)
+
+## Effect of Season
+plot(log10(AFDM) ~ Season, data = EtOH)
+
+##plot of treatment effect
+  plot(AFDM ~ Type, data= EtOH)
+
+#plot of treatment effect by season
+   plot(AFDM[-21] ~ Type[-21], data= EtOH, subset= Season == "Fall")
+   plot(AFDM ~ Type, data= EtOH, subset= Season == "Summer")
+
+##plot by site
+   plot(AFDM[-21] ~ Location[-21], data= EtOH, subset= Season =="Fall")
+
+
+  
