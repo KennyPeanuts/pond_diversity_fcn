@@ -1,0 +1,47 @@
+# Calculation of variables for CPOM survey 2013		
+
+## Metadata
+
+### Collected by: 
+
+Kenneth Fortino, Leanna Tacik, Carly Martin
+
+### Collected on: 
+
+Late Winter - Summer 2013
+
+### Affiliation: 
+
+Longwood University
+
+### Location: 
+
+* Daulton Pond (DP, sometimes labeled DL)
+* Wilkes Lake (WL)
+* Lancer Park Pond (LPP)
+* Woodland Court Pond (WC)
+
+All ponds located in Farmville, VA
+
+### Description: 
+
+These data represent the compilation of all of the CPOM density data and sediment LOI data collected during the spring 2013 semester and the 2013 PRISM project.  
+
+During the late winter and spring, the samples were collected from LPP and WL in the littoral zone and open regions of the ponds. A single replicate sample was collected from 3 unique locations in each pond on each date.
+
+During the summer sampling in WL, DP, and WC, 2 replicate samples were taken from each of 3 unique locations in the littoral and open parts of the lake.  The descriptions of the sampling locations are in the field notebook.
+
+The samples were collected from each lake using an Ekman dredge and placed into a plastic bin.  Once on shore, the sediments were homogenized and a sample was collected in a 20 ml glass scintillation vial.  
+
+Created: 
+
+Modified:
+
+### Variables:
+
+
+## R Code
+
+
+## Output
+
