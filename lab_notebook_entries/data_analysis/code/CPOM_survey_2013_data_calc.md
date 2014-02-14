@@ -1,0 +1,102 @@
+# Calculation of variables for CPOM survey 2013		
+
+## Metadata
+
+### Collected by: 
+
+Kenneth Fortino, Leanna Tacik, Carly Martin
+
+### Collected on: 
+
+Late Winter - Summer 2013
+
+### Affiliation: 
+
+Longwood University
+
+### Location: 
+
+* Daulton Pond (DP, sometimes labeled DL)
+* Wilkes Lake (WL)
+* Lancer Park Pond (LPP)
+* Woodland Court Pond (WC)
+
+All ponds located in Farmville, VA
+
+### Description: 
+
+#### Sample Collection
+
+These data represent the compilation of all of the CPOM density data and sediment LOI data collected during the spring 2013 semester and the 2013 PRISM project.  
+
+During the late winter and spring, the samples were collected from LPP and WL in the littoral zone and open regions of the ponds. A single replicate sample was collected from 3 unique locations in each pond on each date.
+
+During the summer sampling in WL, DP, and WC, 2 replicate samples were taken from each of 3 unique locations in the littoral and open parts of the lake.  The descriptions of the sampling locations are in the field notebook.
+
+The samples were collected from each lake using an Ekman dredge and placed into a plastic bin.  Once on shore, the sediments were homogenized and a sample was collected in a 20 ml glass scintillation vial.  The sediments were then dried at 50 dC.
+
+The remaining sediments were then passed through a 250 um mesh in the field.  The material retained by the mesh was preserved in 70% ethanol and taken back to the lab.  
+
+The preserved material was passed through a 1 mm sieve to separate the coarse and fine fractions.  Any material retained buy the sieve (coarse) was dried at 50 dC and weighed.
+
+#### Lab Processing
+
+The AFDM of the CPOM was determined by grinding the dried leaves in a mortar and pestle and then ashing them in a crucible at 550 dC.  In some cases the entire mass of the CPOM did not fit into a crucible so only a portion of the sample was ashed and the AFDM was determined by multiplying the proportion of organic matter in the sample by the dry mass of the sample.
+ 
+The LOI of the complete sediments was determined by ashing the samples for approximately 4 h at 550 dC.
+
+### File History
+
+* Created: 12 Feb 2014 
+
+* Modified: 14 Feb 2014
+
+### Descriptive Variables:
+
+* lake is the abbreviation of the pond name
+
+    * WL = Wilke's Lake
+    * LPP = Lancer Park Pond
+    * DP = Daulton Pond
+    * WC = Woodland Court Pond
+
+* date is the date that the samples were collected
+
+* julian is the julian day of the sample collection
+
+* sa is the surface area of the lake determined by a best estimate of L X W. In ha (this needs to be confirmed)
+
+* depth is the water depth at the sampling location
+
+* location is whether the sampling location was considered littoral (< 10 m from shore) or open (near the center of the pond)
+
+* site identifies a unique sampling location in the lake.  A description of the sites are in the field notebook.
+
+* rep is the number of the replicate sample taken at each site
+
+
+### Measured Variables:
+
+* CPOM.empty is the mass of the paper bag or plastic dish that the CPOM was dried in (g)
+
+* CPOM.full is the mass of the paper bag or plastic dish plus the dried CPOM (g)
+
+* CPOM.cruc.num is the number identifying the crucible for AFDM determination (g)
+
+* CPOM.cruc.empty is the mass of the empty crucible for AFDM determination (g)
+
+* CPOM.cruc.full is the mass of the crucible plus ground leaves (g)
+
+* CPOM.cruc.ash is the mass of the crucible plus the ash, following ashing at 550 dC (g)
+
+* sed.empty is the mass of the empty crucible used for sediment LOI determination (g)
+
+* sed.full is the mass of the crucible plus the dried sediments used for LOI determination (g)
+
+* sed.cruc.ash is the mass of the crucible plus the ash, following ashing at 550 dC (g)
+
+## R Code
+
+
+## Output
+
