@@ -55,7 +55,7 @@ The LOI of the complete sediments was determined by ashing the samples for appro
 
 * lake is the abbreviation of the pond name
 
-    * WL = Wilke's Lake
+    * WL = Wilkes Lake
     * LPP = Lancer Park Pond
     * DP = Daulton Pond
     * WC = Woodland Court Pond
@@ -95,8 +95,22 @@ The LOI of the complete sediments was determined by ashing the samples for appro
 
 * sed.cruc.ash is the mass of the crucible plus the ash, following ashing at 550 dC (g)
 
+### Calculated Variables
+
+* CPOM.mass.ekman is the mass of the dried CPOM in the Ekman (g/Ekman) The Ekman = 0.0225 m^2
+
+* CPOM.mass is the dry mass of CPOM per m^2
+
 ## R Code
 
+### Import Raw Data
+
+    survey <- read.delim("./data/CPOM_survey_2013.txt", header = T, stringsAsFactors = F)
+
+### Calculate Variables
+
+    CPOM.mass.ekman <- survey$CPOM.full - survey$CPOM.empty
+    CPOM.mass <- CPOM.mass.ekman * 0.0225
 
 ## Output
 
