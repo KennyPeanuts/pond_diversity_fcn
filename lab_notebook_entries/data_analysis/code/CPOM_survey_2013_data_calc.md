@@ -101,6 +101,14 @@ The LOI of the complete sediments was determined by ashing the samples for appro
 
 * CPOM.mass is the dry mass of CPOM per m^2
 
+* CPOM.AFDM.dry is the mass of the dry CPOM in the crucible before ashing for CPOM AFDM determination (g)
+
+* CPOM.AFDM.ash is the mass of the ash remaining in the crucible following ashing for CPOM AFDM determination (g)
+
+* CPOM.propOM is the proportion of organic matter in the CPOM based on LOI
+
+* CPOM.AFDM is the ash free dry mass of the CPOM, determined as the proportion of OM in the CPOM multiplied my the mass of the CPOM / m^2 (g/m^2)
+
 ## R Code
 
 ### Import Raw Data
@@ -111,6 +119,10 @@ The LOI of the complete sediments was determined by ashing the samples for appro
 
     CPOM.mass.ekman <- survey$CPOM.full - survey$CPOM.empty
     CPOM.mass <- CPOM.mass.ekman * 0.0225
+    CPOM.AFDM.dry <- survey$CPOM.cruc.full - survey$CPOM.cruc.empty
+    CPOM.AFDM.ash <- survey$CPOM.cruc.ash - survey$CPOM.cruc.empty
+    CPOM.propOM <- (CPOM.AFDM.dry - CPOM.AFDM.ash) / CPOM.AFDM.dry
+    CPOM.AFDM <- CPOM.propOM * CPOM.mass
 
 ## Output
 
