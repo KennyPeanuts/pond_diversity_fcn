@@ -49,7 +49,7 @@ The LOI of the complete sediments was determined by ashing the samples for appro
 
 * Created: 12 Feb 2014 
 
-* Modified: 14 Feb 2014
+* Modified: 15 Feb 2014
 
 ### Descriptive Variables:
 
@@ -89,9 +89,15 @@ The LOI of the complete sediments was determined by ashing the samples for appro
 
 * CPOM.cruc.ash is the mass of the crucible plus the ash, following ashing at 550 dC (g)
 
-* sed.empty is the mass of the empty crucible used for sediment LOI determination (g)
+* sed.empty is the mass of the empty scintillation vial used for sediment dry mass determination (g)
 
-* sed.full is the mass of the crucible plus the dried sediments used for LOI determination (g)
+* sed.full is the mass of the scintillation vial plus dried sediments used for sediment dry mass determination (g)
+
+* sed.cruc.num is the number of the crucible used for the sediment LOI determination (g)
+
+* sed.cruc.empty is the mass of the empty crucible used for the sediment LOI determination (g)
+
+* sed.cruc.full is the mass of the crucible plus the dried, homogenized sediment used for the sediment LOI determination (g)
 
 * sed.cruc.ash is the mass of the crucible plus the ash, following ashing at 550 dC (g)
 
@@ -109,11 +115,17 @@ The LOI of the complete sediments was determined by ashing the samples for appro
 
 * CPOM.AFDM is the ash free dry mass of the CPOM, determined as the proportion of OM in the CPOM multiplied my the mass of the CPOM / m^2 (g/m^2)
 
+* sed.LOI.dry is the mass of the dry sediments prior to ashing (g)
+
+* sed.LOI.ash is the mass of the ash after ashing the sediments at 550 dC for approx. 4 h (g)
+
+* sed.propOM is the proportion of organic matter in the sediments based on LOI 
+
 ## R Code
 
 ### Import Raw Data
 
-    survey <- read.delim("./data/CPOM_survey_2013.txt", header = T, stringsAsFactors = F)
+    survey <- read.delim("./data/CPOM_survey_2013_raw.txt", header = T, stringsAsFactors = F)
 
 ### Calculate Variables
 
@@ -123,6 +135,17 @@ The LOI of the complete sediments was determined by ashing the samples for appro
     CPOM.AFDM.ash <- survey$CPOM.cruc.ash - survey$CPOM.cruc.empty
     CPOM.propOM <- (CPOM.AFDM.dry - CPOM.AFDM.ash) / CPOM.AFDM.dry
     CPOM.AFDM <- CPOM.propOM * CPOM.mass
+    sed.LOI.dry <- survey$sed.cruc.full - survey$sed.cruc.empty
+    sed.LOI.ash <- survey$sed.cruc.ash - survey$sed.cruc.empty
+    sed.propOM <- (sed.LOI.dry - sed.LOI.ash) / sed.LOI.dry
 
-## Output
+## Data Table Output
+
+### Make Data Frame with Calc. Variables
+
+    survey.calc <- data.frame(survey, CPOM.mass.ekman, CPOM.mass, CPOM.AFDM.dry, CPOM.AFDM.ash, CPOM.propOM, CPOM.AFDM, sed.LOI.dry, sed.LOI.ash, sed.propOM)
+
+### Make Data Table
+
+    write.table(survey.calc, file = "./data/CPOM_survey_2013_calc.txt", quote = F, row.names = F, sep = "\t")
 
