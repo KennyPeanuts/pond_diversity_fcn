@@ -64,7 +64,7 @@ The LOI of the complete sediments was determined by ashing the samples for appro
 
 * julian is the julian day of the sample collection
 
-* sa is the surface area of the lake determined by a best estimate of L X W. In ha (this needs to be confirmed)
+* sa is the surface area of the lake determined by a best estimate of L X W taken from areal photographs on Google Maps (m^2)
 
 * depth is the water depth at the sampling location
 
