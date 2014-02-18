@@ -3,22 +3,23 @@
 #Sed collected from Wilck's Lake on 11 June 2013
 #Control samp were not preserved and washed the same day, Treatment samp was preserved and washed a week later
 
-#working directory:"C:/Users/Leanna/Dropbox/pond_bgc"
+# working directory:"C:/Users/Leanna/Dropbox/pond_bgc"
 
-#import data
+# import data
 etoh <- read.delim("./data/EtOH.txt", header= T)
 
-#treatment A & B were same sample in field but we are removing it from the data because B is a duplicate of A
+# treatment A & B were same sample in field but we are removing it from the data because B is a duplicate of A
 etoh <- etoh[-11,]
 
-#calc variables
-CPOM.ek <- etoh$dish.CPOM - etoh$dish.mass
-ash.cruc <- etoh$cruc.ash -etoh$cruc.mass
-CPOM.cruc <- etoh$cruc.sed - etoh$cruc.mass
-CPOM <- CPOM.ek/ 0.0225
-OM.cruc <- CPOM.cruc - ash.cruc
-OM.prop <- OM.cruc/ CPOM.cruc
-AFDM <- CPOM* OM.prop
+# calc variables
+
+    CPOM.ek <- etoh$dish.CPOM - etoh$dish.mass
+    ash.cruc <- etoh$cruc.ash -etoh$cruc.mass
+    CPOM.cruc <- etoh$cruc.sed - etoh$cruc.mass
+    CPOM <- CPOM.ek/ 0.0225
+    OM.cruc <- CPOM.cruc - ash.cruc
+    OM.prop <- OM.cruc/ CPOM.cruc
+    AFDM <- CPOM* OM.prop
 
 #Var Names
 ##CPOM.ek = mass of dry CPOM (g) in Ekman
@@ -64,6 +65,12 @@ anova(lm(log10(AFDM)~Location, data= etoh))
 #treatment A & B were same sample in field but we are removing it from the data because B is a duplicate of A
 EtOH <- EtOH[-11,]
 
+# Adding Littoral/Open Variable
+
+    Site <- c(rep("L", 3), rep("O", 5), "L", rep("L", 3), rep("O", 5), "L", "L", "O", "O", "L", "L", "O", "O", "L")
+
+EtOH <- data.frame(EtOH, Site)
+
 #calc variables
 CPOM.ek <- EtOH$dish.CPOM - EtOH$dish.mass
 ash.cruc <- EtOH$cruc.ash -EtOH$cruc.mass
@@ -79,23 +86,33 @@ AFDM <- CPOM* OM.prop
     anova(EtOH.effect)
     logEtOH.effect<- lm(log10(AFDM[-21])~ Type[-21]*Season[-21], data= EtOH)
     anova(logEtOH.effect)
+
 # Plot of Treatment effect 
-plot(0,0, type ="n", ylim = c(0, 500), xlim = c(1, 10))
-points(AFDM[EtOH$Type == "Control"], col = 1)
-points(AFDM[EtOH$Type == "Treatment"], pch = 16)
+
+    plot(0,0, type ="n", ylim = c(0, 500), xlim = c(1, 10))
+    points(AFDM[EtOH$Type == "Control"], col = 1)
+    points(AFDM[EtOH$Type == "Treatment"], pch = 16)
 
 ## Effect of Season
-plot(log10(AFDM) ~ Season, data = EtOH)
+
+    plot(log10(AFDM) ~ Season, data = EtOH)
 
 ##plot of treatment effect
-  plot(AFDM ~ Type, data= EtOH)
+
+    plot(AFDM ~ Type, data= EtOH)
 
 #plot of treatment effect by season
-   plot(AFDM[-21] ~ Type[-21], data= EtOH, subset= Season == "Fall")
-   plot(AFDM ~ Type, data= EtOH, subset= Season == "Summer")
+
+    plot(AFDM[-21] ~ Type[-21], data= EtOH, subset= Season == "Fall")
+    plot(AFDM ~ Type, data= EtOH, subset= Season == "Summer")
 
 ##plot by site
-   plot(AFDM[-21] ~ Location[-21], data= EtOH, subset= Season =="Fall")
 
+    plot(AFDM[-21] ~ Location[-21], data= EtOH, subset= Season =="Fall")
 
+## Analysis of the EtOH experiment using a test of the specific null hypothesis of 0
+
+This code is for the reanalysis of the EtOH data to take into the fact that there were differences in the location of the samples but that there were not replicate samples taken from each location in each treatment.  This means that we cannot calculate a location by treatment interaction and that the lack of significant difference in the treatment may be due to the variation at each location.
+
+In this new approach I am going to make a new variable that is the difference between the AFDM of the 
   
