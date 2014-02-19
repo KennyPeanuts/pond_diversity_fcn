@@ -60,7 +60,9 @@ The dried leaves were weighed, homogenized with a mortar and pestle and then ash
 
 * ash_mass_AFDM = the mass of the ash following ashing at 550 dC for 4 h (g)
 
-* AFDM = the difference between the leaf_mass_AFDM and ash_mass_AFDM (g)
+* propOM = the proportion of organic matter in the sample
+
+* AFDM = the leaf dry mass multiplied buy the proportion of OM in the sample (g)
 
 ## R Code
 
@@ -73,14 +75,15 @@ The dried leaves were weighed, homogenized with a mortar and pestle and then ash
     leaf_mass <- leaf$bag_leaf - leaf$bag
     leaf_mass_AFDM <- leaf$cruc_full - leaf$cruc_empty
     ash_mass_AFDM <- leaf$cruc_ash - leaf$cruc_empty
-    AFDM <- leaf_mass_AFDM - ash_mass_AFDM
+    propOM <- (leaf_mass_AFDM - ash_mass_AFDM) / leaf_mass_AFDM
+    AFDM <- leaf_mass * propOM
 
 **These data still need to be checked for errors**
 
 ### Make Data Frame
 
-    leaf_calc <- data.frame(leaf, leaf_mass, leaf_mass_AFDM, ash_mass_AFDM, AFDM)
+    leaf_calc <- data.frame(leaf, leaf_mass, leaf_mass_AFDM, ash_mass_AFDM, propOM, AFDM)
 
 ## Output
 
-    write.table(leaf_calc, "./data/leaf_decomp_calc_2013-14.txt", row.names = F, quote = F)
+    write.table(leaf_calc, "./data/leaf_decomp_calc_2013-14.txt", row.names = F, quote = F, sep = "\t")
