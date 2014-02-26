@@ -57,7 +57,34 @@ Virginia or the region?
 
 ### Research Questions and Justification
 
-* Does the CPOM of lake sediments aid in the sequestration of inorganic nutrients in man-made ponds.
+#### Does the CPOM of lake sediments alter the sequestration and flux inorganic nutrients in man-made ponds?
 
-* How does CPOM alter the flux of nutrients in the sediments
-    a) The C:N and C:P of CPOM declines when it is incubated with inorganic nutrients (Tant et al 2013)
+* How does CPOM alter the flux of nutrients in the sediments?
+
+    * The C:N and C:P of CPOM declines when it is incubated with inorganic nutrients (Tant et al 2013)
+
+    * We have shown that leaf mass loss is slow in man-made ponds
+
+    * Thus the CPOM may be a sink for inorganic nutrients
+
+* How does CPOM alter the way that sediments respond to nutrient enrichment?
+
+    * In streams, the respiration on the CPOM increased between 122 to 303% when enriched with N+P but the FPOM only increased 52%
+
+    * Would this make sediments containing CPOM more sensitive to nutrient enrichment, relative to sediments that are mainly FPOM?
+
+### Response Variables
+
+* bacterial biomass
+
+* fungal biomass
+
+* absorbance
+
+* N & P flux
+
+* SOD
+
+* chlorophyll
+
+* C:N:P
