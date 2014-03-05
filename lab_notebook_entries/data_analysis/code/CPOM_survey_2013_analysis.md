@@ -121,7 +121,7 @@ Natural Log transformed CPOM AFDM by pond for the 2013 survey
     dev.copy(png, "./output/plots/CPOM_by_pond_Hist.png")
     dev.off()
 
-![Frequency histograms of CPOM (g AFDM / m^2) for each pond in the 2013 survey)[../output/plots/CPOM_by_pond_Hist.png]
+![Frequency histograms of CPOM (g AFDM / m^2) for each pond in the 2013 survey](../output/plots/CPOM_by_pond_Hist.png)
 
 Frequency histograms of CPOM (g AFDM / m^2) for each pond in the 2013 survey
 
@@ -163,5 +163,64 @@ The results of individual lakes suports the hypothesis that the density of CPOM 
 
 #### Comparison of the open and littoral habitats.
 
-   par(las = 1)
-   plot(CPOM.AFDM ~ as.factor(location), data = survey, col = 8)
+    tapply(survey$CPOM.AFDM, survey$location, summary)
+
+~~~~
+
+$littoral
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NAs 
+0.004917 0.022310 0.056990 0.143300 0.227400 0.597000        2 
+
+$open
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NAs 
+0.001739 0.003728 0.005484 0.014840 0.013450 0.108800       10
+
+~~~~
+
+    par(las = 1)
+    plot(CPOM.AFDM ~ as.factor(location), data = survey, col = 8, xlab = "location in pond", ylab = "CPOM Density (g AFDM/m^2)")
+    dev.copy(png, "./output/plots/CPOM_by_location.png")
+    dev.off()
+
+![CPOM Density (g AFDM/m^2) by location in the pond in the 2013 survey](../output/plots/CPOM_by_location.png)
+
+CPOM Density (g AFDM/m^2) by location in the pond in the 2013 survey
+
+    plot(log(CPOM.AFDM) ~ as.factor(location), data = survey, col = 8, xlab = "location in pond", ylab = "ln CPOM Density (g AFDM/m^2)")
+    dev.copy(png, "./output/plots/lnCPOM_by_location.png")
+    dev.off()
+
+![CPOM Density (g AFDM/m^2) by location in the pond in the 2013 survey](../output/plots/lnCPOM_by_location.png)
+
+ln CPOM Density (g AFDM/m^2) by location in the pond in the 2013 survey
+
+    par(las = 1, mfcol = c(2, 1), mar = c(5, 10, 5, 10))
+    hist(survey$CPOM.AFDM[survey$location == "littoral"], xlim = c(0, 1), col = 8, main = "Littoral", xlab = " ")
+    hist(survey$CPOM.AFDM[survey$location == "open"], xlim = c(0, 1), col = 8, main = "Open", xlab = "CPOM Density (g AFDM/m^2)")
+    dev.copy(png, "./output/plots/CPOM_by_location_hist.png")
+    dev.off()
+
+![Frequency histogram of CPOM Density (g AFDM/m^2) by location in the pond in the 2013 survey](../output/plots/CPOM_by_location_hist.png)
+
+
+Frequency histogram of CPOM Density (g AFDM/m^2) by location in the pond in the 2013 survey
+
+##### ANOVA of transformed CPOM ~ Location
+
+    location.cpom.aov <- lm(log(CPOM.AFDM) ~ as.factor(location), data = survey)
+    anova(location.cpom.aov)
+
+###### Output
+
+~~~~
+
+Analysis of Variance Table
+
+Response: log(CPOM.AFDM)
+                    Df Sum Sq Mean Sq F value    Pr(>F)    
+as.factor(location)  1 44.781  44.781      28 4.658e-06 ***
+Residuals           40 63.973   1.599
+
+~~~~
+
+The results show that there is significantly more CPOM in the littoral locations than in the open locations. However virtually all of the densities are below 100 mg AFDM / m^2
