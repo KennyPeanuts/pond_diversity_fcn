@@ -49,14 +49,14 @@ Metadata can be found at:
     dev.copy(png, "./output/plots/CPOM_Dens_Boxplot.png")
     dev.off()
 
-![Boxplot of the density of CPOM in all of the survey lakes during the 2013 survey](../output/plot/CPOM_Dens_Boxplot.png)
+![Boxplot of the density of CPOM in all of the survey lakes during the 2013 survey](../output/plots/CPOM_Dens_Boxplot.png)
 
     par(las = 1)
     hist(survey$CPOM.AFDM, breaks = 10, xlab = "CPOM Density (g AFDM/m^2)", main = " ", col = 8)
     dev.copy(png, "./output/plots/CPOM_Dens_Hist.png")
     dev.off()
 
-![Frequency histogram of the density of CPOM in all of the survey lakes during the 2013 survey](../output/plot/CPOM_Dens_Hist.png)
+![Frequency histogram of the density of CPOM in all of the survey lakes during the 2013 survey](../output/plots/CPOM_Dens_Hist.png)
 
 The data show that for all of the samples the density of CPOM is mainly under 100 mg AFDM / m^2 however there are local patches of higher CPOM with densities between 200 and 600 mg AFDM / m^2.
 
