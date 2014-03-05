@@ -49,7 +49,11 @@ The LOI of the complete sediments was determined by ashing the samples for appro
 
 * Created: 12 Feb 2014 
 
-* Modified: 15 Feb 2014
+* Modified:
+
+    * 15 Feb 2014
+    * 5 March 2014 - reanalyzed the data with new WL sediment LOI data from 14 June
+
 
 ### Descriptive Variables:
 
