@@ -22,10 +22,8 @@ Metadata can be found at:
 2) How does the density of CPOM vary among ponds?
 
 3) How does the density of CPOM vary within ponds?
-
-    * Littoral vs Open Habitats
-
-    * Within Littoral and Open Habitats
+     a. Littoral vs Open Habitats
+     b. Within Littoral and Open Habitats
 
 4) Does the density of CPOM vary with date (WL only)?
 
@@ -93,7 +91,7 @@ $WC
 
 $WL
     Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NAs 
-0.003028 0.005532 0.012520 0.074840 0.118500 0.266600       11 
+0.003028 0.005532 0.012520 0.074840 0.118500 0.266600       11
 
 ~~~~
 
@@ -109,8 +107,23 @@ $WL
 
 ![CPOM AFDM by pond for the 2013 survey](../output/plots/CPOM_by_pond.png)
 
+CPOM AFDM by pond for the 2013 survey
+
 ![Natural Log transformed CPOM AFDM by pond for the 2013 survey](../output/plots/lnCPOM_by_pond.png)
 
+Natural Log transformed CPOM AFDM by pond for the 2013 survey
+
+    par(las = 1, mfcol = c(4, 1), mar = c(5, 12, 4, 12))
+    hist(survey$CPOM.AFDM[survey$lake == "DP"], breaks = 5,  xlim = c(0, 1), col = 8, main = "DP", xlab = " ")
+    hist(survey$CPOM.AFDM[survey$lake == "LPP"], breaks = 5, xlim = c(0, 1), col = 8, main = "LPP", xlab = " ")
+    hist(survey$CPOM.AFDM[survey$lake == "WC"], breaks = 5, xlim = c(0, 1), col = 8, main = "WC", xlab = " ")
+    hist(survey$CPOM.AFDM[survey$lake == "WL"], breaks = 5, xlim = c(0, 1), col = 8, main = "WL", xlab = "CPOM Density (g AFDM/m^2)")
+    dev.copy(png, "./output/plots/CPOM_by_pond_Hist.png")
+    dev.off()
+
+![Frequency histograms of CPOM (g AFDM / m^2) for each pond in the 2013 survey)[../output/plots/CPOM_by_pond_Hist.png]
+
+Frequency histograms of CPOM (g AFDM / m^2) for each pond in the 2013 survey
 
 ##### ANOVA of transformed CPOM ~ Pond
 
@@ -143,3 +156,12 @@ WL-WC   1.0097999 -0.6155328  2.6351326 0.3537328
 ~~~~
 
 The ANOVA with ln transformation shows a significant model and Tukeys HSD shows that LPP has more CPOM than WC, otherwise the CPOM density in the ponds is not significantly different.
+
+The results of individual lakes suports the hypothesis that the density of CPOM is generally less than 0.05 - 0.1 g / m^2 with a few locations going much higher than that.
+
+#### Density of CPOM within a lake
+
+#### Comparison of the open and littoral habitats.
+
+   par(las = 1)
+   plot(CPOM.AFDM ~ as.factor(location), data = survey, col = 8)
