@@ -4,7 +4,7 @@
 
 The plan is to establish a permanent field site at North Campus for the study of atmosphere-water-land interactions.  The site will have equipment for remote data collection as well as permanent plots that will be sampled repeatedly.
 
-The plan also includes specifications for data storage and accessibility. All of the data will be publicly available and a selection of the data will be displayed in real time in campus locations.
+The plan also includes specifications for data storage and accessibility. All of the data will be publicly available and a selection of the data will be displayed in real time in campus locations (e.g., Environmental Center and the Hall TVs in Chichester).
 
 ### Remote Instrumentation 
 
@@ -13,8 +13,6 @@ The plan also includes specifications for data storage and accessibility. All of
 * Data Logger (http://www.onsetcomp.com/products/data-loggers/u30-wif) $798
 
 * Barometric Pressure (http://www.onsetcomp.com/products/sensors/s-bpb-cm50) $249
-
-* Light Intensity 
 
 * PAR (http://www.onsetcomp.com/products/sensors/s-lia-m003) $220
         
@@ -40,21 +38,22 @@ The plan also includes specifications for data storage and accessibility. All of
 
 #### Stream Sampling
 
-YSI can likely make a sonde that will do all we need in terms of chemistry
+YSI can likely make a sonde that will do all we need in terms of chemistry (temp, DO, Turbidity, etc...)
 
-* http://www.ysi.com/applicationsdetail.php?Surface-Water-5
+* YSI sonde (http://www.ysi.com/applicationsdetail.php?Surface-Water-5)
 
 *  Water Level (http://www.onsetcomp.com/products/data-loggers/u20-001-01) $495
 
-*  Water Temperature $200 (This is for a hobo system)
+*  Water Temperature $200 (This is for a hobo system with no wifi)
     
-*  Dissolved Oxygen
 
 #### Land Sampling
 
-* Wildlife Cameras
+* Wildlife Cameras (http://www.pixcontroller.com/Raptor/PixControllerRaptor-WiFi-GPS.htm) $1250
 
-* Frog/Bird Recorders
+* Frog/Bird Recorders (http://www.frogloggers.com/Order%20Frogloggers%20Page%201.htm) $649
+
+* Bat Recorders
 
 ### Scheduled Sampling
 
@@ -65,6 +64,10 @@ This is not remotely collected data but sheduled data collection that will be re
 * Plant Phenology
 
 * NPP
+
+* Pit Fall Traps
+
+* Sand Pads for Mammal Tracks
 
 #### Stream
 
