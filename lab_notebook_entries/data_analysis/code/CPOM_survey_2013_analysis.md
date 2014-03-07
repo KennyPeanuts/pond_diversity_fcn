@@ -224,3 +224,149 @@ Residuals           40 63.973   1.599
 ~~~~
 
 The results show that there is significantly more CPOM in the littoral locations than in the open locations. However virtually all of the densities are below 100 mg AFDM / m^2
+
+
+#### Relationship between CPOM and sediment %OM
+
+##### Variation in %OM 
+
+    summary(survey$sed.propOM)
+
+~~~~
+
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max.      NAs 
+ 0.007268  0.080530  0.106700  0.103200  0.127700  0.223000 13.000000
+
+~~~~
+
+   par(las = 1)
+   boxplot(survey$sed.propOM * 100, col = 8, ylab = "Percent Organic Matter (LOI 550)")
+   dev.copy(png, "./output/plots/percOM_boxplot.png")
+   dev.off()
+
+![Percent sediment organic matter (LOI 550) in 2013 survey ponds](../output/plots/percOM_boxplot.png)
+
+Percent sediment organic matter (LOI 550) in 2013 survey ponds
+
+   par(las = 1)
+   hist(survey$sed.propOM * 100, col = 8, breaks = 10)
+   dev.copy(png, "./output/plots/percOM_hist.png")
+   dev.off()
+
+![Frequency histogram percent sediment organic matter (LOI 550) in 2013 survey ponds](../output/plots/percOM_hist.png)
+
+Frequency histogram percent sediment organic matter (LOI 550) in 2013 survey ponds
+
+Overall the sediment organic matter ranges from between 8 and 13% but there is a cluster of samples with <5% organic matter and a cluster of samples with >20% organic matter.  It is likely that the low percent organic matter samples, are those that were very sandy.
+
+##### Variation in percent OM by lake
+
+    tapply(survey$sed.propOM * 100, survey$lake, summary)
+
+~~~~
+
+$DP
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NAs 
+  2.363  10.800  20.710  15.830  21.230  22.300   6.000 
+
+$LPP
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  11.12   11.58   12.38   12.72   13.50   15.27 
+
+$WC
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  10.08   10.74   11.60   12.26   13.05   17.73 
+
+$WL
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NAs 
+ 0.7268  2.4520  8.0530  6.1660  8.8560 10.1700  7.0000 
+
+
+~~~~
+
+    par(las = 1)
+    plot((sed.propOM * 100) ~ as.factor(lake), data = survey, col = 8, xlab = "Pond", ylab = "Percent Sediment Organic Matter (LOI 550)")
+    dev.copy(png, "./output/plots/percOM_by_lake.png")
+    dev.off()
+
+![Percent sediement organic matter (LOI 550) in the different ponds in 2013 survey](../output/plots/percOM_by_lake.png)
+
+Percent sediement organic matter (LOI 550) in the different ponds in 2013 survey
+
+    par(las = 1, mfcol = c(4, 1), mar = c(5, 10, 5, 10))
+    hist(survey$sed.propOM[survey$lake == "DP"] * 100, breaks = 10, col = 8, xlim = c(0, 25), xlab = " ", main = "DP")
+    hist(survey$sed.propOM[survey$lake == "LPP"] * 100, breaks = 10, col = 8, xlim = c(0, 25), xlab = " ", main = "LPP")
+    hist(survey$sed.propOM[survey$lake == "WC"] * 100, breaks = 10, col = 8, xlim = c(0, 25), xlab = " ", main = "WC")
+    hist(survey$sed.propOM[survey$lake == "WL"] * 100, breaks = 10, col = 8, xlim = c(0, 25), xlab = "Percent Sediment Organic Matter (LOI 550)", main = "WL")
+    dev.copy(png, "./output/plots/percOM_by_lake_hist.png")
+    dev.off()
+
+![Frequency histogram of percent sediement organic matter (LOI 550) in the different ponds in 2013 survey](../output/plots/percOM_by_lake_hist.png)
+
+Frequency histogram of percent sediement organic matter (LOI 550) in the different ponds in 2013 survey
+
+There are differences in the way that sediment OM is distributed among the lakes.  The two catch-basin lakes (LPP and WC) have the most homogeneous sediment organic matter with virtually all samples falling between 10 and 15% sediment OM.  WL has the lowest sediment OM with virtually all samples falling below 10%.  DP shows a bimodal distribution with a 2 samples under 10% and 4 samples over 20%, so overall DP has the greatest sediment OM.
+
+##### Variation in Perc. OM by location
+
+    tapply(survey$sed.propOM * 100, survey$location, summary)
+
+~~~~
+
+$littoral
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NAs 
+ 0.7268  3.3920 10.6700  9.3270 12.8600 17.7300  7.0000 
+
+$open
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NAs 
+  1.536   8.188  10.390  11.030  11.900  22.300   6.000 
+
+~~~~
+
+    par(las = 1)
+    plot(sed.propOM * 100 ~ as.factor(location), data = survey, col = 8)
+    dev.copy(png, "./output/plots/percOM_by_location.png")
+    dev.off()
+
+![Percent sediement organic matter (LOI 550) in open and littoral regions in 2013 survey](../output/plots/percOM_by_location.png)
+
+Percent sediement organic matter (LOI 550) in open and littoral regions in 2013 survey
+
+    par(las = 1, mfcol = c(2, 1), mar = c(5, 10, 5, 10))
+    hist(survey$sed.propOM[survey$location == "littoral"] * 100, breaks = 10, xlim = c(0, 25), col = 8, main = "Littoral", xlab = " ")
+    hist(survey$sed.propOM[survey$location == "open"] * 100, breaks = 10,  xlim = c(0, 25), col = 8, main = "Open", xlab = "Sediment Percent Organic Matter (LOI 550)")
+    dev.copy(png, "./output/plots/percOM_by_location_hist.png")
+    dev.off()
+
+![Frequency histogram of percent sediement organic matter (LOI 550) in open and littoral regions in 2013 survey](../output/plots/percOM_by_location <- hist.png)
+
+Frequency histogram of percent sediement organic matter (LOI 550) in open and littoral regions in 2013 survey
+
+Overall there is not a big difference between the littoral and open locations the cluster of high sediment OM in DP is from the open habitat. There were samples with low percent OM from both the littoral and open habitats.
+
+##### Relationship between CPOM and sediment percent OM
+
+    par(las = 1)
+    plot((sed.propOM * 100) ~ CPOM.AFDM, data = survey, subset = location == "littoral",  xlim = c(0, 1), ylim = c(0, 25), pch = 16, ylab = "Percent Sediment Organic Matter (LOI 550)", xlab = "CPOM Density (g AFDM/m^2)")
+    points((sed.propOM * 100) ~ CPOM.AFDM, data = survey, subset = location == "open")
+    legend(0.6, 25, c("littoral", "open"), pch = c(16, 1))
+    dev.copy(png, "./output/plots/percOM_by_CPOM.png")
+    dev.off()
+
+![Percent sediement organic matter (LOI 550) plotted against CPOM (g AFDM/m^2) in open and littoral regions in 2013 survey](../output/plots/percOM_by_CPOM.png)
+
+_Percent sediement organic matter (LOI 550) plotted against CPOM (g AFDM/m^2) in open and littoral regions in 2013 survey_
+
+    par(las = 1)
+    plot((sed.propOM * 100) ~ log(CPOM.AFDM), data = survey, subset = location == "littoral",  xlim = c(-7, 0), ylim = c(0, 25), pch = 16, ylab = "Percent Sediment Organic Matter (LOI 550)", xlab = "ln CPOM Density (g AFDM/m^2)")
+    points((sed.propOM * 100) ~ log(CPOM.AFDM), data = survey, subset = location == "open")
+    legend(-3, 25, c("littoral", "open"), pch = c(16, 1))
+    dev.copy(png, "./output/plots/percOM_by_lnCPOM.png")
+    dev.off()
+
+![Percent sediement organic matter (LOI 550) plotted against CPOM (g AFDM/m^2) in open and littoral regions in 2013 survey](../output/plots/percOM_by_lnCPOM.png)
+
+_Percent sediement organic matter (LOI 550) plotted against ln transformed CPOM (ln g AFDM/m^2) in open and littoral regions in 2013 survey_
+
+
+There is no relationship between CPOM Density and sediment organic matter content.
