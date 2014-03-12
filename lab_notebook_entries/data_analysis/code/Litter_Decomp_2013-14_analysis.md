@@ -187,3 +187,4 @@ F-statistic: 13.29 on 1 and 12 DF,  p-value: 0.003358
 ![Percent leaf pack mass remining in Lancer Park Pond by days in the pond](../output/plots/lnLPP_decomp_mass_remain.png)
 
 _Natural log of proportion of leaf pack mass remining in Lancer Park Pond by days in the pond. Line is the best fit model._
+

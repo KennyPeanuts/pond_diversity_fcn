@@ -57,21 +57,66 @@ Virginia or the region?
 
 ### Research Questions and Justification
 
-#### Does the CPOM of lake sediments alter the sequestration and flux inorganic nutrients in man-made ponds?
+#### Goal
 
-* How does CPOM alter the flux of nutrients in the sediments?
+Understand the way in which man-made ponds contribute to the processing of watershed organic matter and nutrients.
 
-    * The C:N and C:P of CPOM declines when it is incubated with inorganic nutrients (Tant et al 2013)
+#### Research Questions
 
-    * We have shown that leaf mass loss is slow in man-made ponds
+1. How does the input of terrestrial detritus affect the nutrient retention or release from the sediments of man-made ponds?
 
-    * Thus the CPOM may be a sink for inorganic nutrients
+2. How does the input of terrestrial detritus alter the sensitivity of pond metabolism to nutrient enrichment?
 
-* How does CPOM alter the way that sediments respond to nutrient enrichment?
 
-    * In streams, the respiration on the CPOM increased between 122 to 303% when enriched with N+P but the FPOM only increased 52%
+#### Objectives and Hypotheses
 
-    * Would this make sediments containing CPOM more sensitive to nutrient enrichment, relative to sediments that are mainly FPOM?
+1. Quantify the effect of CPOM on the flux of nutrients across the sediment water interface.
+
+    * H1: CPOM will result in an increase in N and P flux into the sediments.
+
+    * H2: CPOM will result in an increase in DOC flux out of the sediments.
+
+    * H3: CPOM will result in an increase in SOD. 
+
+2. Quantify how CPOM alters heterotrophic microbial biomass.
+
+    * H1: CPOM will increase water column bacterial abundance.
+
+    * H2: CPOM will increase sediment bacterial biomass.
+ 
+    * H3: CPOM will increase sediment fungal biomass.
+
+3. Quantify how CPOM alters the response of sediment metabolism to nutrient enrichment.
+
+    * H1: CPOM will increase SOD when the sediments are enriched with N and P.
+
+
+### Experimental Design
+
+##### Treatments
+
+|         | Ambient Nutrient | N + P Addition |
+|---------+------------------+----------------|
+| No CPOM |                5 | 5              |
+| CPOM    |                5 | 5              |
+
+
+
+* pond sediments - CPOM = sediments passed through a 250um mesh to remove all CPOM and macroinvertebrates
+
+* pond sediments + CPOM 0.5 mg CPOM/jar = 0.16 g/m^2
+
+* N + P addition = 2X ambient N & P
+
+
+##### Response 
+
+* N & P flux
+
+* SOD
+ 
+* absorbance
+
 
 ### Response Variables
 
@@ -88,3 +133,16 @@ Virginia or the region?
 * chlorophyll
 
 * C:N:P
+
+
+1. How does CPOM alter the flux of nutrients in the sediments?
+
+    * The C:N and C:P of CPOM declines when it is incubated with inorganic nutrients (Tant et al 2013)
+
+    * Thus the CPOM may be a sink for inorganic nutrients
+
+2. How does CPOM alter the way that sediments respond to nutrient enrichment?
+
+    * In streams, the respiration on the CPOM increased between 122 to 303% when enriched with N+P but the FPOM only increased 52%
+
+    * Would this make sediment metabolism containing CPOM more sensitive to nutrient enrichment, relative to sediments that are mainly FPOM?

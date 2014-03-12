@@ -1,0 +1,25 @@
+# Abstracts on Nutrient Flux from Lake Sediments
+
+doi:10.2134/jeq1996.00472425002500020022x
+Resuspension and Diffusive Flux of Nitrogen and Phosphorus in a Hypereutrophic Lake
+K. R. Reddy *, M. M. Fisher and D. Ivanoff
+Journal of Environmental Quality Vol. 25 No. 2, p. 363-371
+Abstract
+Bottom sediments in shallow lakes can play a major role in releasing nutrients to the overlying water column during wind induced sediment resuspension or by constant flux due to diffusion. Internal nutrient loads due to these processes may be equal to or higher than external loads. Laboratory and field experiments were conducted on Lake Apopka, a shallow, hypereutrophic subtropical lake located in central Florida. Ammonium (NH+4) and soluble reactive P (SRP) flux during sediment resuspension were measured under laboratory conditions using intact sediment cores. Ammonium N and SRP flux due soley to diffusion were assessed using in situ porewater concentrations. Average diffusive flux from sediment to the overlying water was estimated to be 25 mg NH4-N m−2 d−1 and 1 mg P m−1 d−2. Resuspension fluxes of NH+4 and SRP were higher than diffusive flux. Soluble reactive P profiles of porewater showed distinct profile differentiation, with the surface 0 to 8 cm sediment depth acting as a P-depletion zone, and the underlying sediment displaying steep gradients in porewater SRP. These results suggest that dissolved NH+4 and SRP transport from the surface 8 cm of sediment was due to sediment resuspension, while below this depth, upward mobility of NH+4 and SRP was regulated by diffusion. Although dissolved N and P flux is upwards (from sediment to water column), during extended periods (annual cycle) the lake is functioning as a net sink for N and P by transforming inorganic pools of nutrients into organic forms and depositing them on the sediment surface.
+
+Aquatic Sciences
+July 2012, Volume 74, Issue 3, pp 611-617
+Low boundary layer response and temperature dependence of nitrogen and phosphorus releases from oxic sediments of an oligotrophic lake
+J. L. Anthony, W. M. Lewis Jr.
+Abstract
+The effects of temperature, diffusive boundary-layer thickness, and sediment composition on fluxes of inorganic N and P were estimated for sediment cores with oxidized surfaces from nearshore waters (2–10 m) of a montane oligotrophic lake. Fluxes of N and P were not affected by diffusive boundary-layer thickness but were strongly affected by temperature. Below 16 °C, sediments sequestered small amounts of P and released small amounts of N. Above 16 °C, the seasonal maximum water temperature, sediments were substantial sources of N (NH4 +–N = 2–24 mg m−2 d−1; NO3 − + NO2 −–N = 2–5 mg m−2 d−1) and P (0.1–0.4 mg m−2 d−1), indicating potential responsiveness of sediment–water nutrient exchange, and of corresponding phytoplankton growth, to synoptic warming.
+
+DOI:10.1080/02772240500132216
+Effect of diffusion and resuspension on nutrient release from submerged sediments
+I. R Phillips Prof. Dr., E. D Burton & D. W Hawker 
+Toxicological & Environmental Chemistry
+Volume 87, Issue 3, 2005
+Abstract
+Nutrient release from a coarse-sand (CS) and a fine-sand (FS) estuarine sediment into the overlying water column was studied under static (diffusion-controlled) and dynamic (resuspension) conditions. Resuspension increased the amounts of NH4 and NO3.
+and P released from the sediment cores compared to those released by diffusion alone due to direct release of these nutrients from the readily available pore-water and ion exchange fractions. The average effective NH4 and NO3 and P diffusion coefficients (D e) were found to be similar for both sediments, and did not vary significantly between static and dynamic conditions. Values of D e were typically of the order of 10−5 to 10−6 cm2 s−1. The average daily NH4 and NO3 and P diffusive flux density from CS and FS into the overlying water column of the study area was estimated to be 24.6, 0.02 and 0.39 mg m−2 d−1, and 66.9, 0.017 and 0.002 mg m−2 d−1, respectively. These fluxes suggest that nutrient release from the sediments via diffusion and small-scale resuspension events may represent only a minor source of NH4 and NO3 and P to the water column of the study area.
+
