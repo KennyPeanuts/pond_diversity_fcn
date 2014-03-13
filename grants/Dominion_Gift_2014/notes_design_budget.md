@@ -36,7 +36,7 @@ The plan also includes specifications for data storage and accessibility. All of
 
 * Tripod $300
 
-#### Stream Sampling
+#### Stream and Pond Sampling
 
 YSI can likely make a sonde that will do all we need in terms of chemistry (temp, DO, Turbidity, etc...)
 
@@ -68,6 +68,18 @@ This is not remotely collected data but sheduled data collection that will be re
 * Pit Fall Traps
 
 * Sand Pads for Mammal Tracks
+
+##### Ground Water
+
+* Lysimeters (http://www.soilmeasurement.com/lysimeter.html) (call for price 520-742-4471)
+
+* Lysimeter Vacuum Pump (http://www.soilmeasurement.com/vacpump.html) (call for price 520-742-4471)
+
+* Tensiometer (http://www.specmeters.com/soil-and-water/soil-moisture/tensiometers/tensiom
+eters/) $600
+
+* pressure transducer (http://www.specmeters.com/soil-and-water/soil-moisture/soil-moisture-sensor
+s/soil-moisture-transducer-3669/) $1530
 
 #### Stream
 
