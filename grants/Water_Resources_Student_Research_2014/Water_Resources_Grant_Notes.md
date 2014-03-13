@@ -93,12 +93,12 @@ Understand the way in which man-made ponds contribute to the processing of water
 
 ### Experimental Design
 
-##### Treatments
+#### Treatments
 
 |         | Ambient Nutrient | N + P Addition |
-|---------+------------------+----------------|
-| No CPOM |                5 | 5              |
-| CPOM    |                5 | 5              |
+| :------ | :--------------: | :------------: |
+| No CPOM |                5 |              5 |
+| CPOM    |                5 |              5 |
 
 
 
@@ -109,7 +109,7 @@ Understand the way in which man-made ponds contribute to the processing of water
 * N + P addition = 2X ambient N & P
 
 
-##### Response 
+#### Response 
 
 * N & P flux
 
@@ -117,32 +117,39 @@ Understand the way in which man-made ponds contribute to the processing of water
  
 * absorbance
 
-
-### Response Variables
-
 * bacterial biomass
 
 * fungal biomass
 
-* absorbance
 
-* N & P flux
+#### Methods Description
 
-* SOD
+##### Set Up
 
-* chlorophyll
+* Sediment samples will be collected from a local man-made pond.  The sediments will be passed through a 250&mu; mesh to remove CPOM and macroinvertebrates.
 
-* C:N:P
+* Approximately 4 cm sediments will then be placed into 300 ml septum topped glass jars and the remaining volume will be filled with pond water collected at the same time as the sediments.
 
+* CPOM treatments will be created by adding 0.5 mg dry mass of tulip poplar leaf disks to the surface of the sediments from tulip poplar leaved collected immediately after senescence, air dried, and then conditioned for 24 hours in pond water.
 
-1. How does CPOM alter the flux of nutrients in the sediments?
+* Elevated nutrient treatments will be created by adding NO3 and PO4 at 2X the concentration measured in the overlying water at the initiation of the experiment.
 
-    * The C:N and C:P of CPOM declines when it is incubated with inorganic nutrients (Tant et al 2013)
+##### Sampling
 
-    * Thus the CPOM may be a sink for inorganic nutrients
+* The jars will be incubated in darkness at room temperature.
 
-2. How does CPOM alter the way that sediments respond to nutrient enrichment?
+* Every 24 hours for 1 week each jar will be sampled:
 
-    * In streams, the respiration on the CPOM increased between 122 to 303% when enriched with N+P but the FPOM only increased 52%
+     * 25 ml of water will be removed and filtered through GFF and frozen to measure the nutrient concentration
 
-    * Would this make sediment metabolism containing CPOM more sensitive to nutrient enrichment, relative to sediments that are mainly FPOM?
+     * 1 ml of water will be removed and filtered through a GFF and the absorbance will be measured on a nanopore spec.
+
+     * 5 ml of water will be removed and filtered onto a black membrane filter and stained with DAPI for bacterial counts with epiflorescence.
+
+     * SOD will be measured by refilling the jars with pond water and sealing them without air.
+ 
+        * 15 ml samples will be taken after 1, 3, and 6h of dark incubation without introducing air into the jars.
+ 
+        * the oxygen content of the sample will be determined with Winkler Titration.
+
+* At the conclusion of the experiment, the fungal biomass on the CPOM will be determined using ergosterol extraction.
