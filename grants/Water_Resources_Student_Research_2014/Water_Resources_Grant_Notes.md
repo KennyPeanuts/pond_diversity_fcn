@@ -93,16 +93,13 @@ Understand the way in which man-made ponds contribute to the processing of water
 
 ### Experimental Design
 
-#### Treatments
-
 |         | Ambient Nutrient | N + P Addition |
 | :------ | :--------------: | :------------: |
 | No CPOM |                5 |              5 |
 | CPOM    |                5 |              5 |
 
 
-
-* pond sediments - CPOM = sediments passed through a 250um mesh to remove all CPOM and macroinvertebrates
+* pond sediments - CPOM = sediments passed through a 250um mesh to remove all CPOM and macroinvertebrates.  Also an equivilent amount of sediment to equal the OM added from the CPOM will be added.
 
 * pond sediments + CPOM 0.5 mg CPOM/jar = 0.16 g/m^2
 
@@ -119,7 +116,28 @@ Understand the way in which man-made ponds contribute to the processing of water
 
 * bacterial biomass
 
-* fungal biomass
+* fungal biomass (Ergosterol)
+
+
+#### Sample Calculations
+
+* CPOM levels = 2
+
+* Nutrients levels = 2 
+
+* Replicates/level = 5
+
+* Weeks = 6
+
+* Nutrient/Abs/Bacteria Samples = [Samples/Week1 = 5 + ((Samples/Weeks 2:6 = 1) * 5 Weeks) = 5] = 10
+
+* Ergosterol/AFDM Samples = 1
+
+* Jars needed = 2 CPOM * 2 Nutrients * 5 Replicates = 20
+
+* Total Nutrient/Abs/Bacteria Samples = 20 Jars * 10 Samples = 200 
+
+* Total Ergosterol Samples = 20 Jars * 1 Sample = 20
 
 
 #### Methods Description
@@ -136,9 +154,10 @@ Understand the way in which man-made ponds contribute to the processing of water
 
 ##### Sampling
 
-* The jars will be incubated in darkness at room temperature.
+* The jars will be incubated in darkness at room temperature for a total of 6 weeks.
 
-* Every 24 hours for 1 week each jar will be sampled:
+
+* For the first week each jar will be sampled every 24 hours:
 
      * 25 ml of water will be removed and filtered through GFF and frozen to measure the nutrient concentration
 
@@ -152,4 +171,36 @@ Understand the way in which man-made ponds contribute to the processing of water
  
         * the oxygen content of the sample will be determined with Winkler Titration.
 
+* For the remaining 5 weeks, each jar will be sampled once a week.
+
 * At the conclusion of the experiment, the fungal biomass on the CPOM will be determined using ergosterol extraction.
+
+> Ergosterol was extracted by following a method slightly modified from that of
+Newell et al. (17). Leaf disks were refluxed for 30 min in alcoholic KOH (25 ml
+of methanol plus 5 ml of 4% KOH in 95% methanol) at 80dC for 30 min. Leaf
+disks were removed, and the extract was transferred to tubes. Water (10 ml) and
+pentane (10 ml) were added, and the tubes were inverted for 3 min on a mixer
+(Rotamix; 20 rpm). The pentane fraction plus two successive 5-ml aliquots of
+pentane mixed in the same manner were then evaporated to dryness under a
+stream of N2 at 30dC, and the residue was dissolved in 1.0 ml of methanol. The
+solution was filtered (0.45-um pore size; Acrodisc) and injected into a high-
+pressure liquid chromatograph (HPLC; Shimadzu) with an RP-10 column. (Suberkropp and Weyers 1996)
+
+### Budget
+
+* Nutrient samples
+
+* Ergosterol samples 
+
+* Digital buret
+
+* DAPI
+
+* Black Filters
+
+* Filter towers/flasks
+
+* Counter (Bacteria)
+
+* Nutrients (N + P)
+
