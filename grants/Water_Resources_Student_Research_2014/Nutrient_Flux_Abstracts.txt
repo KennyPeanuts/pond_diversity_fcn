@@ -23,3 +23,26 @@ Abstract
 Nutrient release from a coarse-sand (CS) and a fine-sand (FS) estuarine sediment into the overlying water column was studied under static (diffusion-controlled) and dynamic (resuspension) conditions. Resuspension increased the amounts of NH4 and NO3.
 and P released from the sediment cores compared to those released by diffusion alone due to direct release of these nutrients from the readily available pore-water and ion exchange fractions. The average effective NH4 and NO3 and P diffusion coefficients (D e) were found to be similar for both sediments, and did not vary significantly between static and dynamic conditions. Values of D e were typically of the order of 10−5 to 10−6 cm2 s−1. The average daily NH4 and NO3 and P diffusive flux density from CS and FS into the overlying water column of the study area was estimated to be 24.6, 0.02 and 0.39 mg m−2 d−1, and 66.9, 0.017 and 0.002 mg m−2 d−1, respectively. These fluxes suggest that nutrient release from the sediments via diffusion and small-scale resuspension events may represent only a minor source of NH4 and NO3 and P to the water column of the study area.
 
+
+DOI:10.1080/10643389109388425
+Sediment and nutrient retention by freshwater wetlands: Effects on surface water quality
+Carol A. Johnston
+Critical Reviews in Environmental Control
+Volume 21, Issue 5-6, 1991
+Abstract
+Freshwater wetlands alter surface water quality in ways which benefit downstream use. This review summarizes the mechanisms of freshwater wetland interaction with sediment and nutrients that affect surface water quality. The mechanisms vary in magnitude and reversibility, and differ among wetland types. They include sedimentation, plant uptake, litter decomposition, retention in the soil, and microbial processes. Sedimentation is a relatively permanent retention mechanism whereby particulates and associated contaminants are physically deposited on the wetland soil surface. Plant uptake and litter decomposition provide short‐to long‐term retention of nutrients, depending on rates of leaching, translocation to and from storage structures, and the longevity of plant tissues. Plant litter can also provide a substrate for microbial processing of nutrients. Wetland soils sorb nutrients, and provide the environment for aerobic and anaerobic microorganisms that process nutrients. Wetland storage compartments, fluxes, and net retention rates are discussed for nitrogen and phosphorus.
+
+Conflicting demands on wetland ecosystem services: nutrient retention, biodiversity or both?
+LARS-ANDERS HANSSON, CHRISTER BRÖNMARK, P ANDERS NILSSON andKAJSA ÅBJÖRNSSON
+DOI: 10.1111/j.1365-2427.2005.01352.x
+Freshwater Biology
+Volume 50, Issue 4, pages 705–714, April 2005
+http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2427.2005.01352.x/full
+Summary
+1. Wetland ecosystems may, besides having considerable economical value, increase landscape biodiversity and function as traps for nutrients from land to freshwater- and marine systems. As a result of these features, wetlands are nowadays often protected and restored, and many countries have even initiated wetland construction programmes.
+
+2. In the present study, we aim at increasing the knowledge on how to improve the design of a wetland with respect to both biodiversity and nutrient retention, by analysing physical, chemical and biological features of a large set of constructed wetlands.
+
+3. Our results show that a combination of the wetland features, namely shallow depth, large surface area and high shoreline complexity are likely to provide a high biodiversity of birds, benthic invertebrates and macrophytes and to have high nitrogen retention, whereas a small, deep wetland is likely to be more efficient in phosphorus retention, but less valuable in terms of biodiversity.
+
+4. Hence, among the features used to design new wetlands, area, depth and shoreline complexity have fundamental, and sometimes conflicting, effects on nutrient retention and biodiversity. This means that there are, within limits, possibilities to direct the ecosystem function of a specific wetland in desired directions.
