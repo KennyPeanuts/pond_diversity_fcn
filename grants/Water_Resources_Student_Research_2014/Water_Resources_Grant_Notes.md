@@ -186,6 +186,22 @@ stream of N2 at 30dC, and the residue was dissolved in 1.0 ml of methanol. The
 solution was filtered (0.45-um pore size; Acrodisc) and injected into a high-
 pressure liquid chromatograph (HPLC; Shimadzu) with an RP-10 column. (Suberkropp and Weyers 1996)
 
+##### Timeline
+
+* Early June 2014 - collect sediments and establish treatments
+
+* June/ early July 2014 - sample experiment collect SOD data, collect absorbance data
+
+* Fall 2014 - send off nutrients and ergosterol samples for measurement count bacteria samples
+
+* Winter 2014/2015 - analyze data, begin manuscript preparation
+
+* Spring 2015 - complete manuscript and present results at SFS
+
+##### Expected Results
+
+The results should allow us to quantify how leaf litter and nutrients interact to affect nutrient retention in the sediments of man-made ponds.  This will allow us to make predictions about how man-made ponds will alter the flow of nutrients in the watershed.
+
 ### Budget
 
 * Nutrient samples
