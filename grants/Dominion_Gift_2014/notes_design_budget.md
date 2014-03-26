@@ -6,6 +6,12 @@ The plan is to establish a permanent field site at North Campus for the study of
 
 The plan also includes specifications for data storage and accessibility. All of the data will be publicly available and a selection of the data will be displayed in real time in campus locations (e.g., Environmental Center and the Hall TVs in Chichester).
 
+### Digital Infrastructure Total 
+
+* Web Interface $25,000
+
+* Server Hosting $100/mo
+
 ### Remote Instrumentation 
 
 #### Meteorological Station and Main Instrument Array
@@ -91,3 +97,36 @@ s/soil-moisture-transducer-3669/) $1530
 
 * Field Data Collection and Analysis
 
+## Plan Redesign Thoughts (after 25 March Meeting)
+
+### Goal
+
+Establish the infrastructure for long-term environmental data collection, archiving, and access at Longwood University.  
+
+### Requirements
+
+#### Digital infrastructure to store and distribute environmental data collected at established research sites.
+
+* web front-end with dashboards and search function
+
+* database
+
+* server space 
+
+#### Establishment of research locations with remotely collected data and standardized data protocols.
+
+* North Campus Environmental Center and Floodplain 
+
+* Other Farmville Locations (e.g., KF ponds, SH fish collections, etc...)
+
+* Hull Springs Farm
+
+#### Data manager who would oversee the archiving and distribution of the data.
+
+This would be an department assignment that would count toward service (like a committee).  The data manager would be responsible for coordinating the data uploading and archiving.
+
+* Keeping protocols and data sets up to date
+
+* Organizing scheduled data collection
+
+* Promoting and coordinating data use
