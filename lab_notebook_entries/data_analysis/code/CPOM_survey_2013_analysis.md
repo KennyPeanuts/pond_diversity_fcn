@@ -36,9 +36,9 @@ Metadata can be found at:
     summary(survey$CPOM.AFDM)
 
 ~~~~
-
+  
     Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NAs 
-0.001739 0.005461 0.020350 0.082150 0.092450 0.597000       12
+   3.436   10.790   40.210  162.300  182.600 1179.000       12 
 
 ~~~~
 
@@ -56,7 +56,7 @@ Metadata can be found at:
 
 ![Frequency histogram of the density of CPOM in all of the survey lakes during the 2013 survey](../output/plots/CPOM_Dens_Hist.png)
 
-The data show that for all of the samples the density of CPOM is mainly under 100 mg AFDM / m^2 however there are local patches of higher CPOM with densities between 200 and 600 mg AFDM / m^2.
+The data show that for all of the samples the density of CPOM is mainly under 100 g AFDM / m^2 however there are local patches of higher CPOM with densities between 400 and 1200 g AFDM / m^2.
 
 This is not due to differences in then location of the samples since there are 30 open and 24 littoral samples.
 
@@ -79,19 +79,19 @@ There is potentially a bias introduced by the lakes because most of the samples 
 
 $DP
     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-0.003006 0.008314 0.018960 0.088820 0.030020 0.540400 
+   5.937   16.420   37.450  175.400   59.300 1067.000 
 
 $LPP
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-0.02826 0.05695 0.11170 0.20180 0.27070 0.59700 
+  55.81  112.50  220.60  398.70  534.70 1179.00 
 
 $WC
-    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NAs 
-0.001739 0.004123 0.005437 0.018230 0.020350 0.099140        1 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NAs 
+  3.436   8.144  10.740  36.000  40.210 195.800       1 
 
 $WL
-    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NAs 
-0.003028 0.005532 0.012520 0.074840 0.118500 0.266600       11
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NAs 
+  5.981  10.930  24.740 147.800 234.000 526.600      11 
 
 ~~~~
 
@@ -114,10 +114,10 @@ CPOM AFDM by pond for the 2013 survey
 Natural Log transformed CPOM AFDM by pond for the 2013 survey
 
     par(las = 1, mfcol = c(4, 1), mar = c(5, 12, 4, 12))
-    hist(survey$CPOM.AFDM[survey$lake == "DP"], breaks = 5,  xlim = c(0, 1), col = 8, main = "DP", xlab = " ")
-    hist(survey$CPOM.AFDM[survey$lake == "LPP"], breaks = 5, xlim = c(0, 1), col = 8, main = "LPP", xlab = " ")
-    hist(survey$CPOM.AFDM[survey$lake == "WC"], breaks = 5, xlim = c(0, 1), col = 8, main = "WC", xlab = " ")
-    hist(survey$CPOM.AFDM[survey$lake == "WL"], breaks = 5, xlim = c(0, 1), col = 8, main = "WL", xlab = "CPOM Density (g AFDM/m^2)")
+    hist(survey$CPOM.AFDM[survey$lake == "DP"], breaks = 5,  xlim = c(0, 1200), col = 8, main = "DP", xlab = " ")
+    hist(survey$CPOM.AFDM[survey$lake == "LPP"], breaks = 5, xlim = c(0, 1200), col = 8, main = "LPP", xlab = " ")
+    hist(survey$CPOM.AFDM[survey$lake == "WC"], breaks = 5,  xlim = c(0, 1200), col = 8, main = "WC", xlab = " ")
+    hist(survey$CPOM.AFDM[survey$lake == "WL"], breaks = 5,  xlim = c(0, 1200), col = 8, main = "WL", xlab = "CPOM Density (g AFDM/m^2)")
     dev.copy(png, "./output/plots/CPOM_by_pond_Hist.png")
     dev.off()
 
@@ -134,12 +134,14 @@ Frequency histograms of CPOM (g AFDM / m^2) for each pond in the 2013 survey
 ###### Output
 
 ~~~~
-
-              Df Sum Sq Mean Sq F value Pr(>F)  
+                Df Sum Sq Mean Sq F value Pr(>F)  
 as.factor(lake)  3  25.88   8.626   3.955  0.015 *
-Residuals       38  82.88   2.181
-
-Tukey multiple comparisons of means
+Residuals       38  82.88   2.181                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+12 observations deleted due to missingness
+>     TukeyHSD(pond.cpom.aov)
+  Tukey multiple comparisons of means
     95% family-wise confidence level
 
 Fit: aov(formula = log(CPOM.AFDM) ~ as.factor(lake), data = survey)
@@ -157,8 +159,6 @@ WL-WC   1.0097999 -0.6155328  2.6351326 0.3537328
 
 The ANOVA with ln transformation shows a significant model and Tukeys HSD shows that LPP has more CPOM than WC, otherwise the CPOM density in the ponds is not significantly different.
 
-The results of individual lakes suports the hypothesis that the density of CPOM is generally less than 0.05 - 0.1 g / m^2 with a few locations going much higher than that.
-
 #### Density of CPOM within a lake
 
 #### Comparison of the open and littoral habitats.
@@ -169,11 +169,11 @@ The results of individual lakes suports the hypothesis that the density of CPOM 
 
 $littoral
     Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NAs 
-0.004917 0.022310 0.056990 0.143300 0.227400 0.597000        2 
+   9.712   44.070  112.600  283.100  449.200 1179.000        2 
 
 $open
-    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NAs 
-0.001739 0.003728 0.005484 0.014840 0.013450 0.108800       10
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NAs 
+  3.436   7.363  10.830  29.310  26.570 214.900      10 
 
 ~~~~
 
@@ -195,8 +195,8 @@ CPOM Density (g AFDM/m^2) by location in the pond in the 2013 survey
 ln CPOM Density (g AFDM/m^2) by location in the pond in the 2013 survey
 
     par(las = 1, mfcol = c(2, 1), mar = c(5, 10, 5, 10))
-    hist(survey$CPOM.AFDM[survey$location == "littoral"], xlim = c(0, 1), col = 8, main = "Littoral", xlab = " ")
-    hist(survey$CPOM.AFDM[survey$location == "open"], xlim = c(0, 1), col = 8, main = "Open", xlab = "CPOM Density (g AFDM/m^2)")
+    hist(survey$CPOM.AFDM[survey$location == "littoral"], xlim = c(0, 1200), col = 8, main = "Littoral", xlab = " ")
+    hist(survey$CPOM.AFDM[survey$location == "open"], xlim = c(0, 1200), col = 8, main = "Open", xlab = "CPOM Density (g AFDM/m^2)")
     dev.copy(png, "./output/plots/CPOM_by_location_hist.png")
     dev.off()
 
@@ -219,12 +219,11 @@ Analysis of Variance Table
 Response: log(CPOM.AFDM)
                     Df Sum Sq Mean Sq F value    Pr(>F)    
 as.factor(location)  1 44.781  44.781      28 4.658e-06 ***
-Residuals           40 63.973   1.599
+Residuals           40 63.973   1.599                      
 
 ~~~~
 
-The results show that there is significantly more CPOM in the littoral locations than in the open locations. However virtually all of the densities are below 100 mg AFDM / m^2
-
+The results show that there is significantly more CPOM in the littoral locations than in the open locations. 
 
 #### Relationship between CPOM and sediment %OM
 
@@ -347,7 +346,7 @@ Overall there is not a big difference between the littoral and open locations th
 ##### Relationship between CPOM and sediment percent OM
 
     par(las = 1)
-    plot((sed.propOM * 100) ~ CPOM.AFDM, data = survey, subset = location == "littoral",  xlim = c(0, 1), ylim = c(0, 25), pch = 16, ylab = "Percent Sediment Organic Matter (LOI 550)", xlab = "CPOM Density (g AFDM/m^2)")
+    plot((sed.propOM * 100) ~ CPOM.AFDM, data = survey, subset = location == "littoral",  xlim = c(0, 1200), ylim = c(0, 25), pch = 16, ylab = "Percent Sediment Organic Matter (LOI 550)", xlab = "CPOM Density (g AFDM/m^2)")
     points((sed.propOM * 100) ~ CPOM.AFDM, data = survey, subset = location == "open")
     legend(0.6, 25, c("littoral", "open"), pch = c(16, 1))
     dev.copy(png, "./output/plots/percOM_by_CPOM.png")
@@ -358,7 +357,7 @@ Overall there is not a big difference between the littoral and open locations th
 _Percent sediement organic matter (LOI 550) plotted against CPOM (g AFDM/m^2) in open and littoral regions in 2013 survey_
 
     par(las = 1)
-    plot((sed.propOM * 100) ~ log(CPOM.AFDM), data = survey, subset = location == "littoral",  xlim = c(-7, 0), ylim = c(0, 25), pch = 16, ylab = "Percent Sediment Organic Matter (LOI 550)", xlab = "ln CPOM Density (g AFDM/m^2)")
+    plot((sed.propOM * 100) ~ log(CPOM.AFDM), data = survey, subset = location == "littoral", xlim = c(0, 7),   ylim = c(0, 25), pch = 16, ylab = "Percent Sediment Organic Matter (LOI 550)", xlab = "ln CPOM Density (g AFDM/m^2)")
     points((sed.propOM * 100) ~ log(CPOM.AFDM), data = survey, subset = location == "open")
     legend(-3, 25, c("littoral", "open"), pch = c(16, 1))
     dev.copy(png, "./output/plots/percOM_by_lnCPOM.png")

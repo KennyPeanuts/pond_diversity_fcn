@@ -53,6 +53,7 @@ The LOI of the complete sediments was determined by ashing the samples for appro
 
     * 15 Feb 2014
     * 5 March 2014 - reanalyzed the data with new WL sediment LOI data from 14 June
+    * 30 March 2014 - fixed error in CPOM density Calculations, was multiplying by ekaman area and should have been dividing
 
 
 ### Descriptive Variables:
