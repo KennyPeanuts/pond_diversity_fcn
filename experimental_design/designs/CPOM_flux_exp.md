@@ -143,21 +143,24 @@ Understand the way in which litter decomposition contributes to the cycling of n
 
 ### Budget
 
-| Item                   | vendor | cat_num     | cost    | Number  | Total | Budget |
-| :----------------      | :----- | :------     | :---    | :----   | :---- | :----  |
+| Item                   | vendor | cat_num     |    cost | Number  | Total | Budget |
+| :----------------      | :----- | :------     |    :--- | :----   | :---- | :----  |
 | Nutrient samples       | VCU    | NA          | 18/samp | 200     |       | Prism  |
-| Ergosterol samples     | CCU    | NA          | free    | 200     |       | NA     |
-| DAPI                   |        |             |         |         |       | FDG    |
-| Black Filters          | Fisher | GTBP 025 00 | 169     | 3pk 100 |   507 | FDG    |
-| Fiter set-up           | Fisher | 14-209-99   | 184     | 2ea     |   368 | FDG    |
-| Tally Counter          | Fisher | 07-905-6    | 40      | 1ea     |    40 | FDG    |
-| KPO4                   | Fisher |             |         |         |       |        |
-| NH4NO3                 | Fisher |             |         |         |       |        |
-| Hach Nutrient Tests    | Fisher |             |         |         |       |        |
-| Acid Bath (5G bucket)  |        |             |         |         |       |        |
-| HCl                    |        |             |         |         |       |        |
-| Rubber Gloves          |        |             |         |         |       |        |
-| Gluteraldehyde         |        |             |         |         |       |        |
-| Sterile bacteria tubes |        |             |         |         |       |        |
+| Ergosterol samples     | CCU    | NA          |    free | 200     |       | NA     |
+| DAPI                   | Fisher | ICN15757405 |     106 | 5mg     |   106 | FDG    |
+| Black Filters          | Fisher | GTBP 025 00 |     169 | 3pk 100 |   507 | FDG    |
+| Fiter set-up           | Fisher | 14-209-99   |     184 | 2ea     |   368 | FDG    |
+| Tally Counter          | Fisher | 07-905-6    |      40 | 1ea     |    40 | FDG    |
+| KPO4                   | Fisher | P285-500    |     140 | 500g    |   140 |        |
+| NH4NO3                 | Fisher | S25172      |      20 | 500g    |    20 |        |
+| Hach NO3-NO2 Tests     | Hach   | 1408100     |     133 | 1       |   133 |        |
+| Hach NH4 Tests         | Hach   | 2428700     |      84 | 1       |    84 |        |
+| Hach PO4 Tests         | Hach   | 224902      |     126 | 1       |   126 |        |
+| Acid Bath              | Fisher |             |         |         |       |        |
+| HCl                    | Fisher |             |         |         |       |        |
+| Rubber Gloves          | WM     |             |         |         |       |        |
+| Gluteraldehyde         | Fisher | BP2548-1    |     172 | 1L      |   172 |        |
+| Sterile bacteria tubes | Fisher |             |         |         |       |        |
 | UV cuvete              |        |             |         |         |       |        |
-| Crucibles              |        |             |         |         |       |        |
+| Rocker Shaker          | Fisher |             |         |         |       |        |
+| **Total**              |        |             |         |         |  1696 |        |
