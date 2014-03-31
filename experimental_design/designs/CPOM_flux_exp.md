@@ -143,24 +143,27 @@ Understand the way in which litter decomposition contributes to the cycling of n
 
 ### Budget
 
-| Item                   | vendor | cat_num     |    cost | Number  | Total | Budget |
-| :----------------      | :----- | :------     |    :--- | :----   | :---- | :----  |
-| Nutrient samples       | VCU    | NA          | 18/samp | 200     |       | Prism  |
-| Ergosterol samples     | CCU    | NA          |    free | 200     |       | NA     |
-| DAPI                   | Fisher | ICN15757405 |     106 | 5mg     |   106 | FDG    |
-| Black Filters          | Fisher | GTBP 025 00 |     169 | 3pk 100 |   507 | FDG    |
-| Fiter set-up           | Fisher | 14-209-99   |     184 | 2ea     |   368 | FDG    |
-| Tally Counter          | Fisher | 07-905-6    |      40 | 1ea     |    40 | FDG    |
-| KPO4                   | Fisher | P285-500    |     140 | 500g    |   140 |        |
-| NH4NO3                 | Fisher | S25172      |      20 | 500g    |    20 |        |
-| Hach NO3-NO2 Tests     | Hach   | 1408100     |     133 | 1       |   133 |        |
-| Hach NH4 Tests         | Hach   | 2428700     |      84 | 1       |    84 |        |
-| Hach PO4 Tests         | Hach   | 224902      |     126 | 1       |   126 |        |
-| Acid Bath              | Fisher |             |         |         |       |        |
-| HCl                    | Fisher |             |         |         |       |        |
-| Rubber Gloves          | WM     |             |         |         |       |        |
-| Gluteraldehyde         | Fisher | BP2548-1    |     172 | 1L      |   172 |        |
-| Sterile bacteria tubes | Fisher |             |         |         |       |        |
-| UV cuvete              |        |             |         |         |       |        |
-| Rocker Shaker          | Fisher |             |         |         |       |        |
-| **Total**              |        |             |         |         |  1696 |        |
+| Item                   | vendor  | cat_num     |    cost | Number    | Total | Budget |
+| :----------------      | :-----  | :------     |    :--- | :----     | :---- | :----  |
+| Nutrient samples       | VCU     | NA          | 18/samp | 200       |       | Prism  |
+| Ergosterol samples     | CCU     | NA          |    free | 200       |       | NA     |
+| DAPI                   | Fisher  | ICN15757405 |     106 | 5mg       |   106 | FDG    |
+| Black Filters          | Fisher  | GTBP 025 00 |     169 | 3pk 100   |   507 | FDG    |
+| Fiter set-up           | Fisher  | 14-209-99   |     184 | 2ea       |   368 | FDG    |
+| Tally Counter          | Fisher  | 07-905-6    |      40 | 1ea       |    40 | FDG    |
+| KPO4                   | Fisher  | P285-500    |     140 | 500g      |   140 |        |
+| NH4NO3                 | Fisher  | S25172      |      20 | 500g      |    20 |        |
+| Hach NO3-NO2 Tests     | Hach    | 1408100     |     133 | 1         |   133 |        |
+| Hach NH4 Tests         | Hach    | 2428700     |      84 | 1         |    84 |        |
+| Hach PO4 Tests         | Hach    | 224902      |     126 | 1         |   126 |        |
+| Acid Bath (5g bucket)  | Lowes   |             |         |           |       |        |
+| Rubber Gloves          | WM      |             |         |           |       |        |
+| Gluteraldehyde         | Fisher  | BP2548-1    |     172 | 1L        |   172 |        |
+| Sterile bacteria tubes | Fisher  |             |         |           |       |        |
+| UV cuvete              | Fisher  | E4099100008 |     220 | 1cs       |   220 |        |
+| Rocker Shaker          | Fisher  | 02-217-765  |    1060 | 1         |  1060 |        |
+| Rafts                  | Sevylor | 2000014161  |      70 | 3         |   210 |        |
+| Falcon Tubes           | Fisher  | 05-527-90   |     240 | 1cs - 500 |   240 |        |
+| BOD 300ml              | Fisher  | 02-885A     |     390 | 1cs - 24  |   390 |        |
+| BOD 60ml               | Fisher  | 02-926-100B |     910 | 1cs - 36  |   910 |        |
+| **Total**              |         |             |         |           |  4726 |        |

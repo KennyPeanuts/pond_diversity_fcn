@@ -135,7 +135,7 @@ The LOI of the complete sediments was determined by ashing the samples for appro
 ### Calculate Variables
 
     CPOM.mass.ekman <- survey$CPOM.full - survey$CPOM.empty
-    CPOM.mass <- CPOM.mass.ekman * 0.0225
+    CPOM.mass <- CPOM.mass.ekman / 0.0225
     CPOM.AFDM.dry <- survey$CPOM.cruc.full - survey$CPOM.cruc.empty
     CPOM.AFDM.ash <- survey$CPOM.cruc.ash - survey$CPOM.cruc.empty
     CPOM.propOM <- (CPOM.AFDM.dry - CPOM.AFDM.ash) / CPOM.AFDM.dry
