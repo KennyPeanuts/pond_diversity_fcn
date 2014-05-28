@@ -1,0 +1,65 @@
+
+## Date
+
+February 11, 2014
+
+## Author
+
+KP
+
+## Samples
+
+Location: Daulton Pond
+
+Samples:
+
+Crucible 1: 
+	- Bag # 6
+	- Collected: Nov. 6, 2013
+Crucible 2:
+	- Bag # 33
+	- Collected: Nov. 6, 2013
+Crucible 3:
+	- Bag # 47
+	- Collected: Nov. 6, 2013
+Crucible 4:
+	- Bag # 57
+	- Collected: Nov. 6, 2013
+Crucible 5:
+	- Bag # 63
+	- Collected: Nov. 6, 2013
+Crucible 6:
+	- Bag # 31
+	- Collected: Nov. 13, 2013
+Crucible 7:
+	- Bag # 32
+	- Collected: Nov. 13, 2013
+Crucible 8:
+	- Bag # 36
+	- Collected: Nov. 13, 2013
+Crucible 9:
+	- Bag # 44
+	- Collected: Nov. 13, 2013
+Crucible 10:
+	- Bag # 58
+	- Collected: Nov. 13, 2013
+
+## Purpose
+
+The sample leaves were crushed with a mortar and pestle and placed into the furnace at 550 degrees Celcius for approximately 4 hours.
+
+## Lab observations and data
+
+
+
+~~~~~
+
+DATA 
+
+1
+2
+3
+4
+
+~~~~
+
