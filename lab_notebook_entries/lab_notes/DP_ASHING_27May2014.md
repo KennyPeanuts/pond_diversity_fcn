@@ -13,7 +13,6 @@ KDP
 Location: Daulton Pond
 
 Samples:
-
 Crucible 1:
 	-Bag # 1
 	-Collected: Dec. 21, 2013

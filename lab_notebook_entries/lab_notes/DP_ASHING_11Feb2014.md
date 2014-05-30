@@ -1,4 +1,3 @@
-
 Daulton Pond Ashing
 
 ## Date
@@ -14,7 +13,6 @@ KDP
 Location: Daulton Pond
 
 Samples:
-
 Crucible 1: 
 	- Bag # 6
 	- Collected: Nov. 6, 2013
@@ -56,7 +54,7 @@ The sample leaves were crushed with a mortar and pestle and placed into the furn
 2. Due to the amount of time it took to crush all 10 samples, I waited until the afternoon of 12 February 2014 to place the crucibles into the muffle furnace.
 3. The samples were placed into the furnace around 2:30 p.m. but had to be removed at 3:20 p.m. due to inclement weather (Dr. Fortino).
 4. The samples were then stored in the drying oven until the lab could once again be accessed.
-5. The samples were finally able to finish their time in the muffle on 17 Febraury 2014 (Leanna Tacik).
+5. The samples were finally able to finish their time in the muffle furnace on 17 Febraury 2014 (Leanna Tacik).
 6. They were left in the furnace from 3:00pm-7:00 pm.
 
 ~~~~~

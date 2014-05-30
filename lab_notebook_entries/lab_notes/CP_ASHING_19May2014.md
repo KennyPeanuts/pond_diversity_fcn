@@ -70,7 +70,6 @@ Crucible 4:
 	- Crucible mass: 27.4852g 
 	- Crucible + Crushed leaves mass: 30.1557g 
 	- Crucible + Ash mass: 28.0842g
-
 Crucible 5:
 	- Crucible mass: 30.3783g 
 	- Crucible + Crushed leaves mass: 32.6745g 

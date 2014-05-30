@@ -1,4 +1,3 @@
-
 Campus Pond Ashing
 
 ## Date
@@ -14,7 +13,6 @@ KDP
 Location: Campus Pond
 
 Samples:
-
 Crucible 1: 
 	- Bag #3
 	- Collected: Oct. 22, 2013
