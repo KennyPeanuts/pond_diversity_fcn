@@ -32,26 +32,26 @@ To sort throught the sample(s) until only CPOM is remaining.
 DATA 
 
 Sample A:
-	-Bag Weight (alone):
+	-Bag Weight (alone): 7.1597g
 	-Bag + CPOM weight (after drying):
 	-Crucible mass:
 	-Crucible + CPOM mass:
 	-Crucible + ash mass:
 
 Sample B:
-	-Bag Weight (alone):
+	-Bag Weight (alone): 7.2625g
 	-Bag + CPOM weight (after drying):
 	-Crucible mass:
 	-Crucible + CPOM mass:
 	-Crucible + ash mass:
 Sample C:
-	-Bag Weight (alone):
+	-Bag Weight (alone): 7.2824g
 	-Bag + CPOM weight (after drying):
 	-Crucible mass:
 	-Crucible + CPOM mass:
 	-Crucible + ash mass:
 Sample D:
-	-Bag Weight (alone):
+	-Bag Weight (alone): 7.3592g
 	-Bag + CPOM weight (after drying):
 	-Crucible mass:
 	-Crucible + CPOM mass:
