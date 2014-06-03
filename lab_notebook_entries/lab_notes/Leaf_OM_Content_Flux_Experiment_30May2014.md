@@ -10,7 +10,7 @@ KDP
 
 ## Samples
 
-Randomly selected tulip poplar leaves (from storage box) 
+Randomly selected tulip poplar leaves (collected in Fall 2013) 
 
 ## Purpose
 
@@ -27,12 +27,20 @@ Methods:
 
 DATA 
 
-Replicate  Crucible #	Crucible Mass (g)   Crucible+Leaf Mass (g)   Crucible+Ash Mass (g)
-    1		6	     31.5145
-    2		7	     28.1980
-    3		8	     28.9668
-    4		9	     27.0792
-    5	       	10	     29.7503
+Replicate  Crucible #	Crucible Mass (g)   Crucible+Leaf Mass* (g)   Crucible+Ash Mass* (g)
+    1		6	     31.5145		   31.5169
+    2		7	     28.1980		   28.2001
+    3		8	     28.9668		   28.9695
+    4		9	     27.0792		   27.0837
+    5	       	10	     29.7503		   29.7544
+
+*Data was collected on 3 June 2014
+
+Ashing notes:
+	-Date: 3 June 2014
+	-Time in: 10:01 a.m.
+	-Time out:
+	-Initial temperature:75 degrees Celcius
 
 ~~~~
 

@@ -39,11 +39,19 @@ NO2-NO3 Analysis:
 
 DATA 
 
-Replicate  Depth  Bag Mass (g)	Bag + CPOM (g)	  Crucible #	Crucible mass(g)    Crucible + CPOM mass(g)	Crucible + ash mass (g)
-   A	   	    7.1597	   8.6431		21	   30.9983
-   B		    7.2625	   9.2051		22	   26.9346
-   C		    7.2824	   11.5849		23	   28.8130
-   D		    7.3592	   10.5602		24	   29.3950
+Replicate  Depth  Bag Mass (g)	Bag + CPOM (g)	  Crucible #	Crucible mass(g)    Crucible + CPOM mass* (g)	Crucible + ash mass* (g)
+   A	   	    7.1597	   8.6431		21	   30.9983		     32.4642			
+   B		    7.2625	   9.2051		22	   26.9346		     28.8457
+   C		    7.2824	   11.5849		23	   28.8130		     32.9767
+   D		    7.3592	   10.5602		24	   29.3950		     32.5144
+
+*Data was collected on 3 June 2014
+
+Ashing notes:
+	-Date: 3 June 2014
+	-Time in: 10:01 a.m.
+	-Time out:
+	-Initial temperature: 75 degrees Celcius
 
 ~~~~
 

@@ -29,12 +29,20 @@ Methods:
 
 DATA 
 
-Replicate  Crucible #	Crucible Mass (g)  Crucible+Wet Sediment Mass (g)   Crucible+Dry Sediment (g)  Ash mass (g)
-   1		1	     29.7378		       41.0326				
-   2		2	     26.6517		       38.0633
-   3		3	     28.0753		       39.5898
-   4		4	     27.4867		       39.0056
-   5		5	     30.3799		       42.0787
+Replicate  Crucible #	Crucible Mass (g)  Crucible+Wet Sediment Mass (g)   Crucible+Dry Sediment* (g)  Ash mass* (g)
+   1		1	     29.7378		       41.0326				32.2244
+   2		2	     26.6517		       38.0633				29.1841
+   3		3	     28.0753		       39.5898				30.6054
+   4		4	     27.4867		       39.0056				30.0275
+   5		5	     30.3799		       42.0787				32.9646
+
+*Data was collected on 3 June 2014
+
+Ash notes:
+	-Date: 3 June 2014
+	-Time in: 10:01 a.m.
+	-Time out:
+	-Initial temperature: 75 degrees Celcius
 
 ~~~~
 
