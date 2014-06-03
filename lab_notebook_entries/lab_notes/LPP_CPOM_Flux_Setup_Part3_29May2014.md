@@ -14,7 +14,9 @@ Location: Lancer Park Pond
 
 ## Purpose
 
-To determine the CPOM density 
+-To determine the CPOM density
+-Analyze ambient nutrient content of LPP water samples collected on 29 May 2014
+-Analyze the chorophyl a
 
 ## Lab observations and data
 
@@ -45,7 +47,7 @@ Replicate  Depth  Bag Mass (g)	Bag + CPOM (g)	  Crucible #	Crucible mass(g)    C
    C		    7.2824	   11.5849		23	   28.8130		     32.9767
    D		    7.3592	   10.5602		24	   29.3950		     32.5144
 
-*Data was collected on 3 June 2014
+*Samples were ashed on 3 June 2014
 
 Ashing notes:
 	-Date: 3 June 2014

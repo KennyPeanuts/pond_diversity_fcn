@@ -34,7 +34,7 @@ Replicate  Crucible #	Crucible Mass (g)   Crucible+Leaf Mass* (g)   Crucible+Ash
     4		9	     27.0792		   27.0837
     5	       	10	     29.7503		   29.7544
 
-*Data was collected on 3 June 2014
+*Leaves were ashed on 3 June 2014
 
 Ashing notes:
 	-Date: 3 June 2014

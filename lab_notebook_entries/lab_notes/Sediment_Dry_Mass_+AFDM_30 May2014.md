@@ -36,7 +36,7 @@ Replicate  Crucible #	Crucible Mass (g)  Crucible+Wet Sediment Mass (g)   Crucib
    4		4	     27.4867		       39.0056				30.0275
    5		5	     30.3799		       42.0787				32.9646
 
-*Data was collected on 3 June 2014
+*Dry sediment was ashed on 3 June 2014
 
 Ash notes:
 	-Date: 3 June 2014
