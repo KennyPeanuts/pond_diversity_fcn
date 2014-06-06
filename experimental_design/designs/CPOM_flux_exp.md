@@ -151,7 +151,7 @@ Understand the way in which litter decomposition contributes to the cycling of n
  
     * Another 15 ml of water will be collected into a 10 ml vial and incubated in the dark for the T-1 water respiration measurement
 
-* The SOD bottles will then be refilled with 75 ml of pond water (40 ml + 30 ml + 5 ml) and sealed.
+* The SOD bottles will then be refilled with 90 ml of pond water (40 ml from nut samp. + 30 ml from resp + 15 ml from prev. resp + 5 ml overflow) and sealed.
 
 * After a 5 h incubation in the dark, 15 ml of water will be collected from the BOD bottle into a 10 ml vial and fixed for T-1 SOD measurement
 
@@ -163,7 +163,7 @@ Understand the way in which litter decomposition contributes to the cycling of n
 
     * the BOD jars will have 185 ml prior to sampling so the 70 ml removed per jar is 38% of the volume of the overlying water.
 
-* **Total Water Needed for Replacement = 75 ml * 16 jars * 7 sampling dates = 8400 ml + (55 ml * 7 sampling dates) = 8785 ml total** 
+* **Total Water Needed for Replacement = 90 ml * 16 jars * 7 sampling dates = 10080 ml + (55 ml * 7 sampling dates) = 10465 ml total** 
 
 ##### Fungal Biomass and CPOM  AFDM.
 
