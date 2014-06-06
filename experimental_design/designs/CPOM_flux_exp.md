@@ -2,6 +2,8 @@
 
 ## Notes on Design and Experiments
 
+* modified 6 June 2014 by KF
+
 ### Research Questions and Justification
 
 #### Goal
@@ -25,13 +27,15 @@ Understand the way in which litter decomposition contributes to the cycling of n
 
     * H3: Sediments with CPOM will have greater SOD due to the respiration of the fungal and bacterial communities on the leaves. 
 
-    * Sediments with CPOM will not increase in the percent organic matter of the FPOM because leaf mass is mainly being lost as CO_2 and DOM.
+    * H4 Sediments with CPOM will not increase in the percent organic matter of the FPOM because leaf mass is mainly being lost as CO_2 and DOM.
 
-2. Quantify how CPOM alters heterotrophic microbial biomass.
+2. Quantify how CPOM alters heterotrophic microbial biomass and metabolism.
 
     * H1: Sediments with CPOM will increase water column bacterial abundance due to the production of DOM from leaf leaching.
 
-    * H2: CPOM particles will have greater fungal biomass than fine sediments.
+    * H2: The water exposed to CPOM will have greater water column respiration due to the increase in leachate from the leaves.
+
+    * H3: CPOM particles will have greater fungal biomass than fine sediments.
 
 3. Quantify how CPOM alters the response of sediment metabolism to nutrient enrichment.
 
@@ -41,6 +45,8 @@ Understand the way in which litter decomposition contributes to the cycling of n
 
     * H3: Sediments with CPOM will have greater SOD when exposed to elevated inorganic N and P due to greater respiration by leaf associated fungi.
 
+    * H4: The water oxygen consumption will be greater in the treatments with elevated N and P.
+
     * H4: Water column bacteria biomass will increase more following fertilization with inorganic N and P in sediments with CPOM due to the ability of the bacteria to balance the stoichiometry of leaf produced DOM.
 
 
@@ -48,11 +54,11 @@ Understand the way in which litter decomposition contributes to the cycling of n
 
 |         | Ambient Nutrient | N + P Addition |
 | :------ | :--------------: | :------------: |
-| No CPOM |                5 |              5 |
-| CPOM    |                5 |              5 |
+| No CPOM |                4 |              4 |
+| CPOM    |                4 |              4 |
 
 
-* pond sediments - CPOM = sediments passed through a 250um mesh to remove all CPOM and macroinvertebrates.  Also an equivilent amount of sediment to equal the OM added from the CPOM will be added.
+* pond sediments - CPOM = sediments passed through a 250um mesh to remove all CPOM and macroinvertebrates.  
 
 * pond sediments + CPOM 0.5 mg CPOM/jar = 0.16 g/m^2
 
@@ -63,9 +69,13 @@ Understand the way in which litter decomposition contributes to the cycling of n
 
 * N & P concentration
 
-* oxygen concentration
+* bottle SOD 
+
+* water respiration
  
 * absorbance
+
+* 3-D fluorometry
 
 * bacterial biomass
 
@@ -73,25 +83,38 @@ Understand the way in which litter decomposition contributes to the cycling of n
 
 * LOI of CPOM
 
-#### Sample Calculations
+#### Sample Number Calculations
 
 * CPOM levels = 2
 
 * Nutrients levels = 2 
 
-* Replicates/level = 5
+* Replicates/level = 4
 
-* Weeks = 6
+* Weeks = 4
 
-* Nutrient/Abs/Bacteria Samples = [Samples/Week1 = 5 + ((Samples/Weeks 2:6 = 1) * 5 Weeks) = 5] = 10
+* Sed O2 Conc. Samples = 14
+    * Week 1 = 8
+    * Weeks 2:4 = 2/week = 6 
+
+* Water O2 Conc. Samples = 7
+    * Week 1 = 4
+    * Weeks 2:4 = 1/week = 3
+
+* Nutrient/Abs/Bacteria Samples = 7 
+    * Week 1 = 4
+    * Weeks 2:4 = 1/week = 3
 
 * Ergosterol/AFDM Samples = 1
 
-* Jars needed = 2 CPOM * 2 Nutrients * 5 Replicates = 20
+* Jars needed = 2 CPOM * 2 Nutrients * 4 Replicates = 16
 
-* Total Nutrient/Abs/Bacteria Samples = 20 Jars * 10 Samples = 200 
+* Total Nutrient/Abs/Bacteria Samples = 16 Jars * 7 Samples = 112
 
-* Total Ergosterol Samples = 20 Jars * 1 Sample = 20
+* Total Ergosterol Samples = 16 Jars * 1 Sample = 16
+
+#### Sample Volume Calculations
+
 
 
 #### Methods Description
@@ -100,34 +123,57 @@ Understand the way in which litter decomposition contributes to the cycling of n
 
 * Sediment samples will be collected from a local man-made pond.  The sediments will be passed through a 250&mu; mesh to remove CPOM and macroinvertebrates.
 
-* Approximately 4 cm sediments will then be placed into 300 ml septum topped glass jars and the remaining volume will be filled with pond water collected at the same time as the sediments.
+* After allowing the mud to settle overnight and siphoning off the overlying water, 100 ml of sediments slurry will be placed into 300 ml BOD and the remaining volume will be filled with pond water collected at the same time as the sediments.
 
 * CPOM treatments will be created by adding 0.5 mg dry mass of tulip poplar leaf disks to the surface of the sediments from tulip poplar leaved collected immediately after senescence, air dried, and then conditioned for 24 hours in pond water.
 
 * Elevated nutrient treatments will be created by adding NO3 and PO4 at 2X the concentration measured in the overlying water at the initiation of the experiment.
 
-##### Sampling
+##### Nutrient, DOM, and Bacterial Sampling
 
-* The jars will be incubated in darkness at room temperature for a total of 6 weeks.
+* The jars will be incubated in darkness at room temperature for a total of 4 weeks.
 
+* For each BOD jar + the refill water:
 
-* For the first week each jar will be sampled every 24 hours:
+     * 30 ml of water will be removed and filtered through GFF and frozen to measure the nutrient concentration
 
-     * 25 ml of water will be removed and filtered through GFF and frozen to measure the nutrient concentration
+     * 5 ml of water will be removed and filtered through a GFF and the absorbance will be measured on a nanopore spec.
 
-     * 1 ml of water will be removed and filtered through a GFF and the absorbance will be measured on a nanopore spec.
+     * 3 ml of water will be removed and preserved with gluteraldehyde for bacterial abundance.
 
-     * 5 ml of water will be removed and filtered onto a black membrane filter and stained with DAPI for bacterial counts with epiflorescence.
+* **Total Water Removed = 40 ml per BOD + 40 ml for refill water = 680 ml per sampling** 
 
-     * SOD will be measured by refilling the jars with pond water and sealing them without air.
+##### SOD and Respiration Sampling
+
+* Prior to the nutrient, DOM, and bacteria samples are collected 
+   
+    * 15 ml of water will be collected from each BOD jar and the refill water into a 10 ml vial and fixed immediately for the T-0 SOD and water respiration measurement
  
-        * 15 ml samples will be taken after 1, 3, and 6h of dark incubation without introducing air into the jars.
- 
-        * the oxygen content of the sample will be determined with Winkler Titration.
+    * Another 15 ml of water will be collected into a 10 ml vial and incubated in the dark for the T-1 water respiration measurement
 
-* For the remaining 5 weeks, each jar will be sampled once a week.
+* The SOD bottles will then be refilled with 75 ml of pond water (40 ml + 30 ml + 5 ml) and sealed.
 
-* At the conclusion of the experiment, the fungal biomass on the CPOM will be determined using ergosterol extraction.
+* After a 5 h incubation in the dark, 15 ml of water will be collected from the BOD bottle into a 10 ml vial and fixed for T-1 SOD measurement
+
+* At the same time the vial of incubating water will be fixed for the T-1 water respiration measurement.
+
+* For the remaining 4 weeks, each jar will be sampled once a week.
+
+* **Total Water Removed = 30 ml per BOD + 15 ml for refill water = 495 ml per sampling**
+
+    * the BOD jars will have 185 ml prior to sampling so the 70 ml removed per jar is 38% of the volume of the overlying water.
+
+* **Total Water Needed for Replacement = 75 ml * 16 jars * 7 sampling dates = 8400 ml + (55 ml * 7 sampling dates) = 8785 ml total** 
+
+##### Fungal Biomass and CPOM  AFDM.
+
+* At the conclusion of the experiment, 
+    
+    * 3 leaf disks will be placed into 10 ml of methanol for ergosterol extraction.
+
+    * 3 leaf disks will be ashed for AFDM.
+
+    * 10 ml of sediment will be dried and ashed for FPOM AFDM
 
 ##### Timeline
 
