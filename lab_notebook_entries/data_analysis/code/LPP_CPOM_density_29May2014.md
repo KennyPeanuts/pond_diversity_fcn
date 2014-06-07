@@ -22,7 +22,7 @@ Description:
 
 Created: 5 June 2014
 
-Modified:
+Modified: 6 June 2014, KF
 
 ### Variables:
 
@@ -75,4 +75,4 @@ Modified:
 
     cpom <- data.frame(rep, depth, cruc, cruc.mass, cruc.CPOM, cruc.ash, CPOM.ekman, ash, prop.OM, CPOM, AFDM)
 
-    write.table(cpom, "./data/LPP_CPOM_density_for_CPOM_Flux_Exp_29May2014.txt", row.names = F, quote = F, sep = "/t")
+    write.table(cpom, "./data/LPP_CPOM_density_for_CPOM_Flux_Exp_29May2014.txt", row.names = F, quote = F, sep = "\t")
