@@ -40,27 +40,18 @@ So to get a target solution of 300 ug/L, which equals 300 ug/L * 1 g/1000000 ug 
 
     Cs = (0.0003 * 1) / 0.001 = 0.3 g/L DIN
 
-The molecular weight of NH4NO3 = 
+The molecular weight of NH4NO3 = 80.052 g/mol
 
+The molecular weight of N = 14 g/mol
 
-Insert detailed comments on anything that you observe or data that you collect.  
+Since NH4NO3 has 2 N, the N weighs 28 g/mol
 
- * You can include photos that are in the "photos" folder like this:
+Thus the N is `35%` of the mass of the NH4NO3
 
-![very brief description](../photos/FILE_NAME.jpg)
+    28 / 80.052 = 0.35 
 
-Always include a detailed description of the photos
+So to get 0.3 g/L, we need to dissolve `0.857 g` NH4NO3 into 1 L of di water
 
-* You can include formatted data if you put it between ~~~~ like this:
+    0.35x = 0.3 --> x = 0.3/0.35 = 0.857
 
-~~~~~
-
-DATA 
-
-1
-2
-3
-4
-
-~~~~
 
