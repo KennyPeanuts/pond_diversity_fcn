@@ -62,14 +62,14 @@ To get a target concentration of 30 ug/L, which equals 30 ug/L * 1 g / 1000000 u
 
     Cs = (0.00003 * 1) / 0.001 = 0.03 g/L P
 
-The molecular weight of PO4 = 94.97
+The molecular weight of KH2PO4 = 120.087
 
 The P weighs 30.97 g/mol
 
-Thus the P is `33%` of the mass of the PO4
+Thus the P is `26%` of the mass of the PO4
 
-    30.97 / 94.97
+    30.97 / 120.087
 
-So to get 0.03 g/L P we would need to dissolve `0.091 g` PO4 into 1 L of DI water.
+So to get 0.03 g/L P we would need to dissolve `0.115 g` PO4 into 1 L of DI water.
 
-    0.33x = 0.03 --> x = 0.03/0.33 = 0.091 
+    0.26x = 0.03 --> x = 0.03/0.26 = 0.115 
