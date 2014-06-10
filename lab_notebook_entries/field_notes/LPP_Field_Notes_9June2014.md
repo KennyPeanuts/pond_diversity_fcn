@@ -18,6 +18,8 @@ We were collecting 14 L of water for the replacement water in the CPOM Flux Exp.
 
 ### YSI Profile
 
+~~~~~
+
 |                      |   0 m | 0.5 m |    1 m |
 |                      |  :--: | :---: |   :--: |
 | Temperature (dC)     | 25.77 | 25.24 | 25. 03 |
@@ -28,6 +30,7 @@ We were collecting 14 L of water for the replacement water in the CPOM Flux Exp.
 | pH (mV)              | -66.4 | -70.2 |  -73.0 |
 | ORP                  | 142.8 | 134.0 |  124.7 |
 
+~~~~
 ### Secchi Depth 
 
 `0.75 m `
