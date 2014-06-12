@@ -2,9 +2,11 @@
 
 This protocol is modified for small samples from Carpenter 1965. Limnology and Oceanography. 10: 141-143
 
-Revised 30 May 2012 for project in Depauw Quarry Pond
+* Revised 30 May 2012 for project in Depauw Quarry Pond
 
-Further Revised 8 Oct 2013 for Longwood U. pond research projects
+* Revised 8 Oct 2013 for Longwood U. pond research projects
+
+* Revised 12 June based on CPOM Flux Exp work at Longwood U.
 
 ## Equipment
 
@@ -40,11 +42,12 @@ Further Revised 8 Oct 2013 for Longwood U. pond research projects
     * 175g Na2S2O3*5H2O --> 500ml DI
 
 * Working Sodium Thiosulfate solution (0.14N):
-    * 10 ml of Stock Thiosulfate solution (1.4N) --> 100 ml DI water
-    * 1 ml of Stock Thiosulfate solution (1.4N) --> 100 ml DI water
+    * For 0.14 N: 10 ml of Stock Thiosulfate solution (1.4N) --> 100 ml DI water
+    * For 0.014 N: 1 ml of Stock Thiosulfate solution (1.4N) --> 100 ml DI water
+    * For 0.0014 N: 100 ul of Stock Thiosulfate solution (1.4N) --> 100 ml DI water
 
 * Potassium Iodate solution (0.01N)
-    * 0.1780g KIO3 --> 500ml DI 
+    * 0.1780 g KIO3 --> 500ml DI 
 
 ## Calculations
 
@@ -74,7 +77,7 @@ where:
 5. Titrate with sodium thiosulfate until pale yellow then add 1 drop starch sol. and titrate until blue color disappears
 
 ### Standardization of Sodium Thiosulfate
-1. Add 85 ul of KIO3 sol. to serum vial
+1. Add 200 ul of KIO3 sol. to serum vial
 2. Nearly fill serum vial with DI Water
 3. Add 85 ul of 10N H2SO4
 4. Add 85 ul of NaOH/NaI sol.
@@ -82,13 +85,13 @@ where:
 6. Repeat 3 to 5 times and use mean in calculations
 
 ### Blank Determination
-1. Add 85 ul KIO3 sol. to BOD bottle 
+1. Add 200 ul KIO3 sol. to BOD bottle 
 2. Nearly fill BOD bottle with DI Water
 3. Add 85 ul of 10N H2SO4
 4. Add 85 ul of NaOH/NaI sol. and mix
 5. Add 85 ul of MnCl sol.
 6. Titrate with sodium thiosulfate until pale yellow then add 1 drop starch sol. and titrate until blue color disappears
-7. Add 85 ul KIO3 sol.
+7. Add 200 ul KIO3 sol.
 8. Titrate with sodium thiosulfate until pale yellow then add 1 drop starch sol. and titrate until blue color disappears
 9. Calculate difference between 1st and 2nd titrations as Rblk (this may be negative)
 
