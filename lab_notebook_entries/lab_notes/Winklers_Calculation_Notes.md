@@ -2,7 +2,9 @@
 
 ## Date
 
-12 June 2014
+* began 12 June 2014
+
+* modified 16 June 2014
 
 ## Author
 
@@ -46,7 +48,7 @@ where:
 
     DO <- (((R - Rblk) Vstd * Nstd * E)/(Rstd - Rblk) (Vb - Vreg)) - DOreg
 
-#### Calculation Test
+#### DO Measurement Calculation Test
 
 Based on the data from the Water R on 10 June 2014
 
@@ -67,3 +69,49 @@ Based on the data from the Water R on 10 June 2014
 
     DO.0 <- (((R0 - Rblk) * Vstd * Nstd * E)  / ((Rstd - Rblk) * (Vb - Vreg))) - DOreg
     DO.1 <- (((R1 - Rblk) * Vstd * Nstd * E)  / ((Rstd - Rblk) * (Vb - Vreg))) - DOreg
+
+##### Conversion to mmol / L
+
+##### Variables Needed
+
+* DO concentration (ml/L)
+
+* Temperature (K)
+
+* Atm Pressure (mm Hg)
+
+## SOD Calculations
+
+### Calculation
+
+    SOD <- dO2 / (t * A)
+
+    dO2 <- DOmmol.TF - DOmmol.T0
+
+    DOmmol.T0 <- DOconc.T0 * BODwatervol
+
+    DOmmol.TF <- DOconc.TF * BODwatervol
+
+    DOconc.T0 <- DOconc.T0 * (1 - (Sampvol/BODwatervol)) + Replconc * (Replvol/BODwatervol)
+
+#### Variables
+
+* SOD = sediment oxygen demand (mmol/m2/d)
+
+* dO2 = the difference in the mmol of DO in the BOD bottle between T0 and TF (mmol)
+
+* t = the time elapsed between T0 and TF (d)
+
+* A = the surface area of the sediments (m2)
+
+* DOmmol.Tx = the mmol of DO in the BOD bottle at time step "x" (mmol)
+
+* DOconc.Tx = the DO concentration in the BOD bottle at time step "x" (mmol/L)
+
+* Sampvol = the volume of water removed during sampling
+
+* Replconc = the DO concentration of the replacement water (mmol/L)
+
+* Replvol = the volume of water added back to the BOD bottle before incubation (L)
+
+* BODwatervol = the volume of the overlying water in the BOD bottle (L)
