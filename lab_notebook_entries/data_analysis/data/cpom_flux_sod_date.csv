@@ -1,1 +1,1 @@
-bod,vial,treat,temp,pressure,T0,Rblk,Rstd,Vstd,Vb,Vreg,Nstd,E,Doreg,RmeasT0,TF,RmeasTF,A,Sampvol,Replconc,Replvol,BODwatervol
+bod,vial,treat,temp,pressure,time0,Rblk,Rstd,Vstd,Vb,Vreg,Nstd,E,Doreg,RmeasT0,timeF,RmeasTF,A,Sampvol,Replconc,Replvol,BODwatervol

@@ -33,6 +33,7 @@ where:
 * E = 5,598 ml O2 / equivalent 
 * DOreg = oxygen added with reagents (ml) = 0.018 ml/L O2 per 1 ml of MnCl
 
+
 ### R Code for Calculations
 
 #### Vectors Needed
