@@ -72,13 +72,19 @@ Based on the data from the Water R on 10 June 2014
 
 ##### Conversion to mmol / L
 
+To convert the DO concentration from ml/L to mmol/L I used the ideal gas law to determine the mols of O2 in the measured dissolved volume.
+
+    DOconc.Tx <- (P * DOvol)/(R * T)
+
 ##### Variables Needed
 
-* DO concentration (ml/L)
+* DOvol = the DO concentration measured from the winkler titration (ml/L)
 
-* Temperature (K)
+* P = the atmospheric pressure (atm)
 
-* Atm Pressure (mm Hg)
+* T = the temperature (K)
+
+* R = the ideal gas constant, which is 0.08206 (L * atm)/(mol * K)
 
 ## SOD Calculations
 
