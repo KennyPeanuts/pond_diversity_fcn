@@ -49,4 +49,4 @@ Modified:
 
 ## Output File Name
 
-    cpom_flux_sod_date.txt
+    cpom_flux_sod_date.csv
