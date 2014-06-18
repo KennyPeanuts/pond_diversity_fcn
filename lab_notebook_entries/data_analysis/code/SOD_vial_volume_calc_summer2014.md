@@ -49,6 +49,8 @@ Modified:
     vial <- c(vial1, vial2)
     vol <- c(vol1, vol2)
     
-
 ## Output
 
+    vial.volume <- data.frame(vial, vol)
+
+    write.table(vial.volume, "./data/vial_volume_summer_2014.txt", quote = F, row.names = F, sep = "\t")    
