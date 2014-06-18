@@ -34,6 +34,8 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
 ###Calculations
 
     # DO Calculations
+    ## Match vial volumes to vial names
+    
     ## Calculation of [DO] of T0 samples
     DOvol.T0 <- (((sod$RmeasT0 - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (std$Vb - std$Vreg)) - std$DOreg
     ## Calculation of [DO] of TF samples
@@ -44,10 +46,12 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
     replDOvolN <- (((repl$RreplN - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (std$Vb - std$Vreg)) - std$DOreg
     ## Convert from ml/L to mmol/L
     R <- 0.08205746 # ideal gas constant in (L atm)/(mol K)
-    DOmmol.T0 <- (sod$pressure * DOvol.T0) / (R * sod$temp)
-    DOmmol.TF <- (sod$pressure * DOvol.TF) / (R * sod$temp)
-    replDOmmol0 <- (sod$pressure * replDOvol0) / (R * sod$temp)
-    replDOmmolN <- (sod$pressure * replDOvolN) / (R * sod$temp)
+    T <- sod$temp + 273.15 # convert C to K
+    P <- sod$pressure * 0.03342 # convert in Hg to atm
+    DOmmol.T0 <- (P * DOvol.T0) / (R * T)
+    DOmmol.TF <- (P * DOvol.TF) / (R * T)
+    replDOmmol0 <- (P * replDOvol0) / (R * T)
+    replDOmmolN <- (P * replDOvolN) / (R * T)
     # SOD Calculations
     ## Calculation of T0 DO concentration
     DO.T0.0 <- (DOmmol.T0[sod$Nutrient == "no"] * (1 - (Replvol[sod$Nutrient == "no"] / BODwatervol[sod$Nutrient == "no"]))) + (replDOmmol0 * (Replvol[sod$Nutrient == "no"] / BODwatervol[sod$Nutrient == "no"]))
@@ -64,6 +68,7 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
     t0 <- as.POSIXlt(time0)
     tF <- as.POSIXlt(timeF)
     ## Calculate the incubation hours
-    incubation.h <- as.numeric(t
+    incubation.h <- t0 - tF
+    incubation.h <- as.numeric(incubation.h)
     ## Normalize by hours of incubation
-    mmolO2.m2.h <- mmol.m2 / 
+    mmolO2.m2.h <- mmol.m2 / incubation.h
