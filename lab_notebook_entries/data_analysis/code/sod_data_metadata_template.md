@@ -29,7 +29,7 @@ Modified:
     * 0N = no CPOM + elevated nutrients
 * temp = the incubation temperature (K)
 * pressure = the atmospheric pressure (atm)
-* time0 = the time that the bottle was sealed
+* time0 = the time that the bottle was sealed (y-m-d H:M)
 * RmeasT0 = sample titration buret reading at time 0 (ml)
 * Rblk = difference between 1st and 2nd blank titration buret readings (ml)
 * Rstd = standardization titration buret reading (ml)
@@ -39,7 +39,7 @@ Modified:
 * Nstd = normality of KIO3 standard (eq/L)
 * E = 5,598 ml O2 / equivalent 
 * DOreg = oxygen added with reagents (ml) = 0.018 ml/L O2 per 1 ml of MnCl
-* timeF = the time that the BOD bottle was sampled after the incubation.
+* timeF = the time that the BOD bottle was sampled after the incubation (y-m-d H:M)
 * RmeasTF = the sample titration buret reading at time F (ml)
 * A = the area of the sediments in the BOD bottle (m2)
 * Sampvol = the total volume of sample removed from the BOD bottle (L)

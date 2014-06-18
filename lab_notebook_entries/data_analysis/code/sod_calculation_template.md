@@ -60,7 +60,10 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
     dDO <- DOmmol.bot.T0 - DOmmol.bot.TF
     ## Normalize by sediment area --> convert to per m2
     mmolO2.m2 <- dDO / sod$A
-    ## Calculate incubation time
-    h <- 
+    ## Convert times to POSIXlt standard
+    t0 <- as.POSIXlt(time0)
+    tF <- as.POSIXlt(timeF)
+    ## Calculate the incubation hours
+    incubation.h <- as.numeric(t
     ## Normalize by hours of incubation
     mmolO2.m2.h <- mmol.m2 / 
