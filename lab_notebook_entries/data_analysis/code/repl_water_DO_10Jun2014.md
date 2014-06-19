@@ -30,9 +30,11 @@ The code for the calculation of the DO in the replacement water in the CPOM Flux
 
     Nutrient <- c("no", "yes")
     date <- c("2014-06-10", "2014-06-10")
-    vial <- c(18, 35)
+    vial <- c(18, 8) 
     Rmeas <- c(5.66, 6.83)
-    
+
+Note: Originally the nutirent water was run in vial 35 but vial 8 was broken and vial number 35 was renumbered 8
+
 ## Output
 
     repl <- data.frame(Nutrient, date, vial, Rmeas)
