@@ -45,6 +45,6 @@ The code for the calculation of the standardization variables for the winkler ti
 
     std <- data.frame(Rstd, Rblk, Vstd, Nstd, E, Vreg)
 
-    write.table <- (std, "./data/winkler_standardization_data.txt", quote = F, row.names = F, sep = "\t")
+    write.table <- (std, "./data/winkler_standardization_data.csv", quote = F, row.names = F, sep = ",")
 
 

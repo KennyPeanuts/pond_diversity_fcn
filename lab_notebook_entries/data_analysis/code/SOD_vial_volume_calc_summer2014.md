@@ -53,4 +53,4 @@ Modified:
 
     vial.volume <- data.frame(vial, vol)
 
-    write.table(vial.volume, "./data/vial_volume_summer_2014.txt", quote = F, row.names = F, sep = "\t")    
+    write.table(vial.volume, "./data/vial_volume_summer_2014.csv", quote = F, row.names = F, sep = ",")    

@@ -27,21 +27,25 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
 ### Import Data
 
     sod <- read.delim("./data/cpom_flux_sod_DATE.csv", header = T, stringsAsFactors = F, sep = ",")
-    std <- read.delim("./data/winker_standardization_DATE.txt", header = T)
-    repl <- read.delim("./data/repl_water_DATE.txt", header = T)
-    vial <- read.delim("./data/vial_volume_summer_2014.txt", header = T)
+    std <- read.delim("./data/winker_standardization_DATE.csv", header = T)
+    repl <- read.delim("./data/repl_water_DATE.csv", header = T)
+    vial <- read.delim("./data/vial_volume_summer_2014.csv", header = T)
 
 ###Calculations
 
     # DO Calculations
-    ## Match vial volumes to vial names
-    
+    ## Add vial vial volumes to the sod data.dframe for T1
+    sodT0 <- merge(sod, vial, by.x = "vialT0", by.y = "vial")
     ## Calculation of [DO] of T0 samples
-    DOvol.T0 <- (((sod$RmeasT0 - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (std$Vb - std$Vreg)) - std$DOreg
+    DOvol.T0 <- (((sod$RmeasT0 - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (sodT0$volume - std$Vreg)) - std$DOreg
+    ## Add vial vial volumes to the sod data.dframe for T1
+    sodTF <- merge(sod, vial, by.x = "vialTF", by.y = "vial")
     ## Calculation of [DO] of TF samples
-    DOvol.TF <- (((sod$RmeasTF - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (std$Vb - std$Vreg)) - std$DOreg
+    DOvol.TF <- (((sod$RmeasTF - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (sodTF$volume - std$Vreg)) - std$DOreg
+    ## Add vial vial volumes to the sod data.dframe for T1
+    repl <- merge(repl, vial, by.x = "vial", by.y = "vial")
     ## Calculation of replacement water [DO] no nutrients
-    replDOvol0 <- (((repl$Rrepl0 - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (std$Vb - std$Vreg)) - std$DOreg
+    replDOvol0 <- (((repl$Rrepl0 - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (repl$volume - std$Vreg)) - std$DOreg
     ## Calculation of the replacement water [DO] nutrients
     replDOvolN <- (((repl$RreplN - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (std$Vb - std$Vreg)) - std$DOreg
     ## Convert from ml/L to mmol/L
