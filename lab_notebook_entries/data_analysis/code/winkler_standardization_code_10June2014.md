@@ -42,10 +42,11 @@ The code for the calculation of the standardization variables for the winkler ti
     Rstd <- mean(stds)
     Rblk <- mean(blank.first - blank.second)
     Vreg <- sum(MnCl.vol, NaI.vol)
+    DOreg <- 0.018 * MnCl.vol
 
 ## Output
 
-    std <- data.frame(Rstd, Rblk, Vstd, Nstd, E, Vreg)
+    std <- data.frame(Rstd, Rblk, Vstd, Nstd, E, Vreg, DOreg)
 
     write.table(std, file = "./data/winkler_standardization_10June2014.csv", quote = F, row.names = F, sep = ",")
 
