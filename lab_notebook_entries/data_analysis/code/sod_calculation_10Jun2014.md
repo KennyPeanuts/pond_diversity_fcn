@@ -47,7 +47,7 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
     ## Add vial vial volumes to the sod data.dframe for T1
     repl <- merge(repl, vial, by.x = "vial", by.y = "vial")
     ## Calculation of replacement water [DO] no nutrients
-    replDOvol0 <- (((repl$Rmeas[repl$Nutrient == "no"] - std$Rblk) * std$Vstd * std$Nstd * std$E)))# / (std$Rstd - std$Rblk) * (repl$vol[repl$Nutrient == "no"] - std$Vreg)) - std$DOreg
+    replDOvol0 <- (((repl$Rmeas[repl$Nutrient == "no"] - std$Rblk) * std$Vstd * std$Nstd * std$E) / (std$Rstd - std$Rblk) * (repl$vol[repl$Nutrient == "no"] - std$Vreg)) - std$DOreg
     ## Calculation of the replacement water [DO] nutrients
     replDOvolN <- (((repl$Rmeas[repl$Nutrient == "yes"] - std$Rblk) * std$Vstd * std$Nstd * std$E) / (std$Rstd - std$Rblk) * (repl$vol[repl$Nutrient == "yes"] - std$Vreg)) - std$DOreg
 
