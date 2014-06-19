@@ -40,7 +40,8 @@ The code for the calculation of the standardization variables for the winkler ti
 ### Calculations
 
     Rstd <- mean(stds)
-    Rblk <- mean(blank.first - blank.second)
+    blank.second.vol <- blank.second - blank.first
+    Rblk <- mean(blank.first - blank.second.vol)
     Vreg <- sum(MnCl.vol, NaI.vol)
     DOreg <- 0.018 * MnCl.vol
 
