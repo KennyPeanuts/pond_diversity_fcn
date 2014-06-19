@@ -63,23 +63,21 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
     DO.T0.0 <- (DOmmol.T0[sod$Nutrient == "no"] * (1 - (sod$Replvol[sod$Nutrient == "no"] / sod$BODwatervol[sod$Nutrient == "no"]))) + (replDOmmol0[sod$Nutrient == "no"] * (sod$Replvol[sod$Nutrient == "no"] / sod$BODwatervol[sod$Nutrient == "no"]))
     DO.T0.N <- (DOmmol.T0[sod$Nutrient == "yes"] * (1 - (sod$Replvol[sod$Nutrient == "yes"] / sod$BODwatervol[sod$Nutrient == "yes"]))) + (replDOmmol0[sod$Nutrient == "yes"] * (sod$Replvol[sod$Nutrient == "yes"] / sod$BODwatervol[sod$Nutrient == "yes"]))
     DO.T0 <- c(DO.T0.0, DO.T0.N)
-
     ## Calculation of mmols of oxygen in the bottles
     DOmmol.bot.T0 <- DO.T0 * (sod$BODwatervol / 1000) # converting bottle volume from ml to L
     DOmmol.bot.TF <- DOmmol.TF * (sod$BODwatervol / 1000) # converting bottle volume from ml to L
-
     ## Calculation of change in mmol DO during incubation
     dDO <- DOmmol.bot.T0 - DOmmol.bot.TF
-    ## Normalize by sediment area --> convert to per m2
-    mmolO2.m2 <- dDO / sod$A
     ## Convert times to POSIXlt standard
-    t0 <- as.POSIXlt(time0)
-    tF <- as.POSIXlt(timeF)
+    t0 <- as.POSIXlt(sod$time0)
+    tF <- as.POSIXlt(sod$timeF)
     ## Calculate the incubation hours
-    incubation.h <- t0 - tF
+    incubation.h <- tF - t0
     incubation.h <- as.numeric(incubation.h)
     ## Normalize by hours of incubation
     mmolO2.m2.h <- mmol.m2 / incubation.h
+    ## Normalize by sediment area --> convert to per m2
+    mmolO2.m2 <- dDO / sod$A
     ## Make data frame of relevant variables
     flux <- data.frame(sod$bod, sod$CPOM, sod$Nutrient, sod.temp, DO.mmol.T0, DO.mmol.TF, DO.T0, mmolO2.m2.h)
     names(flux) <- c("bod", "CPOM", "nutrient", "temp", "DOpre", "DOpost", "DO.T0", "SOD")
