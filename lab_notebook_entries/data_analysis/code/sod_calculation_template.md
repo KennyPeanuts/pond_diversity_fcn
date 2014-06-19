@@ -45,9 +45,9 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
     ## Add vial vial volumes to the sod data.dframe for T1
     repl <- merge(repl, vial, by.x = "vial", by.y = "vial")
     ## Calculation of replacement water [DO] no nutrients
-    replDOvol0 <- (((repl$Rrepl0 - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (repl$volume - std$Vreg)) - std$DOreg
+    replDOvol0 <- (((repl$Rmeas[repl$Nutrients == "no"] - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (repl$volume[repl$Nutrients == "no" - std$Vreg)) - std$DOreg
     ## Calculation of the replacement water [DO] nutrients
-    replDOvolN <- (((repl$RreplN - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (std$Vb - std$Vreg)) - std$DOreg
+    replDOvolN <- (((repl$Rmeas[repl$Nutrients == "yes"] - std$Rblk) std$Vstd * std$Nstd * std$E)/(std$Rstd - std$Rblk) * (repl$volume[repl$Nutrients == "yes" - std$Vreg)) - std$DOreg
     ## Convert from ml/L to mmol/L
     R <- 0.08205746 # ideal gas constant in (L atm)/(mol K)
     T <- sod$temp + 273.15 # convert C to K
@@ -76,3 +76,10 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
     incubation.h <- as.numeric(incubation.h)
     ## Normalize by hours of incubation
     mmolO2.m2.h <- mmol.m2 / incubation.h
+    ## Make data frame of relevant variables
+    flux <- data.frame(sod$bod, sod$CPOM, sod$Nutrient, sod.temp, DO.mmol.T0, DO.mmol.TF, DO.T0, mmolO2.m2.h)
+    names(flux) <- c("bod", "CPOM", "nutrient", "temp", "DOpre", "DOpost", "DO.T0", "SOD")
+
+    ## Make Data Table
+    write.table(flux, "./data/cpom_flux_sod_calc_DATE.csv", quote = F, row,names = F, sep = ",")
+    
