@@ -2,17 +2,17 @@
 
 ## Date of Run 
 
-10 June 2014
+17 June 2014
 
 ## Metadata
 
 ### Collected by:
 
-AG, KP
+KP 
 
 ### Created on:
 
-19 June 2014
+20 June 2014
 
 ### Modified:
 
@@ -28,9 +28,9 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
 
 ### Import Data
 
-    sod <- read.delim("./data/cpom_flux_sod_10jun2014.csv", header = T, sep = ",")
-    std <- read.delim("./data/winkler_standardization_10June2014.csv", header = T,  sep = ",")
-    repl <- read.delim("./data/repl_water_10Jun2014.csv", header = T,  sep = ",")
+    sod <- read.delim("./data/cpom_flux_sod_17jun2014.csv", header = T, sep = ",")
+    std <- read.delim("./data/winkler_standardization_17jun2014.csv", header = T,  sep = ",")
+    repl <- read.delim("./data/repl_water_17jun2014.csv", header = T,  sep = ",")
     vial <- read.delim("./data/vial_volume_summer_2014.csv", header = T,  sep = ",")
 
 ###Calculations
@@ -83,5 +83,5 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
     names(flux) <- c("bod", "CPOM", "nutrient", "temp", "DOpre", "DOpost", "DO.T0", "SOD")
 
     ## Make Data Table
-    write.table(flux, "./data/sod_calculation_10Jun2014.csv", quote = F, row.names = F, sep = ",")
+    write.table(flux, "./data/sod_calculation_17jun2014.csv", quote = F, row.names = F, sep = ",")
     
