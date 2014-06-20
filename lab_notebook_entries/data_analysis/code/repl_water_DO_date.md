@@ -2,15 +2,15 @@
 
 ## Date of Run 
 
-INSERT DATE HERE
+INSERT DATE OF RUN
 
 ## Metadata
 
 ### Collected by:
 
-AG, KP
+KP
 
-### Created on:
+### Created 
 
 ### Modified:
 
@@ -22,19 +22,33 @@ Longwood University
 
 The code for the calculation of the DO in the replacement water in the CPOM Flux Experiment
 
+## Variable Descriptions
+
+* Nutrient = indicates whether the water came from the nutrient enriched treatment
+
+* date = the date that the measurements were collected (YYYY-MM-DD)
+
+* vial = the number ID of the 10 ml vial used to collect the water for winklers
+
+* Rmeas = the ml of titrant used to titrate the sample (ml)
+
 ## R Code
 
 ### Data entry
 
+    # replace the values with the current data
     Nutrient <- c("no", "yes")
-    date <- c("y-m-d", "y-m-d")
-    vial <- c(17, 34)
-    Rmeas <- c(volume of titrant)
-    
+    date <- c("2014-06-10", "2014-06-10")
+    vial <- c(18, 8) 
+    Rmeas <- c(5.66, 6.83)
+
+Note: Originally the nutirent water was run in vial 35 but vial 8 was broken and vial number 35 was renumbered 8
+
 ## Output
 
     repl <- data.frame(Nutrient, date, vial, Rmeas)
 
-    write.table <- (std, "./data/repl_water_DATE.csv", quote = F, row.names = F, sep = ",")
+    # replace date with date of run
+    write.table(repl, "./data/repl_water_DATE.csv", quote = F, row.names = F, sep = ",")
 
 
