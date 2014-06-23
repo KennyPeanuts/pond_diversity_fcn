@@ -90,3 +90,22 @@ Modified:
         names(bottleOM) <- c("CPOM", "tot.OM", "leaf.OM", "sed.OM")
 
         write.table(bottleOM, file = "./data/CPOM_flux_bottleOM_initial.csv", row.names = F, quote = F, sep = ",")
+
+### Calculation variables
+
+* sedOM.mass: AFDM of 10 ml of slurry
+* sed.OM: OM in 1ml sediment slurry
+* bod.sedOM: amount of OM in the 100 ml slurry in each bod bottle
+* mean.bod.sedOM: average of the bod.sedOM samples
+* mean.bod.CPOM: average of the leaf disk AFDM samples (20 leaf disks per sample)
+* bod.CPOM: cumulative total of OM in bod bottles containing CPOM
+* bod.noCPOM:  cumulative total of OM in bod bottles containing no CPOM
+* CPOM: Indication of whether CPOM was present in the bod bottle
+* bottleOM: data table containing the total OM in each bod bottle, broken down by whether or not the bottle contained CPOM
+
+####Data file name descriptions:
+		
+"CPOM": description of whether CPOM was added to the bod bottle
+"tot.OM": total OM in bod bottle
+"leaf.OM": mass of OM in CPOM
+"sed.OM": mass of OM in 100 ml of sediment slurry
