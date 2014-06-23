@@ -74,7 +74,19 @@ Modified:
 
 ### Import Sed OM Data
 
-     sedOM <- read.table("./data/CPOM_flux_LPP_sed_OM_initial_29May2014.txt", header = T, sep = "/t")
+     sedOM <- read.table("./data/CPOM_flux_LPP_sed_OM_inital_29May2014.txt", header = T, sep = "\t")
 
 ### Calculate Sed OM in each bottle
 
+        sedOM.mass <- sedOM$prop.OM * sedOM$sed.dry
+        sed.OM  <- sedOM.mass / 10
+        bod.sedOM <- sed.OM * 100
+        mean.bod.sedOM <- mean(bod.sedOM)
+        mean.bod.CPOM <- mean(leafOM$AFDM)
+        bod.CPOM <- mean.bod.sedOM + mean.bod.CPOM
+        bod.noCPOM <- mean.bod.sedOM
+        CPOM <- c("yes", "no")
+        bottleOM <- data.frame(CPOM, c(bod.CPOM, bod.noCPOM), c(mean.bod.CPOM, 0), c(mean.bod.sedOM, mean.bod.sedOM))
+        names(bottleOM) <- c("CPOM", "tot.OM", "leaf.OM", "sed.OM")
+
+        write.table(bottleOM, file = "./data/CPOM_flux_bottleOM_initial.csv", row.names = F, quote = F, sep = ",")
