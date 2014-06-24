@@ -2,7 +2,7 @@
 
 ## Date of Run
  
-18 June 2014
+13 June 2014
 
 ## Metadata
 
@@ -59,17 +59,15 @@ The code for the calculation of the standardization variables for the winkler ti
 ### Data entry
     
     # insert actual titration values
-    stds <- c(1.25, 1.26, 1.25) 
-    blank.first <- c(1.26, 1.24, 1.28)
-    blank.second <- c(2.53, 2.52, 2.52)
+    stds <- c(1.28, 1.26, 1.23) 
+    blank.first <- c(1.30, 1.30, 1.29)
+    blank.second <- c(2.55, 2.60, 2.57)
     Vstd <- 0.2
     MnCl.vol <- 0.085
     NaI.vol <- 0.085
     Nstd <- 0.01
     E <- 5598
     MnCl.DO <- 0.018
-
--Note: On the first standardization titration we got 1.91 ml; however, since this number was significantly different, this number was not put into the calculations.
 
 ### Calculations
 
