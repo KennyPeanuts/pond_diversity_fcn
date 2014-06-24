@@ -31,7 +31,7 @@ The code for the calculation of water oxygen demand from the winkler titration d
     sod <- read.delim("./data/cpom_flux_sod_10jun2014.csv", header = T, sep = ",")
     sod.calc <- read.delim("./data/sod_calculation_10jun2014.csv", header = T, sep = ",")
     water <- read.delim("./data/cpom_flux_waterR_11jun2014.csv", header = T, sep = ",")
-    std <- read.delim("./data/winkler_standardization_10jun2014.csv", header = T,  sep = ",")
+    std <- read.delim("./data/winkler_standardization_11jun2014.csv", header = T,  sep = ",")
     vial <- read.delim("./data/vial_volume_summer_2014.csv", header = T,  sep = ",")
 
 ###Calculations
@@ -57,8 +57,8 @@ The code for the calculation of water oxygen demand from the winkler titration d
     ## Normalize by hours of incubation
     dDO.h <- dDO / incubation.h
     ## Make data frame of relevant variables
-    waterR <- data.frame(water$bod, water$CPOM, water$Nutrient, water$temp, sod$DOpre, DOmmol.TF, dDO, dDO.h)
-    names(waterR) <- c("bod", "CPOM", "nutrient", "temp", "DOpre", "DOpost", "dDO", "waterR")
+    waterR <- data.frame(waterTF$bod, waterTF$CPOM, waterTF$Nutrient, waterTF$temp, sod.calc$DOpre, DOmmol.TF, dDO, dDO.h)
+    names(waterR) <- c("bod", "CPOM", "nutrient", "temp", "DO.T0", "DO.TF", "dDO", "waterR")
 
     ## Make Data Table
     write.table(waterR, "./data/waterR_calculation_11jun2014.csv", quote = F, row.names = F, sep = ",")

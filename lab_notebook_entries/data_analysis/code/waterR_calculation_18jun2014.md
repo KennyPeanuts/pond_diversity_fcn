@@ -2,7 +2,7 @@
 
 ## Date of Run 
 
-11 June 2014
+18 June 2014
 
 ## Metadata
 
@@ -57,8 +57,8 @@ The code for the calculation of water oxygen demand from the winkler titration d
     ## Normalize by hours of incubation
     dDO.h <- dDO / incubation.h
     ## Make data frame of relevant variables
-    waterR <- data.frame(water$bod, water$CPOM, water$Nutrient, water$temp, sod$DOpre, DOmmol.TF, dDO, dDO.h)
-    names(waterR) <- c("bod", "CPOM", "nutrient", "temp", "DOpre", "DOpost", "dDO", "waterR")
+    waterR <- data.frame(waterTF$bod, waterTF$CPOM, waterTF$Nutrient, waterTF$temp, sod.calc$DOpre, DOmmol.TF, dDO, dDO.h)
+    names(waterR) <- c("bod", "CPOM", "nutrient", "temp", "DO.T0", "DO.TF", "dDO", "waterR")
 
     ## Make Data Table
     write.table(waterR, "./data/waterR_calculation_18jun2014.csv", quote = F, row.names = F, sep = ",")
