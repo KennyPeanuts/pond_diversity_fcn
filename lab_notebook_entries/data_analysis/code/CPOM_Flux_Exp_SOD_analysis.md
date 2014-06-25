@@ -13,6 +13,149 @@ This code it to analyze the SOD data from the treatments with and without CPOM a
 
 ## Data Analysis
 
+## 10 June 2014 Run
+
+### Merge sediment OM calculation to SOD
+
+    sod10 <- merge(sod10, botOM, by.x = "CPOM", by.y = "CPOM")
+
+### Normalize flux to sediment OM and time
+
+    mmol.h10 <- sod10$dDO / sod10$incubation.h
+    mmol.h.OM10 <- mmol.h10 / sod10$tot.OM
+    ## convert to umol to make easier to read
+    umol.h.OM10 <- mmol.h.OM10 * 1000
+
+### Summarize OM normalized Data
+
+    summary(umol.h.OM10)
+
+~~~~
+
+    summary(umol.h.OM10)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.3146  0.4674  0.5990  0.5849  0.6820  0.8830
+
+~~~~
+
+    stem(umol.h.OM10)
+
+~~~~
+
+The decimal point is 1 digit(s) to the left of the |
+
+  2 | 16
+  4 | 577946
+  6 | 4578938
+  8 | 8
+
+~~~~
+
+### Comparison of OM normalized SOD by treatments
+
+    anova(lm(umol.h.OM10 ~ CPOM * nutrient, data = sod10))
+    hist(residuals(lm(umol.h.OM10 ~ CPOM * nutrient, data = sod10)))
+
+
+#### Output
+
+~~~~
+
+Analysis of Variance Table
+
+Response: umol.h.OM10
+              Df   Sum Sq  Mean Sq F value   Pr(>F)   
+CPOM           1 0.125545 0.125545 10.4335 0.007218 **
+nutrient       1 0.083208 0.083208  6.9151 0.021990 * 
+CPOM:nutrient  1 0.007725 0.007725  0.6420 0.438580   
+Residuals     12 0.144394 0.012033                    
+
+~~~~
+
+    plot(umol.h.OM10 ~ CPOM, data = sod10, ylab = expression(paste(mu, "mol h"^{-1}, "g OM"^{-1})), ylim = c(0, 2), col = "light green")
+    dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_CPOM_10jun2014.png")
+    dev.off()
+
+![SOD by CPOM]("../output/plots/CPOM_flux_OMflux_by_CPOM_10jun2014.png")
+
+_SOD by CPOM_
+
+    plot(umol.h.OM10  ~ nutrient, data = sod10, ylab = expression(paste(mu, "mol h"^{-1}, "g OM"^{-1})), ylim = c(0, 2), col = "orange")
+    dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_nutrient_10jun2014.png")
+    dev.off()
+
+![SOD by Nutrient]("../output/plots/CPOM_flux_OMflux_by_nutrient_10jun2014.png")
+
+_SOD by nutrient_
+
+### Comparison of Area normalized SOD by treatments
+
+### Summarize Area Normalized Data
+
+    summary(sod10$SOD)
+
+~~~~
+
+ Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.3650  0.5424  0.7057  0.6878  0.8097  1.0480
+
+~~~~
+
+    stem(sod10$SOD)
+
+~~~~
+
+The decimal point is 1 digit(s) to the left of the |
+
+   2 | 7
+   4 | 22447
+   6 | 4656
+   8 | 01260
+  10 | 5
+
+~~~~
+
+### Comparison of the Area Normalized SOD by Treatment
+
+    anova(lm(SOD ~ CPOM * nutrient, data = sod10))
+    hist(residuals(lm(SOD ~ CPOM * nutrient, data = sod10)))
+
+
+#### Output
+
+~~~~
+
+Analysis of Variance Table
+
+Response: SOD
+              Df   Sum Sq  Mean Sq F value   Pr(>F)   
+CPOM           1 0.200051 0.200051 12.1137 0.004542 **
+nutrient       1 0.113854 0.113854  6.8942 0.022152 * 
+CPOM:nutrient  1 0.009861 0.009861  0.5971 0.454638   
+Residuals     12 0.198174 0.016515                    
+
+
+~~~~
+
+    plot(SOD ~ CPOM, data = sod10, ylab = expression(paste("mmol m"^{-2},"h"^{-1})), ylim = c(0, 3 ), col = "light green")
+    dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_CPOM_10jun2014.png")
+    dev.off()
+
+![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_CPOM_10jun2014.png")
+
+_Area SOD by CPOM_
+
+    plot(SOD ~ nutrient, data = sod10, ylab = expression(paste("mmol m"^{-2},"h"^{-1})), ylim = c(0, 3 ), col = "orange")
+    dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_Nutrient_10jun2014.png")
+    dev.off()
+
+![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_nutrient_10jun2014.png")
+
+_Area SOD by Nutrient_
+
+
+################################################################################
+
 ## 12 June 2014 Run
 
 ### Merge sediment OM calculation to SOD
@@ -150,6 +293,8 @@ _Area SOD by CPOM_
 ![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_nutrient_12jun2014.png")
 
 _Area SOD by Nutrient_
+
+################################################################################
 
 ## 17 June 2014 Run
 
