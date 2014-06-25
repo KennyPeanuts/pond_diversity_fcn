@@ -435,3 +435,100 @@ _Area SOD by CPOM_
 
 _Area SOD by Nutrient_
 
+################################################################################
+
+## Combine All Dates
+
+### Average OM normalized SOD
+
+    sum.OMflux <- umol.h.OM10 + umol.h.OM12 + umol.h.OM17
+    mean.OMflux <- sum.OMflux / 3
+
+### Summarize Mean OM Normalized Data
+
+### Compare mean OM normalized SOD by treatment
+
+    anova(lm(mean.OMflux ~ CPOM * nutrient, data = sod17))
+    hist(residuals(lm(SOD ~ CPOM * nutrient, data = sod17)))
+
+
+#### Output
+
+~~~~
+
+Analysis of Variance Table
+
+Response: mean.OMflux
+              Df  Sum Sq Mean Sq F value    Pr(>F)    
+CPOM           1 0.42536 0.42536 27.5738 0.0002721 ***
+nutrient       1 0.10421 0.10421  6.7552 0.0247344 *  
+CPOM:nutrient  1 0.00005 0.00005  0.0034 0.9547883    
+Residuals     11 0.16969 0.01543                      
+
+~~~~
+
+    plot(mean.OMflux ~ CPOM, data = sod17, ylab = expression(paste("mmol m"^{-2},"h"^{-1})), ylim = c(0, 3 ), col = "light green")
+    dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_CPOM_all.png")
+    dev.off()
+
+![OM SOD by CPOM]("../output/plots/CPOM_flux_OMflux_by_CPOM_all.png")
+
+_OM SOD by CPOM_
+
+    plot(mean.OMflux ~ nutrient, data = sod17, ylab = expression(paste("mmol m"^{-2},"h"^{-1})), ylim = c(0, 3 ), col = "orange")
+    dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_Nutrient_all.png")
+    dev.off()
+
+![OM SOD by CPOM]("../output/plots/CPOM_flux_OMflux_by_nutrient_all.png")
+
+_OM SOD by Nutrient_
+
+
+### Average OM normalized SOD
+
+    sum.Aflux <- sod10$SOD + sod12$SOD + sod17$SOD
+    mean.Aflux <- sum.Aflux / 3
+
+### Summarize Mean OM Normalized Data
+
+
+### Compare mean Area normalized SOD by treatment
+
+    anova(lm(mean.Aflux ~ CPOM * nutrient, data = sod17))
+    hist(residuals(lm(SOD ~ CPOM * nutrient, data = sod17)))
+
+
+#### Output
+
+~~~~
+
+Analysis of Variance Table
+
+Response: mean.Aflux
+              Df  Sum Sq Mean Sq F value    Pr(>F)    
+CPOM           1 0.66253 0.66253 31.0570 0.0001669 ***
+nutrient       1 0.14376 0.14376  6.7391 0.0248715 *  
+CPOM:nutrient  1 0.00002 0.00002  0.0008 0.9779204    
+Residuals     11 0.23466 0.02133                      
+~~~~
+
+    plot(mean.Aflux ~ CPOM, data = sod17, ylab = expression(paste("mmol m"^{-2},"h"^{-1})), ylim = c(0, 3 ), col = "light green")
+    dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_CPOM_all.png")
+    dev.off()
+
+![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_CPOM_all.png")
+
+_Area SOD by CPOM_
+
+    plot(mean.OMflux ~ nutrient, data = sod17, ylab = expression(paste("mmol m"^{-2},"h"^{-1})), ylim = c(0, 3 ), col = "orange")
+    dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_Nutrient_all.png")
+    dev.off()
+
+![Area SOD by CPOM]("../output/plots/CPOMn_flux_Aflux_by_nutrient_all.png")
+
+_Area SOD by Nutrient_
+
+### Areal SOD by Time
+
+    boxplot(sod10$SOD[sod10$CPOM == "yes"], sod12$SOD[sod10$CPOM == "yes"], sod17$SOD[sod10$CPOM == "yes"], ylim = c(0, 3), col = "light green")
+    boxplot(sod10$SOD[sod10$CPOM == "no"], sod12$SOD[sod10$CPOM == "no"], sod17$SOD[sod10$CPOM == "no"], add = T, col = 8)
