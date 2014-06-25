@@ -24,6 +24,80 @@ Longwood University
 
 The code for the calculation of sediment oxygen demand from the winkler titration data from the CPOM Flux Experiment
 
+## Variable Descriptions
+
+### Data Frames
+
+* sod = data frame with the raw winkler data (variable descriptions in "sod_data_metadata_DATE.md")
+
+* std = data frame with the variables for the winkler standardization (variable descriptions in "winkler_standardization_DATE.md")
+
+* repl = the data frame with the raw winkler data for the replacement water (variable descriptions in "repl_water_DO_DATE.md")
+
+* vial = the data frame with the vial volumes
+
+* sodT0 = the data frame the merges sod with vial to match the vial volumes with the specific samples at the T0 sampling
+
+* sodTF = the data frame the merges sod with vial to match the vial volumes with the specific samples at the TF sampling
+
+* repl = the data frame the merges repl with vial to match the vial volumes with the specific replacement water samples
+
+* flux = the data frame of relevant objects from the calculations
+
+    * DOpre = the [DO] in the BOD bottle before the replacement water is added (mmol/L)
+
+    * DOpost = the [DO] in the BOD bottle at the conclusion of the incubation (mmol/L)
+
+    * incubation.h = the duration of the incubation (h)
+
+    * SOD = the sediment oxygen demand (mmol/m^2/h)
+
+### R Objects
+
+* DOvol.T0 = the [DO] in the overlying water at T0 (ml/L)
+
+* DOvol.T0 = the [DO] in the overlying water at TF (ml/L)
+
+* replDOvol0 = the [DO] in the replacement water without added nutrients (ml/L)
+
+* replDOvolN = the [DO] in the replacement water with added nutrients (ml/L)
+
+* R = the ideal gas constant [(L atm)/(mol K)]
+
+* T = the incubation temperature (K)
+
+* P = the incubation atmospheric pressure (atm)
+
+* DOmmol.T0 = the [DO] of the T0 sample (mmol/L)
+
+* DOmmol.TF = the [DO] of the TF sample (mmol/L)
+
+* replDOmmol0 = the [DO] of the replacement water without added nutrients (mmol/L)
+
+* replDOmmolN = the [DO] of the replacement water with added nutrients (mmol/L)
+
+* DO.T0.0 = the [DO] of the BOD bottle once the replacement water was added to the bottle in the no-nutrient treatments (mmol/L)
+
+* DO.T0.N = the [DO] of the BOD bottle once the replacement water was added to the bottle in the added nutrient treatments (mmol/L)
+
+* DO.T0 = the [DO] of the BOD bottle once the replacement water was added to the bottles (mmol/L)
+
+* DOmmol.bot.T0 = the mmol of DO in the overlying water in the BOD bottles at T0 (mmol)
+
+* DOmmol.bot.TF = the mmol of DO in the overlying water in the BOD bottles at TF (mmol)
+
+* dDO = the change in mmol DO in the bottle during the incubation (mmol)
+
+* mmolO2.m2 = the change in mmol DO normalized to the area of the sediments in the bottle (mmol/m^2)
+
+* t0 = the time the bottle was sealed at the beginning of the incubation (YYYY-MM-DD HH:MM)
+
+* tF = the time the bottle was unsealed at the end of the incubation (YYYY-MM-DD HH:MM)
+
+* incubation.h = the duration of the incbation (h)
+
+* mmolO2.m2.h = the change in oxygen in the bottle during the incubation normalized to area and time (mmol/m^2/h)
+
 ## R Code
 
 ### Import Data
@@ -44,8 +118,7 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
     sodTF <- merge(sod, vial, by.x = "vialTF", by.y = "vial")
     ## Calculation of [DO] of TF samples
     DOvol.TF <- (((sod$RmeasTF - std$Rblk) * std$Vstd * std$Nstd * std$E) / ((std$Rstd - std$Rblk) * (sodTF$vol - std$Vreg))) - std$DOreg
-
-## Add vial vial volumes to the sod data.dframe for T1
+    ## Add vial vial volumes to the sod data.dframe for T1
     repl <- merge(repl, vial, by.x = "vial", by.y = "vial")
     ## Calculation of replacement water [DO] no nutrients
     replDOvol0 <- (((repl$Rmeas[repl$Nutrient == "no"] - std$Rblk) * std$Vstd * std$Nstd * std$E) / ((std$Rstd - std$Rblk) * (repl$vol[repl$Nutrient == "no"] - std$Vreg))) - std$DOreg
@@ -80,8 +153,8 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
     ## Normalize by hours of incubation
     mmolO2.m2.h <- mmolO2.m2 / incubation.h
     ## Make data frame of relevant variables
-    flux <- data.frame(sod$bod, sod$CPOM, sod$Nutrient, sod$temp, DOmmol.T0, DOmmol.TF, DO.T0, dDO, mmolO2.m2.h)
-    names(flux) <- c("bod", "CPOM", "nutrient", "temp", "DOpre", "DOpost", "DO.T0", "dDO", "SOD")
+    flux <- data.frame(sod$bod, sod$CPOM, sod$Nutrient, sod$temp, DOmmol.T0, DOmmol.TF, DO.T0, incubation.h, mmolO2.m2.h)
+    names(flux) <- c("bod", "CPOM", "nutrient", "temp", "DOpre", "DOpost", "DO.T0", "incubation.h", "SOD")
 
     ## Make Data Table
     write.table(flux, "./data/sod_calculation_17jun2014.csv", quote = F, row.names = F, sep = ",")
