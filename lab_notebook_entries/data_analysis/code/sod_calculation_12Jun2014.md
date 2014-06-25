@@ -153,8 +153,8 @@ The code for the calculation of sediment oxygen demand from the winkler titratio
     ## Normalize by hours of incubation
     mmolO2.m2.h <- mmolO2.m2 / incubation.h
     ## Make data frame of relevant variables
-    flux <- data.frame(sod$bod, sod$CPOM, sod$Nutrient, sod$temp, DOmmol.T0, DOmmol.TF, DO.T0, incubation.h, mmolO2.m2.h)
-    names(flux) <- c("bod", "CPOM", "nutrient", "temp", "DOpre", "DOpost", "DO.T0", "incubation.h", "SOD")
+    flux <- data.frame(sod$bod, sod$CPOM, sod$Nutrient, sod$temp, dDO, DOmmol.T0, DOmmol.TF, DO.T0, incubation.h, mmolO2.m2.h)
+    names(flux) <- c("bod", "CPOM", "nutrient", "temp", "dDO", "DOpre", "DOpost", "DO.T0", "incubation.h", "SOD")
 
     ## Make Data Table
     write.table(flux, "./data/sod_calculation_12jun2014.csv", quote = F, row.names = F, sep = ",")
