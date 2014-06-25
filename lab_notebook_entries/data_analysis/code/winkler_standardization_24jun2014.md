@@ -82,6 +82,7 @@ The code for the calculation of the standardization variables for the winkler ti
     std <- data.frame(Rstd, Rblk, Vstd, Nstd, E, Vreg, DOreg)
     
     # insert date of run into file name
+
     write.table(std, file = "./data/winkler_standardization_24jun2014.csv", quote = F, row.names = F, sep = ",")
 
 
