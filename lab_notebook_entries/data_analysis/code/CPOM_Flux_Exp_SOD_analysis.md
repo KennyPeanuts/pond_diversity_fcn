@@ -77,7 +77,7 @@ Residuals     12 0.144394 0.012033
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_CPOM_10jun2014.png")
     dev.off()
 
-![SOD by CPOM]("../output/plots/CPOM_flux_OMflux_by_CPOM_10jun2014.png")
+![SOD by CPOM](../output/plots/CPOM_flux_OMflux_by_CPOM_10jun2014.png)
 
 _SOD by CPOM_
 
@@ -85,7 +85,7 @@ _SOD by CPOM_
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_nutrient_10jun2014.png")
     dev.off()
 
-![SOD by Nutrient]("../output/plots/CPOM_flux_OMflux_by_nutrient_10jun2014.png")
+![SOD by Nutrient](../output/plots/CPOM_flux_OMflux_by_nutrient_10jun2014.png)
 
 _SOD by nutrient_
 
@@ -142,7 +142,7 @@ Residuals     12 0.198174 0.016515
     dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_CPOM_10jun2014.png")
     dev.off()
 
-![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_CPOM_10jun2014.png")
+![Area SOD by CPOM](../output/plots/CPOM_flux_Aflux_by_CPOM_10jun2014.png)
 
 _Area SOD by CPOM_
 
@@ -150,7 +150,7 @@ _Area SOD by CPOM_
     dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_Nutrient_10jun2014.png")
     dev.off()
 
-![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_nutrient_10jun2014.png")
+![Area SOD by CPOM](../output/plots/CPOM_flux_Aflux_by_nutrient_10jun2014.png)
 
 _Area SOD by Nutrient_
 
@@ -219,7 +219,7 @@ Residuals     11 1.05234 0.095667
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_CPOM_12jun2014.png")
     dev.off()
 
-![SOD by CPOM]("../output/plots/CPOM_flux_OMflux_by_CPOM_12jun2014.png")
+![SOD by CPOM](../output/plots/CPOM_flux_OMflux_by_CPOM_12jun2014.png)
 
 _SOD by CPOM_
 
@@ -227,7 +227,7 @@ _SOD by CPOM_
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_nutrient_12jun2014.png")
     dev.off()
 
-![SOD by Nutrient]("../output/plots/CPOM_flux_OMflux_by_nutrient_12jun2014.png")
+![SOD by Nutrient](../output/plots/CPOM_flux_OMflux_by_nutrient_12jun2014.png)
 
 _SOD by nutrient_
 
@@ -283,7 +283,7 @@ Residuals     11 1.45513 0.13228
     dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_CPOM_12jun2014.png")
     dev.off()
 
-![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_CPOM_12jun2014.png")
+![Area SOD by CPOM](../output/plots/CPOM_flux_Aflux_by_CPOM_12jun2014.png)
 
 _Area SOD by CPOM_
 
@@ -291,7 +291,7 @@ _Area SOD by CPOM_
     dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_Nutrient_12jun2014.png")
     dev.off()
 
-![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_nutrient_12jun2014.png")
+![Area SOD by CPOM](../output/plots/CPOM_flux_Aflux_by_nutrient_12jun2014.png)
 
 _Area SOD by Nutrient_
 
@@ -359,7 +359,7 @@ Residuals     12 0.26076 0.02173
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_CPOM_17jun2014.png")
     dev.off()
 
-![SOD by CPOM]("../output/plots/CPOM_flux_OMflux_by_CPOM_17jun2014.png")
+![SOD by CPOM](../output/plots/CPOM_flux_OMflux_by_CPOM_17jun2014.png)
 
 _SOD by CPOM_
 
@@ -367,7 +367,7 @@ _SOD by CPOM_
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_nutrient_17jun2014.png")
     dev.off()
 
-![SOD by Nutrient]("../output/plots/CPOM_flux_OMflux_by_nutrient_17jun2014.png")
+![SOD by Nutrient](../output/plots/CPOM_flux_OMflux_by_nutrient_17jun2014.png)
 
 _SOD by nutrient_
 
@@ -424,7 +424,7 @@ Residuals     12 0.36180 0.03015
     dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_CPOM_17jun2014.png")
     dev.off()
 
-![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_CPOM_17jun2014.png")
+![Area SOD by CPOM](../output/plots/CPOM_flux_Aflux_by_CPOM_17jun2014.png)
 
 _Area SOD by CPOM_
 
@@ -432,7 +432,7 @@ _Area SOD by CPOM_
     dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_Nutrient_17jun2014.png")
     dev.off()
 
-![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_nutrient_17jun2014.png")
+![Area SOD by CPOM](../output/plots/CPOM_flux_Aflux_by_nutrient_17jun2014.png)
 
 _Area SOD by
 
@@ -501,7 +501,7 @@ Residuals     12 0.195074 0.016256
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_CPOM_24jun2014.png")
     dev.off()
 
-![SOD by CPOM]("../output/plots/CPOM_flux_OMflux_by_CPOM_24jun2014.png")
+![SOD by CPOM](../output/plots/CPOM_flux_OMflux_by_CPOM_24jun2014.png)
 
 _SOD by CPOM_
 
@@ -509,7 +509,7 @@ _SOD by CPOM_
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_nutrient_24jun2014.png")
     dev.off()
 
-![SOD by Nutrient]("../output/plots/CPOM_flux_OMflux_by_nutrient_24jun2014.png")
+![SOD by Nutrient](../output/plots/CPOM_flux_OMflux_by_nutrient_24jun2014.png)
 
 _SOD by nutrient_
 
@@ -567,7 +567,7 @@ Residuals     12 0.27164 0.02264
     dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_CPOM_24jun2014.png")
     dev.off()
 
-![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_CPOM_24jun2014.png")
+![Area SOD by CPOM](../output/plots/CPOM_flux_Aflux_by_CPOM_24jun2014.png)
 
 _Area SOD by CPOM_
 
@@ -575,7 +575,7 @@ _Area SOD by CPOM_
     dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_Nutrient_24jun2014.png")
     dev.off()
 
-![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_nutrient_24jun2014.png")
+![Area SOD by CPOM](../output/plots/CPOM_flux_Aflux_by_nutrient_24jun2014.png)
 
 _Area SOD by
 
@@ -615,7 +615,7 @@ Residuals     11 0.10695 0.00972
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_CPOM_all.png")
     dev.off()
 
-![OM SOD by CPOM]("../output/plots/CPOM_flux_OMflux_by_CPOM_all.png")
+![OM SOD by CPOM](../output/plots/CPOM_flux_OMflux_by_CPOM_all.png)
 
 _OM SOD by CPOM_
 
@@ -623,7 +623,7 @@ _OM SOD by CPOM_
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_Nutrient_all.png")
     dev.off()
 
-![OM SOD by CPOM]("../output/plots/CPOM_flux_OMflux_by_nutrient_all.png")
+![OM SOD by CPOM](../output/plots/CPOM_flux_OMflux_by_nutrient_all.png)
 
 _OM SOD by Nutrient_
 
@@ -661,7 +661,7 @@ Residuals     11 0.23466 0.02133
     dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_CPOM_all.png")
     dev.off()
 
-![Area SOD by CPOM]("../output/plots/CPOM_flux_Aflux_by_CPOM_all.png")
+![Area SOD by CPOM](../output/plots/CPOM_flux_Aflux_by_CPOM_all.png)
 
 _Area SOD by CPOM_
 
@@ -669,7 +669,7 @@ _Area SOD by CPOM_
     dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_Nutrient_all.png")
     dev.off()
 
-![Area SOD by CPOM]("../output/plots/CPOMn_flux_Aflux_by_nutrient_all.png")
+![Area SOD by CPOM](../output/plots/CPOMn_flux_Aflux_by_nutrient_all.png)
 
 _Area SOD by Nutrient_
 
@@ -699,7 +699,7 @@ _Area SOD by Nutrient_
     dev.copy(png, "./output/CPOM_flux_Aflux_by_date.png")
     dev.off()
 
-![Areal SOD by Date]("../output/CPOM_flux_Aflux_by_date.png")
+![Areal SOD by Date](../output/CPOM_flux_Aflux_by_date.png)
 
 _Areal SOD by Date_
 
