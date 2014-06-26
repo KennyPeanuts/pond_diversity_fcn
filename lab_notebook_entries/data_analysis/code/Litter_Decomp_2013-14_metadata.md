@@ -68,7 +68,7 @@ The dried leaves were weighed, homogenized with a mortar and pestle and then ash
 
 ### Import Raw Data
 
-        leaf <- read.delim("./data/leaf_dry_mass_fall2013.txt", header = T, stringsAsFactors = F)
+    leaf <- read.delim("./data/leaf_dry_mass_fall2013.txt", header = T, stringsAsFactors = F)
 
 ### Variable Calculation
 

@@ -59,26 +59,27 @@ _Percent leaf pack mass remining in Daulton Pond by days in the pond_
 ~~~~
 
     summary(DP.k)
-
-
+    summary(DP.k)
 
 Call:
 lm(formula = log(prop.rem.DP[prop.rem.DP > 0]) ~ day.axis.DP[prop.rem.DP > 
     0])
 
 Residuals:
-      Min        1Q    Median        3Q       Max 
--0.410642 -0.082346  0.001307  0.084595  0.269229 
+     Min       1Q   Median       3Q      Max 
+-10.0686   0.1139   0.1874   0.2471   0.5125 
 
 Coefficients:
-                              Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  -0.245917   0.043727  -5.624 2.92e-06 ***
-day.axis.DP[prop.rem.DP > 0] -0.005564   0.001937  -2.872  0.00707 ** 
+                              Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                  -0.489232   0.255748  -1.913   0.0612 .
+day.axis.DP[prop.rem.DP > 0] -0.002657   0.003012  -0.882   0.3816  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
 
-Residual standard error: 0.1624 on 33 degrees of freedom
-  (35 observations deleted due to missingness)
-Multiple R-squared:   0.2,	Adjusted R-squared: 0.1758 
-F-statistic:  8.25 on 1 and 33 DF,  p-value: 0.00707 
+Residual standard error: 1.404 on 53 degrees of freedom
+  (15 observations deleted due to missingness)
+Multiple R-squared: 0.01447,	Adjusted R-squared: -0.00412 
+F-statistic: 0.7784 on 1 and 53 DF,  p-value: 0.3816 
 
 ~~~~
 
@@ -122,17 +123,19 @@ lm(formula = log(prop.rem.CP[prop.rem.CP > 0]) ~ day.axis.CP[prop.rem.CP >
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--0.35525 -0.10974 -0.02062  0.06692  1.01198 
+-0.33930 -0.11056 -0.04142  0.08493  1.02793 
 
 Coefficients:
-                              Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                  -0.228854   0.059056  -3.875 0.000479 ***
-day.axis.CP[prop.rem.CP > 0] -0.003842   0.002051  -1.874 0.069864 .  
+                               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  -0.2657570  0.0395988  -6.711 9.62e-09 ***
+day.axis.CP[prop.rem.CP > 0] -0.0034745  0.0004694  -7.403 6.78e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
 
-Residual standard error: 0.2402 on 33 degrees of freedom
-  (35 observations deleted due to missingness)
-Multiple R-squared: 0.09615,	Adjusted R-squared: 0.06876 
-F-statistic:  3.51 on 1 and 33 DF,  p-value: 0.06986 
+Residual standard error: 0.2187 on 57 degrees of freedom
+  (11 observations deleted due to missingness)
+Multiple R-squared: 0.4902,	Adjusted R-squared: 0.4812 
+F-statistic:  54.8 on 1 and 57 DF,  p-value: 6.784e-10 
 
 ~~~~
 
@@ -177,17 +180,19 @@ lm(formula = log(prop.rem.LPP[prop.rem.LPP > 0]) ~ day.axis.LPP[prop.rem.LPP >
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--1.15079 -0.04926  0.01448  0.08023  0.57042 
+-1.14646 -0.06578  0.01058  0.11865  0.58875 
 
 Coefficients:
                                  Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                    -0.1899167  0.0494571  -3.840 0.000409 ***
-day.axis.LPP[prop.rem.LPP > 0] -0.0020857  0.0008505  -2.452 0.018433 *  
+(Intercept)                    -0.1618811  0.0445881  -3.631 0.000685 ***
+day.axis.LPP[prop.rem.LPP > 0] -0.0029604  0.0005181  -5.714 6.84e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
 
-Residual standard error: 0.2325 on 42 degrees of freedom
-  (26 observations deleted due to missingness)
-Multiple R-squared: 0.1253,	Adjusted R-squared: 0.1044 
-F-statistic: 6.014 on 1 and 42 DF,  p-value: 0.01843 
+Residual standard error: 0.2301 on 48 degrees of freedom
+  (20 observations deleted due to missingness)
+Multiple R-squared: 0.4048,	Adjusted R-squared: 0.3924 
+F-statistic: 32.65 on 1 and 48 DF,  p-value: 6.836e-07 
 
 ~~~~
 

@@ -577,7 +577,7 @@ _Area SOD by CPOM_
 
 ![Area SOD by CPOM](../output/plots/CPOM_flux_Aflux_by_nutrient_24jun2014.png)
 
-_Area SOD by
+_Area SOD by Nutrient_
 
 ################################################################################
 
@@ -666,12 +666,12 @@ Residuals     11 0.23466 0.02133
 _Area SOD by CPOM_
 
     plot(mean.OMflux ~ nutrient, data = sod17, ylab = expression(paste("mmol m"^{-2},"h"^{-1})), ylim = c(0, 3 ), col = "orange")
-    dev.copy(png, "./output/plots/CPOM_flux_Aflux_by_Nutrient_all.png")
+    dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_Nutrient_all.png")
     dev.off()
 
-![Area SOD by CPOM](../output/plots/CPOMn_flux_Aflux_by_nutrient_all.png)
+![OM normalized SOD by CPOM](../output/plots/CPOM_flux_OMflux_by_nutrient_all.png)
 
-_Area SOD by Nutrient_
+_OM Normalized SOD by Nutrient_
 
 ### Areal SOD by Time
 
