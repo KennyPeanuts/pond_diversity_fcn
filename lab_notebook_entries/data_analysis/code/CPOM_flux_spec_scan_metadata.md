@@ -1,5 +1,38 @@
 # Metadata and code cleaning for spec scans from the CPOM Flux Experiment
 
+## Metadata
+
+Collected by: KDP and KF
+
+Collected on: 10 June 2014
+
+Affiliation: Longwood University
+
+Location: Longwood University
+
+Description: 
+
+Five ml of water was collected from each BOD bottle prior to sealing for SOD incubation with a glass syringe. The sample was filtered through a GFF into a 15 ml Falcon Tube.  The sample was then refrigerated for approximately 24 h before absorbance was measured.  Absorbance was measured between 190 and 840 nm on a Nanopore (MODEL) spec in a 1 cm pathway cuvette. The software subtracted abs at 750 nm for baseline correction
+
+Created: 31 June 2014
+
+Modified:
+
+### Variables
+
+* bod# = a data frame of the data imported from the spec, where the # is the ID of the BOD bottle. 17 and 18 refer to the ambient and nutrient replacement water.
+
+* spec.all = a data frame that combines the data from all of the BOD bottles
+
+* bod = a list of the BOD bottle ID numbers sorted
+
+* spec.trunk = a data frame with just the wavelength and absorbance data
+
+* spec = a data frame merging the wavelength and absorbance data with the bod ID numbers
+
+    * bod = the bod ID number
+    * wl = the wavelength (nm)
+    * abs = the absorbance
 
 ## Data Import
 
