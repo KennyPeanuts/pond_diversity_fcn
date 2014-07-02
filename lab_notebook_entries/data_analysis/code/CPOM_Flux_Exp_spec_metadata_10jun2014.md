@@ -14,7 +14,7 @@ Description:
 
 Five ml of water was collected from each BOD bottle prior to sealing for SOD incubation with a glass syringe. The sample was filtered through a GFF into a 15 ml Falcon Tube.  The sample was then refrigerated for approximately 24 h before absorbance was measured.  Absorbance was measured between 190 and 840 nm on a Nanopore (MODEL) spec in a 1 cm pathway cuvette. The software subtracted abs at 750 nm for baseline correction
 
-Created: 31 June 2014
+Created: 1 July 2014
 
 Modified:
 
@@ -67,3 +67,7 @@ Modified:
      spec.trunk <- spec.all[, 1:2]
      spec <- data.frame(bod, spec.trunk)
      names(spec) <- c("bod", "wl", "abs")
+
+## Make Data Table
+
+    write.table(spec, "./data/cpom_flux_spec_10jun2014.csv", row.names = F, quote = F, sep = ",")
