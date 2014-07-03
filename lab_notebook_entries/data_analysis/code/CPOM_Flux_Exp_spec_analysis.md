@@ -46,6 +46,7 @@ This code it to analyze the spec scan data from the treatments with and without 
 
     plot(ratio254 ~ day, data = ratio254, subset = CPOM == "yes", ylim = c(0, 20), main = "CPOM", col = 8)
     dev.copy(png, "./output/plots/cpom_flux_ratio254_by_day_CPOM.png")
+    dev.off()
 
 ![ratio254 by day with CPOM](../output/plots/cpom_flux_ratio254_by_day_CPOM.png)
 
@@ -53,6 +54,7 @@ _ratio254 by day with CPOM_
 
     plot(ratio254 ~ day, data = ratio254, subset = CPOM == "no", ylim = c(0, 20), main = "NO-CPOM", col = 8)
     dev.copy(png, "./output/plots/cpom_flux_ratio254_by_day_noCPOM.png")
+    dev.off()
 
 ![ratio254 by day with CPOM](../output/plots/cpom_flux_ratio254_by_day_noCPOM.png)
 
@@ -60,6 +62,7 @@ _ratio254 by day with no CPOM_
     
     interaction.plot(ratio254$day, ratio254$CPOM, ratio254$ratio254, fun = "mean", xlab = "day", ylab = "ratio of absorbance at 254 to 365 nm", trace.label = "CPOM")
     dev.copy(png, "./output/plots/cpom_flux_ratio254_by_day_interaction.png")
+    dev.off()
 
 ![ratio254 by day with CPOM](../output/plots/cpom_flux_ratio254_by_day_interaction.png)
 

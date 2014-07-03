@@ -22,19 +22,19 @@ Sediment C:N = Sediment C:N ratio
 
  BOD | Sediment Erg. | Leaf Erg. | Leaf C:N | Sediment C:N 
 -----|---------------|-----------|----------|--------------
-1	X		X		X	X
-2	X					X
-3	X					X
-4	X		X		X	X
-5	X					X
-6	X		X		X	X
-7	X					X
-8	X					X
-9	X					X
-10	X		X		X	X
-11	X		X		X	X
-12	X		X		X	X
-13	X		X		X	X
-14	X					X
-15	X					X
-16	X		X		X	X
+1    |	X	     |	X	 |	X   |	X
+2    |	X	     |   	 |	    |	X
+3    |	X	     |           |	    |	X
+4    |	X	     |	X	 |	X   |	X
+5    |	X	     |		 |	    |	X
+6    |	X	     |	X	 |	X   |	X
+7    |	X	     |		 |	    |	X
+8    |	X	     |		 |	    |	X
+9    |	X	     |		 |	    |	X
+10   |	X	     |	X	 |	X   |	X
+11   |	X	     |	X	 |	X   |	X
+12   |	X	     |	X	 |	X   |	X
+13   |	X	     |	X	 |	X   |	X
+14   |	X	     |		 |	    |	X
+15   |	X	     |		 |	    |	X
+16   |	X	     |	X	 |	X   |	X
