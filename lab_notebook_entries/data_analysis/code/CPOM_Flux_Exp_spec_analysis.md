@@ -42,7 +42,7 @@ This code it to analyze the spec scan data from the treatments with and without 
     elapsed24 <- as.numeric(difftime(ratio254$day[ratio254$day == "2014-06-24"], ratio254$day[ratio254$day == "2014-06-10"], units = "days"))
     elapsed.d <- c(elapsed10, elapsed12, elapsed17, elapsed24)
 
-## Graphical Analysis
+#### Graphical Analysis
 
     plot(ratio254 ~ day, data = ratio254, subset = CPOM == "yes", ylim = c(0, 20), main = "CPOM", col = 8)
     dev.copy(png, "./output/plots/cpom_flux_ratio254_by_day_CPOM.png")
@@ -56,7 +56,7 @@ _ratio254 by day with CPOM_
     dev.copy(png, "./output/plots/cpom_flux_ratio254_by_day_noCPOM.png")
     dev.off()
 
-![ratio254 by day with CPOM](../output/plots/cpom_flux_ratio254_by_day_noCPOM.png)
+![ratio254 by day with no CPOM](../output/plots/cpom_flux_ratio254_by_day_noCPOM.png)
 
 _ratio254 by day with no CPOM_
     
@@ -64,7 +64,18 @@ _ratio254 by day with no CPOM_
     dev.copy(png, "./output/plots/cpom_flux_ratio254_by_day_interaction.png")
     dev.off()
 
-![ratio254 by day with CPOM](../output/plots/cpom_flux_ratio254_by_day_interaction.png)
+![ratio254 interaction between CPOM and day](../output/plots/cpom_flux_ratio254_by_day_interaction.png)
 
-_ratio254 by day interaction_
+_ratio254 interaction between CPOM and day_
+
+
+### Calculate S275-295
+
+    spec.s275 <- spec[spec$wl >= 275 & spec$wl <= 295, ]
+
+    max.s275 <- as.numeric(tapply(spec.s275$abs, list(spec.s275$bod, spec.s275$day), max))
+    min.s275 <- as.numeric(tapply(spec.s275$abs, list(spec.s275$bod, spec.s275$day), min))
+    rise <- max.s275 - min.s275
+    run <- 295 - 275
+    s275 <- rise / run
 
