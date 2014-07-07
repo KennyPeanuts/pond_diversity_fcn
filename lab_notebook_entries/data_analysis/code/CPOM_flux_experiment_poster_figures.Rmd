@@ -1,0 +1,16 @@
+# CPOM Flux Experiment Poster Figures
+## 7 July 2014
+
+###Import Data
+
+    sod10 <- read.table ("./data/sod_calculation_10jun2014.csv", header = T, sep = ",")
+    sod12 <- read.table ("./data/sod_calculation_12jun2014.csv", header = T, sep = ",")   
+    sod17 <- read.table ("./data/sod_calculation_17jun2014.csv", header = T, sep = ",")
+    sod24 <- read.table ("./data/sod_calculation_24jun2014.csv", header = T, sep = ",")
+    sod01 <- read.table ("./data/sod_calculation_1jul2014.csv", header = T, sep = ",")
+    botOM <- read.table ("./data/CPOM_flux_bottleOM_initial.csv", header = T, sep = ",")
+
+###Combine Dates
+
+    SOD <- rbind(sod10, sod12, sod17, sod24, sod01)
+    day <- c(rep("2014-06-10", 16), rep("2014-06-12", 16), rep("2014-06-17", 16), rep("2014-06-24", 16),rep("2014-07-01", 16))
