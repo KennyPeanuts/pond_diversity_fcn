@@ -30,7 +30,7 @@ Modified:
 
 #### Measured Variables
 
-* rep = the replicate identifier
+* bod = the BOD bottle ID number
 
 * cruc = the crucible identiying number
 
@@ -53,7 +53,7 @@ Modified:
 
 ## R Code
 
-    rep <- c(1:8)
+    bod <- c(1:8)
     cruc <- c(17:24)
     cruc.mass <- c(30.5141, 29.4362, 28.5470, 29.1382, 31.0017, 26.9369, 28.8154, 29.3969)
     cruc.leaf <- c(30.5527, 29.4730, 28.5782, 29.1532, 31.0313, 26.9732, 28.8530, 29.4262)
@@ -66,8 +66,8 @@ Modified:
     prop.OM <- 1 - (ash / leaf)
     AFDM <- leaf * prop.OM
 
-    leafOM <- data.frame(rep, cruc, cruc.mass, cruc.leaf, cruc.ash, leaf, ash, prop.OM, AFDM)
+    leafOM <- data.frame(bod, cruc, cruc.mass, cruc.leaf, cruc.ash, leaf, ash, prop.OM, AFDM)
 
 ## Output
 
-    write.table(leafOM, "./data/CPOM_flux_leaf_disk_OM_7jul2014.txt", row.names = F, sep = "\t", quote = F) 
+    write.table(leafOM, "./data/CPOM_flux_leaf_disk_OM_7jul2014.csv", row.names = F, sep = ",", quote = F) 
