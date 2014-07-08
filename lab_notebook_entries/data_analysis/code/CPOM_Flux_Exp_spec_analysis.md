@@ -10,18 +10,18 @@ This code it to analyze the spec scan data from the treatments with and without 
     spec12 <- read.table("./data/cpom_flux_spec_12jun2014.csv", header = T, sep = ",")
     spec17 <- read.table("./data/cpom_flux_spec_17jun2014.csv", header = T, sep = ",")
     spec24 <- read.table("./data/cpom_flux_spec_24jun2014.csv", header = T, sep = ",")
-   # spec01 <- read.table("./data/cpom_flux_spec_01jul2014.csv", header = T, sep = ",")
+    spec01 <- read.table("./data/cpom_flux_spec_1jul2014.csv", header = T, sep = ",")
     sod10 <- read.table("./data/cpom_flux_sod_10jun2014.csv", header = T, sep = ",") # imported to get treatment assignments to bod IDs
 ## Combine dates
 
-    spec.all <- rbind(spec10, spec12, spec17, spec24)
+    spec.all <- rbind(spec10, spec12, spec17, spec24, spec01)
     ## make date list
-    day <- c(rep("2014-06-10", length(spec10$bod)), rep("2014-06-12", length(spec12$bod)), rep("2014-06-17", length(spec17$bod)), rep("2014-06-24", length(spec24$bod)))
+    day <- c(rep("2014-06-10", length(spec10$bod)), rep("2014-06-12", length(spec12$bod)), rep("2014-06-17", length(spec17$bod)), rep("2014-06-24", length(spec24$bod)), rep("2014-07-01", length(spec01$bod)))
     spec.tot <- data.frame(day, spec.all)
 
 ### Merge with treatments
 
-    treat <- sod10[, c(1, 4, 5)]
+    treat <- sod10[, c(1, 4, 5)] # selects for the relevant colums from the sod data.frame
     spec <- merge(treat, spec.tot, by.x = "bod", by.y = "bod")
 
 ## Data Analysis
@@ -40,11 +40,47 @@ This code it to analyze the spec scan data from the treatments with and without 
     elapsed12 <- as.numeric(difftime(ratio254$day[ratio254$day == "2014-06-12"], ratio254$day[ratio254$day == "2014-06-10"], units = "days"))
     elapsed17 <- as.numeric(difftime(ratio254$day[ratio254$day == "2014-06-17"], ratio254$day[ratio254$day == "2014-06-10"], units = "days"))
     elapsed24 <- as.numeric(difftime(ratio254$day[ratio254$day == "2014-06-24"], ratio254$day[ratio254$day == "2014-06-10"], units = "days"))
-    elapsed.d <- c(elapsed10, elapsed12, elapsed17, elapsed24)
+    elapsed01 <- as.numeric(difftime(ratio254$day[ratio254$day == "2014-07-01"], ratio254$day[ratio254$day == "2014-06-10"], units = "days"))
+    elapsed.d <- c(elapsed10, elapsed12, elapsed17, elapsed24, elapsed01)
+
+#### Make Data Frame of ratio254 with elapsed time
+
+    # the order stmnt is to sort ratio254 so that it matches the sort of elapsed.d
+    r254.t <- data.frame(ratio254[order(as.Date(ratio254$day)), ], elapsed.d)
 
 #### Graphical Analysis
 
-    plot(ratio254 ~ day, data = ratio254, subset = CPOM == "yes", ylim = c(0, 20), main = "CPOM", col = 8)
+    par(mfcol = c(1, 4), mar = c(3, 4, 4, 1))
+    plot(ratio254 ~ day, data = r254.t, subset = CPOM == "yes" & nutrient == "yes", ylim = c(0, 20), col = "dark red", axes = F, xlab = " ", ylab = "Proxy for Labile Dissolved Organic Matter (abs254:abs365)")
+    axis(1, at = c(1, 2, 3, 4, 5), labels = c("10-Jun", "12-Jun", "17-Jun", "24-Jun", "1-Jul"))
+    axis(2,  las = 2)
+    text(3, 20, "Leaf + Enriched")
+    plot(ratio254 ~ day, data = r254.t, subset = CPOM == "yes" & nutrient == "no", ylim = c(0, 20), col = "dark red", axes = F, xlab = " ", ylab = " ")
+    axis(1, at = c(1, 2, 3, 4, 5), labels = c("10-Jun", "12-Jun", "17-Jun", "24-Jun", "1-Jul"))
+#    axis(2,  las = 2)
+    text(3, 20, "Leaf + Ambient")
+    plot(ratio254 ~ day, data = r254.t, subset = CPOM == "no" & nutrient == "yes", ylim = c(0, 20), col = "dark red", axes = F, xlab = " ", ylab = " ")
+    axis(1, at = c(1, 2, 3, 4, 5), labels = c("10-Jun", "12-Jun", "17-Jun", "24-Jun", "1-Jul"))
+ #   axis(2,  las = 2)
+    text(3, 20, "No-Leaf + Enriched")
+    plot(ratio254 ~ day, data = r254.t, subset = CPOM == "no" & nutrient == "no", ylim = c(0, 20), col = "dark red", axes = F, xlab = " ", ylab = " ")
+    axis(1, at = c(1, 2, 3, 4, 5), labels = c("10-Jun", "12-Jun", "17-Jun", "24-Jun", "1-Jul"))
+  #  axis(2,  las = 2)
+    text(3, 20, "No-Leaf + Ambient")
+
+
+    par(mfcol = c(1, 2), mar = c(3, 4, 4, 0))
+    plot(ratio254 ~ day, data = r254.t, subset = CPOM == "yes", ylim = c(0, 20), col = "light green", axes = F, xlab = " ", ylab = "Proxy for Labile Dissolved Organic Matter (abs254:abs365)")
+    axis(1, at = c(1, 2, 3, 4, 5), labels = c("10-Jun", "12-Jun", "17-Jun", "24-Jun", "1-Jul"))
+    axis(2,  las = 2)
+    text(3, 0, "Leaf")
+    par(mar = c(3, 0, 4, 4))
+    plot(ratio254 ~ day, data = r254.t, subset = CPOM == "no", ylim = c(0, 20), col = 8, axes = F, xlab = " ", ylab = " ")
+    axis(1, at = c(1, 2, 3, 4, 5), labels = c("10-Jun", "12-Jun", "17-Jun", "24-Jun", "1-Jul"))
+#    axis(2,  las = 2)
+    text(3, 0, "No-Leaf")
+
+
     dev.copy(png, "./output/plots/cpom_flux_ratio254_by_day_CPOM.png")
     dev.off()
 
