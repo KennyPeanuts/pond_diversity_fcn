@@ -806,8 +806,9 @@ Residuals     11 0.14726 0.01339
 
 _Area SOD by CPOM_
 
-    plot((mean.OMflux * 24) ~ CPOM, data = sod17, ylab = expression(paste("SOD (", mu,"mol (g OM)"^{-1},"h"^{-1}, ")")), ylim = c(0, 30), col = "light green", axes = F, xlab = " ", cex.lab = 1.5)
-    axis(1, at = c(1, 2), labels = c("No Leaf Litter", "Leaf Litter"), cex.axis = 1.5)
+    par(mar = c(3, 5, 3, 3))
+    plot((mean.OMflux * 24) ~ CPOM, data = sod17, ylab = expression(paste("SOD (", mu,"mol (g OM)"^{-1},"h"^{-1}, ")")), ylim = c(0, 30), col = "light green", axes = F, xlab = " ", cex.lab = 1.2)
+    axis(1, at = c(1, 2), labels = c("No Leaf Litter", "Leaf Litter"), cex.axis = 1.2)
     axis(2, las = 2, cex.axis = 1.5)
     box()
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_CPOM_all.png")
@@ -820,8 +821,9 @@ _Area SOD by CPOM_
 _OM Normalized SOD by CPOM_
 
 
+    par(mar = c(3, 5, 3, 3))
     plot((mean.OMflux * 24) ~ nutrient, data = sod17, ylab = expression(paste("SOD (", mu,"mol (g OM)"^{-1},"h"^{-1}, ")")), ylim = c(0, 30), col = "orange", axes = F, xlab = " ", cex.lab = 1.5)
-    axis(1, at = c(1, 2), labels = c("Ambient Nutrients", "Enriched Nutrients"), cex.axis = 1.5)
+    axis(1, at = c(1, 2), labels = c("Ambient Nutrients", "Enriched Nutrients"), cex.axis = 1.2)
     axis(2, las = 2, cex.axis = 1.5)
     box()
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_nutrient_all.png")
@@ -895,11 +897,13 @@ _Areal SOD by Date with Nutrients_
     sod.OM <- sod.OM.mmol * 1000 # flux in umol O2 / g OM / d
 
     par(mar = c(5, 5, 5, 5))
-    plot(sod.OM ~ days.elap, data = sod.tot, subset = CPOM == "yes", pch = 19, ylim = c(0, 50), ylab = expression(paste("SOD (", mu,"mol (g OM)"^{-1}, "d"^{-1}, ")")), xlab = "Experiment Days", cex.lab = 1.5, axes = F, cex = 1.5, col = "brown")
+    plot(sod.OM ~ days.elap, data = sod.tot, subset = CPOM == "yes", pch = 19, ylim = c(0, 50), ylab = expression(paste("SOD (", mu,"mol (g OM)"^{-1}, "d"^{-1}, ")")), xlab = "Experiment Days", cex.lab = 1.5, axes = F, cex = 1.5, col = "light green")
+    points(sod.OM ~ days.elap, data = sod.tot, subset = CPOM == "yes", pch = 1, cex = 1.5)
     axis(1, las = 1, cex = 1.5)
     axis(2, las = 2, cex = 1.5)
     points(sod.OM ~ days.elap, data = sod.tot, subset = CPOM == "no", pch = 8, cex = 1.5, col = "blue")
-    legend(10, 50, c("CPOM", "NO-CPOM"), pch = c(19, 8), col = c("brown", "blue"), cex = 1.5)
+    legend(8, 50, c("Leaf Litter ", "No-Leaf Litter "), pch = c(19, 8), col = c("light green", "blue"), cex = 1.5)
+    legend(8, 50, c("Leaf Litter ", "No-Leaf Litter "), pch = c(1, 8), col = c("black", "blue"), cex = 1.5)
     dev.copy(png, "./output/plots/CPOM_flux_OMflux_by_date.png")
     dev.off()
     dev.copy(pdf, "./output/plots/CPOM_flux_OMflux_by_date.pdf")
@@ -910,15 +914,19 @@ _Areal SOD by Date with Nutrients_
 _OM normalized SOD by Date_
 
     par(mar = c(5, 5, 5, 5))
-    plot(sod.OM ~ days.elap, data = sod.tot, subset = nutrient == "yes", pch = 17, ylim = c(0, 50), ylab = expression(paste("SOD (", mu,"mol (g OM)"^{-1}, "d"^{-1}, ")")), xlab = "Experiment Days", cex.lab = 1.5, axes = F, cex = 1.5, col = "brown")
+    plot(sod.OM ~ days.elap, data = sod.tot, subset = nutrient == "yes", pch = 19, ylim = c(0, 50), ylab = expression(paste("SOD (", mu,"mol (g OM)"^{-1}, "d"^{-1}, ")")), xlab = "Experiment Days", cex.lab = 1.5, axes = F, cex = 1.5, col = "orange")
+    points(sod.OM ~ days.elap, data = sod.tot, subset = nutrient == "yes", pch = 1, cex = 1.5)
     axis(1, las = 1, cex = 1.5)
     axis(2, las = 2, cex = 1.5)
     points(sod.OM ~ days.elap, data = sod.tot, subset = nutrient == "no", pch = 8, cex = 1.5, col = "blue")
-    legend(10, 50, c("Enriched Nutrients", "Ambient Nutrients"), pch = c(17, 8), col = c("brown", "blue"), cex = 1.5)
+    legend(8, 50, c("Enriched Nutrients ", "Ambient Nutrients "), pch = c(19, 8), col = c("orange", "blue"), cex = 1.5)
+    legend(8, 50, c("Enriched Nutrients ", "Ambient Nutrients "), pch = c(1, 8), col = c("black", "blue"), cex = 1.5)
     dev.copy(png, "./output/plots/nutrient_flux_OMflux_by_date.png")
     dev.off()
     dev.copy(pdf, "./output/plots/nutrient_flux_OMflux_by_date.pdf")
     dev.off()
+
+
 
 ![OM SOD by Date](../output/plots/nutrient_flux_OMflux_by_date.png)
 

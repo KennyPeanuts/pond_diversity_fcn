@@ -70,17 +70,15 @@ This code it to analyze the spec scan data from the treatments with and without 
 
 
     par(mfcol = c(1, 2), mar = c(3, 4, 4, 0))
-    plot(ratio254 ~ day, data = r254.t, subset = CPOM == "yes", ylim = c(0, 20), col = "light green", axes = F, xlab = " ", ylab = "Proxy for Labile Dissolved Organic Matter (abs254:abs365)")
+    plot(ratio254 ~ day, data = r254.t, subset = CPOM == "yes", ylim = c(0, 20), col = "light green", axes = F, xlab = " ", ylab = "Labile Dissolved Organic Matter (abs254:abs365)")
     axis(1, at = c(1, 2, 3, 4, 5), labels = c("10-Jun", "12-Jun", "17-Jun", "24-Jun", "1-Jul"))
     axis(2,  las = 2)
-    text(3, 0, "Leaf")
+    text(3, 0, "Leaf Litter")
     par(mar = c(3, 0, 4, 4))
     plot(ratio254 ~ day, data = r254.t, subset = CPOM == "no", ylim = c(0, 20), col = 8, axes = F, xlab = " ", ylab = " ")
     axis(1, at = c(1, 2, 3, 4, 5), labels = c("10-Jun", "12-Jun", "17-Jun", "24-Jun", "1-Jul"))
 #    axis(2,  las = 2)
-    text(3, 0, "No-Leaf")
-
-
+    text(3, 0, "No-Leaf Litter")
     dev.copy(png, "./output/plots/cpom_flux_ratio254_by_day_CPOM.png")
     dev.off()
 
