@@ -19,7 +19,6 @@
     * LU campus pond
 
 * Distance from Shore
-    * 0 m 
     * 2 m
     * 10 m
 
@@ -34,17 +33,17 @@
 
 #### Replicates
 
-    3 distances
+    2 distances
     3 transects
-    3 locations
+    2 locations
     ----------------
-    27 samples per lake
+    12 samples per lake
     3 lakes
     ----------------
-    81 samples per season
+    36 samples per season
     2 seasons
     --------
-    162
+    72 total samples
  
 #### Response Variables
 
@@ -58,14 +57,3 @@
 
 1. Change in litter density by season
 
-### Materials
-
-* [ ] Ekman
-
-* [ ] Washnets
-
-* [ ] 27 Sample bags
-
-* [ ] Squeeze bottles
-
-* [ ] 
