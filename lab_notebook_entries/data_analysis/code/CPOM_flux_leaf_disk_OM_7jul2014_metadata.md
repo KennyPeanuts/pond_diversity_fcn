@@ -26,6 +26,8 @@ Created: 7 July 2014
 
 Modified:
 
+* 13 Jan 2015 - KF replaced the bod numbers 1 - 8 in `bod` with the actual bod number values
+
 ### Variables
 
 #### Measured Variables
@@ -53,7 +55,7 @@ Modified:
 
 ## R Code
 
-    bod <- c(1:8)
+    bod <- c(1, 4, 6, 10, 11, 12, 13, 16)
     cruc <- c(17:24)
     cruc.mass <- c(30.5141, 29.4362, 28.5470, 29.1382, 31.0017, 26.9369, 28.8154, 29.3969)
     cruc.leaf <- c(30.5527, 29.4730, 28.5782, 29.1532, 31.0313, 26.9732, 28.8530, 29.4262)
