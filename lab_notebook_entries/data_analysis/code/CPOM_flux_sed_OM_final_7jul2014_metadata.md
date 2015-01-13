@@ -10,13 +10,17 @@ Affiliation: Longwood University
 
 Location: Lancer Park Pond
 
+Modified:
+
+* 13 Jan 2014 KF - corrected the methods and variable descriptions to indicate the volume of sediment used.
+
 Description: 
 
 * Sediments were collected from LPP with an Ekman and then sieved through a 250 um mesh to remove all macroinvertebrates and CPOM
 
 * The sediments were placed into BOD bottles on 9 June 2014 until 30 June 2014 in the dark with pond water and the applicable treatment conditions.
 
-* At the conclusion of the experiment the water was siphoned off and a 1 X 0.8 cm core was collected from the center of the bottle. The core volume is `&pi;(0.4^2) * 1 = 0.5 cm3`.
+* At the conclusion of the experiment the water was siphoned off and a 1 X 0.8 cm core was collected from the center of the bottle. The core volume is `pi * (0.4^2) * 1 = 0.5 cm3`.
 
 * The sediment core was placed into a preweighed crucible and then dried at 50 dC and ashed at 550 dC
 
