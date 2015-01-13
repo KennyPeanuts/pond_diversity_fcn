@@ -28,6 +28,8 @@ The bottles were then placed haphazardly on the rocker shakers in the dark with 
 
 The treatment levels were randomly assigned to the bottles
 
+~~~~~
+
 | Bottle_number | CPOM | Nutrients | Treatment_Code |
 |---------------+------+-----------+----------------|
 | 1             | Y    | N         | C0             |
@@ -48,4 +50,4 @@ The treatment levels were randomly assigned to the bottles
 | 16            | Y    | Y         | CN             |
 |               |      |           |                |
 
-
+~~~~
