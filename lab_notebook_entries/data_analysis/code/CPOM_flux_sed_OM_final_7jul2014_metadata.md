@@ -14,11 +14,11 @@ Description:
 
 * Sediments were collected from LPP with an Ekman and then sieved through a 250 um mesh to remove all macroinvertebrates and CPOM
 
-* The sediments were then allowd to settle ovenight and the overlying water was siphoned off
+* The sediments were placed into BOD bottles on 9 June 2014 until 30 June 2014 in the dark with pond water and the applicable treatment conditions.
 
-* The remaining slurry was homogenized and 10 ml was place into a pre-weighed crucible
+* At the conclusion of the experiment the water was siphoned off and a 1 X 0.8 cm core was collected from the center of the bottle. The core volume is `&pi;(0.4^2) * 1 = 0.5 cm3`.
 
-* The sediments were then dried at 50 dC and ashed at 550 dC
+* The sediment core was placed into a preweighed crucible and then dried at 50 dC and ashed at 550 dC
 
 Created: 7 July 2014
 
@@ -40,13 +40,14 @@ Modified:
 
 #### Calculated Variables
 
-* sed.dry = the dry mass of the sediment (g)
+* sed.dry = the dry mass of the 0.5 ml sediment core (g)
 
 * sed.ash = the mass of the ash after 4 h at 550 dC (g)
 
 * prop.OM = the proportion of orgainic matter in the sediment
 
-* AFDM = the ash-free dry mass of the sediment (g)
+* AFDM.core = the ash-free dry mass of the sediment 0.5 ml core(g)
+
 
 ## R Code
 
@@ -61,9 +62,9 @@ Modified:
     sed.dry <- cruc.dry - cruc.mass
     sed.ash <- cruc.ash - cruc.mass
     prop.OM <- 1 - (sed.ash / sed.dry)
-    AFDM <- sed.dry * prop.OM
+    AFDM.core <- sed.dry * prop.OM
 
-    sedOM <- data.frame(bod, cruc, cruc.mass, cruc.dry, cruc.ash, sed.dry, sed.ash, prop.OM, AFDM)
+    sedOM <- data.frame(bod, cruc, cruc.mass, cruc.dry, cruc.ash, sed.dry, sed.ash, prop.OM, AFDM.core)
 
 ## Output
 
