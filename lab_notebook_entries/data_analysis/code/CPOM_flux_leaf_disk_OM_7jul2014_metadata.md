@@ -4,7 +4,7 @@
 
 Collected by: KDP and KF
 
-Collected on: 30 May 2014
+Collected on: 30 June 2014
 
 Affiliation: Longwood University
 
@@ -18,7 +18,9 @@ Description:
 
 * a 10 mm (#5) cork borer was used to cut a single leaf disk from each leaf, avoiding major veins
 
-* each disk was placed in a pre-weighed crucible and dried at 50 dC, then ashed at 550 dC
+* 20 leaf discs were placed into a BOD bottle with sediment from LPP on 9 June 2014 and then incubated until 24 June 2014
+
+* 12 leaf discs from each BOD bottle were placed in a pre-weighed crucible and dried at 50 dC, then ashed at 550 dC
 
 * Note: BOD bottle #10 had a 3-4 instar Chironominae in it. We only recovered 17 leaf disks so the crucible #10 only had 9 leaf disks. Some leaf disks were almost completely skeletonized and others had chunks taken from them.
 
@@ -27,6 +29,7 @@ Created: 7 July 2014
 Modified:
 
 * 13 Jan 2015 - KF replaced the bod numbers 1 - 8 in `bod` with the actual bod number values
+* 13 Jan 2015 - KF corrected methods in above section
 
 ### Variables
 
@@ -38,19 +41,19 @@ Modified:
 
 * cruc.mass = the mass of the empty crucible (g)
 
-* cruc.leaf = the mass of the crucible plus the leaf disk drying at 50 dC (g)
+* cruc.leaf = the mass of the crucible plus the 12 leaf disks drying at 50 dC (g)
 
 * cruc.ash = the mass of the crucible plus the ash after 4 h at 550 dC (g)
 
 #### Calculated Variables
 
-* leaf = the dry mass of the leaf disk (g)
+* leaf.12 = the dry mass of the 12 leaf disks (g)
 
-* ash = the mass of the ash after 4 h at 550 dC (g)
+* ash.12 = the mass of the ash after 4 h at 550 dC (g)
 
-* prop.OM = the proportion of organic matter in the leaf disk
+* prop.OM = the proportion of organic matter in the 12 leaf disks
 
-* AFDM = the ash free dry mass of the leaf disk
+* AFDM.12 = the ash free dry mass of the 12 leaf disks
 
 
 ## R Code
@@ -64,11 +67,12 @@ Modified:
 ### Calculated Variables
 
     leaf <- cruc.leaf- cruc.mass
-    ash <- cruc.ash - cruc.mass
-    prop.OM <- 1 - (ash / leaf)
-    AFDM <- leaf * prop.OM
+    ash.12 <- cruc.ash - cruc.mass
+    prop.OM <- 1 - (ash.12 / leaf)
+    AFDM.12 <- leaf * prop.OM
+    AFDM <- AFDM.12 / c(12, 12, 12, 9, 12, 12, 12, 12) # BOD 10 has only 9 leaf discs - see note above
 
-    leafOM <- data.frame(bod, cruc, cruc.mass, cruc.leaf, cruc.ash, leaf, ash, prop.OM, AFDM)
+    leafOM <- data.frame(bod, cruc, cruc.mass, cruc.leaf, cruc.ash, leaf, ash.12, prop.OM, AFDM.12, AFDM)
 
 ## Output
 
