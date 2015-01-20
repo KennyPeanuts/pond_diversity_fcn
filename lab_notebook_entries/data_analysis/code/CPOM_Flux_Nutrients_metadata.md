@@ -22,13 +22,13 @@ Modified:
 
 ### Variables:
 
-BOD: Sample BOD bottle number (1-16; RW0= Replacement water with ambient nutrients; RWN= Replacement water with added nutrients)
-CPOM: 0= none added	C= CPOM added
-NUTS: 0= none added	N= Nutrient Enriched
-DATE: Date of sample collection
-NOx: [NOx-N] (mg/L)
-NH3: [NH3-N] (mg/L)
-P: [ortho-p] (mg/L)
+* BOD: Sample BOD bottle number (1-16; RW0= Replacement water with ambient nutrients; RWN= Replacement water with added nutrients)
+* CPOM: 0= none added	C= CPOM added
+* NUTS: 0= none added	N= Nutrient Enriched
+* DATE: Date of sample collection
+* NOx: [NOx-N] (mg/L)
+* NH3: [NH3-N] (mg/L)
+* P: [ortho-p] (mg/L)
 
 ## R Code
 
