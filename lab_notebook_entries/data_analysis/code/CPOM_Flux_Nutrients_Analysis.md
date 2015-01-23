@@ -14,8 +14,13 @@ These data were collected from the CPOM Flux Exp. to assess the effect of CPOM o
 ## Initial Exploratory plots
 
     plot(NOx ~ DATE, data = nut, subset = CPOM == "0")
-    plot(NOx ~ DATE, data = nut, subset = CPOM == "C")
-    plot(NH3 ~ DATE, data = nut, subset = CPOM == "0")
+    plot(NOx ~ DATE, data = nut, subset = CPOM == "C", add = T, col = 2)
+    
+    plot(NOx ~ DATE, data = nut, subset = CPOM == "0" & NUTS == "0")
+    plot(NOx ~ DATE, data = nut, subset = CPOM == "C" & NUTS == "0", add = T, col = 2)
+    plot(NOx ~ DATE, data = nut, subset = CPOM == "0" & NUTS == "N")
+    plot(NOx ~ DATE, data = nut, subset = CPOM == "C" & NUTS == "N", add = T, col = 2)
+    
     plot(NH3 ~ DATE, data = nut, subset = CPOM == "C")
     plot(NH3 ~ DATE, data = nut, subset = CPOM == "C")
     plot(P ~ DATE, data = nut, subset = CPOM == "0")
