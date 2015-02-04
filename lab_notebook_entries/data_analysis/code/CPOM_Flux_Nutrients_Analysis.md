@@ -5,6 +5,7 @@
 * Author: KF
 
 * Modified: 3 Feb 2015 - KF - add code to calculate flux
+* Modified: 4 Feb 2015 - KF - added code to calculate flux for 17 June Sampling
 
 ## Purpose
 These data were collected from the CPOM Flux Exp. to assess the effect of CPOM on the flux of nutrients across the sediment water interface.
@@ -107,4 +108,40 @@ So the inital nutrient concentration for 17 June is the concentration on 12 June
 
 ##### Merge replacement volume data with Nutrient data
  
-    flux.17Jun <- merge(nut[nut$DATE == "17-Jun"], sod.12Jun, by.x = BOD, by.y = bod)
+    repl.vol <- sod.12Jun[, c(1, 13, 14)] # selects only the BOD number and the repl vol from the file
+    names(repl.vol) <- c("BOD", "Replvol", "BODwatervol")
+    nut.12Jun <- merge(nut[nut$DATE == "12-Jun", ], repl.vol, by = "BOD")
+
+##### Calculate the initial nutrient concentration as a weighted average of the volumes
+
+    prop.repl <- nut.12Jun$Replvol / nut.12Jun$BODwatervol
+    init.NOx.17Jun.C <- (nut.12Jun$NOx[nut.12Jun$NUTS == 0] * (1 - prop.repl[nut.12Jun$NUTS == "0"])) + (nut$NOx[nut$BOD == "RW0" & nut$DATE == "12-Jun"] * prop.repl[nut.12Jun$NUTS == "0"])
+    init.NH3.17Jun.C <- (nut.12Jun$NH3[nut.12Jun$NUTS == 0] * (1 - prop.repl[nut.12Jun$NUTS == "0"])) + (nut$NH3[nut$BOD == "RW0" & nut$DATE == "12-Jun"] * prop.repl[nut.12Jun$NUTS == "0"])
+    init.P.17Jun.C <- (nut.12Jun$P[nut.12Jun$NUTS == 0] * (1 - prop.repl[nut.12Jun$NUTS == "0"])) + (nut$P[nut$BOD == "RW0" & nut$DATE == "12-Jun"] * prop.repl[nut.12Jun$NUTS == "0"])
+
+##### Calculate the Flux as the change in Concentration
+
+    flux.NOx.17Jun.C <- nut$NOx[nut$BOD != "RW0" & nut$DATE == "17-Jun" & nut$NUTS == "0"] - init.NOx.17Jun.C
+    flux.NH3.17Jun.C <- nut$NH3[nut$BOD != "RW0" & nut$DATE == "17-Jun" & nut$NUTS == "0"] - init.NH3.17Jun.C
+    flux.P.17Jun.C <- nut$P[nut$BOD != "RW0" & nut$DATE == "17-Jun" & nut$NUTS == "0"] - init.P.17Jun.C
+    CPOM.C <- nut$CPOM[nut$BOD != "RW0" & nut$DATE == "17-Jun" & nut$NUTS == "0"]
+    flux.17Jun.C <- data.frame(CPOM.C, flux.NOx.17Jun.C, flux.NH3.17Jun.C, flux.P.17Jun.C)
+    names(flux.17Jun.C) <- c("CPOM", "NOx", "NH3", "P")
+
+##### Output
+
+~~~~
+  
+  > flux.17Jun.C
+CPOM       NOx       NH3        P
+1    C  3.540770 -0.113045 0.025455
+2    0  0.253465 -0.102720 0.018360
+3    0  0.345965 -0.108815 0.011680
+4    C -0.329225 -0.092340 0.003170
+5    0 -3.077185 -0.231060 0.009850
+6    0  0.254310 -0.191015 0.014000
+7    C -0.042825 -0.088925 0.003830
+8    C -1.943735 -0.084890 0.019780
+> 
+  
+~~~~
