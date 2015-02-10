@@ -401,3 +401,11 @@ names(flux.1Jul.N) <- c("CPOM", "NOx", "NH3", "P")
 > 
 
 ~~~~
+
+### Create single data frame from dates
+
+DATE <- c(rep("12-Jun", 16), rep("17-Jun", 16), rep("24-Jun", 16), rep("1-Jul", 16))
+T <- c(rep(2, 16), rep(7, 16), rep(14, 16), rep(21, 16))
+NUT <- c(rep(c(rep("0", 8), rep("N", 8)), 4))
+flux <- rbind(flux.12Jun.C, flux.12Jun.N, flux.17Jun.C, flux.17Jun.N, flux.24Jun.C, flux.24Jun.N, flux.1Jul.C, flux.1Jul.N)
+cpom.flux.nut <- data.frame(DATE, T, NUT, flux)
