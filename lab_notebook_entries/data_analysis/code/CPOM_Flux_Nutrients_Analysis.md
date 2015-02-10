@@ -6,6 +6,7 @@
 
 * Modified: 3 Feb 2015 - KF - add code to calculate flux
 * Modified: 4 Feb 2015 - KF - added code to calculate flux for 17 June Sampling
+* Modified: 10 Feb 2015 - KF - added code to calculate flux for 24 June Sampling
 
 ## Purpose
 These data were collected from the CPOM Flux Exp. to assess the effect of CPOM on the flux of nutrients across the sediment water interface.
@@ -144,4 +145,102 @@ CPOM       NOx       NH3        P
 8    C -1.943735 -0.084890 0.019780
 > 
   
+~~~~
+  
+#### 24 June
+  
+  To calculate the flux for 24 June we need to calculate the initial nutrient concentrations due to the dilution of the overlying water with the replacement water.  At the conclusion of the sampling of the previous date a volume of water was removed from each of the bottles for sampling and this was then readded via the replacement water before the jar was put back into incubation.
+
+So the inital nutrient concentration for 24 June is the concentration on 17 June diluted with the 17 June replacement water.
+
+##### Import data with replacement water volumes
+
+sod.17Jun <- read.table("./data/cpom_flux_sod_17jun2014.csv", header = T, sep = ",")
+
+##### Merge replacement volume data with Nutrient data
+
+repl.vol <- sod.17Jun[, c(1, 13, 14)] # selects only the BOD number and the repl vol from the file
+names(repl.vol) <- c("BOD", "Replvol", "BODwatervol")
+nut.17Jun <- merge(nut[nut$DATE == "17-Jun", ], repl.vol, by = "BOD")
+
+##### Calculate the initial nutrient concentration as a weighted average of the volumes
+
+prop.repl <- nut.17Jun$Replvol / nut.17Jun$BODwatervol
+init.NOx.24Jun.C <- (nut.17Jun$NOx[nut.17Jun$NUTS == 0] * (1 - prop.repl[nut.17Jun$NUTS == "0"])) + (nut$NOx[nut$BOD == "RW0" & nut$DATE == "17-Jun"] * prop.repl[nut.17Jun$NUTS == "0"])
+init.NH3.24Jun.C <- (nut.17Jun$NH3[nut.17Jun$NUTS == 0] * (1 - prop.repl[nut.17Jun$NUTS == "0"])) + (nut$NH3[nut$BOD == "RW0" & nut$DATE == "17-Jun"] * prop.repl[nut.17Jun$NUTS == "0"])
+init.P.24Jun.C <- (nut.17Jun$P[nut.17Jun$NUTS == 0] * (1 - prop.repl[nut.17Jun$NUTS == "0"])) + (nut$P[nut$BOD == "RW0" & nut$DATE == "17-Jun"] * prop.repl[nut.17Jun$NUTS == "0"])
+
+##### Calculate the Flux as the change in Concentration
+
+flux.NOx.24Jun.C <- nut$NOx[nut$BOD != "RW0" & nut$DATE == "24-Jun" & nut$NUTS == "0"] - init.NOx.24Jun.C
+flux.NH3.24Jun.C <- nut$NH3[nut$BOD != "RW0" & nut$DATE == "24-Jun" & nut$NUTS == "0"] - init.NH3.24Jun.C
+flux.P.24Jun.C <- nut$P[nut$BOD != "RW0" & nut$DATE == "24-Jun" & nut$NUTS == "0"] - init.P.24Jun.C
+CPOM.C <- nut$CPOM[nut$BOD != "RW0" & nut$DATE == "24-Jun" & nut$NUTS == "0"]
+flux.24Jun.C <- data.frame(CPOM.C, flux.NOx.24Jun.C, flux.NH3.24Jun.C, flux.P.24Jun.C)
+names(flux.24Jun.C) <- c("CPOM", "NOx", "NH3", "P")
+
+##### Output
+
+~~~~
+  
+> flux.24Jun.C
+  CPOM      NOx       NH3         P
+1    C -1.89924 -0.098020 -0.007530
+2    0 -0.31557 -0.073490  0.005565
+3    0 -1.19749 -0.078490  0.006320
+4    C  0.04254 -0.037660  0.000225
+5    0  0.00265  0.245510  0.045395
+6    0 -1.43417  0.001850  0.009320
+7    C -0.03329 -0.082395 -0.008850
+8    C  0.04553 -0.036270  0.012300
+
+~~~~
+
+#### 1 July
+  
+  To calculate the flux for 1 Jul we need to calculate the initial nutrient concentrations due to the dilution of the overlying water with the replacement water.  At the conclusion of the sampling of the previous date a volume of water was removed from each of the bottles for sampling and this was then readded via the replacement water before the jar was put back into incubation.
+
+So the inital nutrient concentration for 1 July is the concentration on 24 June diluted with the 24 June replacement water.
+
+##### Import data with replacement water volumes
+
+sod.24Jun <- read.table("./data/cpom_flux_sod_24jun2014.csv", header = T, sep = ",")
+
+##### Merge replacement volume data with Nutrient data
+
+repl.vol <- sod.24Jun[, c(1, 13, 14)] # selects only the BOD number and the repl vol from the file
+names(repl.vol) <- c("BOD", "Replvol", "BODwatervol")
+nut.24Jun <- merge(nut[nut$DATE == "24-Jun", ], repl.vol, by = "BOD")
+
+##### Calculate the initial nutrient concentration as a weighted average of the volumes
+
+prop.repl <- nut.1Jul$Replvol / nut.1Jul$BODwatervol
+init.NOx.1Jul.C <- (nut.24Jun$NOx[nut.24Jun$NUTS == 0] * (1 - prop.repl[nut.24Jun$NUTS == "0"])) + (nut$NOx[nut$BOD == "RW0" & nut$DATE == "24-Jun"] * prop.repl[nut.24Jun$NUTS == "0"])
+init.NH3.1Jul.C <- (nut.24Jun$NH3[nut.24Jun$NUTS == 0] * (1 - prop.repl[nut.24Jun$NUTS == "0"])) + (nut$NH3[nut$BOD == "RW0" & nut$DATE == "24-Jun"] * prop.repl[nut.24Jun$NUTS == "0"])
+init.P.1Jul.C <- (nut.24Jun$P[nut.24Jun$NUTS == 0] * (1 - prop.repl[nut.24Jun$NUTS == "0"])) + (nut$P[nut$BOD == "RW0" & nut$DATE == "24-Jun"] * prop.repl[nut.24Jun$NUTS == "0"])
+
+##### Calculate the Flux as the change in Concentration
+
+flux.NOx.1Jul.C <- nut$NOx[nut$BOD != "RW0" & nut$DATE == "1-Jul" & nut$NUTS == "0"] - init.NOx.1Jul.C
+flux.NH3.1Jul.C <- nut$NH3[nut$BOD != "RW0" & nut$DATE == "1-Jul" & nut$NUTS == "0"] - init.NH3.1Jul.C
+flux.P.1Jul.C <- nut$P[nut$BOD != "RW0" & nut$DATE == "1-Jul" & nut$NUTS == "0"] - init.P.1Jul.C
+CPOM.C <- nut$CPOM[nut$BOD != "RW0" & nut$DATE == "1-Jul" & nut$NUTS == "0"]
+flux.1Jul.C <- data.frame(CPOM.C, flux.NOx.1Jul.C, flux.NH3.1Jul.C, flux.P.1Jul.C)
+names(flux.1Jul.C) <- c("CPOM", "NOx", "NH3", "P")
+
+##### Output
+
+~~~~
+
+> flux.1Jul.C
+  CPOM       NOx       NH3         P
+1    C -1.130255  0.005605  0.009980
+2    0 -1.139760  0.143020  0.052490
+3    0 -1.152785  0.106995  0.046865
+4    C -1.146010 -0.020585  0.011715
+5    0 -1.212220  0.003340 -0.011700
+6    0 -1.183805 -0.035230  0.009470
+7    C -1.166105 -0.107200 -0.025270
+8    C -1.453990 -0.056890 -0.012155
+
 ~~~~
