@@ -854,6 +854,12 @@ _OM Normalized SOD by Nutrient_
 
     sod.tot <- data.frame(sod.tot, days.elap)
 
+##### Output
+
+    unique(days.elap)
+   
+    > unique(days.elap)
+    [1]  0  2  7 14 21
 #### Analyize areal normalized by time
 
     par(mar = c(5, 5, 5, 5))
