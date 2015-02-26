@@ -7,7 +7,7 @@
 * Modified: 3 Feb 2015 - KF - add code to calculate flux
 * Modified: 4 Feb 2015 - KF - added code to calculate flux for 17 June Sampling
 * Modified: 10 Feb 2015 - KF - added code to calculate flux for 24 June Sampling
-* Modified: 25 Feb 2015 - KF - normalized flux by time elapsed
+* Modified: 25 Feb 2015 - KF - normalized flux by time elapsed; create data file of flux calculations
 
 
 ## Purpose
@@ -407,11 +407,12 @@ names(flux.1Jul.N) <- c("CPOM", "NOx", "NH3", "P")
 ### Create single data frame from dates
 
 DATE <- c(rep("12-Jun", 16), rep("17-Jun", 16), rep("24-Jun", 16), rep("1-Jul", 16))
-days <- c(rep(2, 16), rep(7, 16), rep(14, 16), rep(21, 16))
-days.elap <- c(rep(2, 16), rep(5, 16), rep(7, 16), rep(7, 16))
-NUT <- c(rep(c(rep("0", 8), rep("N", 8)), 4))
+days <- c(rep(2, 16), rep(7, 16), rep(14, 16), rep(21, 16)) # number of days since set up
+days.elap <- c(rep(2, 16), rep(5, 16), rep(7, 16), rep(7, 16)) # number of days since t-1
+NUT <- c(rep(c(rep("0", 8), rep("N", 8)), 4)) 
 flux.samp <- rbind(flux.12Jun.C, flux.12Jun.N, flux.17Jun.C, flux.17Jun.N, flux.24Jun.C, flux.24Jun.N, flux.1Jul.C, flux.1Jul.N)
-flux <- flux.samp[,-1]/days.elap
+flux.day <- flux.samp[,-1]/days.elap # removed the `CPOM` variable from the data and normalize by days
+flux <- flux.day # need the volume of water 
 cpom.flux.nut <- data.frame(DATE, days, NUT, flux.samp[,1], flux)
 names(cpom.flux.nut) <- c("DATE", "days", "NUT", "CPOM", "NOx", "NH3", "P")
 write.table(cpom.flux.nut, "./data/CPOM_Flux_Nutrient_Flux_calc.csv", row.names = F, quote = F, sep = ",")
