@@ -10,6 +10,9 @@ The experiment was to assess the loss of mass from leaves in 3 ponds in Farmvill
 
 * Modified 24 March 2014
 
+* Modified 11 June 2015 - KF - completed analysis with the latest data and updated code to remove the outlier from DP
+
+
 ## Author
 
 KF
@@ -42,6 +45,29 @@ KF
     T0.DP <- mean(leaf$AFDM[leaf$lake == "Daulton Pond" & leaf$days == 0], na.rm = T)
     prop.rem.DP <- 1 - ((T0.DP - leaf$AFDM[leaf$lake == "Daulton Pond"]) / T0.DP)
 
+##### Remove Incorrect Point due to Missing Data
+
+One of the points is basically 0 due to missing data
+
+    leaf[128, ]
+
+~~~~
+
+          lake sample   date_col julian year    bag bag_leaf days cruc_num
+128 Daulton Pond     48 12/21/2013    355 2013 7.3292   7.3293   60        4
+    cruc_empty cruc_full cruc_ash leaf_mass leaf_mass_AFDM ash_mass_AFDM
+128     27.487   30.2993  27.7033     1e-04         2.8123        0.2163
+       propOM         AFDM
+128 0.9230879 9.230879e-05
+
+~~~~
+
+to prevent this from affecting the calculation of k, I converted this value to NA in the data
+
+    prop.rem.DP[58] <- NA
+
+Create the days axis
+
     day.axis.DP <- leaf$days[leaf$lake == "Daulton Pond"] 
 
     plot(prop.rem.DP[prop.rem.DP > 0] * 100 ~ day.axis.DP[prop.rem.DP > 0], xlab = "Days in Pond", ylab = "Percent Mass Remaining", ylim = c(0, 100), pch = 16)
@@ -56,10 +82,10 @@ _Percent leaf pack mass remining in Daulton Pond by days in the pond_
 
     DP.k <- lm(log(prop.rem.DP[prop.rem.DP > 0]) ~ day.axis.DP[prop.rem.DP > 0])
 
+    summary(DP.k)
+
 ~~~~
 
-    summary(DP.k)
-    summary(DP.k)
 
 Call:
 lm(formula = log(prop.rem.DP[prop.rem.DP > 0]) ~ day.axis.DP[prop.rem.DP > 
@@ -67,20 +93,19 @@ lm(formula = log(prop.rem.DP[prop.rem.DP > 0]) ~ day.axis.DP[prop.rem.DP >
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--10.0686   0.1139   0.1874   0.2471   0.5125 
+-0.41291 -0.06924  0.00411  0.06316  0.33392 
 
 Coefficients:
-                              Estimate Std. Error t value Pr(>|t|)  
-(Intercept)                  -0.489232   0.255748  -1.913   0.0612 .
-day.axis.DP[prop.rem.DP > 0] -0.002657   0.003012  -0.882   0.3816  
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+                               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                  -0.3106079  0.0279081 -11.130 2.27e-15 
+day.axis.DP[prop.rem.DP > 0] -0.0025201  0.0003272  -7.703 3.76e-10 
+ 
+Residual standard error: 0.1525 on 52 degrees of freedom
+  (16 observations deleted due to missingness)
+Multiple R-squared: 0.5329,	Adjusted R-squared: 0.524 
+F-statistic: 59.34 on 1 and 52 DF,  p-value: 3.761e-10 
 
-Residual standard error: 1.404 on 53 degrees of freedom
-  (15 observations deleted due to missingness)
-Multiple R-squared: 0.01447,	Adjusted R-squared: -0.00412 
-F-statistic: 0.7784 on 1 and 53 DF,  p-value: 0.3816 
-
+ 
 ~~~~
 
     plot(log(prop.rem.DP[prop.rem.DP > 0]) ~ day.axis.DP[prop.rem.DP > 0])
