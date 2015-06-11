@@ -1,0 +1,16 @@
+# Evaluation for Research, Fall 2013
+## Annie
+
+This is a written evaluation of your performance as a research student during the Fall 2013 semester.  This evaluation is to highlight the aspects of your work that I think is satisfactory or beyond expectations and to indicate areas where I think you can improve.  This evaluation is mainly give you an idea of my perception of your lab-work and is intended to be part of a conversation as you continue in the lab.  Please use this evaluation as a starting point for any questions you have about becoming a better student and scholar.  
+
+I am making my observations from two perspectives.  The first is from the perspective of getting the lab projects completed efficiently and properly.  In this case I am considering your ability to work well with the rest of the team and to complete the work according to the established lab protocols.  In the second case I am considering your development as a professional scientist and scholar.  In this case I am evaluating your overall approach to being part of a research team. 
+
+## Lab Work
+
+Overall I am very satisfied with the work that you are doing the lab and field.  You are consistent and careful. You still need to work on the documentation of that work, however.  Clear and current documentation of what you are doing is as important to the project as the actual lab and field work.  I would like to see you develop the habit of more consistent documentation as we move forward.  I know some of this is related to computer issues and difficulties using git.  I have made some changes to formalize this process more so hopefully this will make it easier this semester.  
+
+## Professional Development 
+
+It is in this area that I think you have the most potential for improvement.  Your specific work is excellent but I do not feel like you have taken ownership of the project.  As we move forward, I would like to see you work to develop your understanding of how our specific project fits into the bigger picture of the field.  This means working with the literature to develop your understanding of the big picture and developing the habit of applying this big picture to what you are seeing in the field and lab.
+
+

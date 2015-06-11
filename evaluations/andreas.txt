@@ -1,0 +1,14 @@
+# Evaluation for Research, Fall 2013
+## Andreas
+
+This is a written evaluation of your performance as a research student during the Fall 2013 semester.  This evaluation is to highlight the aspects of your work that I think is satisfactory or beyond expectations and to indicate areas where I think you can improve.  This evaluation is mainly give you an idea of my perception of your lab-work and is intended to be part of a conversation as you continue in the lab.  Please use this evaluation as a starting point for any questions you have about becoming a better student and scholar.  
+
+I am making my observations from two perspectives.  The first is from the perspective of getting the lab projects completed efficiently and properly.  In this case I am considering your ability to work well with the rest of the team and to complete the work according to the established lab protocols.  In the second case I am considering your development as a professional scientist and scholar.  In this case I am evaluating your overall approach to being part of a research team. 
+
+## Lab Work
+
+Overall I am very satisfied with your work in the lab.  Your lab and field work is consistent and careful.  One area that needs work is the timely and consistent documentation of the work you are doing.  I realize that much of this has to do with the difficulties using git and I have taken steps to hopefully make that easier. Overall, keep up the good work.
+
+## Professional Development 
+
+Your strengths in this area are your intellectual curiosity.  You seem to be thinking about the observations that you are making and your questions about the system show that you are trying to make sense of what you are doing.  As we move forward I would like to see you develop this even more by taking more ownership of the project and more formally developing your questions within the context of the filed.  This means working with the literature to develop a more comprehensive understanding of the context of the research and, of course, applying your curiosity!
